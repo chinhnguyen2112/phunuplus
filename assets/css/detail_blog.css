@@ -343,10 +343,15 @@ figcaption {
 }
 
 .title_handbook {
+    text-align: left;
     font-weight: 600;
     color: #333333;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 24px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 .this_des_handbook {
@@ -452,6 +457,7 @@ a.H4abc {
 
 .img_blog_same {
     width: 100%;
+    height: 130px;
 }
 
 .data_handbook {
