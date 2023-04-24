@@ -17,23 +17,6 @@ function show_menu() {
 	search_div.style.display = search_div.style.display == "block" ? "none" : "block";
 }
 
-$(document).ready(function() {
-	$('#search').submit(function() {
-		var key_search = $('#search_input').val();
-		if(key_search != '') {
-			$.ajax({
-				url: "/search",
-				method: "GET",
-				data:{key_search:key_search},
-				success:function(data) {
-				}
-			});
-		} else {
-			$('.search_result').css("display","none");
-		}
-	});
-});
-
 
 
 function big_item_menu(e, type) {

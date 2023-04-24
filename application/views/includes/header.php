@@ -28,7 +28,7 @@
         </div>   
         <div class="search" id="search_div">
             <img class="img_search" src="/images/icons8-search-30.png" />
-            <form class="form_search" id="search" method="get" action="search" >
+            <form class="form_search" id="search" method="get" action="/search" >
                 <input class="search_input" id="search_input" type="text" autocomplete="off" name="search"  placeholder="Nhập từ khóa cần tìm..." />
             </form>
         </div>
