@@ -14,7 +14,7 @@
           </div> -->
           <div class="blog_top_content blog_top_right">
             <p class="title_blog_top"><?= $blog[0]['title'] ?></p>
-            <div class="sapo_blog"><?= $blog[0]['sapo'] ?>Còn nhớ những khát khao yêu thương đang dâng trào,còn nhớ những khát khao yêu thương đang dâng trào,còn nhớ những khát khao yêu thương đang dâng trào</div>
+            <div class="sapo_blog"><?= $blog[0]['sapo'] ?></div>
           </div>
         </a>
       </div>
@@ -34,7 +34,7 @@
                     <span class="dot_item"></span>
                     <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p> 
                   </div>
-                  <span class="des_post"><?= $val['sapo'] ?>Ngày xưa có một người con gái đi ở với một nhà trưởng giả. Nàng phải làm việc quần quật suốt ngày, lại bị chủ đối đãi rất tệ. Cái ăn cái mặc đã chả có gì mà thỉnh thoảng còn bị đánh đập chửi mắng. Vì thế, cô gái tuổi mới đôi mươi mà người cứ quắt lại, trông xấu xí bệ rạc hết chỗ nói. Một hôm nhà trưởng giả có giỗ, cỗ bàn bày linh đình, họ hàng đến ăn uống đông đúc. Trong khi đó thì cô gái phải đi gánh nước luôn vai không nghỉ. Lần gánh nước thứ mười, cô gái mỏi mệt quá ngồi lại ở bờ giếng. Tự nhiên cô thấy tủi thân, ôm mặt khóc. Lúc đó đức Phật bỗng hiện ra với trạng mạo một ông cụ già. Ông cụ có vẻ đâu từ xa lại, dáng điệu mệt nhọc đến xin nước uống. Nàng vội quảy gánh xuống giếng vực nước lên cho ông già giải khát. Ông cụ uống xong lại đòi ăn. Cô gái nhớ tới phần cơm của mình chưa ăn, bèn bảo ông cụ ngồi chờ rồi quảy gánh nước về. Lần sau ra giếng, cô lấy cơm trong thùng đưa cho ông già và nói:</span>
+                  <span class="des_post"><?= $val['sapo'] ?></span>
                 </div>
               </a>
             </div>
