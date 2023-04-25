@@ -1,14 +1,13 @@
 * {
-    font: 14px normal -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    font-family: Montserrat !important;
 }
 
 .body_width {
     max-width: 980px;
     margin: auto;
 }
-
 .main_content {
-    padding-top: 51px;
+    padding-top: 80px;
 }
 
 .header_top {
@@ -23,6 +22,13 @@
     align-items: center;
     text-rendering: geometricPrecision;
     padding: 0px 20px;
+}
+#nav {
+    transition: 0.5s;
+    padding-top: 15px;
+}
+#logo_scroll {
+    display: none;
 }
 
 .header_top img {
@@ -44,7 +50,6 @@
 .main_header {
     position: fixed;
     width: 100%;
-    background: #ab0609;
     z-index: 3;
 }
 
@@ -55,22 +60,24 @@
     -moz-transition: all .3s;
     transition: all .3s;
     width: -webkit-fill-available;
+    max-width: 100%;
     background: #ab0609;
     margin: auto;
     display: flex;
     /* padding: 5px 20px; */
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    padding-left: 400px;
 }
 
 .header_menu {
     display: flex;
-    height: 58px;
+    height: max-content;
     align-items: center;
 }
 
 img.img_logo_bot_header {
-    width: 190px;
+    width: 150px;
     margin-right: 36px;
     /* border-radius: 50%; */
 }
@@ -215,11 +222,16 @@ a.item_menu {
 }
 .search {
     width: 25px;
+    position: absolute;
+    top: 63px;
+    right: 410px;
 }
 .search:hover .search_input {
     height: 25px;
     padding: 5px 25px;
     width: 200px;
+    box-shadow: 1px 2px 3px #000;
+
 }
 .form_search {
     border-radius: 5px;
@@ -231,7 +243,7 @@ a.item_menu {
     width: 0;
 }
 .search_input {
-    box-shadow: 1px 2px 3px #000;
+    padding: 0;
     border: none;
     border-radius: 5px;
     width: 0px;
@@ -241,6 +253,15 @@ a.item_menu {
     transition: 0.5s;
 }
 @media only screen and (max-width: 1024px) {
+    .body_width {
+        max-width: 100% !important;
+    }
+    #logo {
+        display: none !important;
+    }
+    #logo_scroll {
+        display: block !important;
+    }
     .img_show_menu {
         display: block;
         position: absolute;
@@ -356,7 +377,7 @@ a.item_menu {
         justify-content: space-between;
         padding-top: 26px;
         padding-bottom: 10px;
-        top: 40px;
+        top: 50px;
         height: 0px;
         transition: 0.5s;
         right: 0;
@@ -397,7 +418,7 @@ a.item_menu {
     .search {
         display: none;
         width: 250px;
-        top: 50px;
+        top: 60px;
         position: absolute;
         right: 0;
     }
@@ -406,13 +427,14 @@ a.item_menu {
     }
     .search:hover .search_input {
         height: 25px;
-        width: 200px;
-        padding: 0 5px !important;
+        width: 190px;
+        padding: 0 10px !important;
     }
     .form_search {
         width: 100%;
     }
     .search_input {
+        font-size: 12px;
         padding: 0 5px;
         width: 170px;
         height: 25px;
@@ -449,6 +471,7 @@ a.item_menu {
         top: 50px;
         position: absolute;
         right: 0;
+        transition: 0.3s;
     }
     .search img {
         display: none;
