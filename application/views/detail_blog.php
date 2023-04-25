@@ -23,13 +23,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sapo"> <?= $blog['sapo'] ?>Bài viết trên đã giúp cho bạn biết được có nên thay đổi sữa rửa
-                    mặt
-                    thường xuyên hay không. Việc thay đổi này cũng đã mang đến một vài lợi ích nhất định, tuy nhiên bạn
-                    cũng
-                    phải cân nhắc thật kỹ, tránh tình trạng kích ứng da. Nếu như bạn quan tâm về các mẹo chăm sóc da,
-                    hãy
-                    ghé ngay website của Phụ Nữ Plus để tìm hiểu thêm nhé!</div>
+                <div class="sapo"> <?= $blog['sapo'] ?></div>
                 <div class="right_detail">
                     <div class="mucluc_blog" id="mucluc_blog">
                         <p class="title_mucluc" id="title_mucluc">Mục lục [<span class="show_ml">show</span>]</p>
