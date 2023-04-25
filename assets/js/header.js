@@ -31,7 +31,21 @@ if (type == 1) {
 }
 }
   
- 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("nav").style.padding = "0px";
+    document.getElementById("logo").style.display = "none";
+    document.getElementById("logo_scroll").style.display = "block";
+    document.getElementById("search_div").style.top = "10px";
+  } else {
+    document.getElementById("nav").style.padding = "15px 0px 0px 0px";
+    document.getElementById("logo").style.display = "block";
+    document.getElementById("logo_scroll").style.display = "none";
+    document.getElementById("search_div").style.top = "65px";
+  }
+}
 // var acc = document.getElementsByClassName("item_menu");
 // var i;
 // for (i = 0; i < acc.length; i++) {

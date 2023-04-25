@@ -126,3 +126,14 @@ if (mucluc != null && input1 != null) {
     // }
   }
 }
+var check_click = 0;
+$(".show_ml").click(function () {
+	if (check_click % 2 == 0) {
+		$(".list_mucluc").show(100);
+		$(".right_detail").css("width", "100%");
+	} else {
+		$(".list_mucluc").hide(100);
+		$(".right_detail").css("width", "max-content");
+	}
+	++check_click;
+});
