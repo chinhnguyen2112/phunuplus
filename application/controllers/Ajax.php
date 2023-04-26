@@ -69,7 +69,7 @@ class Ajax extends CI_Controller
             $start = $limit * ($page - 1);
             $count = $this->Madmin->query_sql("SELECT * FROM blogs WHERE type = 0 AND time_post <= $time AND title LIKE '%$key_search%'");
             pagination('/search', count($count), $limit);
-            $result = $this->Madmin->query_sql("SELECT category.alias as cate_alias, category.name as cate_name, bolgs.* FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE blogs.type = 0 AND time_post <= $time AND blogs.title LIKE '%$key_search%' ORDER BY blogs.id DESC LIMIT $start,$limit ");
+            $result = $this->Madmin->query_sql("SELECT category.alias as cate_alias, category.name as cate_name, blogs.* FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE blogs.type = 0 AND time_post <= $time AND blogs.title LIKE '%$key_search%' ORDER BY blogs.id DESC LIMIT $start,$limit ");
             $data['result'] = $result;
             $data['meta_title'] = 'Tất cả kết quả tìm kiếm';
             $data['content'] = 'result_search';
