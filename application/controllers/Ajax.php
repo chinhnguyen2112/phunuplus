@@ -52,7 +52,7 @@ class Ajax extends CI_Controller
         }
         echo json_encode($response);
     }
-
+    
     public function search()
     {
         $time = time();
