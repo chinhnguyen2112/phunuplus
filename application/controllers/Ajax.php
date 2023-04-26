@@ -52,7 +52,7 @@ class Ajax extends CI_Controller
         }
         echo json_encode($response);
     }
-
+    
     public function search()
     {
         $infor_cate = $this->Madmin->query_sql_row("SELECT category.name as cate_name, category.alias as cate_alias FROM blogs INNER JOIN category WHERE category.id = blogs.chuyenmuc AND blogs.type = 0");

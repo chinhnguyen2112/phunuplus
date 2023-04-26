@@ -84,7 +84,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+.top_blog {
+    display: grid;
+    width: 100%;
+    gap: 30px;
+    grid-template-columns: auto 300px;
+}
+.top_left {
+    display: flex;
+    gap: 18px;
+}
 .left_about {
     width: calc(100% - 340px);
     display: flex;
@@ -194,11 +203,10 @@
 }
 
 .date_post {
-    margin-bottom: 10px;
-    color: #ffc600;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 28px;
+    color: #777777;
 }
 
 .des_blog {
@@ -270,7 +278,7 @@
 
 .this_train a img {
     width: 33%;
-    /* border-radius: 20px; */
+    float: left;
 }
 
 .left_blog {
@@ -313,7 +321,7 @@
 }
 
 .right_blog {
-    width: 32%;
+    width: 35.4%;
     /* float: right; */
 }
 
@@ -339,10 +347,14 @@
 }
 
 .this_train_right .title_blog {
-    font-size: 20px;
+    font-size: 14px;
     margin-bottom: 10px;
+    line-height: 22px;
 }
-
+img.img_banner_slick {
+    width: 300px;
+    height: 250px;
+}
 .des_blog p,
 .des_blog span {
     font-size: 15px !important;
@@ -527,6 +539,44 @@ a.H4abc {
 
 .blog_content {
     padding-top: 30px;
+}
+.load_more {
+    max-width: 170px;
+    position: relative;
+    background: linear-gradient(90deg,#cc0355 0,#5447a4 0,#ea003a 100%);
+    padding: 1px;
+    border-radius: 35px;
+    margin: 20px auto;
+}
+.load_more:hover {
+    background: #cc0355;
+    background: linear-gradient(90deg,#cc0355 0,#ea003a 0,#5447a4 100%)
+}
+.btn_see_more {
+    background: #fff;
+    padding: 6px 15px 7px 10px;
+    border-radius: 35px;
+    color: #333;
+    display: block;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+.btn_see_more span {
+    font-family: Montserrat,sans-serif;
+    color: #533c94;
+    font-weight: 500;
+    font-size: 14px;
+}
+.icon_arrow_down {
+    position: absolute;
+    background-image: url(/images/arrow-down.png);
+    width: 9px;
+    height: 5px;
+    right: 12px;
+    top: 16px;
+    background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 1024px) {

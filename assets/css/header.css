@@ -61,7 +61,7 @@
     transition: all .3s;
     width: -webkit-fill-available;
     max-width: 100%;
-    background: #ab0609;
+    background: linear-gradient(90deg,#cc0355 0,#ea003a 0,#5447a4 100%);
     margin: auto;
     display: flex;
     /* padding: 5px 20px; */
@@ -251,6 +251,14 @@ a.item_menu {
     color: #ab0609;
     position: absolute;
     transition: 0.5s;
+}
+@media only screen and (max-width: 1280px) {
+    .header_bot {
+        padding-left: 150px;
+    }
+    .search {
+        right: 150px;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .body_width {
