@@ -51,12 +51,16 @@
         public function view_add_blog()
         {
             if (admin()) {
-
+                $data['time_post'] = time();
                 $data['content'] = '/admin/add_blog';
                 if ($this->input->get('id') > 0) {
                     $data['id'] = $id = $this->input->get('id');
                     $blog = $this->Madmin->get_by(['id' => $id], 'blogs');
                     if ($blog != null) {
+                        $data['time_post'] = $blog['created_at'];
+                        if ($blog['time_post'] > 0) {
+                            $data['time_post'] = $blog['time_post'];
+                        }
                         $data['blog'] = $blog;
                     } else {
                         redirect('/add_blog');
@@ -72,6 +76,7 @@
             $id = $this->input->post('id');
             $time = time();
             $data['title'] = $this->input->post('title');
+            $data['time_post'] = strtotime($this->input->post('time_post'));
             $data['alias'] = $alias = $this->input->post('alias');
             $data['chuyenmuc'] = $chuyenmuc =  $this->input->post('category');
             $data['sapo'] = $this->input->post('sapo');

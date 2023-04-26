@@ -11,8 +11,8 @@
                             <a class="img_item" href="/<?= $val['alias'] ?>/">
                                 <img src="/<?= $val['image'] ?>" />
                             </a>
-                            <a class="name_cate" href="/<?= $infor_cate['cate_alias'] ?>/">
-                                <?= $infor_cate['cate_name'] ?>
+                            <a class="name_cate" href="/<?= $val['cate_alias'] ?>/">
+                                <?= $val['cate_name'] ?>
                             </a>
                         </div>
                         <div class="right_item_content">
