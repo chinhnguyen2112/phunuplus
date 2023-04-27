@@ -157,6 +157,7 @@ h6 p {
     font-size: 17px !important;
     line-height: 1.5 !important;
     text-align: left !important;
+    padding-right: 10px !important;
 }
 .box_data_blog {
     margin-top: 20px;
@@ -174,6 +175,7 @@ h6 p {
     line-height: 30px;
     color: #131736;
     margin-bottom: 10px;
+    padding-right: 10px;
 }
 .box_author img {
     width: 20px;
