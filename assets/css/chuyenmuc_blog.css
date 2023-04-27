@@ -190,7 +190,21 @@
     color: #333333 !IMPORTANT;
     margin: 0 0 8px;
 }
-
+.des_blog_top {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size: 14px !important;
+}
+.des_blog_top p, .des_blog_top span {
+    text-align: left !important;
+    font-size: 13px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
+    margin-top: 0 !important;
+    color: #777777 !important;
+}
 .title_blog a {
     color: #333333;
     font-size: 24px;
@@ -217,10 +231,19 @@
     /* margin-bottom: 10px; */
     font-size: 14px !important;
 }
-
-.des_blog p {
-    text-align: justify;
+.des_blog p,
+.des_blog span {
+    text-align: left !important;
+    font-size: 13px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
+    margin-top: 0 !important;
+    color: #777777 !important;
+    text-align: left;
 }
+/* .des_blog p {
+    text-align: justify;
+} */
 
 .see_detail {
     color: #fff;
@@ -278,6 +301,7 @@
 
 .this_train a img {
     width: 33%;
+    height: 150px;
     float: left;
 }
 
@@ -292,19 +316,20 @@
 }
 
 .title_blog_top {
-    font-size: 27px;
-    color: #FFFFFF;
+    font-size: 20px;
+    color: #000;
     font-weight: 500;
-    line-height: initial;
-    margin-bottom: 20px;
+    line-height: 25px;
+    margin-bottom: 0px;
 }
 
 .linl_all_detail {
+    background: #F4F4F4;
     color: unset;
 }
 
 .blog_top {
-    background: #090f20;
+    background: #F4F4F4;
     /* padding: 15px 20px; */
     display: flex;
     flex-direction: column;
@@ -319,7 +344,23 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.sapo_blog_top {
+    font-size: 13px;
+    color: #6c6e70 !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
 
+.sapo_blog_top p, .sapo_blog_top span {
+    font-weight: normal !important;
+    line-height: 22px !important;
+    font-size: 14px !important;
+    color: #777777 !important;
+    margin: 0 !important;
+}
 .right_blog {
     width: 35.4%;
     /* float: right; */
@@ -355,12 +396,7 @@ img.img_banner_slick {
     width: 300px;
     height: 250px;
 }
-.des_blog p,
-.des_blog span {
-    font-size: 15px !important;
-    line-height: 24px !important;
-    margin-top: 0 !important;
-}
+
 
 .list_blog {
     width: 66%;
@@ -571,7 +607,7 @@ a.H4abc {
 }
 .icon_arrow_down {
     position: absolute;
-    background-image: url(/images/arrow-down.png);
+    background-image: url(/images/icons/arrow-down.png);
     width: 9px;
     height: 5px;
     right: 12px;
@@ -635,6 +671,48 @@ a.H4abc {
     }
 
 }
+@media only screen and (max-width: 768px) {
+    .train_content {
+        margin-top: 20px;
+    }
+    .top_blog {
+        gap: 0;
+        display: flex;
+    }
+    .top_left {
+        flex-direction: column;
+        width: 70%;
+    }
+    .left_blog, .right_blog {
+        width: 100%;
+    }
+    .top_right {
+        width: calc(30% - 20px);
+        padding-left: 20px;
+    }
+    .des_blog_top {
+        margin-bottom: 10px;
+    }
+    .title_blog {
+        font-size: 15px;
+        line-height: 20px;
+        margin: 0;
+    }
+    .this_train a img {
+        height: 97px;
+    }
+    .date_post span {
+        font-size: 11px;
+    }
+    .des_blog {
+        font-size: 11px !important;
+        line-height: 15px !important;
+    }
+    .des_blog p, .des_blog span {
+        font-size: 11px !important;
+        line-height: 15px !important;
+    }
+}
 
 @media only screen and (max-width: 540px) {
     .banner_all {
@@ -665,7 +743,13 @@ a.H4abc {
         flex-direction: column;
         margin-top: 20px;
     }
-
+    .top_blog {
+        flex-direction: column;
+    }
+    .top_left, .top_right {
+        width: 100%;
+        padding: 0;
+    }
     .title_list {
         margin: 0;
         font-size: 23px;
@@ -692,7 +776,7 @@ a.H4abc {
     }
 
     .title_blog_top {
-        font-size: 22px;
+        font-size: 15px;
     }
 
     .blog_top p {
@@ -729,7 +813,13 @@ a.H4abc {
         font-size: 14px;
         line-height: 1.5;
     }
-
+    .sapo_blog_top p, .sapo_blog_top span {
+        font-weight: normal !important;
+        line-height: 22px !important;
+        font-size: 14px !important;
+        color: #777777 !important;
+        margin: 0 !important;
+    }
     .mucluc_blog {
         padding: 16px;
     }
@@ -746,5 +836,7 @@ a.H4abc {
     .ul_nav_mucluc {
         margin-bottom: -7px;
     }
-
+    .slick_banner {
+        margin-bottom: 20px;
+    }
 }
