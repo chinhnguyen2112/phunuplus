@@ -76,7 +76,7 @@
             $id = $this->input->post('id');
             $time = time();
             $data['title'] = $this->input->post('title');
-            $data['time_post'] = strtotime($this->input->post('time_post'));
+            $data['time_post'] = $time_post = strtotime($this->input->post('time_post'));
             $data['alias'] = $alias = $this->input->post('alias');
             $data['chuyenmuc'] = $chuyenmuc =  $this->input->post('category');
             $data['sapo'] = $this->input->post('sapo');
@@ -85,7 +85,7 @@
             $data['meta_key']     = $this->input->post('meta_key');
             $data['meta_des']     = $this->input->post('meta_des');
             $data['type'] = $this->input->post('type');
-
+            $data['created_at'] = $time_post;
             $data['updated_at'] = $time;
             $cate = chuyen_muc(['id' => $chuyenmuc]);
             if ($cate[0]['parent'] > 0) {
@@ -139,7 +139,6 @@
                         $insert_blog = $id;
                     }
                 } else {
-                    $data['created_at'] = $time;
                     $insert_blog = $this->Madmin->insert($data, 'blogs');
                 }
                 if ($insert_blog > 0) {
