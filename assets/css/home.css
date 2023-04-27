@@ -19,16 +19,11 @@
 }
 .sapo_blog {
     padding: 0 !important;
-    text-align: left;
-    padding: 0 15px;
-    font-family: Arial;
-    color: #fff;
-    line-height: 21px;
-    font-weight: 500;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
+    margin-top: 15px;
 }
 .sapo_blog,
 .sapo_blog p,
@@ -38,6 +33,7 @@
     font-size: 14px !important;
     line-height: 21px !important;
     font-weight: 500 !important;
+    /* display: block; */
 }
 
 .des_post,
@@ -269,15 +265,12 @@ li.item {
     height: 100%;
     overflow: hidden;
 }
-
-.blog_top p {
-    padding: 15px;
-}
 .blog_top_left {
     max-height: 293px;
     width: 440px;
 }
 .blog_top_right {
+    padding: 15px;
     height: 293px;
     width: 220px;
     background: linear-gradient(90deg,#cc0355 0,#ea003a 0,#5447a4 100%);
