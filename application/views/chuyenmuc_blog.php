@@ -49,7 +49,7 @@
                                 <div class="this_train_right">
                                     <a class="linl_all_detail" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
                                         <p class="title_blog"><?= $val['title'] ?></p>
-                                        <div class="des_blog"><?= $val['sapo'] ?></div>
+                                        <div class="des_blog_top"><?= $val['sapo'] ?></div>
                                     </a>
                                 </div>
                         <?php }
@@ -87,3 +87,4 @@
         </div>
     </div>
 </div>
+<input id="chuyen_muc" value="<?= isset($chuyenmuc) ? $chuyenmuc : '' ?>" hidden />
