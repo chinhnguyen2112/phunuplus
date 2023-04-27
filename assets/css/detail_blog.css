@@ -347,12 +347,10 @@ figcaption {
     color: #000 !important;
     font-style: italic;
     /* margin-top: 0; */
-    margin: 12px 0 !important;
 }
 
 .blog_same {
     width: 100%;
-    margin-top: 30px;
     padding-bottom: 40px;
 }
 
@@ -622,7 +620,7 @@ td:first-child {
 
 .item_hot_news {
     display: block;
-    padding: 13px 18px;
+    padding: 13px 8px;
     position: relative;
     border: 1px solid #dedede;
 }
