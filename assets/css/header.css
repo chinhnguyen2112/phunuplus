@@ -131,27 +131,20 @@ a.item_menu {
     width: auto !important;
 }
 .menu_con li {
+    width: 100%;
     float: left;
     position: relative;
     margin: 4px 2px 0 15px;
     padding: 1px 0 1px 0;
-    border-bottom: 1px solid #fff;
 }
-.fa {
-    top: 9px;
-    left: 7px;
+.icon_arrow_left {
     position: absolute;
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+    background-image: url(/images/icons/icons8-forward-15.png);
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: 9px;
+    background-repeat: no-repeat;
 }
 .menu_con a {
     float: left;
@@ -167,7 +160,9 @@ a.item_menu {
 .menu_con a:hover {
     background: #ff9248;
 }
+
 .this_menu:hover .menu_con {
+    /* flex-wrap: wrap; */
     display: block;
 }
 
@@ -178,7 +173,12 @@ a.item_menu {
 .list_menu {
     display: flex;
 }
-
+.list_item_menu {
+    margin-top: 0;
+}
+.icon_cancel {
+    display: none;
+}
 .this_menu:hover span a {
     color: #dadada;
 }
@@ -308,6 +308,9 @@ a.item_menu {
     .main_header {
         position: unset;
     }
+    .list_item_menu {
+        margin-top: 50px;
+    }
 
     .menu_con {
         position: unset;
@@ -325,14 +328,16 @@ a.item_menu {
         padding: 0px 30px;
         margin: 0 !important;
     }
-
+    .icon_arrow_left {
+        display: none;
+    }
     .this_menu {
         flex-direction: column;
         align-items: flex-start;
         padding: unset;
         margin-top: 15px;
         border-radius: 5px;
-        width: 100%;
+        width: 99%;
         background: none;
     }
 
@@ -381,21 +386,29 @@ a.item_menu {
         display: block;
     }
     .list_menu {
+        border-radius: 5px;
+        z-index: 1;
         flex-wrap: wrap;
         justify-content: space-between;
         padding-top: 26px;
         padding-bottom: 10px;
-        top: 50px;
-        height: 0px;
+        top: 15px;
+        max-height: 400px;
         transition: 0.5s;
-        right: 0;
+        right: 5px;
         position: absolute;
-        width: 250px;
+        width: 275px;
         flex-direction: column;
-        background: #ab0609;
+        background: linear-gradient(90deg,#cc0355 0,#ea003a 0,#5447a4 100%);
         display: none;
         /* box-shadow: 15px 10px 30px #fff; */
         /* border-top: 1px solid #fff; */
+    }
+    .icon_cancel {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
     .this_menu img {
         display: block;
@@ -420,6 +433,7 @@ a.item_menu {
         display: none;
     }
     .menu_con a {
+        width: 100%;
         background: none;
         padding: 5px 8px 5px 0;
     }
@@ -433,20 +447,26 @@ a.item_menu {
     .search img {
         display: none;
     }
-    .search:hover .search_input {
-        height: 25px;
-        width: 190px;
-        padding: 0 10px !important;
+    .img_search {
+        display: block !important;
     }
+    /* .img_search:hover .search_input {
+        height: 25px;
+        width: 210px;
+        padding: 0 10px !important;
+    } */
     .form_search {
         width: 100%;
+        margin-top: 30px;
+        height: 25px;
+        display: flex;  
     }
     .search_input {
         font-size: 12px;
-        padding: 0 5px;
-        width: 170px;
+        width: 0;
         height: 25px;
         box-shadow: none;
+        margin-left: 40px;
     }
     
 }
@@ -462,6 +482,9 @@ a.item_menu {
         border: none;
         padding: 0px 30px;
         margin: 0 !important;
+    }
+    .icon_arrow_left {
+        display: none;
     }
     .menu_con .fa {
         display: none;
@@ -484,17 +507,16 @@ a.item_menu {
     .search img {
         display: none;
     }
-    .search:hover .search_input {
+    /* .search:hover .search_input {
         height: 25px;
         width: 200px;
         padding: 0 5px !important;
-    }
+    } */
     .form_search {
         width: 100%;
     }
     .search_input {
-        padding: 0 5px;
-        width: 170px;
+        width: 0;
         height: 25px;
         box-shadow: none;
     }

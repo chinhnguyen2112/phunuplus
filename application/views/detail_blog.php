@@ -23,7 +23,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sapo"> <?= $blog['sapo'] ?></div>
+                <div class="sapo_top"> <?= $blog['sapo'] ?>Cách kẻ lông mày bằng chì xé hiện đang được rất nhiều tín đồ làm đẹp quan tâm bởi độ tiện lợi cũng như dễ dàng thao tác khi trang điểm. Với những ưu điểm nổi bật như vậy, nhưng chưa chắc ai cũng biết cách sử dụng. Vậy nên bài viết dưới đây sẽ hướng dẫn mọi người cách sử dụng chì xé kẻ mày nhé.</div>
                 <div class="right_detail">
                     <div class="mucluc_blog" id="mucluc_blog">
                         <p class="title_mucluc" id="title_mucluc">Mục lục [<span class="show_ml">show</span>]</p>

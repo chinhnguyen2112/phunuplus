@@ -79,4 +79,43 @@ class Ajax extends CI_Controller
             redirect('/');
         }
     }
+    public function load_more_cate()
+    {
+        $page = $this->input->post('page');
+        $chuyen_muc = $this->input->post('id_chuyenmuc');
+        $page = 10 * ($page - 1);
+        $blog_cate_sql = "SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as image_cate FROM blogs INNER JOIN category ON blogs.chuyenmuc = category.id WHERE blogs.chuyenmuc = $chuyen_muc ORDER BY $chuyen_muc  DESC LIMIT $page,  10";
+        $blog_cate = $this->Madmin->query_sql($blog_cate_sql);
+        $html = '';
+        if ($blog_cate != null) {
+            foreach ($blog_cate as $val) {
+                $html .= '
+                <div class="this_train">
+                    <a href="/' . $val['alias'] . ' /">
+                        <img src="/' . $val['image'] . '" alt="' . $val['title'] . '">
+                        <div class="box_right_data">
+                            <p class="title_blog">' . $val['title'] . '</p>
+                            <p class="date_post"><span>' . date('d-m-Y', $val['created_at']) . '</span></p>
+                            <div class="des_blog">' . $val['sapo'] . '</div>
+                        </div>
+                    </a>
+                </div>
+                ';
+            }
+            $next = 0;
+            if (count($blog_cate) == 10) {
+                $next = 1;
+            }
+            $response = [
+                'status' => 1,
+                'html' => $html,
+                'next' => $next
+            ];
+        } else {
+            $response = [
+                'status' => 0,
+            ];
+        }
+        echo json_encode($response);
+    }
 }
