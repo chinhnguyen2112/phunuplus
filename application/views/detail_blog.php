@@ -77,14 +77,14 @@
                     <div class="box_content">
                         <ul>
                             <li class="item_content_sidebar">
-                                <img class="icon_li" src="/images/icons8-star-50.png" />
+                                <img class="icon_li" src="/images/icons/icons8-star-50.png" />
                                 Bí Quyết Trị
                                 <strong>
                                     <a href="#">Nám</a>
                                 </strong>
                             </li>
                             <li class="item_content_sidebar">
-                                <img class="icon_li" src="/images/icons8-star-50.png" />
+                                <img class="icon_li" src="/images/icons/icons8-star-50.png" />
                                 Top 10
                                 <strong>
                                     <a href="/bi-quyet/">Bí Quyết</a>
@@ -92,7 +92,7 @@
                                 Hạnh Phúc
                             </li>
                             <li class="item_content_sidebar">
-                                <img class="icon_li" src="/images/icons8-star-50.png" />
+                                <img class="icon_li" src="/images/icons/icons8-star-50.png" />
                                 Bật Mí 3
                                 <strong>
                                     <a href="/ve-mat-meo/">Cách Vẽ</a>
@@ -100,7 +100,7 @@
                                 Mắt Mèo
                             </li>
                             <li class="item_content_sidebar">
-                                <img class="icon_li" src="/images/icons8-star-50.png" />
+                                <img class="icon_li" src="/images/icons/icons8-star-50.png" />
                                 Cách
                                 <strong>
                                     <a href="/nuoi-con-bang-sua-me/">Nuôi Con</a>
@@ -108,7 +108,7 @@
                                 Bằng Sữa Mẹ
                             </li>
                             <li class="item_content_sidebar">
-                                <img class="icon_li" src="/images/icons8-star-50.png" />
+                                <img class="icon_li" src="/images/icons/icons8-star-50.png" />
                                 Tâm Lý
                                 <strong>
                                     <a href="/tam-ly-dan-ong-khi-yeu/">Đàn Ông</a>
@@ -116,7 +116,7 @@
                                 Khi Yêu
                             </li>
                             <li class="item_content_sidebar">
-                                <img class="icon_li" src="/images/icons8-star-50.png" />
+                                <img class="icon_li" src="/images/icons/icons8-star-50.png" />
                                 Làm Sao Để
                                 <strong>
                                     <a href="/-sao-de-khong-luy-tinh/">Không</a>
@@ -129,7 +129,7 @@
                 <div class="hot_news">
                     <div class="box_heading">
                         <a href="#">
-                            <img src="/images/icons8-fire-30.png" />
+                            <img src="/images/icons/icons8-fire-30.png" />
                             Tin Mới Nóng
                         </a>
                     </div>
