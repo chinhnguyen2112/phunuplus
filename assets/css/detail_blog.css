@@ -103,7 +103,7 @@ h3,
     font-weight: 600 !important;
     margin-bottom: 12px !important;
     color: #000 !important;
-    font-style: italic;
+    font-style: normal !important;
 }
 
 h4,
@@ -337,7 +337,7 @@ figcaption {
     font-size: 25px !important;
     line-height: 32px !important;
     color: #000 !important;
-    font-style: italic;
+    font-style: normal;
     margin: 12px 0 !important;
 }
 
@@ -624,7 +624,6 @@ td:first-child {
 
 .item_hot_news a {
     font-size: 16px;
-    font-weight: 500;
     line-height: 22px;
     color: #333;
 }

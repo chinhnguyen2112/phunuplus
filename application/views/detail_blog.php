@@ -77,51 +77,52 @@
                         <ul>
                             <li class="item_content_sidebar">
                                 <img class="icon_li" src="/images/icons/icons8-star-50.png" />
-                                Bí Quyết Trị
+                                Chuyện
                                 <strong>
-                                    <a href="#">Nám</a>
+                                    <a href="/chuyen-tinh-yeu/">Tình Yêu</a>
                                 </strong>
+                                Lãng Mạn
                             </li>
                             <li class="item_content_sidebar">
                                 <img class="icon_li" src="/images/icons/icons8-star-50.png" />
-                                Top 10
+                                Chăm Sóc
                                 <strong>
-                                    <a href="/bi-quyet/">Bí Quyết</a>
+                                    <a href="/da-dep/">Da Đẹp</a>
                                 </strong>
-                                Hạnh Phúc
+                                Như Sao Hàn
                             </li>
                             <li class="item_content_sidebar">
                                 <img class="icon_li" src="/images/icons/icons8-star-50.png" />
-                                Bật Mí 3
+                                Giá Trị Của
                                 <strong>
-                                    <a href="/ve-mat-meo/">Cách Vẽ</a>
+                                    <a href="/hon-nhan/">Hôn Nhân</a>
                                 </strong>
-                                Mắt Mèo
+                                Vợ Chồng
                             </li>
                             <li class="item_content_sidebar">
                                 <img class="icon_li" src="/images/icons/icons8-star-50.png" />
-                                Cách
+                                Tiêu Chuẩn
                                 <strong>
-                                    <a href="/nuoi-con-bang-sua-me/">Nuôi Con</a>
+                                    <a href="/dang-dep/">Dáng Đẹp</a>
                                 </strong>
-                                Bằng Sữa Mẹ
+                                Phụ Nữ Việt
                             </li>
                             <li class="item_content_sidebar">
                                 <img class="icon_li" src="/images/icons/icons8-star-50.png" />
-                                Tâm Lý
+                                Style
                                 <strong>
-                                    <a href="/tam-ly-dan-ong-khi-yeu/">Đàn Ông</a>
+                                    <a href="/mac-dep/">Mặc Đẹp</a>
                                 </strong>
-                                Khi Yêu
+                                Dành Cho Phái Nữ
                             </li>
-                            <li class="item_content_sidebar">
+                            <!-- <li class="item_content_sidebar">
                                 <img class="icon_li" src="/images/icons/icons8-star-50.png" />
                                 Làm Sao Để
                                 <strong>
                                     <a href="/-sao-de-khong-luy-tinh/">Không</a>
                                 </strong>
                                 Lụy Tình
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>

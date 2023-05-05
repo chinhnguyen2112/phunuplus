@@ -42,13 +42,16 @@
             </div>
         <?php }
         } ?>
+        <div class="load_more">
+            <button class="btn_see_more">
+                <span>Hiển thị thêm tin</span>
+                <i class="icon_arrow_down"></i>
+            </button>
+        </div>
       </div>
       <!-- <div class="load_more">Xem thêm</div> -->
     </div>
     <div class="left_home">
-
-
-
       <div class="list_news item_left">
         <div class="header_news header_item_left">
           <p>Tin Mới Nhất</p>
