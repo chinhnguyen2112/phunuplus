@@ -31,29 +31,13 @@
                         <div class="blog_top">
                             <?php foreach ($blog as $key => $val) {
                                 if ($key == 0) { ?>
-                                    <!-- <a class="linl_all_detail" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
-                                        <p class="title_blog_top"><?= $val['title'] ?></p>
-                                        <div class="fl_date">
-                                            <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p>
-                                        </div>
-                                        <div class="sapo_blog_top"><?= $val['sapo'] ?></div>
-                                    </a> -->
-
                                     <a class="linl_all_detail" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
                                         <div class="blog_top_content blog_top_left">
                                             <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
                                         </div>
-                                        <!-- <div class="fl_date">
-                                            <p class="date_post"><?php $cate = chuyen_muc(['id' => $val['chuyenmuc']]);
-                                                                echo $cate[0]['name']; ?></p>
-                                            <p class="date_post"><?= date('d-m-Y', $blog[0]['created_at']) ?></p>
-                                        </div> -->
                                         <div class="blog_top_content blog_top_right">
                                             <p class="title_blog_top"><?= $val['title'] ?></p>
-                                            <div class="sapo_blog"><?= $val['sapo'] ?> 
-                                            <p>Để cải thiện sắc vóc và có được một thân hình hoàn hảo trong mơ, rất nhiều người quan tâm tới chủ đề cách dáng người quả lê giảm cân. Làm thế nào để cải thiện dáng quả lê là điều không hề khó nếu bạn học biết về những bài tập và xây dựng chế độ ăn uống hiệu quả. Còn nếu chưa biết, bạn hãy tham khảo bài viết dưới đây của Phụ Nữ Plus nhé!</p>
-                                            </div>
+                                            <div class="sapo_blog"><?= $val['sapo'] ?></div>
                                         </div>
                                     </a>
                             <?php }
@@ -69,7 +53,7 @@
                                         <div class="box_right_data">
                                             <p class="title_blog"><?= $val['title'] ?></p>
                                             <p class="date_post"><span><?= date('d-m-Y', $val['created_at']) ?></span></p>
-                                            <div class="des_blog"><?= $val['sapo'] ?>Để cải thiện sắc vóc và có được một thân hình hoàn hảo trong mơ, rất nhiều người quan tâm tới chủ đề cách dáng người quả lê giảm cân. Làm thế nào để cải thiện dáng quả lê là điều không hề khó nếu bạn học biết về những bài tập và xây dựng chế độ ăn uống hiệu quả. Còn nếu chưa biết, bạn hãy tham khảo bài viết dưới đây của Phụ Nữ Plus nhé!</div>
+                                            <div class="des_blog"><?= $val['sapo'] ?></div>
                                         </div>
                                     </a>
                                 </div>
