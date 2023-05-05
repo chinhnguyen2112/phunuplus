@@ -1,7 +1,6 @@
 .homeContent {
     position: relative;
     padding: 20px;
-    max-width: 980px;
 }
 
 .container_widget {
@@ -9,26 +8,21 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 15px;
+    padding: 0 15px;
 }
 
 .right_home {
-    width: 660px;
-    padding: 0 10px;
+    width: calc(100% - 32%);
+    /* padding: 0 10px; */
     margin-top: 20px;
 }
 .sapo_blog {
     padding: 0 !important;
-    text-align: left;
-    padding: 0 15px;
-    font-family: Arial;
-    color: #fff;
-    line-height: 21px;
-    font-weight: 500;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
     overflow: hidden;
+    margin-top: 15px;
 }
 .sapo_blog,
 .sapo_blog p,
@@ -38,6 +32,7 @@
     font-size: 14px !important;
     line-height: 21px !important;
     font-weight: 500 !important;
+    /* display: block; */
 }
 
 .des_post,
@@ -52,8 +47,8 @@
 }
 .left_home {
     margin-top: 20px;
-    padding: 0 10px;
-    width: 300px;
+    /* padding: 0 10px; */
+    width: 30.1%;
     /* border: 1px solid rgba(0, 0, 0, 0.05); */
     /* box-shadow: 0px 0px 80px rgb(0 0 0 / 2%), 0px 64.8148px 46.8519px rgb(0 0 0 / 2%), 0px 38.5185px 25.4815px rgb(0 0 0 / 1%), 0px 20px 13px rgb(0 0 0 / 1%), 0px 8.14815px 6.51852px rgb(0 0 0 / 1%), 0px 1.85185px 3.14815px rgb(0 0 0 / 0%); */
     /* border-radius: 20px; */
@@ -82,23 +77,22 @@
 }
 li.item {
     display: block;
-    padding: 13px 18px;
+    padding: 8px 10px;
     position: relative;
     border: 1px solid #dedede;
 }
 .item a {
-    font-family: Montserrat,sans-serif;
-    font-weight: 500;
     line-height: 22px;
     color: #333;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 600;
     transition: 0.5s;
 }
 .item_news a:hover {
     color: #e6003d;
 }
 .item_links a {
-    padding-left: 15px;
+    padding-left: 20px;
 }
 .item_links strong {
     text-transform: uppercase;
@@ -109,7 +103,7 @@ li.item {
     position: absolute;
     width: 13px;
     height: 13px;
-    top: 17px;
+    top: 13px;
     left: 10px;
 }
 .title_left_home {
@@ -166,6 +160,7 @@ li.item {
     -webkit-line-clamp: 2;
     overflow: hidden;
     font-family: Montserrat,sans-serif;
+    transition: 0.5s;
 }
 .title_blog:hover {
     color: #cb0030;
@@ -250,11 +245,20 @@ li.item {
 }
 
 .title_blog_top {
+    padding: 50px 15px 0px 15px;
     color: #fff!important;
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;
     font-family: Montserrat,sans-serif;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.sapo_blog p {
+    padding: 0 15px;
 }
 .title_blog_top:hover {
     color: #ffffff8f;
@@ -269,17 +273,13 @@ li.item {
     height: 100%;
     overflow: hidden;
 }
-
-.blog_top p {
-    padding: 15px;
-}
 .blog_top_left {
     max-height: 293px;
-    width: 440px;
+    width: 64%;
 }
 .blog_top_right {
     height: 293px;
-    width: 220px;
+    width: 35%;
     background: linear-gradient(90deg,#cc0355 0,#ea003a 0,#5447a4 100%);
     border-radius: 0 5px 5px 0;
 }
@@ -311,6 +311,7 @@ li.item {
 }
 
 .fl_date {
+    margin: 10px 0 5px 0;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -391,9 +392,11 @@ li.item {
     .homeContent {
         padding: 0 10px;
     }
+    .right_home {
+        margin-top: 0;
+    }
     .linl_all_detail {
         flex-direction: column;
-        padding: 0 10px;
     }
     .blog_top_left, .blog_top_right {
         width: 100%;
@@ -422,9 +425,8 @@ li.item {
         line-height: 32px;
         font-weight: 600;
         font-family: 'Arial',sans-serif;
-    }
-    .blog_top p {
-        padding: 15px 0;
+        padding: 15px 0 !important;
+        margin-bottom: 0;
     }
     .sapo_blog {
         color: #232323!important;
@@ -438,6 +440,11 @@ li.item {
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
         overflow: hidden;
+        margin-top: 0;
+    }
+    .sapo_blog, .sapo_blog p, .sapo_blog span {
+        color: #000 !important;
+        padding: 0 !important;
     }
     .link_fl {
         flex-direction: row ;

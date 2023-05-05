@@ -29,7 +29,7 @@ function show_menu(e) {
 }
 
 $("#img_search").click(function () {
-  var toggleWidth = $("#search_input").width() == 190 ? "0px" : "190px";
+  var toggleWidth = $("#search_input").width() == 160 ? "0px" : "160px";
 	$("#search_input").animate(
 		{
 			width: toggleWidth,
@@ -64,7 +64,7 @@ function scrollFunction() {
     document.getElementById("nav").style.padding = "15px 0px 0px 0px";
     document.getElementById("logo").style.display = "block";
     // document.getElementById("logo_scroll").style.display = "none";
-    document.getElementById("search_div").style.top = "65px";
+    document.getElementById("search_div").style.top = "5px";
   }
 }
 // var acc = document.getElementsByClassName("item_menu");

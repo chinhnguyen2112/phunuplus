@@ -86,6 +86,14 @@
     overflow: hidden;
     margin-top: 1em;
 }
+.sapo_blog p, .sapo_blog span {
+    text-align: left !important;
+    font-size: 13px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
+    margin-top: 0 !important;
+    color: #777777 !important;
+}
 .btn_see_more {
     color: #3e3e44;
     display: inline-block;

@@ -1,5 +1,5 @@
 .container_widget_about {
-    padding: 40px 70px 0 70px;
+    padding: 20px 70px 0 70px;
 }
 
 a {
@@ -165,6 +165,7 @@ h6 p {
     font-size: 26px;
     line-height: 30px;
     color: #131736;
+    margin-bottom: 10px;
 }
 .box_author img {
     width: 20px;
@@ -187,7 +188,7 @@ h6 p {
 }
 
 .blog_content {
-    width: calc(100% - 310px);
+    width: calc(100% - 370px);
     display: flex;
     flex-direction: column;
 }
@@ -410,7 +411,12 @@ figure {
     margin-bottom: 10px;
     width: 100% !important;
 }
-
+.content_blog li {
+    margin-bottom: 10px;
+    font-size: 17px !important;
+    line-height: 1.5 !important;
+    text-align: justify !important;
+}
 .content_blog div {
     display: flex;
     flex-wrap: wrap;
@@ -557,7 +563,7 @@ td:first-child {
 
 
 .sidebar_content {
-    width: 280px;
+    width: 340px;
 }
 .sidebar_box {
     margin-bottom: 20px;
@@ -566,7 +572,7 @@ td:first-child {
 .box_heading {
     text-align: center;
     padding: 4px 10px;
-    background: #ab0609;
+    background: linear-gradient(90deg,#cc0355 0,#ea003a 0,#5447a4 100%);
     /* border-radius: 5px 5px 0 0; */
 }
 
@@ -575,7 +581,6 @@ td:first-child {
 }
 
 .box_heading a {
-    font-family: Montserrat, sans-serif;
     color: #fff;
     text-transform: uppercase;
     font-size: 16px;
@@ -590,11 +595,8 @@ td:first-child {
 .item_content_sidebar {
     font-size: 14px;
     font-weight: 600;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 10px;
+    padding: 8px 0 8px 15px;
     position: relative;
-    font-family: Montserrat, sans-serif;
     border: 1px solid #dedede;
 }
 
@@ -611,13 +613,13 @@ td:first-child {
 
 .item_hot_news {
     display: block;
-    padding: 13px 8px;
+    padding: 13px 18px;
     position: relative;
     border: 1px solid #dedede;
 }
 
 .item_hot_news a {
-    font-family: Montserrat, sans-serif;
+    font-size: 16px;
     font-weight: 500;
     line-height: 22px;
     color: #333;
@@ -628,7 +630,7 @@ td:first-child {
 }
 
 .btn_see_more {
-    background: #533c94;
+    background: linear-gradient(90deg,#cc0355 0,#ea003a 0,#5447a4 100%);
     border: none;
     width: 100%;
     text-align: center;
@@ -648,7 +650,7 @@ td:first-child {
     color: #fff;
     text-transform: uppercase;
     font-size: 13px;
-    font-family: Montserrat, sans-serif;
+    
     padding: 5px;
     font-weight: 500;
     display: block;

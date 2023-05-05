@@ -1,13 +1,12 @@
 
 .site-footer {
     position: relative;
-    padding: 20px 10px;
-    background-color: #262436;
+    background: #262436;
     background-size: cover;
 }
 
 .footer-widgets {
-    width: 980px;
+    width: 100%;
     z-index: 1;
     position: relative;
     background-repeat: no-repeat;
@@ -20,7 +19,6 @@
 
 .copyright {
     margin: auto;
-    width: 980px;
     padding: 20px 20px;
     overflow: hidden;
     box-shadow: inset rgb(255 255 255 / 10%) 0 1px 0;
@@ -90,10 +88,9 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     text-align: justify;
     font-size: 14px;
-    padding-bottom: 15px;
     margin: 0 0 20px 0;
     font-weight: 600;
 }
@@ -214,14 +211,13 @@
         margin: 0 !important;
     }
     .logo_ft {
-        border-radius: 50%;
         max-height: 80px !important;
         width: 50%;
     }
 
     .box_logo_ft {
         width: auto;
-        margin: auto;
+        margin: 10px auto;
         text-align: center;
     }
 
