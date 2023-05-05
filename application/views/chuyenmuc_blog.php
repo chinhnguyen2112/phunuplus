@@ -52,7 +52,12 @@
                                         <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
                                         <div class="box_right_data">
                                             <p class="title_blog"><?= $val['title'] ?></p>
-                                            <p class="date_post"><span><?= date('d-m-Y', $val['created_at']) ?></span></p>
+                                            <div class="fl_date">
+                                                <p class="cate_post"><?php $cate = chuyen_muc(['id' => $val['chuyenmuc']]);
+                                                                    echo $cate[0]['name']; ?></p>
+                                                <span class="dot_item"></span>
+                                                <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p> 
+                                            </div>
                                             <div class="des_blog"><?= $val['sapo'] ?></div>
                                         </div>
                                     </a>
