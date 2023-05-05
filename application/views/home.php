@@ -14,9 +14,7 @@
           </div> -->
           <div class="blog_top_content blog_top_right">
             <p class="title_blog_top"><?= $blog[0]['title'] ?></p>
-            <div class="sapo_blog"><?= $blog[0]['sapo'] ?> 
-              <p>Để cải thiện sắc vóc và có được một thân hình hoàn hảo trong mơ, rất nhiều người quan tâm tới chủ đề cách dáng người quả lê giảm cân. Làm thế nào để cải thiện dáng quả lê là điều không hề khó nếu bạn học biết về những bài tập và xây dựng chế độ ăn uống hiệu quả. Còn nếu chưa biết, bạn hãy tham khảo bài viết dưới đây của Phụ Nữ Plus nhé!</p>
-            </div>
+            <div class="sapo_blog"><?= $blog[0]['sapo'] ?></div>
           </div>
         </a>
       </div>
@@ -38,9 +36,7 @@
                     <span class="dot_item"></span>
                     <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p> 
                   </div>
-                  <span class="des_post"><?= $val['sapo'] ?>
-                    <p>Để cải thiện sắc vóc và có được một thân hình hoàn hảo trong mơ, rất nhiều người quan tâm tới chủ đề cách dáng người quả lê giảm cân. Làm thế nào để cải thiện dáng quả lê là điều không hề khó nếu bạn học biết về những bài tập và xây dựng chế độ ăn uống hiệu quả. Còn nếu chưa biết, bạn hãy tham khảo bài viết dưới đây của Phụ Nữ Plus nhé!</p>
-                  </span>
+                  <span class="des_post"><?= $val['sapo'] ?></span>
                 </div>
               </a>
             </div>
@@ -69,9 +65,6 @@
           </ul>
         </div>
       </div>
-
-
-
       <div class="useful_links item_left">
         <div class="header_links header_item_left">
           <p>Liên Kết Hữu Ích</p>

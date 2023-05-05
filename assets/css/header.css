@@ -515,6 +515,10 @@ a.item_menu {
         right: 0;
         transition: 0.3s;
     }
+    .search_input {
+        margin-left: 130px !important;
+        top: 0 !important;
+    }
     .search img {
         display: none;
     }
