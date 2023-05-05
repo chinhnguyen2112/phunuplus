@@ -42,7 +42,6 @@
                 <div class="line_blog"></div>
                 <?php if ($blog_same != null) { ?>
                 <div class="blog_same">
-                    <p class="title_blog_same">Tin liên quan</p>
                     <div class="list_blog_same">
                         <?php
                         foreach ($blog_same as $val) { ?>
@@ -143,7 +142,7 @@
                         </ul>
                         <div class="see_more_news">
                             <button class="btn_see_more">
-                                <a href="/">Xem thêm tin mới nhất PhuNuPlus</a>
+                                <a href="/">Xem Thêm</a>
                             </button>
                         </div>
                     </div>
