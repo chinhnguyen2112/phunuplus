@@ -14,7 +14,9 @@
           </div> -->
           <div class="blog_top_content blog_top_right">
             <p class="title_blog_top"><?= $blog[0]['title'] ?></p>
-            <div class="sapo_blog"><?= $blog[0]['sapo'] ?></div>
+            <div class="sapo_blog"><?= $blog[0]['sapo'] ?> 
+              <p>Để cải thiện sắc vóc và có được một thân hình hoàn hảo trong mơ, rất nhiều người quan tâm tới chủ đề cách dáng người quả lê giảm cân. Làm thế nào để cải thiện dáng quả lê là điều không hề khó nếu bạn học biết về những bài tập và xây dựng chế độ ăn uống hiệu quả. Còn nếu chưa biết, bạn hãy tham khảo bài viết dưới đây của Phụ Nữ Plus nhé!</p>
+            </div>
           </div>
         </a>
       </div>
@@ -23,7 +25,9 @@
         <?php foreach ($blog as $key => $val) {
           if ($key > 0) { ?>
             <div class="this_content_right">
-            <p class="title_blog only_mobile"><?= $val['title'] ?></p>
+              <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                <p class="title_blog only_mobile"><?= $val['title'] ?></p>
+              </a>
               <a class="linl_all_detail link_fl" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
                 <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
                 <div class="box_content_blog">
@@ -34,7 +38,9 @@
                     <span class="dot_item"></span>
                     <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p> 
                   </div>
-                  <span class="des_post"><?= $val['sapo'] ?></span>
+                  <span class="des_post"><?= $val['sapo'] ?>
+                    <p>Để cải thiện sắc vóc và có được một thân hình hoàn hảo trong mơ, rất nhiều người quan tâm tới chủ đề cách dáng người quả lê giảm cân. Làm thế nào để cải thiện dáng quả lê là điều không hề khó nếu bạn học biết về những bài tập và xây dựng chế độ ăn uống hiệu quả. Còn nếu chưa biết, bạn hãy tham khảo bài viết dưới đây của Phụ Nữ Plus nhé!</p>
+                  </span>
                 </div>
               </a>
             </div>
@@ -73,7 +79,7 @@
         <div class="content_links content_item_left">
           <ul class="list_links">
             <li class="item_links item">
-              <img src="/images/icons8-star-50.png" />
+              <img src="/images/icons/icons8-star-50.png" />
               <a href="#">
                   Cập nhật 
                   <strong>tin tức phụ nữ</strong>
@@ -81,7 +87,7 @@
                 </a>
             </li>
             <li class="item_links item">
-            <img src="/images/icons8-star-50.png" />
+            <img src="/images/icons/icons8-star-50.png" />
               <a href="#">
                   Đọc tin
                   <strong>phụ nữ</strong>
@@ -89,7 +95,7 @@
                 </a>
             </li>
             <li class="item_links item">
-            <img src="/images/icons8-star-50.png" />
+            <img src="/images/icons/icons8-star-50.png" />
               <a href="#">
                   Cập nhật 
                   <strong>tin tức phụ nữ</strong>
