@@ -237,7 +237,7 @@
 .des_blog {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     overflow: hidden;
     /* margin-bottom: 10px; */
     font-size: 14px !important;
@@ -357,9 +357,9 @@
     padding: 0 !important;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 4;
     overflow: hidden;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .sapo_blog p, .sapo_blog span {
     color: #fff !important;
@@ -777,6 +777,12 @@ li.item {
     }
     .top_right {
         width: 25%;
+    }
+    .header_item_left p {
+        font-size: 15px;
+    }
+    .item a {
+        font-size: 14px;
     }
     .blog_top_right {
         width: 35%;
