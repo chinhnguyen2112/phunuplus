@@ -96,8 +96,10 @@ li.item {
 }
 .item_links strong {
     text-transform: uppercase;
-    color: #e6003d;
     font-size: 12px;
+    color: transparent;
+    background: linear-gradient(90deg,#cc0355 0,#ea003a 0,#5447a4 100%);
+    -webkit-background-clip: text;
 }
 .item img {
     position: absolute;
@@ -171,8 +173,9 @@ li.item {
 .date_post { 
     font-size: 12px;
     font-weight: 500;
-    color: #868686;
-    font-family: Montserrat,sans-serif;
+    color: transparent;
+    background: linear-gradient(90deg,#cc0355 0,#ea003a 0,#5447a4 100%);
+    -webkit-background-clip: text;
 }
 .dot_item {
     position: relative;
@@ -425,8 +428,8 @@ li.item {
         line-height: 32px;
         font-weight: 600;
         font-family: 'Arial',sans-serif;
-        padding: 15px 0 !important;
-        margin-bottom: 0;
+        padding: 15px 0 0 0 !important;
+        margin-bottom: 10px;
     }
     .sapo_blog {
         color: #232323!important;

@@ -60,45 +60,80 @@
                             } ?>
                         </div>
                     </div>
-                    <!-- <div class="right_blog">
+                    <div class="list_blog">
                         <?php foreach ($blog as $key => $val) {
-                            if ($key < 4 && $key > 0) { ?>
-                                <div class="this_train_right">
-                                    <a class="linl_all_detail" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                        <p class="title_blog"><?= $val['title'] ?></p>
-                                        <div class="des_blog_top"><?= $val['sapo'] ?></div>
+                            if ($key > 0) { ?>
+                                <div class="this_train">
+                                    <a href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <div class="box_right_data">
+                                            <p class="title_blog"><?= $val['title'] ?></p>
+                                            <p class="date_post"><span><?= date('d-m-Y', $val['created_at']) ?></span></p>
+                                            <div class="des_blog"><?= $val['sapo'] ?>Để cải thiện sắc vóc và có được một thân hình hoàn hảo trong mơ, rất nhiều người quan tâm tới chủ đề cách dáng người quả lê giảm cân. Làm thế nào để cải thiện dáng quả lê là điều không hề khó nếu bạn học biết về những bài tập và xây dựng chế độ ăn uống hiệu quả. Còn nếu chưa biết, bạn hãy tham khảo bài viết dưới đây của Phụ Nữ Plus nhé!</div>
+                                        </div>
                                     </a>
                                 </div>
                         <?php }
                         } ?>
-                    </div> -->
-                </div>
-                <div class="top_right">
-                    <div class="slick_banner">
-                        <img class="img_banner_slick" src="/images/banner/pic5.gif" alt="banner" />
+                        <div class="load_more">
+                            <button class="btn_see_more">
+                                <span>Hiển thị thêm tin</span>
+                                <i class="icon_arrow_down"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="list_blog">
-                <?php foreach ($blog as $key => $val) {
-                    if ($key > 0) { ?>
-                        <div class="this_train">
-                            <a href="/<?= $val['alias'] ?>/">
-                                <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
-                                <div class="box_right_data">
-                                    <p class="title_blog"><?= $val['title'] ?></p>
-                                    <p class="date_post"><span><?= date('d-m-Y', $val['created_at']) ?></span></p>
-                                    <div class="des_blog"><?= $val['sapo'] ?>Để cải thiện sắc vóc và có được một thân hình hoàn hảo trong mơ, rất nhiều người quan tâm tới chủ đề cách dáng người quả lê giảm cân. Làm thế nào để cải thiện dáng quả lê là điều không hề khó nếu bạn học biết về những bài tập và xây dựng chế độ ăn uống hiệu quả. Còn nếu chưa biết, bạn hãy tham khảo bài viết dưới đây của Phụ Nữ Plus nhé!</div>
-                                </div>
-                            </a>
+                <div class="top_right">
+                    <div class="list_news item_left">
+                        <div class="header_news header_item_left">
+                        <p>Tin Mới Nhất</p>
                         </div>
-                <?php }
-                } ?>
-                <div class="load_more">
-                    <button class="btn_see_more">
-                        <span>Hiển thị thêm tin</span>
-                        <i class="icon_arrow_down"></i>
-                    </button>
+                        <div class="content_news content_item_left">
+                        <ul class="list_news_content">
+                            <?php foreach ($blog as $key => $val) {
+                            if ($key < 6) { ?>
+                            <li class="item_news item">
+                            <a href="/<?= $val['alias'] ?>/"><?= $val['title'] ?></a>
+                            </li>
+                            <?php } 
+                            } ?>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="useful_links item_left">
+                        <div class="header_links header_item_left">
+                        <p>Liên Kết Hữu Ích</p>
+                        </div>
+                        <div class="content_links content_item_left">
+                        <ul class="list_links">
+                            <li class="item_links item">
+                            <img src="/images/icons/icons8-star-50.png" />
+                            <a href="#">
+                                Cập nhật 
+                                <strong>tin tức phụ nữ</strong>
+                                mới
+                                </a>
+                            </li>
+                            <li class="item_links item">
+                            <img src="/images/icons/icons8-star-50.png" />
+                            <a href="#">
+                                Đọc tin
+                                <strong>phụ nữ</strong>
+                                mới
+                                </a>
+                            </li>
+                            <li class="item_links item">
+                            <img src="/images/icons/icons8-star-50.png" />
+                            <a href="#">
+                                Cập nhật 
+                                <strong>tin tức phụ nữ</strong>
+                                mới
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
