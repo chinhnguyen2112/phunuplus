@@ -37,7 +37,7 @@
                                         </div>
                                         <div class="blog_top_content blog_top_right">
                                             <p class="title_blog_top"><?= $val['title'] ?></p>
-                                            <div class="sapo_blog"><?= $val['sapo'] ?></div>
+                                            <div class="sapo_blog"><?= $val['sapo'] ?><p>Cách làm chồng sợ mất vợ là điều mà hầu hết tất cả chị em phụ nữ ai cũng muốn nắm giữ và có được nó. Để có thể giữ lửa hôn nhân cũng như giúp cho gia đình luôn hạnh phúc thì các bạn cũng cần phải bỏ túi ngay một vài cách mà hôm nay Phụ Nữ Plus chỉ ngay dưới đây nhé!</p></div>
                                         </div>
                                     </a>
                             <?php }
@@ -58,7 +58,7 @@
                                                 <span class="dot_item"></span>
                                                 <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p> 
                                             </div>
-                                            <div class="des_blog"><?= $val['sapo'] ?></div>
+                                            <div class="des_blog"><?= $val['sapo'] ?><p>Cách làm chồng sợ mất vợ là điều mà hầu hết tất cả chị em phụ nữ ai cũng muốn nắm giữ và có được nó. Để có thể giữ lửa hôn nhân cũng như giúp cho gia đình luôn hạnh phúc thì các bạn cũng cần phải bỏ túi ngay một vài cách mà hôm nay Phụ Nữ Plus chỉ ngay dưới đây nhé!</p></div>
                                         </div>
                                     </a>
                                 </div>

@@ -9,42 +9,57 @@
 .main_content {
     padding-top: 80px;
 }
-
-.header_top {
-    font-size: 12px;
-    height: 54px;
-    background-color: #262626;
-    z-index: 100;
-    line-height: 54px;
-    margin-bottom: 1px;
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    text-rendering: geometricPrecision;
-    padding: 0px 20px;
-}
 #nav {
     transition: 0.5s;
     padding-top: 15px;
 }
+.top_header {
+    display: flex;
+    justify-content: space-between;
+}
+.header_right {
+    display: flex;
+}
+.weather_link {
+    display: flex;
+}
+.img_weather {
+    width: 32px;
+    height: 32px;
+}
+.img_weather {
+    margin-right: 5px;
+}
+.name_city {
+    line-height: 10px;
+    font-size: 11px;
+    color: #a1a1a1;
+    margin: 0 0 1px;
+}
+.temperature {
+    font-size: 18px;
+    color: #363636;
+}
+.search_only_pc {
+    margin-left: 20px;
+}
+.search_pc {
+    position: relative;
+}
+.input_pc {
+    border: 1px solid #e1e1e1;
+    border-radius: 15px;
+    padding: 4px 13px;
+    font-size: 12px;
+    color: #acacac;
+}
+.img_search_pc {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
 #logo_scroll {
     display: none;
-}
-
-.header_top img {
-    height: 18px;
-    width: auto;
-}
-
-.header_top span {
-    box-shadow: 0 2px 0 #6f9a37;
-    background-color: #82b440;
-    font-size: 14px;
-    padding: 5px 20px;
-    cursor: pointer;
-    line-height: 1.5;
-    color: #fff;
-    border-radius: 4px;
 }
 
 .main_header {
@@ -225,6 +240,7 @@ a.item_menu {
     position: absolute;
     top: 5px;
     right: 0px;
+    display: none;
 }
 .search:hover .search_input {
     height: 25px;
@@ -274,6 +290,9 @@ a.item_menu {
         width: max-content !important;
         display: block !important;
     }
+    .top_header {
+        display: none;
+    }
     .img_show_menu {
         display: block;
         right: 15px;
@@ -306,14 +325,6 @@ a.item_menu {
         margin: unset;
         position: relative;
     }
-
-    .header_top {
-        position: fixed;
-        top: 0;
-        width: -webkit-fill-available;
-        z-index: 201;
-    }
-
     .main_header {
         position: unset;
     }
@@ -455,7 +466,7 @@ a.item_menu {
         display: none;
     }
     .img_search {
-        display: block !important;
+        display: none !important;
     }
     /* .img_search:hover .search_input {
         height: 25px;
@@ -470,10 +481,12 @@ a.item_menu {
     }
     .search_input {
         font-size: 12px;
-        width: 0;
+        width: 220px;
         height: 25px;
+        padding-left: 10px;
         box-shadow: none;
-        margin-left: 40px;
+        top: 0;
+        left: 0;
     }
     
 }
@@ -531,9 +544,10 @@ a.item_menu {
         width: 100%;
     }
     .search_input {
-        width: 0;
+        width: 220px;
         height: 25px;
         box-shadow: none;
-        left: -90px;
+        left: 0px;
+        margin: 0 !important;
     }
 }

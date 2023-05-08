@@ -21,7 +21,6 @@
     font-size: 26px;
     margin: 0 0 15px;
     margin-bottom: 40px;
-    font-family: arial !important;
     color: #29292f;
 }
 .heading_left p {
@@ -54,14 +53,12 @@
     position: absolute;
     padding: 0px 5px;
     font-size: 11px;
-    font-family: arial !important;
 }
 .title_item_result {
     font-size: 22px;
     font-weight: 700;
     margin: 0 0 5px;
     color: #29292f;
-    font-family: arial !important;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -208,7 +205,7 @@
     margin: 0 5px;
 }
 .page-item:hover {
-    background: linear-gradient(90deg,#cc0355 0,#ea003a 0,#5447a4 100%);
+    background: #ab0609;
     color: #fff !important;
 }
 .page-item a:hover {
@@ -221,7 +218,7 @@
 }
 .active_pagin a {
     color: #fff !important;
-    background: linear-gradient(90deg,#cc0355 0,#ea003a 0,#5447a4 100%) !important;
+    background: #ab0609 !important;
 }
 @media only screen and (max-width: 1024px) {
     .container {
@@ -307,7 +304,6 @@
         padding: 3px 5px;
         font-size: 8px;
         line-height: 8px;
-        font-family: arial !important;
     }
     .title_item_result {
         font-size: 14px;

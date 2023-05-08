@@ -1,9 +1,28 @@
 <div class="main_header ">
     <div id="nav">
         <div class="logo body_width" id="logo">
-            <a href="/">
-                <img src="/images/logo.png" alt="logo" class="img_logo_bot_header">
-            </a>
+            <div class="top_header">
+                <a class="header_left" href="/">
+                    <img src="/images/logo.png" alt="logo" class="img_logo_bot_header">
+                </a>
+                <div class="header_right">
+                    <div class="weather">
+                        <a href="#" class="weather_link">
+                            <img class="img_weather" src="/images/icons/icons_weather.png" >
+                            <div class="content_weather">
+                                <p class="name_city">Hà Nội</p>
+                                <p class="temperature">25°C</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="search_only_pc">
+                        <form class="search_pc" id="search" method="get" action="/search" >
+                            <img class="img_search_pc" id="img_search_pc" src="/images/icons/icons8-search-20.png" />
+                            <input class="input_pc" id="search_input" type="text" autocomplete="off" name="search"  placeholder="Tìm kiếm" />
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div> 
         <div class="header_bot body_width">
             <a href="/" id="logo_scroll">
