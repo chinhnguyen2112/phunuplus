@@ -15,7 +15,6 @@ $(".load_more").click(function () {
 			if (data.status == 0) {
 				$(".load_more").remove();
 			} else if (data.status == 1) {
-				// $(".list_blog_home").append(data.html);
 				show_more.before(data.html);
 				if (data.next == 0) {
 					$(".load_more").remove();
