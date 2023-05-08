@@ -847,7 +847,9 @@ td:first-child {
 
     .this_handbook {
         width: 100%;
-        flex-direction: column;
+        flex-direction: unset;
+        justify-content: space-between;
+        border-bottom: 1px solid #e6e8e9;
     }
 
     .this_des_handbook p,
@@ -861,22 +863,28 @@ td:first-child {
     }
 
     .data_handbook {
-        width: 100%;
+        width: calc(50% - 10px);
         padding-left: 0;
     }
     .title_handbook {
-        margin-top: 15px;
+        width: 100% !important;
         font-size: 14px;
         line-height: unset;
         margin-bottom: 3px;
     }
 
     .this_handbook a {
-        width: 100%;
+        width: 50%;
         gap: 5px;
+    }
+    .this_des_handbook {
+        -webkit-line-clamp: 3;
     }
     .hot_news {
         margin-bottom: 20px;
+    }
+    .name_cate {
+        display: none;
     }
 }
 
