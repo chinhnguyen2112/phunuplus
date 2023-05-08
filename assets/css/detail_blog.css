@@ -726,11 +726,6 @@ td:first-child {
         line-height: 16px;
         margin-bottom: 8px !important;
     }
-
-    .this_handbook img {
-        /* margin-bottom: 16px; */
-    }
-
     .title_handbook {
         font-size: 16px;
         line-height: 24px;
@@ -877,8 +872,12 @@ td:first-child {
         width: 50%;
         gap: 5px;
     }
-    .this_des_handbook {
-        -webkit-line-clamp: 3;
+    .date_post {
+        margin-top: 0;
+        margin-bottom: 3px;
+    }
+    .date_post span {
+        margin-left: 0;
     }
     .hot_news {
         margin-bottom: 20px;
