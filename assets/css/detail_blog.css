@@ -53,7 +53,13 @@ a {
     width: 100%;
     display: inline-block;
 }
-
+.left_detail a {
+    box-shadow: inset 0 -4px 0 #7be2af;
+    transition: 0.3s;
+}
+.left_detail a:hover {
+    background: #7be2af;
+}
 .right_detail {
     width: max-content;
     margin-bottom: 20px;
@@ -884,11 +890,5 @@ td:first-child {
     }
     .name_cate {
         display: none;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .this_handbook img {
-        width: 100%;
     }
 }
