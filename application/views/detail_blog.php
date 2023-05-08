@@ -115,14 +115,6 @@
                                 </strong>
                                 Dành Cho Phái Nữ
                             </li>
-                            <!-- <li class="item_content_sidebar">
-                                <img class="icon_li" src="/images/icons/icons8-star-50.png" />
-                                Làm Sao Để
-                                <strong>
-                                    <a href="/-sao-de-khong-luy-tinh/">Không</a>
-                                </strong>
-                                Lụy Tình
-                            </li> -->
                         </ul>
                     </div>
                 </div>

@@ -17,8 +17,13 @@
                         </div>
                         <div class="right_item_content">
                             <a class="title_item_result" href="/<?= $val['alias'] ?>/"><?= $val['title'] ?></a>
-                            <p class="date_blogs"><?= date('d-m-Y', $val['created_at']) ?></p>
-                            <div class="sapo_blog"><?= $val['sapo'] ?>Xác lập luận điểm dựa trên nhóm câu có cùng chung nội dung. ví dụ: Trong tác phẩm Người lái đò Sông Đà đoạn: “Sông Đà tuôn dài, tuôn dài….đốt nương xuân”. Nhóm câu này có nội dung nói về hình dáng sông Đà cảm nhận từ góc nhìn từ trên cao; sông Đà hiện lên như hình ảnh một người đàn bà kiều diễm. Xác định được nội dung đó thì ta có thể xác lập ra luận điểm: “Nhà văn chiêm ngưỡng dòng sông ở nhiều góc độ. Từ trên cao nhìn xuống – sông Đà mang vẻ đẹp trữ tình lãng mạn và gợi cảm biết bao qua phép so sánh, liên tưởng độc đáo tới người đàn bà có áng tóc trữ tình mê đắm….”.</div>
+                            <div class="fl_date">
+                                <p class="cate_post"><?php $cate = chuyen_muc(['id' => $val['chuyenmuc']]);
+                                                    echo $cate[0]['name']; ?></p>
+                                <span class="dot_item"></span>
+                                <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p> 
+                            </div>
+                            <div class="sapo_blog"><?= $val['sapo'] ?></div>
                         </div>
                     </div>
                 <?php } ?>
