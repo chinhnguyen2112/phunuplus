@@ -310,6 +310,8 @@
 .left_blog {
     width: 100%;
     float: left;
+    padding-bottom: 3px;
+    border-bottom: 3px dotted #afa9a9;
 }
 
 .blog_top img {
@@ -366,6 +368,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    border-bottom: 3px dotted #afa9a9;
+    padding-bottom: 30px;
 }
 
 .blog_top p {
@@ -701,6 +705,9 @@ li.item {
     font-weight: unset;
     transition: 0.5s;
 }
+.item a:hover {
+    color: #cb0030;
+}
 .item img {
     position: absolute;
     width: 13px;
@@ -928,9 +935,8 @@ li.item {
         margin-bottom: 10px;
     }
     .sapo_blog p {
-        padding: 0 !important;
+        padding: unset;
     }
-
     .linl_all_detail {
         display: flex;
         flex-direction: column;
@@ -969,7 +975,7 @@ li.item {
     }
 
     .date_post {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.5;
     }
     .sapo_blog_top p, .sapo_blog_top span {

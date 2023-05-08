@@ -2,21 +2,22 @@
   <div class="container_widget ">
     <div class="right_home">
       <div class="blog_top">
-
-        <a class="linl_all_detail" title="<?= $blog[0]['title'] ?>" href="/<?= $blog[0]['alias'] ?>/">
-          <div class="blog_top_content blog_top_left">
-            <img src="/<?= $blog[0]['image'] ?>" alt="<?= $blog[0]['title'] ?>">
-          </div>
-          <!-- <div class="fl_date">
-            <p class="date_post"><?php $cate = chuyen_muc(['id' => $blog[0]['chuyenmuc']]);
-                                  echo $cate[0]['name']; ?></p>
-            <p class="date_post"><?= date('d-m-Y', $blog[0]['created_at']) ?></p>
-          </div> -->
-          <div class="blog_top_content blog_top_right">
-            <p class="title_blog_top"><?= $blog[0]['title'] ?></p>
-            <div class="sapo_blog"><?= $blog[0]['sapo'] ?></div>
-          </div>
-        </a>
+        <div class="border_blog">
+          <a class="linl_all_detail" title="<?= $blog[0]['title'] ?>" href="/<?= $blog[0]['alias'] ?>/">
+            <div class="blog_top_content blog_top_left">
+              <img src="/<?= $blog[0]['image'] ?>" alt="<?= $blog[0]['title'] ?>">
+            </div>
+            <!-- <div class="fl_date">
+              <p class="date_post"><?php $cate = chuyen_muc(['id' => $blog[0]['chuyenmuc']]);
+                                    echo $cate[0]['name']; ?></p>
+              <p class="date_post"><?= date('d-m-Y', $blog[0]['created_at']) ?></p>
+            </div> -->
+            <div class="blog_top_content blog_top_right">
+              <p class="title_blog_top"><?= $blog[0]['title'] ?></p>
+              <div class="sapo_blog"><?= $blog[0]['sapo'] ?></div>
+            </div>
+          </a>
+        </div>
       </div>
       <div class="list_blog_home">
         <!-- <p class="title_left_home none_pc">TIN MỚI NHẤT</p> -->
