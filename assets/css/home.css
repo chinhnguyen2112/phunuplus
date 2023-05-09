@@ -2,6 +2,9 @@
     position: relative;
     padding: 20px;
 }
+strong {
+    font-weight: unset !important;
+}
 
 .container_widget {
     margin: 0 -10px;
@@ -570,5 +573,6 @@ li.item {
     }
     .left_home {
         width: 100%;
+        margin-bottom: 40px;
     }
 }

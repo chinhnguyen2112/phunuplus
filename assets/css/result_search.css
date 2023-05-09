@@ -446,6 +446,7 @@
     }
     .right_content {
         padding: 0;
+        margin-bottom: 20px;
     }
 
     .heading_left p {
