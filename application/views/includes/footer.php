@@ -11,7 +11,7 @@ if (count($menu_cate_parent) > 2) {
         <div class="content_footer">
             <div class="list_footer bg_mb ">
                 <div id="text-1" class="widget widget--footer widget_text">
-                    <p class="address_ft">Phụ Nữ Plus là trang web chia sẻ kiến thức và kinh nghiệm hữu ích cho phụ nữ về nhiều lĩnh vực đời sống như tình yêu, làm đẹp, váo bếp, sức khỏe, du lịch,…</p>
+                    <p class="address_ft">Phụ Nữ Plus là trang web chia sẻ kiến thức và kinh nghiệm hữu ích cho phụ nữ về nhiều lĩnh vực đời sống như tình yêu, làm đẹp, váo bếp, sức khỏe, du lịch.</p>
                     <p class="address_ft">Các bài viết chia sẻ bí quyết và cẩm nang giúp phụ nữ cải thiện cuộc sống và sức khỏe. Phụ nữ Plus mong muốn trở thành người bạn đồng hành đáng tin cậy và thông tin hữu ích cho phụ nữ.</p>
                 </div>
             </div>

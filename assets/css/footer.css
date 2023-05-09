@@ -88,7 +88,7 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     text-align: justify;
     font-size: 14px;
     margin: 0 0 20px 0;
