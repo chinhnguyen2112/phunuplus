@@ -127,7 +127,7 @@
                     </div>
                     <div class="box_content">
                         <ul>
-                            <?php foreach ($blog_same as $key => $val) { ?>
+                            <?php foreach ($hot_news as $key => $val) { ?>
                             <li class="item_hot_news">
                                 <a href="/<?= $val['alias'] ?>"><?= $val['title'] ?></a>
                             </li>
