@@ -126,6 +126,38 @@
                     </div>
                 </div>
             </div>
+            <div class="mail_box">
+                <form class="form_mail">
+                    <div class="content_mail">
+                        <div class="mail_top">
+                            <div class="logo_mail_box">
+                                <img src="/images/logo.png">
+                            </div>
+                            <div class="content_mail_box">
+                                <div class="item_cont">
+                                    <img src="/images/icons/icons_mail01.webp">
+                                    <p class="text_item_mail">Bách Khoa Toàn Thư Làm Đẹp A-Z</p>
+                                </div>
+                                <div class="item_cont">
+                                    <img src="/images/icons/icons_mail02.webp">
+                                    <p class="text_item_mail">100+ Mã Ưu Đãi Độc Quyền</p>
+                                </div>
+                                <div class="item_cont">
+                                    <img src="/images/icons/icons_mail03.webp">
+                                    <p class="text_item_mail">Xu Hướng Làm Đẹp Mới Nhất 2023</p>
+                                </div>
+                            </div>
+                            <div class="content_mail_nonpc">
+                                <p>Xu hướng thịnh hành, bí quyết xịn xò và ưu đãi hấp dẫn đã sẵn sàng gửi đến bạn</p>
+                            </div>
+                        </div>
+                        <div class="mail_bot">
+                            <input class="input_mail" placeholder="Nhập Email của bạn"/>
+                            <button class="submit_mail">Đăng Ký Ngay</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
