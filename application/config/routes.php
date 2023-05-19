@@ -81,6 +81,8 @@ $route['load_more'] = 'Ajax/load_more';
 $route['load_more_cate'] = 'Ajax/load_more_cate';
 $route['search'] = 'Ajax/search';
 $route['search/(:num)'] = 'Ajax/search/$1';
+$route['register_mail'] = 'Ajax/register_mail';
+$route['send_mail'] = 'Admin/send_mail';
 
 
 $route['(:any)'] = 'Home/chuyenmuc/$1 ';

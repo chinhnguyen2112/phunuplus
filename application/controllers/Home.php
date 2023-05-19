@@ -33,15 +33,16 @@ class Home extends CI_Controller
         $data['canonical'] = base_url();
         $time = time();
         $data['blog'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time", 'blogs', 0, 20);
+        $data['blog_new'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time", 'blogs', 0, 5);
         $data['meta_title'] = 'Phụ Nữ Plus: Web Giải Trí Thư Giãn Của Chị Em Phụ Nữ';
+        $data['meta_des'] = 'Phụ Nữ Plus là trang web chia sẻ kiến thức và kinh nghiệm hữu ích dành cho phụ nữ hiện đại. Đây như một cuốn cẩm nang giúp chị em có thêm nhiều bí kíp về tình yêu, sức khỏe, làm đẹp, chuyện vào bếp hay đi du lịch,… Phụ Nữ Plus hứa hẹn sẽ mang đến những thông tin chính xác, hữu ích nhất cho cuộc sống của chị em!';
         $data['content'] = 'home';
         $data['list_js'] = [
-            'slick.min.js',
+            'sweetalert.min.js',
             'home.js',
         ];
         $data['list_css'] = [
-            'slick.css',
-            'slick-theme.css',
+            'sweetalert.css',
             'home.css'
         ];
         $data['index'] = 1;
@@ -81,6 +82,7 @@ class Home extends CI_Controller
                 $title_page = $chuyenmuc_parent['name'] . ' / ' . $chuyenmuc['name'];
             }
             $data['blog'] = $this->Madmin->get_limit_or("time_post <= $time AND type = 0", $count_or, 'blogs', $start, $limit);
+            $data['blog_new'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time", 'blogs', 0, 5);
             $data['title_page'] = $title_page;
             $data['chuyenmuc'] = $chuyenmuc['id'];
             $data['meta_title'] = $chuyenmuc['meta_title'];
@@ -102,7 +104,7 @@ class Home extends CI_Controller
                 redirect('/');
             }
             $data['blog_same'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE type = 0 AND time_post <= $time AND chuyenmuc = {$blog['chuyenmuc']} AND id != {$blog['id']}  ORDER BY updated_at DESC LIMIT 10");
-            $data['hot_news'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE type = 0 AND time_post <= $time AND chuyenmuc = {$blog['chuyenmuc']} AND id != {$blog['id']}  ORDER BY updated_at DESC LIMIT 5");
+            $data['blog_new'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time AND id != {$blog['id']} ", 'blogs', 0, 5);
             $cate = $this->Madmin->query_sql_row("SELECT *  FROM category  WHERE id = {$blog['chuyenmuc']} ");
             $title_page = '';
             if ($cate != null) {
@@ -157,7 +159,6 @@ class Home extends CI_Controller
             $data['meta_title'] = $tags['meta_title'];
             $data['meta_des'] = $tags['meta_des'];
             $data['meta_key'] = $tags['meta_key'];
-            $data['content_tag'] = $tags['content'];
             $data['canonical'] = base_url() . $alias . '/';
             $data['content'] = 'chuyenmuc_blog';
             $data['list_js'] = [
@@ -197,7 +198,6 @@ class Home extends CI_Controller
             $data['meta_title'] = $tags['meta_title'];
             $data['meta_des'] = $tags['meta_des'];
             $data['meta_key'] = $tags['meta_key'];
-            $data['content_tag'] = $tags['content'];
             $data['canonical'] = base_url() . $alias1 . '/' . $alias2 . '/';
             $data['content'] = 'chuyenmuc_blog';
             $data['list_js'] = [

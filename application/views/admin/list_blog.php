@@ -117,6 +117,12 @@
         gap: 5px;
     }
 
+    .send_mail {
+        cursor: pointer;
+        color: blue;
+        font-weight: 600;
+    }
+
     @media only screen and (max-width: 540px) {
 
         .box_search_forrm input,
@@ -184,7 +190,7 @@
                                         <th>Tiêu đề</th>
                                         <th>Xem tin</th>
                                         <th>Chuyên mục</th>
-                                        <!-- <th style="width:300px">Tags</th> -->
+                                        <th>Gửi mail</th>
                                         <th style="width:50px">Type</th>
                                         <th>Ngày đăng</th>
                                     </tr>
@@ -198,31 +204,13 @@
                                             <td><?= $val['title'] ?></td>
                                             <td><a href="/<?= $val['alias'] ?>" target="_blank">Xem tin</a></td>
                                             <td>
-
                                                 <?php
                                                 $chuyenmuc = chuyen_muc(['id' => $val['chuyenmuc']]);
-                                                // foreach ($chuyenmuc as $val1) {
-                                                //     if ($val1['id'] == $val['chuyenmuc']) {
                                                 echo '<a href="/' . $chuyenmuc[0]['alias'] . '" target="_blank">' . $chuyenmuc[0]['name'] . '</a>';
-                                                //     }
-                                                // }
                                                 ?>
                                             </td>
-                                            <!-- <td style="width:300px">
-                                                <div class="list_tag">
-                                                    <?php
-                                                    if ($val['tag'] != '') {
-                                                        $tag = explode(',', $val['tag']);
-                                                        foreach ($tag as $key_tag => $val_tag) {
-                                                            $this_tag = tag(['id' => $val_tag]);
-                                                            $tag_parent = tag(['id' => $this_tag[0]['parent']]);
-                                                            echo '<a style=" background: #ff4504; padding: 2px 5px; color: #fff;" href="/' . $tag_parent[0]['alias'] . '/' . $this_tag[0]['alias'] . '/">' . $this_tag[0]['name'] . '</a>';
-                                                        }
-                                                    }
-                                                    ?></div>
-                                            </td> -->
+                                            <td><span class="send_mail" onclick="send_mail(<?= $val['id']; ?>,this)">Gửi mail</span></td>
                                             <td style="width:50px">
-                                                <!-- <span><?= $val['type']  ?></span> -->
                                                 <span>
                                                     <?php
                                                     if ($val['type'] == '0') {
@@ -257,10 +245,40 @@
     </div>
 
 </div>
+<link rel="stylesheet" href="/assets/css/sweetalert.css">
+<script src="/assets/js/sweetalert.min.js"></script>
 <script>
     function filter_ds() {
         var cate = $('#cate').val();
         var url = '/list_blog?cate=' + cate;
         window.location.href = url;
+    }
+
+    function send_mail(id, e) {
+        $(e).html('Đang gửi...')
+        var form_data = new FormData();
+        form_data.append("id", id);
+        $.ajax({
+            url: "/send_mail",
+            type: "POST",
+            processData: false,
+            contentType: false,
+            dataType: "json",
+            data: form_data,
+            success: function(data) {
+                if (data.status == 1) {
+                    swal({
+                        title: "Thành công",
+                        type: "success",
+                        text: "Gửi mail thành công",
+                    }, function() {
+                        window.location.reload();
+                    });
+                }
+            },
+            error: function() {
+                alert("error");
+            },
+        });
     }
 </script>

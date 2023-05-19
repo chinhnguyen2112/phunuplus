@@ -122,4 +122,40 @@ class Ajax extends CI_Controller
         }
         echo json_encode($response);
     }
+    public function register_mail()
+    {
+        $email = $this->input->post('email');
+        if ($email != '' && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $data = [
+                'email' => $email,
+                'created_at' => time()
+            ];
+            $check_mail = $this->Madmin->get_by(['email' => $email], 'mail_blog');
+            if ($check_mail != null) {
+                $response = [
+                    'status' => 2,
+                    'mess' => "Tồn tại"
+                ];
+            } else {
+                $insert = $this->Madmin->insert($data, 'mail_blog');
+                if ($insert) {
+                    $response = [
+                        'status' => 1,
+                        'mess' => "Thành công"
+                    ];
+                } else {
+                    $response = [
+                        'status' => 0,
+                        'mess' => "Thất bại"
+                    ];
+                }
+            }
+        } else {
+            $response = [
+                'status' => 3,
+                'mess' => "Vui lòng nhập email"
+            ];
+        }
+        echo json_encode($response);
+    }
 }

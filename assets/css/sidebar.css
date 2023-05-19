@@ -1,0 +1,257 @@
+.sidebar_content {
+    width: 30.1%;
+}
+
+.mail_box {
+    margin-bottom: 20px;
+}
+
+.form_mail {
+    border-radius: 8px;
+    padding: 8px;
+    background-image: url(/images/bg-banner.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.content_mail {
+    padding: 12px 20px;
+    background: rgba(255, 238, 238, .9);
+}
+
+.logo_mail_box {
+    width: max-content;
+    margin: auto;
+}
+
+.logo_mail_box img {
+    max-height: 30px;
+}
+
+
+.content_mail_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_mail_nonpc {
+    display: none;
+}
+
+.item_cont {
+    width: 57px;
+    margin-top: 15px !important;
+    padding: 0px 2px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    font-size: 11px !important;
+    line-height: 13px;
+    letter-spacing: -.05em;
+    border-radius: 30px 30px 12px 12px;
+    border: 1px solid #BB2649;
+    color: #BB2649;
+}
+
+.text_item_mail {
+    font-size: 11px !important;
+}
+
+.mail_bot {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.input_mail {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 19px;
+    background: rgba(255, 255, 255, .5);
+    border: 1px solid #958C8F;
+    border-radius: 4px;
+}
+
+.submit_mail {
+    position: relative;
+    background: linear-gradient(90deg, #cc0355 0, #ea003a 0, #5447a4 100%);
+    cursor: pointer;
+    width: 100%;
+    z-index: 1;
+    padding: 5px 19px;
+    color: #fff;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.submit_mail::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(90deg, #5447a4 0, #5447a4 0, #cc0321 100%);
+    z-index: -1;
+    transition: opacity .7s linear;
+    opacity: 0;
+}
+
+.submit_mail:hover::before {
+    opacity: 1;
+}
+
+.item_content_sidebar {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 0 8px 15px;
+    position: relative;
+    border: 1px solid #dedede;
+}
+
+.icon_li {
+    margin-right: 4px;
+    width: 13px;
+}
+
+.item_content_sidebar a {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: transparent;
+    background: linear-gradient(90deg, #cc0355 0, #ea003a 0, #5447a4 100%);
+    -webkit-background-clip: text;
+}
+
+.sidebar_box {
+    margin-bottom: 20px;
+}
+
+.box_heading {
+    text-align: center;
+    padding: 4px 10px;
+    background: linear-gradient(90deg, #cc0355 0, #ea003a 0, #5447a4 100%);
+}
+
+.box_heading a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+}
+
+
+.box_heading img {
+    width: 22px;
+}
+
+.box_content {
+    background-color: #f3f3f3;
+}
+
+.item_hot_news {
+    display: block;
+    padding: 13px 18px;
+    position: relative;
+    border: 1px solid #dedede;
+}
+
+.item_hot_news a {
+    font-size: 16px;
+    line-height: 22px;
+    color: #333;
+    transition: 0.5s;
+}
+
+.item_hot_news a:hover {
+    color: #cb0030;
+}
+
+.btn_more {
+    position: relative;
+    background: linear-gradient(90deg, #cc0355 0, #ea003a 0, #5447a4 100%);
+    cursor: pointer;
+    width: 100%;
+    z-index: 1;
+}
+
+.btn_more::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(90deg, #5447a4 0, #5447a4 0, #cc0321 100%);
+    z-index: -1;
+    transition: opacity .7s linear;
+    opacity: 0;
+}
+
+.btn_more:hover::before {
+    opacity: 1;
+}
+
+.btn_more a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 5px;
+    font-weight: 500;
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar_content {
+        width: 25%;
+        padding: 0;
+    }
+
+    .content_mail_box {
+        display: none;
+    }
+
+    .content_mail_nonpc {
+        display: block;
+        color: #BB2649;
+        margin-top: 5px;
+    }
+
+    .content_mail_nonpc p {
+        font-size: 14px !important;
+        text-align: justify;
+    }
+
+    .input_mail,
+    .submit_mail {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .sidebar_content {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .mail_bot {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .input_mail {
+        width: calc(48% - 5px);
+        height: 34px;
+        padding: 0 5px;
+    }
+
+    .submit_mail {
+        width: 48%;
+        padding: 7px 10px;
+        margin: 0;
+    }
+}

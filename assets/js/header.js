@@ -8,7 +8,6 @@
 // 	}
 // }
 
-
 $(document).click(function (event) {
 	$target = $(event.target);
 	if (
@@ -29,7 +28,7 @@ function show_menu(e) {
 }
 
 $("#img_search").click(function () {
-  var toggleWidth = $("#search_input").width() == 160 ? "0px" : "160px";
+	var toggleWidth = $("#search_input").width() == 160 ? "0px" : "160px";
 	$("#search_input").animate(
 		{
 			width: toggleWidth,
@@ -38,34 +37,34 @@ $("#img_search").click(function () {
 	);
 });
 
-
-
 function big_item_menu(e, type) {
-if (type == 1) {
-	$(e).next().show(300);
+	if (type == 1) {
+		$(e).next().show(300);
 
-	$(e).attr("onclick", "big_item_menu(this,2)");
-} else {
-	$(e).next().hide(300);
+		$(e).attr("onclick", "big_item_menu(this,2)");
+	} else {
+		$(e).next().hide(300);
 
-	$(e).attr("onclick", "big_item_menu(this,1)");
+		$(e).attr("onclick", "big_item_menu(this,1)");
+	}
 }
-}
-  
-window.onscroll = function() {scrollFunction()};
+
+window.onscroll = function () {
+	scrollFunction();
+};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("nav").style.padding = "0px";
-    document.getElementById("logo").style.display = "none";
-    // document.getElementById("logo_scroll").style.display = "block";
-    document.getElementById("search_div").style.top = "6px";
-  } else {
-    document.getElementById("nav").style.padding = "15px 0px 0px 0px";
-    document.getElementById("logo").style.display = "block";
-    // document.getElementById("logo_scroll").style.display = "none";
-    document.getElementById("search_div").style.top = "5px";
-  }
+	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+		document.getElementById("nav").style.padding = "0px";
+		document.getElementById("logo").style.display = "none";
+		// document.getElementById("logo_scroll").style.display = "block";
+		document.getElementById("search_div").style.top = "6px";
+	} else {
+		document.getElementById("nav").style.padding = "15px 0px 0px 0px";
+		document.getElementById("logo").style.display = "block";
+		// document.getElementById("logo_scroll").style.display = "none";
+		document.getElementById("search_div").style.top = "5px";
+	}
 }
 // var acc = document.getElementsByClassName("item_menu");
 // var i;
@@ -95,3 +94,46 @@ function scrollFunction() {
 // 		}
 // 	});
 // }
+
+$(".submit_mail").click(function () {
+	var form_data = new FormData();
+	form_data.append("email", $("#input_mail").val());
+	$.ajax({
+		url: "/register_mail",
+		type: "POST",
+		processData: false,
+		contentType: false,
+		dataType: "json",
+		data: form_data,
+		success: function (data) {
+			if (data.status == 0) {
+				swal({
+					title: "Thất bại",
+					type: "error",
+					text: "Thất bại",
+				});
+			} else if (data.status == 1) {
+				swal({
+					title: "Thành công",
+					type: "success",
+					text: "Đăng ký thành công",
+				});
+			} else if (data.status == 2) {
+				swal({
+					title: "Thất bại",
+					type: "error",
+					text: "Email này đã được đăng ký",
+				});
+			} else if (data.status == 3) {
+				swal({
+					title: "Thất bại",
+					type: "error",
+					text: "Vui lòng nhập email",
+				});
+			}
+		},
+		error: function () {
+			alert("error");
+		},
+	});
+});

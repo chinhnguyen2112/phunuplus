@@ -339,6 +339,26 @@
                 redirect('/admin/login/');
             }
         }
+        public function send_mail()
+        {
+            $id = $this->input->post('id');
+            $blog = $this->Madmin->query_sql_row("SELECT alias,title FROM blogs WHERE id = $id");
+            $list = $this->Madmin->get_list([], 'mail_blog');
+            if ($list != null) {
+                foreach ($list as $val) {
+                    $body_email = file_get_contents('./email/email_blog.html');
+                    $body_email = str_replace('%email%', $val['email'], $body_email);
+                    $body_email = str_replace('%alias%', $blog['alias'], $body_email);
+                    $body_email = str_replace('%title%', $blog['title'], $body_email);
+                    $send_mail = sendEmail($val['email'], $val['email'], "Có tin mới", $body_email);
+                }
+            }
+            $response = [
+                'status' => 1,
+                'mess' => 'Thành công'
+            ];
+            echo json_encode($response);
+        }
         public function sitemap()
         {
             $sql = "SELECT id,alias,updated_at FROM blogs ORDER BY id ASC";
