@@ -430,6 +430,14 @@ td:first-child {
     font-weight: 700;
 }
 
+.title_h1 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 45px;
+    color: #131736;
+    margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 1024px) {
     .container_widget_about {
         padding: 20px;
@@ -486,6 +494,12 @@ td:first-child {
     .this_des_handbook span {
         margin: 0 !important;
         line-height: unset !important;
+    }
+
+    .title_h1 {
+        font-size: 28px;
+        line-height: 48px;
+        margin-bottom: 0px;
     }
 }
 
@@ -621,4 +635,8 @@ td:first-child {
         font-size: 14px;
     }
 
+    .title_h1 {
+        font-size: 24px;
+        line-height: 34px;
+    }
 }

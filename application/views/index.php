@@ -32,7 +32,9 @@
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/header.css">
   <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="stylesheet" href="/assets/css/sweetalert.css">
   <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/js/sweetalert.min.js"></script>
 
   <?php if (isset($list_css)) {
     foreach ($list_css as $css) { ?>

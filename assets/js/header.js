@@ -118,6 +118,7 @@ $(".submit_mail").click(function () {
 					type: "success",
 					text: "Đăng ký thành công",
 				});
+				$("#input_mail").val("");
 			} else if (data.status == 2) {
 				swal({
 					title: "Thất bại",

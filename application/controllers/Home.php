@@ -38,11 +38,9 @@ class Home extends CI_Controller
         $data['meta_des'] = 'Phụ Nữ Plus là trang web chia sẻ kiến thức và kinh nghiệm hữu ích dành cho phụ nữ hiện đại. Đây như một cuốn cẩm nang giúp chị em có thêm nhiều bí kíp về tình yêu, sức khỏe, làm đẹp, chuyện vào bếp hay đi du lịch,… Phụ Nữ Plus hứa hẹn sẽ mang đến những thông tin chính xác, hữu ích nhất cho cuộc sống của chị em!';
         $data['content'] = 'home';
         $data['list_js'] = [
-            'sweetalert.min.js',
             'home.js',
         ];
         $data['list_css'] = [
-            'sweetalert.css',
             'home.css'
         ];
         $data['index'] = 1;
