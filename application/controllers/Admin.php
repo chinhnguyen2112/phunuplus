@@ -232,8 +232,9 @@
         public function list_blog()
         {
             if (admin()) {
+                $key_search = $this->input->get('key_search');
                 $cate = $this->input->get('cate');
-                $where['id >'] = 0;
+                $where = ' id > 0 ';
                 if ($cate > 0) {
                     $id_parent = $cate;
                     $list_cate = $this->Madmin->query_sql("SELECT *  FROM category  WHERE parent = $id_parent ");
@@ -241,6 +242,9 @@
                     foreach ($list_cate as $key => $val) {
                         $where .= ' OR chuyenmuc =' . $val['id'];
                     }
+                }
+                if ($key_search != '') {
+                    $where .= " AND  title LIKE '%$key_search%' ";
                 }
                 $page = $this->uri->segment(2);
                 if ($page < 1 || $page == '') {
