@@ -48,11 +48,10 @@ a {
 }
 
 .right_detail {
-    width: max-content;
     margin-bottom: 20px;
-    background: #f3f3f3;
+    background: #FBFDFF;
     box-shadow: 0px 0px 20px rgba(19, 23, 54, 0.1);
-    border: 1px solid rgb(230 1 60);
+    border-radius: 8px;
 }
 
 h3,
@@ -186,7 +185,18 @@ figcaption {
 }
 
 .mucluc_blog {
+    background: #ebebeb;
     padding: 10px 15px;
+}
+
+.img_show_ml {
+    margin-left: 10px;
+}
+
+.img_ml {
+    width: 16px;
+    margin-right: 5px;
+    margin-top: -4px;
 }
 
 .title_mucluc {
@@ -205,10 +215,6 @@ figcaption {
     justify-content: space-between;
 }
 
-.box_title_ml img {
-    margin-left: 10px;
-}
-
 .show_ml {
     font-size: 13px;
     text-transform: unset !important;
@@ -221,8 +227,8 @@ figcaption {
 }
 
 .list_mucluc {
-    display: none;
     margin-bottom: 8px;
+    display: none;
 }
 
 .list_mucluc li {
@@ -230,11 +236,18 @@ figcaption {
 }
 
 .list_mucluc a {
-    font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     text-align: center;
     color: #131736;
+}
+
+li .toc-ul {
+    padding-left: 15px;
+}
+
+.toc-link-1 {
+    font-weight: 600;
 }
 
 .ul_nav_mucluc {
@@ -462,7 +475,7 @@ td:first-child {
     }
 
     .right_detail {
-        width: max-content;
+        width: 100%;
         position: unset;
         float: unset;
         margin-bottom: 0;
@@ -528,10 +541,6 @@ td:first-child {
     .this_handbook {
         width: 100%;
     }
-
-    .right_detail {
-        width: max-content;
-    }
 }
 
 @media only screen and (max-width: 540px) {
@@ -563,21 +572,13 @@ td:first-child {
         margin-top: 0;
     }
 
-    .right_detail {
-        width: max-content;
-    }
-
     .mucluc_blog {
-        padding: 5px 10px;
+        padding: 16px;
     }
 
     .title_mucluc {
         font-size: 15px;
         line-height: 24px;
-    }
-
-    .list_mucluc li {
-        font-size: 14px;
     }
 
     .ul_nav_mucluc {
@@ -633,10 +634,6 @@ td:first-child {
 
     .name_cate {
         display: none;
-    }
-
-    .list_mucluc a {
-        font-size: 14px;
     }
 
     .title_h1 {

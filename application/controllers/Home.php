@@ -116,6 +116,7 @@ class Home extends CI_Controller
             $data['blog'] = $blog;
             $data['content'] = 'detail_blog';
             $data['list_js'] = [
+                'jquery.toc.min.js',
                 'detail_blog.js',
             ];
             $data['list_css'] = [
