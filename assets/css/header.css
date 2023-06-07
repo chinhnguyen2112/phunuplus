@@ -19,6 +19,7 @@
 .top_header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header_right {
@@ -324,7 +325,7 @@ a.item_menu {
     }
 
     img.img_logo_bot_header {
-        width: 130px;
+        width: 87px;
     }
 
     #logo {
@@ -361,7 +362,7 @@ a.item_menu {
         padding: 10px 0;
         justify-content: space-between;
         padding-right: 20px;
-        align-items: flex-start;
+        align-items: center;
         padding-left: 20px;
         flex-direction: row;
         border-bottom: 1px solid #DBDBDB;

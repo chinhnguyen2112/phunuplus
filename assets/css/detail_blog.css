@@ -146,7 +146,8 @@ h6 p {
 }
 
 .content_blog ul {
-    padding-left: 30px;
+    padding: 0 !important;
+    padding-left: 30px !important;
     list-style: disc;
 }
 
