@@ -8,7 +8,7 @@
                 <div class="header_right">
                     <div class="weather">
                         <a href="#" class="weather_link">
-                            <img class="img_weather" src="/images/icons/icons_weather.png" >
+                            <img class="img_weather" src="/images/icons/icons_weather.png">
                             <div class="content_weather">
                                 <p class="name_city">Hà Nội</p>
                                 <p class="temperature">25°C</p>
@@ -16,17 +16,17 @@
                         </a>
                     </div>
                     <div class="search_only_pc">
-                        <form class="search_pc" id="search" method="get" action="/search" >
+                        <form class="search_pc" id="search" method="get" action="/search">
                             <img class="img_search_pc" id="img_search_pc" src="/images/icons/icons8-search-20.png" />
-                            <input class="input_pc" id="search_input" type="text" autocomplete="off" name="search"  placeholder="Tìm kiếm" />
+                            <input class="input_pc" id="search_input" type="text" autocomplete="off" name="search" placeholder="Tìm kiếm" />
                         </form>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
         <div class="header_bot body_width">
             <a href="/" id="logo_scroll">
-                <img src="/images/logo.png" alt="logo" class="img_logo_bot_header">
+                <img src="/images/logo_mb.png" alt="logo" class="img_logo_bot_header">
             </a>
             <div class="header_bg">
                 <div class="header_menu">
@@ -34,11 +34,11 @@
                         <!-- <div class="this_menu">
                             <span><a href="/">Trang chủ</a></span>
                         </div> -->
-                        <img class="icon_cancel"  src="/images/icons/icons8-cancel-32.png" onclick="$('.list_menu').hide(100)"/>
+                        <img class="icon_cancel" src="/images/icons/icons8-cancel-32.png" onclick="$('.list_menu').hide(100)" />
                         <div class="search_none_pc">
-                            <form class="form_search" id="search" method="get" action="/search" >
+                            <form class="form_search" id="search" method="get" action="/search">
                                 <img class="img_search" id="img_search" src="/images/icons/icons8-search-30.png" />
-                                <input class="search_input" id="search_input" type="text" autocomplete="off" name="search"  placeholder="Nhập từ khóa cần tìm..." />
+                                <input class="search_input" id="search_input" type="text" autocomplete="off" name="search" placeholder="Nhập từ khóa cần tìm..." />
                             </form>
                         </div>
                         <div class="list_item_menu">
@@ -47,7 +47,7 @@
                                 $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
                                 <li class="this_menu" id="this_menu">
                                     <div class="big_item_menu" onclick="big_item_menu(this,1)">
-                                        <a class="item_menu"   href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
+                                        <a class="item_menu" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
                                         <img id="img_menu" src="/images/icons/icons8-sort-down-24.png" id="item_menu" />
                                     </div>
                                     <?php if ($menu_cate != null) { ?>
@@ -60,17 +60,17 @@
                                             <?php } ?>
                                         </ul>
                                     <?php } ?>
-                                </li>      
+                                </li>
                             <?php } ?>
                         </div>
                     </ul>
-                </div>   
+                </div>
                 <div class="search" id="search_div">
-                <form class="form_search" id="search" method="get" action="/search" >
-                        <input class="search_input" id="search_input" type="text" autocomplete="off" name="search"  placeholder="Nhập từ khóa cần tìm..." />
+                    <form class="form_search" id="search" method="get" action="/search">
+                        <input class="search_input" id="search_input" type="text" autocomplete="off" name="search" placeholder="Nhập từ khóa cần tìm..." />
                     </form>
                     <img class="img_search" id="img_search" src="/images/icons/icons8-search-30.png" />
-                    
+
                 </div>
                 <img src="/images/menu_mb.svg" alt="show menu" class="img_show_menu" id="show_menu" onclick="$('.list_menu').show(100)">
             </div>

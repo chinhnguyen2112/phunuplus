@@ -54,6 +54,31 @@
 
     gtag('config', 'G-GP45ZZPN4X');
   </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsMediaOrganization",
+      "name": "Phụ Nữ Plus",
+      "alternateName": "Phụ Nữ Plus",
+      "url": "https://phunuplus.vn/",
+      "logo": "https://phunuplus.vn/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "0328395635",
+        "contactType": "",
+        "areaServed": "VN",
+        "availableLanguage": "Vietnamese"
+      },
+      "sameAs": [
+        "https://twitter.com/phunupluss",
+        "https://www.youtube.com/@phunupluss/about",
+        "https://www.pinterest.com/phunuplus/",
+        "https://phunupluss.tumblr.com/",
+        "https://phunuplus.vn/"
+      ]
+    }
+  </script>
+
 </head>
 
 <body>
