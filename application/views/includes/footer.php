@@ -55,12 +55,12 @@ $ft5 = chuyen_muc(['parent' => 10]);
             </div>
         </div>
     </div> -->
-    <div class="footer_tag">
+    <!-- <div class="footer_tag">
         <div class="content_footer_tag body_width">
             <a href="#" class="this_tag_ft">Thể theo 24h</a>
             <a href="#" class="this_tag_ft">Công nghệ</a>
         </div>
-    </div>
+    </div> -->
     <div class="footer_bottom">
         <div class="content_footer_top body_width">
             <div class="ft_app">

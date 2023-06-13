@@ -48,6 +48,7 @@ strong {
     margin-top: 0 !important;
     text-align: left !important;
     font-weight: unset !important;
+    display: inline;
 }
 
 .this_content_right {

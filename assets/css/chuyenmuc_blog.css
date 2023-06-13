@@ -99,6 +99,7 @@
     margin-top: 0 !important;
     color: #777777 !important;
     text-align: left;
+    display: inline;
 }
 
 .this_train a img {
