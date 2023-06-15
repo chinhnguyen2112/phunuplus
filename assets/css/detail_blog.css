@@ -1,5 +1,5 @@
 .container_widget_about {
-    padding: 20px 70px 0 70px;
+    padding: 0px 70px 0 70px;
 }
 
 a {
@@ -524,7 +524,7 @@ td:first-child {
 
 @media only screen and (max-width: 768px) {
     .main_content {
-        padding-top: 50px;
+        padding-top: 70px;
     }
 
     .main_content_blog {
@@ -547,6 +547,9 @@ td:first-child {
 
 @media only screen and (max-width: 540px) {
 
+    .main_content {
+        padding-top: 80px;
+    }
     .breadcrumb p,
     .breadcrumb span {
         margin-bottom: 0;
