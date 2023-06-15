@@ -2,10 +2,22 @@
     <div id="nav">
         <div class="logo body_width" id="logo">
             <div class="top_header">
-                <a class="header_left" href="/">
-                    <img src="/images/logo.png" alt="logo" class="img_logo_bot_header">
-                </a>
+                <div class="header_left">
+                    <a href="/">
+                        <img src="/images/logo.png" alt="logo" class="img_logo_bot_header">
+                    </a>
+                    <div class="infor_header">
+                        <img src="/images/icons/icon_growth.png" alt="icon growth">
+                        <div class="content_infor_hea">
+                            <a class="infor_pc" href="#">Thông tin Ngành học hot 2023 </a>
+                            <a class="infor_tablet" href="#">Ngành học hot 2023 </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="header_right">
+                    <div class="fan_page">
+                        <a href="#">Fanpage PhuNuPlus</a>
+                    </div>
                     <div class="weather">
                         <a href="#" class="weather_link">
                             <img class="img_weather" src="/images/icons/icons_weather.png">
@@ -21,26 +33,57 @@
                             <input class="input_pc" id="search_input" type="text" autocomplete="off" name="search" placeholder="Tìm kiếm" />
                         </form>
                     </div>
+                    <div class="noti">
+                        <img src="/images/icons/icon_bell_noti.png" alt="icon notification">
+                    </div>
+                    <div class="sub_menu_top">
+                        <div class="btn_submenu_top" id="btn_submenu_top" onclick="show_menu(this,1)">
+                            <span id="line_span"></span>
+                        </div>
+                        <div class="list_item_submenu">
+                            <div class="search_sub">
+                                <form class="form_sub" id="search" method="get" action="/search">
+                                    <img class="img_seach_sub" id="img_search_sub" src="/images/icons/icons8-search-20.png" />
+                                    <input class="input_sub" id="search_input_sub" type="text" autocomplete="off" name="search" placeholder="Tìm kiếm" />
+                                </form>
+                            </div>
+                            <div class="list_item_sub">
+                                <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
+                                foreach ($menu_cate_parent as $val) {
+                                    $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
+                                    <li class="this_menu_sub" id="this_menu">
+                                        <div class="big_item_menu_sub" onclick="show_submenu(this,1)">
+                                            <a class="item_menu_sub" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
+                                            <span class="drop_sub" ></span>
+                                        </div>
+                                        <?php if ($menu_cate != null) { ?>
+                                            <ul class="menu_con_sub">
+                                                <div class="row_sub">
+                                                    <?php foreach ($menu_cate as $val1) { ?>
+                                                        <li>
+                                                            <span class="dot_header_sub"></span>
+                                                            <a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a>
+                                                        </li>
+                                                    <?php } ?>
+                                                </div>
+                                            </ul>
+                                        <?php } ?>
+                                    </li>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="header_bot body_width">
-            <a href="/" id="logo_scroll">
-                <img src="/images/logo_mb.png" alt="logo" class="img_logo_bot_header">
-            </a>
+           
             <div class="header_bg">
                 <div class="header_menu">
                     <ul class="list_menu" id="list_menu">
-                        <!-- <div class="this_menu">
-                            <span><a href="/">Trang chủ</a></span>
-                        </div> -->
-                        <img class="icon_cancel" src="/images/icons/icons8-cancel-32.png" onclick="$('.list_menu').hide(100)" />
-                        <div class="search_none_pc">
-                            <form class="form_search" id="search" method="get" action="/search">
-                                <img class="img_search" id="img_search" src="/images/icons/icons8-search-30.png" />
-                                <input class="search_input" id="search_input" type="text" autocomplete="off" name="search" placeholder="Nhập từ khóa cần tìm..." />
-                            </form>
-                        </div>
+                        <a href="/">
+                            <img src="/images/icons/icons8-home-50.png" alt="icon home">
+                        </a>
                         <div class="list_item_menu">
                             <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
                             foreach ($menu_cate_parent as $val) {
@@ -48,16 +91,18 @@
                                 <li class="this_menu" id="this_menu">
                                     <div class="big_item_menu" onclick="big_item_menu(this,1)">
                                         <a class="item_menu" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
-                                        <img id="img_menu" src="/images/icons/icons8-sort-down-24.png" id="item_menu" />
                                     </div>
                                     <?php if ($menu_cate != null) { ?>
                                         <ul class="menu_con">
-                                            <?php foreach ($menu_cate as $val1) { ?>
-                                                <li>
-                                                    <i class="icon_arrow_left"></i>
-                                                    <a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a>
-                                                </li>
-                                            <?php } ?>
+                                            <div class="row">
+                                                <?php foreach ($menu_cate as $val1) { ?>
+                                                    <li>
+                                                        <!-- <i class="icon_arrow_left"></i> -->
+                                                        <span class="dot_header"></span>
+                                                        <a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a>
+                                                    </li>
+                                                <?php } ?>
+                                            </div>
                                         </ul>
                                     <?php } ?>
                                 </li>
@@ -65,14 +110,6 @@
                         </div>
                     </ul>
                 </div>
-                <div class="search" id="search_div">
-                    <form class="form_search" id="search" method="get" action="/search">
-                        <input class="search_input" id="search_input" type="text" autocomplete="off" name="search" placeholder="Nhập từ khóa cần tìm..." />
-                    </form>
-                    <img class="img_search" id="img_search" src="/images/icons/icons8-search-30.png" />
-
-                </div>
-                <img src="/images/menu_mb.svg" alt="show menu" class="img_show_menu" id="show_menu" onclick="$('.list_menu').show(100)">
             </div>
         </div>
     </div>

@@ -1,33 +1,68 @@
 .content {
-    padding-top: 20px;
+    padding-top: 0px;
     background: #f8f8f8;
-}
-
-.breadcrumb {
-    display: flex;
-    gap: 10px;
 }
 
 .content_about {
     margin: auto;
     margin-top: 0px;
-    padding: 5px 70px 20px 70px;
+    padding: 0px 70px 20px 70px;
+    display: flex;
+    flex-direction: column;
 }
-
-.this_breadcrumb {
-    font-size: 16px;
-    line-height: 24px;
-    color: #999;
-    font-weight: 500;
+.menu_page {
+    display: flex;
+    padding: 10px 20px;
+    border-bottom: 1px solid #f2f2f2;
+    overflow-y: auto;
 }
-
-.breadcrumb p,
-.breadcrumb span {
-    font-size: 16px;
-    line-height: 20px;
-    color: #999;
+.menu_scroll {
+    width: max-content;
+    display: flex;
 }
-
+.row_page {
+    display: flex;
+}
+.name_big_cate {
+    font-size: 14px;
+    color: #363636;
+    text-transform: uppercase;
+    font-weight: bold;
+    position:relative;
+    text-decoration: none;
+}
+.menu_page a {
+    margin-right: 10px;
+}
+.menu_page .active::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #d2577e;
+    transition: all ease .3s;
+}
+.cate_con  {
+    font-size: 13px;
+    color: #363636;
+    margin: 0 10px;
+    position:relative;
+}
+.cate_con::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background: #d2577e;
+    transition: all ease .3s;
+}
+.cate_con:hover::after {
+    height: 2px;
+}
 .train_content {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -286,6 +321,7 @@
 
 @media only screen and (max-width: 1024px) {
     .content_about {
+        margin-top: 20px;
         padding: 20px;
         padding-top: 0;
     }
@@ -380,11 +416,12 @@
 
 @media only screen and (max-width: 540px) {
 
-    .breadcrumb p,
-    .breadcrumb span {
-        margin-bottom: 10px;
+    /* .menu_page .active::after {
+        display: none;
+    } */
+    .menu_page {
+        display: flow-root;
     }
-
     .train_content {
         flex-direction: column;
         margin-top: 0px;
@@ -481,4 +518,9 @@
         color: #000;
     }
 
+}
+@media only screen and (max-width: 414px) {
+    .infor_tablet {
+        display: none;
+    }
 }
