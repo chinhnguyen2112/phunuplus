@@ -29,15 +29,16 @@ strong {
     margin-top: 15px;
 }
 
-.sapo_blog,
 .sapo_blog p,
 .sapo_blog span {
-    display:inline;
     color: #fff !important;
     text-align: justify !important;
     font-size: 14px !important;
     line-height: 21px !important;
     font-weight: 500 !important;
+}
+.sapo_blod span {
+    display:inline;
 }
 
 .des_post,
