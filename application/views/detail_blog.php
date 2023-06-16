@@ -3,11 +3,23 @@
         <div class="main_content_blog">
             <div class="blog_content">
                 <div class="breadcrumb">
-                    <a href="/">Trang chủ</a>
-                    <span> / </span>
-                    <?php if (isset($breadcrumb) && $breadcrumb != '') { ?>
-                        <a class="link_breadcrumb" href="#"><?= $breadcrumb ?></a>
-                        <span> / </span>
+                    <span>
+                        <img src="/images/icons/icons8-home-20.png" alt="icon home small">
+                    </span>
+                    <span>
+                        <img src="/images/icons/icons8-arrow-right-10.png" alt="icon arrow right">
+                    </span>
+                    <?php if (isset($cate_1) && $cate_1 != null) { ?>
+                    <a class="link_breadcrumb" href="/<?= $cate_1['alias'] ?>/"><?= $cate_1['name'] ?></a>
+                    <span>
+                        <img src="/images/icons/icons8-arrow-right-10.png" src="icon arrow right">
+                    </span>
+                    <?php }
+                    if (isset($cate) && $cate != null) { ?>
+                    <a class="link_breadcrumb" href="/<?= $cate['alias'] ?>/"><?= $cate['name'] ?></a>
+                    <span>
+                        <img src="/images/icons/icons8-arrow-right-10.png" src="icon arrow right">
+                    </span>
                     <?php } ?>
                     <span class="this_breadcrumb"><?= $blog['title'] ?></span>
                 </div>
@@ -26,7 +38,8 @@
                 <div class="right_detail">
                     <div class="mucluc_blog" id="mucluc_blog">
                         <div class="box_title_ml">
-                            <p class="title_mucluc" id="title_mucluc"><img class="img_ml" src="/images/icons/mucluc.png" alt="mục lục"> Mục lục</p>
+                            <p class="title_mucluc" id="title_mucluc"><img class="img_ml" src="/images/icons/mucluc.png"
+                                    alt="mục lục"> Mục lục</p>
                             <img src="/images/arrow.svg" class="img_show_ml" alt="mục lục">
                         </div>
                         <ul class="list_mucluc" id="list_mucluc">
@@ -42,27 +55,28 @@
 
                 <div class="line_blog"></div>
                 <?php if ($blog_same != null) { ?>
-                    <div class="blog_same">
-                        <div class="list_blog_same">
-                            <?php
+                <div class="blog_same">
+                    <div class="list_blog_same">
+                        <?php
                             foreach ($blog_same as $val) { ?>
-                                <div class="this_handbook ">
-                                    <a class="img_item" href="/<?= $val['alias'] ?>/">
-                                        <img class="img_blog_same" src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
-                                    </a>
-                                    <div class="data_handbook">
-                                        <a class="title_handbook" href="/<?= $val['alias'] ?>"><?= $val['title'] ?></a>
-                                        <p class="date_post">
-                                            <a class="name_cate" href="/<?= $blog['alias_cate'] ?>"><?= $blog['name_cate'] ?></a>
-                                            <span><?= date('d-m-Y', $val['created_at']) ?><span>
-                                        </p>
-                                        <div class="this_des_handbook"><?= $val['sapo'] ?></div>
-                                    </div>
-                                </div>
-                            <?php
-                            } ?>
+                        <div class="this_handbook ">
+                            <a class="img_item" href="/<?= $val['alias'] ?>/">
+                                <img class="img_blog_same" src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                            </a>
+                            <div class="data_handbook">
+                                <a class="title_handbook" href="/<?= $val['alias'] ?>"><?= $val['title'] ?></a>
+                                <p class="date_post">
+                                    <a class="name_cate"
+                                        href="/<?= $blog['alias_cate'] ?>"><?= $blog['name_cate'] ?></a>
+                                    <span><?= date('d-m-Y', $val['created_at']) ?><span>
+                                </p>
+                                <div class="this_des_handbook"><?= $val['sapo'] ?></div>
+                            </div>
                         </div>
+                        <?php
+                            } ?>
                     </div>
+                </div>
                 <?php } ?>
             </div>
             <?php include('includes/sidebar.php') ?>

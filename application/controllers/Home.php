@@ -82,7 +82,15 @@ class Home extends CI_Controller
             
             $count = $this->Madmin->num_rows_or("time_post <= $time AND type = 0", $count_or, 'blogs');
             pagination('/' . $chuyenmuc['alias'], $count, $limit);
-            
+            $chuyenmuc_parent = $this->Madmin->get_by(['id' => $chuyenmuc['parent']], 'category');
+            $title_page = $chuyenmuc['name'];
+            $data['cate'] = $chuyenmuc['name'];
+            $data['meta_title'] = $chuyenmuc['meta_title'];
+            if ($chuyenmuc_parent != null) {
+                $cate_parent = $this->Madmin->query_sql_row("SELECT id,alias,name,parent  FROM category  WHERE name = '{$chuyenmuc_parent['name']}' ");
+                $data['cate_1'] = $cate_parent;
+                $title_page = $chuyenmuc_parent['name'] . ' - ' . $chuyenmuc['name'];
+            }
             $data['blog'] = $this->Madmin->get_limit_or("time_post <= $time AND type = 0", $count_or, 'blogs', $start, $limit);
             $data['blog_new'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time", 'blogs', 0, 5);
             $data['chuyenmuc'] = $chuyenmuc['id'];
@@ -107,13 +115,15 @@ class Home extends CI_Controller
             $data['blog_same'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE type = 0 AND time_post <= $time AND chuyenmuc = {$blog['chuyenmuc']} AND id != {$blog['id']}  ORDER BY updated_at DESC LIMIT 10");
             $data['blog_new'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time AND id != {$blog['id']} ", 'blogs', 0, 5);
             $cate = $this->Madmin->query_sql_row("SELECT *  FROM category  WHERE id = {$blog['chuyenmuc']} ");
-            $title_page = '';
-            if ($cate != null) {
-                $title_page = $cate['name'];
-                if ($cate['parent'] > 0) {
-                    $cate_parent = $this->Madmin->query_sql_row("SELECT *  FROM category  WHERE id = {$cate['parent']} ");
-                    $title_page = $cate_parent['name'] . ' - ' . $cate['name'];
-                }
+            $chuyenmuc_parent = $this->Madmin->get_by(['id' => $chuyenmuc['parent']], 'category');
+            $title_page = $chuyenmuc['name'];
+            $data['cate'] = $chuyenmuc['name'];
+            $data['meta_title'] = $chuyenmuc['meta_title'];
+            $cate = $this->Madmin->query_sql_row("SELECT id,name,alias,parent  FROM category  WHERE id = {$blog['chuyenmuc']} ");
+            $data['cate'] = $cate;
+            if ($cate['parent'] > 0) {
+                $cate_parent = $this->Madmin->query_sql_row("SELECT id,alias,name,parent  FROM category  WHERE id = {$cate['parent']} ");
+                $data['cate_1'] = $cate_parent;
             }
             $data['breadcrumb'] = $title_page;
             $data['blog'] = $blog;

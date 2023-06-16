@@ -9,7 +9,7 @@ a {
 .main_content_blog {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .breadcrumb {
@@ -27,7 +27,7 @@ a {
 .breadcrumb span {
     margin-bottom: 0;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 24px;
     text-align: center;
     color: #808EA1;
@@ -90,8 +90,8 @@ h6 p {
 
 .link_breadcrumb {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 13px;
+    line-height: 16px;
     text-align: center;
     color: #59606A;
 }
