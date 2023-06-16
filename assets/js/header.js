@@ -57,18 +57,17 @@ function show_submenu(e, type) {
 window.onscroll = function () {
 	scrollFunction();
 };
-
+var width = $(window).width();
+console.log(width);
 function scrollFunction() {
-	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+	if (document.body.scrollTop > 80 && width > 1280  || document.documentElement.scrollTop > 80 && width > 1280) {
 		document.getElementById("nav").style.padding = "0px";
 		document.getElementById("logo").style.display = "none";
 		// document.getElementById("logo_scroll").style.display = "block";
-		document.getElementById("search_div").style.top = "6px";
 	} else {
 		document.getElementById("nav").style.padding = "15px 0px 0px 0px";
 		document.getElementById("logo").style.display = "block";
 		// document.getElementById("logo_scroll").style.display = "none";
-		document.getElementById("search_div").style.top = "5px";
 	}
 }
 // var acc = document.getElementsByClassName("item_menu");

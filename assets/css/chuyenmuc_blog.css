@@ -49,6 +49,7 @@
     color: #363636;
     margin: 0 10px;
     position:relative;
+    text-transform: uppercase;
 }
 .cate_con::after {
     content: "";
