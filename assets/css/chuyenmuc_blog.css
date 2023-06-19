@@ -14,8 +14,12 @@
 	display: flex;
 	padding: 10px 20px;
 	border-bottom: 1px solid #f2f2f2;
-	overflow-y: auto;
+	overflow: auto;
 }
+.menu_page::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+  }
 .menu_scroll {
 	width: max-content;
 	display: flex;
@@ -407,6 +411,10 @@
 	.menu_page {
 		display: flow-root;
 	}
+    .menu_page::-webkit-scrollbar { 
+		width: 0 !important;
+		display: none; 
+	  }
     .infor_header {
         display: none;
     }
