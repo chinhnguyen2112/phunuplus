@@ -495,6 +495,9 @@
 		width: 100%;
 	}
 
+    .this_train img {
+        min-height: 113px;
+    }
 	.box_right_data {
         padding-left: 15px;
         display: flex;
