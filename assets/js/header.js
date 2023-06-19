@@ -58,7 +58,6 @@ window.onscroll = function () {
 	scrollFunction();
 };
 var width = $(window).width();
-console.log(width);
 function scrollFunction() {
 	if (document.body.scrollTop > 80 && width > 1280  || document.documentElement.scrollTop > 80 && width > 1280) {
 		document.getElementById("nav").style.padding = "0px";

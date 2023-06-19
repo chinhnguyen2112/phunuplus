@@ -209,7 +209,7 @@ a.item_menu {
 	color: #fff;
 	display: block;
 	text-decoration: none;
-	padding: 5px 20px;
+	padding: 5px 15px;
 	text-transform: capitalize;
 	font-size: 14px;
 	font-weight: 500;
@@ -565,9 +565,9 @@ a.item_menu {
 		justify-content: space-between;
 	}
 	.item_menu_sub {
-		font-size: 18px;
+		font-size: 15px;
 		color: #d2577e;
-        font-weight: bold;
+		text-transform: uppercase;
 	}
 	.drop_sub::before {
 		content: "";
@@ -605,9 +605,15 @@ a.item_menu {
 	}
 	.header_bot {
 		width:100%;
-		overflow-x: scroll;
+		overflow: auto;
 		display: flow-root;
+		overflow:-moz-scrollbars-none;
+    -ms-overflow-style: none;
 	}
+	.header_bot::-webkit-scrollbar { 
+		width: 0 !important;
+		display: none; 
+	  }
 	.header_bg {
 		width:max-content;
 	}
