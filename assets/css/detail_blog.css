@@ -9,7 +9,7 @@ a {
 .main_content_blog {
     display: flex;
     justify-content: space-between;
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 .breadcrumb {
