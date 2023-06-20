@@ -32,10 +32,7 @@
                                 <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p>
                             </div>
                             <span class="des_post"><?= $val['sapo'] ?>
-                                <p>Nếu bạn đang lo lắng và không biết việc lên thực đơn giảm cân cho người 60kg có khó
-                                    hay không, hãy tham khảo bài viết dưới đây của Phụ Nữ Plus để được hướng dẫn chi
-                                    tiết. Tại đây chúng tôi cung cấp cách lập kế hoạch giảm cân khoa học với thực đơn ăn
-                                    kiêng lành mạnh, đồng thời mang lại hiệu quả nhanh chóng. Tìm hiểu ngay!</p>
+
                             </span>
                         </div>
                     </a>

@@ -495,7 +495,7 @@
 		width: 100%;
 	}
 
-    .this_train img {
+    .this_train a img {
         min-height: 113px;
     }
 	.box_right_data {
