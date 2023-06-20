@@ -465,7 +465,7 @@
 
 	.blog_top p {
 		color: #000 !important;
-		font-size: 20px;
+		font-size: 25px;
 	}
 
 	.sapo_blog {
@@ -495,7 +495,7 @@
 		width: 100%;
 	}
 
-    .this_train img {
+    .this_train a img {
         min-height: 113px;
     }
 	.box_right_data {

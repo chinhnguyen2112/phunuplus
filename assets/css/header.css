@@ -39,7 +39,9 @@
 	padding: 5px 15px;
 	white-space: pre;
 	font-size: 12px;
-	color: #707070;
+	color: transparent;
+    background: linear-gradient(90deg, #cc0355 0, #ea003a 0, #5447a4 100%);
+    -webkit-background-clip: text;
 	border-radius: 15px;
 	border: 1px solid #ececec;
 	transition: 0.5s;
@@ -56,7 +58,9 @@
 	border: 1px solid #eee;
 	font-size: 10px;
 	font-weight: 500;
-	color: #d2577e;
+	color: transparent;
+    background: linear-gradient(90deg, #cc0355 0, #ea003a 0, #5447a4 100%);
+    -webkit-background-clip: text;
 	border-radius: 15px;
 	margin-right: 15px;
 	transition: 0.5s;
@@ -298,7 +302,6 @@ a.item_menu {
 	color: #333;
 	display: block;
 	text-decoration: none;
-	text-transform:uppercase;
 	font-size: 14px;
 	font-weight: 500;
 	transition: 0.5s;
