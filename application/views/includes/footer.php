@@ -73,9 +73,8 @@ $ft5 = chuyen_muc(['parent' => 10]);
             <div class="ft_lh">
                 <p class="ft_title_app">Liên Hệ</p>
                 <ul class="list_lh_ft">
-                    <li><a href="/gioi-thieu-phu-nu-plus/">Giới thiệu</a></li>
+                    <li><a href="/gioi-thieu/">Giới thiệu</a></li>
                     <li><a href="/lien-he/">Liên hệ</a></li>
-                    <li><a href="/chinh-sach-bao-mat/">Chính sách bảo mật</a></li>
                 </ul>
             </div>
             <div class="ft_social">
