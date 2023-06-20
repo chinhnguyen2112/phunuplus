@@ -403,6 +403,7 @@ strong {
 
     .this_content_right img {
         min-height: 113px;
+        width: 50%;
     }
 
     .blog_top_right:hover .title_blog_top {
