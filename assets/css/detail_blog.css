@@ -466,6 +466,7 @@ td:first-child {
 
     .box_author {
         gap: 12px;
+        margin: 10px 0;
     }
 
     .date_blog {
