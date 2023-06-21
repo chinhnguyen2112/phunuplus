@@ -17,11 +17,8 @@
                     <?php }
                     if (isset($cate) && $cate != null) { ?>
                     <a class="link_breadcrumb" href="/<?= $cate['alias'] ?>/"><?= $cate['name'] ?></a>
-                    <span>
-                        <img src="/images/icons/icons8-arrow-right-10.png" src="icon arrow right">
-                    </span>
+                    
                     <?php } ?>
-                    <span class="this_breadcrumb"><?= $blog['title'] ?></span>
                 </div>
                 <div class="box_data_blog">
                     <div class="left_blog">
