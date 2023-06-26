@@ -83,35 +83,33 @@
 
             <div class="header_bg">
                 <div class="header_menu">
-                    <ul >
-                        <div class="list_menu" id="list_menu">
-                            <a href="/">
-                                <img src="/images/icons/icons8-home-50.png" alt="icon home">
-                            </a>
-                            <div class="list_item_menu">
-                                <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
-                                foreach ($menu_cate_parent as $val) {
-                                    $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
-                                <li class="this_menu" id="this_menu">
-                                    <div class="big_item_menu" onclick="big_item_menu(this,1)">
-                                        <a class="item_menu" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
+                    <ul class="list_menu" id="list_menu">
+                        <a href="/">
+                            <img src="/images/icons/icons8-home-50.png" alt="icon home">
+                        </a>
+                        <div class="list_item_menu">
+                            <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
+                            foreach ($menu_cate_parent as $val) {
+                                $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
+                            <li class="this_menu" id="this_menu">
+                                <div class="big_item_menu" onclick="big_item_menu(this,1)">
+                                    <a class="item_menu" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
+                                </div>
+                                <?php if ($menu_cate != null) { ?>
+                                <ul class="menu_con">
+                                    <div class="row">
+                                        <?php foreach ($menu_cate as $val1) { ?>
+                                        <li>
+                                            <!-- <i class="icon_arrow_left"></i> -->
+                                            <span class="dot_header"></span>
+                                            <a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a>
+                                        </li>
+                                        <?php } ?>
                                     </div>
-                                    <?php if ($menu_cate != null) { ?>
-                                    <ul class="menu_con">
-                                        <div class="row">
-                                            <?php foreach ($menu_cate as $val1) { ?>
-                                            <li>
-                                                <!-- <i class="icon_arrow_left"></i> -->
-                                                <span class="dot_header"></span>
-                                                <a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a>
-                                            </li>
-                                            <?php } ?>
-                                        </div>
-                                    </ul>
-                                    <?php } ?>
-                                </li>
+                                </ul>
                                 <?php } ?>
-                            </div>
+                            </li>
+                            <?php } ?>
                         </div>
                     </ul>
                 </div>
