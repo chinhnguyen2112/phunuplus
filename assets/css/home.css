@@ -21,7 +21,7 @@ strong {
 }
 
 .sapo_blog {
-    padding: 0 !important;
+    padding: 0 15px !important;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
@@ -37,6 +37,7 @@ strong {
     line-height: 21px !important;
     font-weight: 500 !important;
     display: inline;
+    padding: 0 !important;
 }
 .sapo_blod span {
     display:inline;
@@ -196,9 +197,6 @@ strong {
     margin-bottom: 15px;
 }
 
-.sapo_blog p {
-    padding: 0 15px;
-}
 
 .title_blog_top:hover {
     color: #ffffff8f;
