@@ -70,9 +70,6 @@ $route['ajax_add_tag'] = 'Admin/ajax_add_tag';
 $route['list_tag'] = 'Admin/list_tag';
 $route['list_tag/(:num)'] = 'Admin/list_tag';
 
-//search
-$route['result_search'] = 'Home/view_result_search';
-
 
 $route['bang-xep-hang'] = 'Home/bxh';
 

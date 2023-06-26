@@ -36,6 +36,7 @@ strong {
     font-size: 14px !important;
     line-height: 21px !important;
     font-weight: 500 !important;
+    display: inline;
 }
 .sapo_blod span {
     display:inline;
@@ -314,7 +315,6 @@ strong {
     .blog_top_right {
         background: none;
         height: max-content;
-        padding-bottom: 10px;
     }
 
     .title_blog {
@@ -352,10 +352,7 @@ strong {
         font-family: Arial;
         line-height: 22px;
         font-weight: 500;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
-        overflow: hidden;
         margin-top: 0;
     }
 
