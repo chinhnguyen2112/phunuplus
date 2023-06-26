@@ -20,7 +20,7 @@
                     </div>
                     <div class="weather">
                         <a href="#" class="weather_link">
-                            <img class="img_weather" src="/images/icons/icons_weather.png">
+                            <img class="img_weather" src="/images/icons/icons_weather.png" alt="icon weather">
                             <div class="content_weather">
                                 <p class="name_city">Hà Nội</p>
                                 <p class="temperature">25°C</p>
@@ -29,7 +29,7 @@
                     </div>
                     <div class="search_only_pc">
                         <form class="search_pc" id="search" method="get" action="/search">
-                            <img class="img_search_pc" id="img_search_pc" src="/images/icons/icons8-search-20.png" />
+                            <img class="img_search_pc" id="img_search_pc" src="/images/icons/icons8-search-20.png" alt="icon search" />
                             <input class="input_pc" id="search_input" type="text" autocomplete="off" name="search"
                                 placeholder="Tìm kiếm" />
                         </form>
