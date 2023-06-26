@@ -262,7 +262,7 @@ class Home extends CI_Controller
             if ($_SERVER['REQUEST_URI'] != '/tac-gia/' . $author['alias'] . '/') {
                 redirect('/tac-gia/' . $author['alias'] . '/', 'location', 301);
             }
-            $blog = $this->Madmin->query_sql("SELECT * FROM blogs WHERE author_id = '{$author['id']}' LIMIT 20");
+            $blog = $this->Madmin->query_sql("SELECT * FROM blogs WHERE time_post <= $time AND author_id = '{$author['id']}' LIMIT 20");
             $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE time_post <= $time  ORDER BY id DESC LIMIT 5");
             $data['blog'] = $blog;
             $data['author'] = $author;
