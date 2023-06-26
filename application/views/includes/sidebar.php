@@ -9,7 +9,7 @@
                     </div>
                     <div class="content_mail_box">
                         <div class="item_cont">
-                            <img src="/images/icons/icons_mail01.webp" icon="icon bách khoa a-z">
+                            <img src="/images/icons/icons_mail01.webp" alt="icon bách khoa a-z">
                             <p class="text_item_mail">Bách Khoa Toàn Thư Làm Đẹp A-Z</p>
                         </div>
                         <div class="item_cont">
