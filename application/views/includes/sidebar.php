@@ -5,19 +5,19 @@
             <div class="content_mail">
                 <div class="mail_top">
                     <div class="logo_mail_box">
-                        <img src="/images/logo.png">
+                        <img src="/images/logo.png" alt="logo">
                     </div>
                     <div class="content_mail_box">
                         <div class="item_cont">
-                            <img src="/images/icons/icons_mail01.webp">
+                            <img src="/images/icons/icons_mail01.webp" alt="icon bách khoa a-z">
                             <p class="text_item_mail">Bách Khoa Toàn Thư Làm Đẹp A-Z</p>
                         </div>
                         <div class="item_cont">
-                            <img src="/images/icons/icons_mail02.webp">
+                            <img src="/images/icons/icons_mail02.webp" alt="icon mã ưu đãi">
                             <p class="text_item_mail">100+ Mã Ưu Đãi Độc Quyền</p>
                         </div>
                         <div class="item_cont">
-                            <img src="/images/icons/icons_mail03.webp">
+                            <img src="/images/icons/icons_mail03.webp" alt="icon xu hướng">
                             <p class="text_item_mail">Xu Hướng Làm Đẹp Mới Nhất 2023</p>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
         <div class="box_content">
             <ul>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons/icons8-star-50.png" />
+                    <img class="icon_li" src="/images/icons/icons8-star-50.png" alt="icon star" />
                     Chuyện
                     <strong>
                         <a href="/chuyen-tinh-yeu/">Tình Yêu</a>
@@ -47,7 +47,7 @@
                     Lãng Mạn
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons/icons8-star-50.png" />
+                    <img class="icon_li" src="/images/icons/icons8-star-50.png" alt="icon star" />
                     Chăm Sóc
                     <strong>
                         <a href="/da-dep/">Da Đẹp</a>
@@ -55,7 +55,7 @@
                     Như Sao Hàn
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons/icons8-star-50.png" />
+                    <img class="icon_li" src="/images/icons/icons8-star-50.png" alt="icon star" />
                     Giá Trị Của
                     <strong>
                         <a href="/hon-nhan/">Hôn Nhân</a>
@@ -63,7 +63,7 @@
                     Vợ Chồng
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons/icons8-star-50.png" />
+                    <img class="icon_li" src="/images/icons/icons8-star-50.png" alt="icon star" />
                     Tiêu Chuẩn
                     <strong>
                         <a href="/dang-dep/">Dáng Đẹp</a>
@@ -71,7 +71,7 @@
                     Phụ Nữ Việt
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons/icons8-star-50.png" />
+                    <img class="icon_li" src="/images/icons/icons8-star-50.png" alt="icon star" />
                     Style
                     <strong>
                         <a href="/mac-dep/">Mặc Đẹp</a>
@@ -84,7 +84,7 @@
     <div class="hot_news">
         <div class="box_heading">
             <a href="#">
-                <img src="/images/icons/icons8-fire-30.png" />
+                <img src="/images/icons/icons8-fire-30.png" alt="icon fire" />
                 Tin Mới Nóng
             </a>
         </div>

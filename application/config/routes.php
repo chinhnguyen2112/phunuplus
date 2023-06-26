@@ -73,9 +73,6 @@ $route['admin/info'] = 'Admin/info';
 $route['admin/ajax_author'] = 'Admin/ajax_author';
 $route['admin/list_author'] = 'Admin/list_author';
 
-//search
-$route['result_search'] = 'Home/view_result_search';
-
 
 $route['bang-xep-hang'] = 'Home/bxh';
 
