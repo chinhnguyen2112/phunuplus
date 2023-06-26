@@ -112,15 +112,44 @@ h6 p {
     align-items: center;
 }
 
-.box_author img {
-    width: 20px;
-}
-
 .box_author {
     display: flex;
     align-items: center;
     gap: 8px;
     margin-bottom: 18px;
+}
+
+.box_date {
+    display: flex;
+    align-items: center;
+}
+
+.text_author {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.text_author img {
+    width: 20px;
+    border-radius: 50%;
+}
+
+.box_date::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    display: block;
+    border-radius: 50%;
+    background: #000;
+    margin: 0 8px 0 0;
+}
+
+.name_author {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
 }
 
 .date_blog {
@@ -267,7 +296,7 @@ li .toc-ul {
     color: #000 !important;
     font-style: normal;
     margin: 12px 0 !important;
-    display :initial;
+    display: initial;
 }
 
 .this_handbook {
@@ -553,6 +582,7 @@ td:first-child {
     .main_content {
         padding-top: 80px;
     }
+
     .breadcrumb p,
     .breadcrumb span {
         margin-bottom: 0;
@@ -570,10 +600,6 @@ td:first-child {
 
     .left_blog {
         width: 100%;
-    }
-
-    .box_author img {
-        width: 20px;
     }
 
     .date_blog {

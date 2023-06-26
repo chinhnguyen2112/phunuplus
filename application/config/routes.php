@@ -69,6 +69,9 @@ $route['add_tag'] = 'Admin/view_add_tag';
 $route['ajax_add_tag'] = 'Admin/ajax_add_tag';
 $route['list_tag'] = 'Admin/list_tag';
 $route['list_tag/(:num)'] = 'Admin/list_tag';
+$route['admin/info'] = 'Admin/info';
+$route['admin/ajax_author'] = 'Admin/ajax_author';
+$route['admin/list_author'] = 'Admin/list_author';
 
 //search
 $route['result_search'] = 'Home/view_result_search';
@@ -79,12 +82,14 @@ $route['bang-xep-hang'] = 'Home/bxh';
 //AJAX
 $route['load_more'] = 'Ajax/load_more';
 $route['load_more_cate'] = 'Ajax/load_more_cate';
+$route['load_more_author'] = 'Ajax/load_more_author';
 $route['search'] = 'Ajax/search';
 $route['search/(:num)'] = 'Ajax/search/$1';
 $route['register_mail'] = 'Ajax/register_mail';
 $route['send_mail'] = 'Admin/send_mail';
 
 
+$route['tac-gia/(:any)'] = 'Home/author/$1 ';
 $route['(:any)'] = 'Home/chuyenmuc/$1 ';
 $route['(:any)/(:num)'] = 'Home/chuyenmuc/$1 ';
 // $route['(:any)/(:any)'] = 'Home/tag/$1/$2 ';
