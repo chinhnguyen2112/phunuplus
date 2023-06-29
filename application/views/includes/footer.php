@@ -7,12 +7,12 @@ $ft5 = chuyen_muc(['parent' => 10]);
 ?>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0"
-    nonce="QhMK8wpB"></script>
+    nonce="wmm40zXP"></script>
 <div class="footer">
     <div class="footer_content body_width">
         <div class="ft_top item_ft">
             <div class="item_ft_top ft_top_01">
-                <p>TỎA SÁNG THEO CÁCH RIÊNG</p>
+                <p>GÓC NHÌN ĐA CHIỀU VIỆT NAM HIỆN ĐẠI</p>
                 <div class="all_menu_ft">
                     <div class="list_item_menu_ft list_left">
                         <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
@@ -43,15 +43,12 @@ $ft5 = chuyen_muc(['parent' => 10]);
                 </a>
                 <p><b>Phụ Nữ Plus</b> là trang web chia sẻ kiến thức và kinh nghiệm hữu ích cho phụ nữ về nhiều lĩnh vực
                     đời sống như tình yêu, làm đẹp, váo bếp, sức khỏe, du lịch.</p>
-                <p>Các bài viết chia sẻ bí quyết và cẩm nang giúp phụ nữ cải thiện cuộc sống và sức khỏe. <b>Phụ nữ
-                        Plus</b> mong muốn trở thành người bạn đồng hành đáng tin cậy và thông tin hữu ích cho phụ nữ.
-                </p>
             </div>
             <div class="line_ft_top line_nonpc"></div>
             <div class="item_ft_top ft_top_03">
                 <div class="fanpage_fb">
-                    <div class="fb-page" data-href="https://www.facebook.com/phunutre.vn" data-tabs="" data-width=""
-                        data-height="" data-small-header="false" data-adapt-container-width="false"
+                    <div class="fb-page" data-href="https://www.facebook.com/phunutre.vn" data-tabs="" data-width="482"
+                        data-height="" data-small-header="false" data-adapt-container-width="true"
                         data-hide-cover="false" data-show-facepile="false">
                         <blockquote cite="https://www.facebook.com/phunutre.vn" class="fb-xfbml-parse-ignore"><a
                                 href="https://www.facebook.com/phunutre.vn">Phụ Nữ News</a></blockquote>
@@ -95,7 +92,6 @@ $ft5 = chuyen_muc(['parent' => 10]);
             </div>
             <div class="item_ft_bot ft_bot_03">
                 <p><b>Trụ sở chính:</b> Số 111 đường Mễ Trì - Quận Nam Từ Liêm - Hà Nội.</p>
-                <p><b>Điện thoại:</b> 0328 39 635</p>
                 <p><b>Email:</b> cs.phunuplus@gmail.com</p>
             </div>
         </div>

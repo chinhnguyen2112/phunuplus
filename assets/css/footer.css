@@ -145,6 +145,13 @@
 	line-height: 20px;
 	letter-spacing: 0.7px;
 }
+.fanpage_fb {
+    width: 482px;
+    overflow:hidden;
+}
+._1drm ._1z7u {
+    right: 18px !important;
+}
 @media only screen and (max-width: 1024px) {
 	.footer_content {
 		padding: 0 20px;
@@ -160,6 +167,10 @@
     }
     .mxh {
         margin-top: 20px;
+    }
+    .fanpage_fb {
+        width: 340px;
+        overflow:hidden;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -189,6 +200,10 @@
     }
     .ft_bot_03 {
         width: 100% !important;
+    }
+    .fanpage_fb {
+        width: 100%;
+        overflow:hidden;
     }
 }
 @media only screen and (max-width: 540px) {
