@@ -80,7 +80,6 @@
             </div>
         </div>
         <div class="header_bot body_width">
-
             <div class="header_bg">
                 <div class="header_menu">
                     <ul class="list_menu" id="list_menu">

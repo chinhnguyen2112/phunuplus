@@ -158,6 +158,7 @@
 
 .blog_top img {
 	width: 100%;
+	height: 100%;
 }
 
 .title_blog_top {
@@ -372,6 +373,7 @@
 	.title_blog_top {
 		padding: 30px 15px 0px 15px;
 		overflow: hidden;
+		font-size: 15px;
 	}
 
 	.blog_top_left {
