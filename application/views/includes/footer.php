@@ -5,94 +5,94 @@ $ft3 = chuyen_muc(['parent' => 5]);
 $ft4 = chuyen_muc(['parent' => 7]);
 $ft5 = chuyen_muc(['parent' => 10]);
 ?>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0"
+    nonce="wmm40zXP"></script>
 <div class="footer">
-    <div class="footer_logo">
-        <div class="logo_ft body_width ">
-            <img src="/images/logo.png" alt="Logo" class="img_logo_ft">
+    <div class="footer_content body_width">
+        <div class="ft_top item_ft">
+            <div class="item_ft_top ft_top_01">
+                <p>GÓC NHÌN ĐA CHIỀU PHỤ NỮ VIỆT NAM</p>
+                <div class="all_menu_ft">
+                    <div class="list_item_menu_ft list_left">
+                        <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
+                        foreach ($menu_cate_parent as $key => $val) {
+                            if ($key <= 4) { ?>
+                        <li class="item_menu_ft">
+                            <a href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
+                        </li>
+                        <?php }
+                        } ?>
+                    </div>
+                    <div class="list_item_menu_ft list_right">
+                        <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
+                        foreach ($menu_cate_parent as $key => $val) {
+                            if ($key > 4) { ?>
+                        <li class="item_menu_ft">
+                            <a href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
+                        </li>
+                        <?php }
+                        } ?>
+                    </div>
+                </div>
+            </div>
+            <div class="line_ft_top"></div>
+            <div class="item_ft_top ft_top_02">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+                <p>All rights reserved © Phụ Nữ Plus</p>
+                <p><b>Phụ Nữ Plus</b> Web chia sẻ kiến thức và kinh nghiệm hữu ích cho phụ nữ về nhiều lĩnh vực đời sống về Yêu, Làm đẹp, Vào bếp, Sức khỏe, Tiêu dùng, Phóng sự.</p>
+            </div>
+            <div class="line_ft_top line_nonpc"></div>
+            <div class="item_ft_top ft_top_03">
+                <div class="fanpage_fb">
+                    <div class="fb-page" data-href="https://www.facebook.com/phunutre.vn" data-tabs="" data-width="482"
+                        data-height="" data-small-header="false" data-adapt-container-width="true"
+                        data-hide-cover="false" data-show-facepile="false">
+                        <blockquote cite="https://www.facebook.com/phunutre.vn" class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/phunutre.vn">Phụ Nữ News</a></blockquote>
+                    </div>
+                </div>
+                <div class="list_contact">
+                    <img class="qr_code" src="/images/icons/qrcode-new.png" alt="qr code">
+                    <div class="app">
+                        <a href="#">
+                            <img src="/images/icons/googleplay.png" alt="google play">
+                        </a>
+                        <a href="#">
+                            <img src="/images/icons/appstore.png" alt="app store">
+                        </a>
+                    </div>
+                    <div class="mxh">
+                        <a href="#">
+                            <img class="icon_fb" src="/images/icons/icon_fb_ft.png" alt="icon facebook">
+                        </a>
+                        <a href="#">
+                            <img class="icon_yt" src="/images/icons/icon_yt_ft.png" alt="icon youtube">
+                        </a>
+                        <a href="#">
+                            <img class="icon_tt" src="/images/icons/icon_tt_ft.png" alt="icon tiktok">
+                        </a>
+                        <a href="#">
+                            <img class="icon_ins" src="/images/icons/icon_ins_ft.png" alt="icon instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- <div class="footer_top">
-        <div class="content_footer_top body_width">
-            <div class="ft_box_cat">
-                <p class="ft_name_cat">Yêu</p>
-                <ul>
-                    <?php foreach ($ft1 as $val) { ?>
-                        <li><a class="ft_link_cat" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a></li>
-                    <?php } ?>
-                </ul>
+        <div class="ft_bot item_ft">
+            <div class="item_ft_bot ft_bot_01">
+                <p><b>Hợp tác nội dung:</b> PhuNuPlus</p>
+                <p><b>Hợp tác thương mại:</b> PhuNuPlus</p>
             </div>
-            <div class="ft_box_cat">
-                <p class="ft_name_cat">Đẹp</p>
-                <ul>
-                    <?php foreach ($ft2 as $val) { ?>
-                        <li><a class="ft_link_cat" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a></li>
-                    <?php } ?>
-                </ul>
+            <div class="item_ft_bot ft_bot_02">
+                <p><b>Chịu trách nhiệm nội dung:</b> Cao Minh Tuệ</p>
+                <p><b>Điện thoại:</b> 0328 39 635</p>
             </div>
-            <div class="ft_box_cat">
-                <p class="ft_name_cat">Khỏe</p>
-                <ul>
-                    <?php foreach ($ft3 as $val) { ?>
-                        <li><a class="ft_link_cat" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a></li>
-                    <?php } ?>
-                </ul>
-            </div>
-            <div class="ft_box_cat">
-                <p class="ft_name_cat">Bếp</p>
-                <ul>
-                    <?php foreach ($ft4 as $val) { ?>
-                        <li><a class="ft_link_cat" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a></li>
-                    <?php } ?>
-                </ul>
-            </div>
-            <div class="ft_box_cat">
-                <p class="ft_name_cat">Nuôi</p>
-                <ul>
-                    <?php foreach ($ft5 as $val) { ?>
-                        <li><a class="ft_link_cat" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a></li>
-                    <?php } ?>
-                </ul>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="footer_tag">
-        <div class="content_footer_tag body_width">
-            <a href="#" class="this_tag_ft">Thể theo 24h</a>
-            <a href="#" class="this_tag_ft">Công nghệ</a>
-        </div>
-    </div> -->
-    <div class="footer_bottom">
-        <div class="content_footer_top body_width">
-            <div class="ft_app">
-                <p class="ft_title_app">APP Mobile</p>
-                <ul class="list_app_ft">
-                    <li><a href="#"><img src="/images/icons/apple.png" alt="tải xuống ios"></a></li>
-                    <li><a href="#"><img src="/images/icons/android.png" alt="tải xuống android"></a></li>
-                </ul>
-            </div>
-            <div class="ft_lh">
-                <p class="ft_title_app">Liên Hệ</p>
-                <ul class="list_lh_ft">
-                    <li><a href="/gioi-thieu/">Giới thiệu</a></li>
-                    <li><a href="/lien-he/">Liên hệ</a></li>
-                </ul>
-            </div>
-            <div class="ft_social">
-                <p class="ft_title_app">Social</p>
-                <ul class="list_lh_ft list_social_ft">
-                    <li><a href="#"><img src="/images/icons/ytb.png" alt="Youtube"> Youtube</a></li>
-                    <li><a href="#"><img src="/images/icons/zalo.png" alt="Zalo"> Zalo</a></li>
-                    <li><a href="#"><img src="/images/icons/fb.png" alt="Facebook"> Facebook</a></li>
-                    <li><a href="#"><img src="/images/icons/tw.png" alt="Twitter"> Twitter</a></li>
-                    <li><a href="#"><img src="/images/icons/rss.png" alt="RSS"> RSS</a></li>
-                    <li><a href="#"><img src="/images/icons/tt.png" alt="Tiktok"> Tiktok</a></li>
-                </ul>
-            </div>
-            <div class="ft_data">
-                <p><b>Phụ Nữ Plus</b> là trang web chia sẻ kiến thức và kinh nghiệm hữu ích cho phụ nữ về nhiều lĩnh vực đời sống như tình yêu, làm đẹp, váo bếp, sức khỏe, du lịch.</p>
-                <p>Các bài viết chia sẻ bí quyết và cẩm nang giúp phụ nữ cải thiện cuộc sống và sức khỏe. <b>Phụ nữ Plus</b> mong muốn trở thành người bạn đồng hành đáng tin cậy và thông tin hữu ích cho phụ nữ.</p>
-                <p><b>Điện thoại:</b> 0328 39 635 / <b>Email:</b> cs.phunuplus@gmail.com</p>
-                <p><b>Trụ sở chính:</b> Số 111 đường Mễ Trì - Quận Nam Từ Liêm - Hà Nội</p>
+            <div class="item_ft_bot ft_bot_03">
+                <p><b>Trụ sở chính:</b> Số 111 đường Mễ Trì - Quận Nam Từ Liêm - Hà Nội.</p>
+                <p><b>Email:</b> cs.phunuplus@gmail.com</p>
             </div>
         </div>
     </div>
