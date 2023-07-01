@@ -19,7 +19,7 @@
 	flex: 0 0 238px;
 }
 .ft_top_01 p {
-	font-size: 24px;
+	font-size: 20px;
 	letter-spacing: 1px;
 	line-height: 31px;
 	font-weight: 600;
@@ -135,6 +135,9 @@
 	display: flex;
 	justify-content: space-between;
     flex-wrap: wrap;
+}
+.ft_bot p {
+	margin-bottom: 5px;
 }
 .ft_bot .item_ft_bot {
 	margin-top: 8px;
