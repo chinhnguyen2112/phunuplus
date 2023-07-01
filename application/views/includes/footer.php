@@ -41,8 +41,8 @@ $ft5 = chuyen_muc(['parent' => 10]);
                 <a href="/">
                     <img src="/images/logo.png" alt="logo">
                 </a>
-                <p><b>Phụ Nữ Plus</b> là trang web chia sẻ kiến thức và kinh nghiệm hữu ích cho phụ nữ về nhiều lĩnh vực
-                    đời sống như tình yêu, làm đẹp, váo bếp, sức khỏe, du lịch.</p>
+                <p>All rights reserved © Phụ Nữ Plus</p>
+                <p><b>Phụ Nữ Plus</b> Web chia sẻ kiến thức và kinh nghiệm hữu ích cho phụ nữ về nhiều lĩnh vực đời sống về Yêu, Làm đẹp, Vào bếp, Sức khỏe, Tiêu dùng, Phóng sự.</p>
             </div>
             <div class="line_ft_top line_nonpc"></div>
             <div class="item_ft_top ft_top_03">
