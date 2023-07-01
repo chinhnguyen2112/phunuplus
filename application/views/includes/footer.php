@@ -12,7 +12,7 @@ $ft5 = chuyen_muc(['parent' => 10]);
     <div class="footer_content body_width">
         <div class="ft_top item_ft">
             <div class="item_ft_top ft_top_01">
-                <p>GÓC NHÌN ĐA CHIỀU VIỆT NAM HIỆN ĐẠI</p>
+                <p>GÓC NHÌN ĐA CHIỀU PHỤ NỮ VIỆT NAM</p>
                 <div class="all_menu_ft">
                     <div class="list_item_menu_ft list_left">
                         <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
@@ -87,7 +87,7 @@ $ft5 = chuyen_muc(['parent' => 10]);
                 <p><b>Hợp tác thương mại:</b> PhuNuPlus</p>
             </div>
             <div class="item_ft_bot ft_bot_02">
-                <p><b>Chịu trách nhiệm nội dung:</b> PhuNuPlus</p>
+                <p><b>Chịu trách nhiệm nội dung:</b> Cao Minh Tuệ</p>
                 <p><b>Điện thoại:</b> 0328 39 635</p>
             </div>
             <div class="item_ft_bot ft_bot_03">
