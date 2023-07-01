@@ -51,6 +51,7 @@ class Home extends CI_Controller
         $time = time();
         $alias = trim($alias);
         $data['canonical'] = base_url() . $alias . '/';
+        $author = $this->Madmin->get_by(['alias' => $alias], 'admin');
         $chuyenmuc = $this->Madmin->get_by(['alias' => $alias], 'category');
         if ($alias == 'gioi-thieu-phu-nu-plus' || $alias == 'chinh-sach-bao-mat' || $alias == 'lien-he') {
             $blog = $this->Madmin->query_sql_row("SELECT * FROM blogs WHERE alias = '$alias' ");
@@ -177,6 +178,8 @@ class Home extends CI_Controller
                 'chuyenmuc_blog.css',
             ];
             $data['index'] = 1;
+        } elseif ($author != null) {
+            return $this->author($alias);
         } else {
             redirect('/');
         }
@@ -259,8 +262,8 @@ class Home extends CI_Controller
             return $this->load->view('errors/html/error_404');
         } else {
             $time = time();
-            if ($_SERVER['REQUEST_URI'] != '/tac-gia/' . $author['alias'] . '/') {
-                redirect('/tac-gia/' . $author['alias'] . '/', 'location', 301);
+            if ($_SERVER['REQUEST_URI'] != '/' . $author['alias'] . '/') {
+                redirect('/' . $author['alias'] . '/', 'location', 301);
             }
             $blog = $this->Madmin->query_sql("SELECT * FROM blogs WHERE time_post <= $time AND author_id = '{$author['id']}' LIMIT 20");
             $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE time_post <= $time  ORDER BY id DESC LIMIT 5");

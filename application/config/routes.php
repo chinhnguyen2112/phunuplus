@@ -86,7 +86,6 @@ $route['register_mail'] = 'Ajax/register_mail';
 $route['send_mail'] = 'Admin/send_mail';
 
 
-$route['tac-gia/(:any)'] = 'Home/author/$1 ';
 $route['(:any)'] = 'Home/chuyenmuc/$1 ';
 $route['(:any)/(:num)'] = 'Home/chuyenmuc/$1 ';
 // $route['(:any)/(:any)'] = 'Home/tag/$1/$2 ';
