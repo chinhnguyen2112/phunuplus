@@ -42,7 +42,7 @@
                     <div class="mucluc_blog" id="mucluc_blog">
                         <div class="box_title_ml">
                             <p class="title_mucluc" id="title_mucluc"><img class="img_ml" src="/images/icons/mucluc.png" alt="mục lục"> Mục lục</p>
-                            <img src="/images/arrow.svg" class="img_show_ml" alt="mục lục">
+                            <img src="/images/icon_arrow_bold.webp" class="img_show_ml" alt="mục lục">
                         </div>
                         <ul class="list_mucluc" id="list_mucluc">
 
