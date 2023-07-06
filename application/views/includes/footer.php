@@ -83,8 +83,8 @@ $ft5 = chuyen_muc(['parent' => 10]);
         </div>
         <div class="ft_bot item_ft">
             <div class="item_ft_bot ft_bot_01">
-                <p><b>Hợp tác nội dung:</b> PhuNuPlus</p>
-                <p><b>Hợp tác thương mại:</b> PhuNuPlus</p>
+                <p><b>Hợp tác nội dung:</b> Lưu Lan Hương</p>
+                <p><b>Hợp tác thương mại:</b> Phụ Nữ News</p>
             </div>
             <div class="item_ft_bot ft_bot_02">
                 <p><b>Chịu trách nhiệm nội dung:</b> Cao Minh Tuệ</p>
