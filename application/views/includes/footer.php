@@ -17,7 +17,7 @@ $ft5 = chuyen_muc(['parent' => 10]);
                     <div class="list_item_menu_ft list_left">
                         <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
                         foreach ($menu_cate_parent as $key => $val) {
-                            if ($key <= 4) { ?>
+                            if ($key <= 5) { ?>
                         <li class="item_menu_ft">
                             <a href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
                         </li>
@@ -27,7 +27,7 @@ $ft5 = chuyen_muc(['parent' => 10]);
                     <div class="list_item_menu_ft list_right">
                         <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
                         foreach ($menu_cate_parent as $key => $val) {
-                            if ($key > 4) { ?>
+                            if ($key > 5) { ?>
                         <li class="item_menu_ft">
                             <a href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
                         </li>
