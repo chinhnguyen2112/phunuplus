@@ -91,9 +91,10 @@
     .delete_job,
     .del_list {
         background: red;
-        padding: 3px 5px;
+        padding: 5px 5px;
         color: #fff;
         cursor: pointer;
+        height: -webkit-fill-available;
     }
 
     .link_add a {
@@ -117,10 +118,8 @@
         gap: 5px;
     }
 
-    .send_mail {
-        cursor: pointer;
-        color: blue;
-        font-weight: 600;
+    .btn-group {
+        align-items: center;
     }
 
     @media only screen and (max-width: 540px) {
@@ -165,13 +164,7 @@
                     <div class="card-body">
                         <div class="box_search_forrm">
                             <p>Bộ lọc</p>
-                            <!-- <select name="" id="tag">
-                                <option value="">Chọn tag</option>
-                                <?php $list_tag = tag();
-                                foreach ($list_tag as $val) {  ?>
-                                    <option <?= ($this->input->get('tag') == $val['id']) ? 'selected' : '' ?> value="<?= $val['id'] ?>"><?= $val['name'] ?></option>
-                                <?php } ?>
-                            </select> -->
+                            <input id="url_search" class="key_search" placeholder="Nhập url..." value="<?= $this->input->get('url_search') ?>" />
                             <input id="key_search" class="key_search" placeholder="Nhập từ khóa..." value="<?= $this->input->get('key_search') ?>" />
                             <select name="" id="cate">
                                 <option value="">Chọn chuyên mục</option>
@@ -183,6 +176,7 @@
                             <button class="filter_btn" onclick="filter_ds()"><span>Lọc</span></button>
                         </div>
                         <div class="table-responsive">
+                            <p><b>Có :<?= $count ?> kết quả</b></p>
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
@@ -191,44 +185,50 @@
                                         <th>Tiêu đề</th>
                                         <th>Xem tin</th>
                                         <th>Chuyên mục</th>
-                                        <th>Gửi mail</th>
-                                        <th style="width:50px">Type</th>
+                                        <th style="width:300px">Tags</th>
                                         <th>Ngày đăng</th>
+                                        <th>Trạng thái</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($list as $key  => $val) {
-                                    ?>
+                                    <?php foreach ($list as $key  => $val) { ?>
                                         <tr>
                                             <td class="text-center"><?= $key; ?></td>
                                             <td class="text-center"><?= $val['id']; ?></td>
                                             <td><?= $val['title'] ?></td>
-                                            <td><a href="/<?= $val['alias'] ?>" target="_blank">Xem tin</a></td>
+                                            <td><a href="/<?= $val['alias'] ?>/" target="_blank">Xem tin</a></td>
                                             <td>
                                                 <?php
-                                                $chuyenmuc = chuyen_muc(['id' => $val['chuyenmuc']]);
-                                                echo '<a href="/' . $chuyenmuc[0]['alias'] . '" target="_blank">' . $chuyenmuc[0]['name'] . '</a>';
+                                                $chuyenmuc = chuyen_muc();
+                                                foreach ($chuyenmuc as $val1) {
+                                                    if ($val1['id'] == $val['chuyenmuc']) {
+                                                        echo '<a href="/' . $val1['alias'] . '/" target="_blank">' . $val1['name'] . '</a>';
+                                                    }
+                                                }
                                                 ?>
                                             </td>
-                                            <td><span class="send_mail" onclick="send_mail(<?= $val['id']; ?>,this)">Gửi mail</span></td>
-                                            <td style="width:50px">
-                                                <span>
+                                            <td style="width:300px">
+                                                <div class="list_tag">
                                                     <?php
-                                                    if ($val['type'] == '0') {
-                                                        echo 'Blog';
-                                                    } else {
-                                                        echo 'Page';
+                                                    if ($val['tag'] != '') {
+                                                        $tag = explode(',', $val['tag']);
+                                                        foreach ($tag as $key_tag => $val_tag) {
+                                                            $this_tag = tag(['id' => $val_tag]);
+                                                            echo '<a style=" background: #ff4504; padding: 2px 5px; color: #fff;" href="/' . $this_tag[0]['alias'] . '/">' . $this_tag[0]['name'] . '</a>';
+                                                        }
                                                     }
-                                                    ?>
-                                                </span>
+                                                    ?></div>
                                             </td>
                                             <td><?= date('d-m-Y', $val['created_at']) ?></td>
+                                            <td><?= $val['index_blog'] == 1 ? 'Đã xuất bản' : 'Chưa xuất bản' ?></td>
                                             <td class="text-center">
                                                 <div class="btn-group">
-                                                    <a href="/add_blog?id=<?= $val['id']; ?>" target="_blank">
+                                                    <a href="/admin/add_blog?id=<?= $val['id']; ?>" target="_blank">
                                                         <button style="font-size: 16px;" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Sửa tài khoản"><i class="fa fa-pencil"></i> Sửa</button>
                                                     </a>
-
+                                                    <?php if (check_admin() == 1) { ?>
+                                                        <span class="delete_job" onclick="del_blog(<?= $val['id']; ?>)">Xóa</span>
+                                                    <?php } ?>
                                                 </div>
                                             </td>
                                         </tr>
@@ -241,8 +241,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
 </div>
@@ -250,37 +248,47 @@
 <script src="/assets/js/sweetalert.min.js"></script>
 <script>
     function filter_ds() {
+        var url_search = $('#url_search').val();
         var key_search = $('#key_search').val();
         var cate = $('#cate').val();
-        var url = '/list_blog?key_search=' + key_search + '&cate=' + cate;
+        var url = '/admin/list_blog?key_search=' + key_search + '&cate=' + cate + '&url_search=' + url_search;
         window.location.href = url;
     }
 
-    function send_mail(id, e) {
-        $(e).html('Đang gửi...')
-        var form_data = new FormData();
-        form_data.append("id", id);
-        $.ajax({
-            url: "/send_mail",
-            type: "POST",
-            processData: false,
-            contentType: false,
-            dataType: "json",
-            data: form_data,
-            success: function(data) {
-                if (data.status == 1) {
-                    swal({
-                        title: "Thành công",
-                        type: "success",
-                        text: "Gửi mail thành công",
-                    }, function() {
-                        window.location.reload();
-                    });
+    function del_blog(id) {
+        if (confirm('Bạn chắc chắn muốn xóa bài viết này?')) {
+            var data = new FormData($("#form")[0]);
+            data.append("id", id);
+            data.append("table", "blogs");
+            $.ajax({
+                url: '/admin/del_blog',
+                type: "POST",
+                cache: false,
+                contentType: false,
+                processData: false,
+                dataType: "json",
+                data: data,
+                success: function(response) {
+                    if (response.status == 1) {
+                        swal({
+                            title: "Thành Công",
+                            type: "success",
+                            text: "Xóa thành công"
+                        }, function() {
+                            window.location.reload();
+                        });
+                    } else {
+                        swal({
+                            title: "Thất bại",
+                            type: "error",
+                            text: "Cập nhật thất bại"
+                        });
+                    }
+                },
+                error: function(xhr) {
+                    alert('Thất bại');
                 }
-            },
-            error: function() {
-                alert("error");
-            },
-        });
+            });
+        }
     }
 </script>

@@ -182,7 +182,7 @@
         <label class="label" for="name">Thông tin tác giả</label>
         <textarea name="content" id="editor"><?= (isset($admin) && $admin['content'] != '') ? $admin['content'] : '' ?></textarea>
     </div>
-    <?php if (admin_vip()) { ?>
+    <?php if (check_admin() == 1) { ?>
         <div class="form-group mb-3">
             <label class="label" for="name">Mật Khẩu</label>
             <input type="text" name="password" id="password" placeholder="Mật khẩu mới" class="form-control">

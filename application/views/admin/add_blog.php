@@ -207,7 +207,7 @@
             <?php } ?>
         </select>
     </div>
-    <!-- <div class="form-group mb-3">
+    <div class="form-group mb-3">
         <label class="label" for="name">tag</label>
         <select name="tag[]" id="tag" class="form-control select2" multiple>
             <?php
@@ -219,7 +219,7 @@
                 <option <?= (isset($blog) &&  in_array($val['id'], $tag_blog)) ? 'selected' : '' ?> value="<?= $val['id'] ?>"><?= $name ?></option>
             <?php } ?>
         </select>
-    </div> -->
+    </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Meta Title (50 > 60 kí tụ)</label>
         <input type="text" name="meta_title" value="<?= (isset($blog)) ? $blog['meta_title'] : ''; ?>" class="form-control">
@@ -236,17 +236,32 @@
         <label class="label" for="name">Nội dung</label>
         <textarea name="content" id="editor"><?= (isset($blog) && $blog['content'] != '') ? $blog['content'] : '' ?></textarea>
     </div>
-    <div class="form-group mb-3">
+    <!-- <div class="form-group mb-3">
         <label class="label" for="name">Phân loại</label>
         <select name="type" id="type" class="form-control">
             <option <?= (isset($blog) && $blog['type'] == 0) ? 'selected' : '' ?> value="0">Post</option>
             <option <?= (isset($blog) && $blog['type'] == 1) ? 'selected' : '' ?> value="1">Page</option>
         </select>
-    </div>
+    </div> -->
     <div class="form-group mb-3">
         <label class="label" for="name">Hẹn giờ đăng </label>
         <input type="datetime-local" name="time_post" id="" value="<?= date("Y-m-d\TH:i:s", $time_post) ?>" class="form-control">
-    </div>
+    </div> <?php if (check_admin() == 3 && isset($blog) && $blog['index_blog'] == 1) { ?>
+        <div class="form-group mb-3">
+            <select name="index_blog" id="index_blog" class="form-control">
+                <option <?= (isset($blog) &&  $blog['index_blog'] == 1) ? 'selected' : '' ?> value="1">Đã xuất bản</option>
+            </select>
+        </div>
+    <?php } else { ?>
+        <div class="form-group mb-3">
+            <select name="index_blog" id="index_blog" class="form-control">
+                <option <?= (isset($blog) &&  $blog['index_blog'] == 0) ? 'selected' : '' ?> value="0">Lưu nháp</option>
+                <?php if (check_admin() != 3) { ?>
+                    <option <?= (isset($blog) &&  $blog['index_blog'] == 1) ? 'selected' : '' ?> value="1">Xuất bản</option>
+                <?php } ?>
+            </select>
+        </div>
+    <?php } ?>
     <div class="form-group">
         <button type="submit" class="form-control btn btn-primary submit px-3"><?= (isset($id)) ? "Sửa" : "Thêm mới" ?></button>
     </div>
@@ -339,7 +354,7 @@
             data.append("content", CKEDITOR.instances.editor.getData());
             data.append("sapo", CKEDITOR.instances.sapo.getData());
             $.ajax({
-                url: '/ajax_add_blog',
+                url: '/admin/ajax_add_blog',
                 type: "POST",
                 cache: false,
                 contentType: false,

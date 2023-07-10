@@ -203,6 +203,13 @@
     CKEDITOR.replace('editor');
 </script>
 <script type="text/javascript">
+    $("#alias").keypress(function(evt) {
+        var num = String.fromCharCode(evt.which);
+        if (num == " ") {
+            evt.preventDefault();
+        }
+    });
+
     function get_alias(str) {
         str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
         str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
@@ -250,7 +257,7 @@
             var data = new FormData($("#form")[0]);
             data.append("content", CKEDITOR.instances.editor.getData());
             $.ajax({
-                url: '/ajax_add_tag',
+                url: '/admin/ajax_add_tag',
                 type: "POST",
                 cache: false,
                 contentType: false,
@@ -265,6 +272,12 @@
                             text: "Cập nhật thành công"
                         }, function() {
                             window.location.reload();
+                        });
+                    } else if (response.status == 2) {
+                        swal({
+                            title: "Thất bại",
+                            type: "error",
+                            text: "Tag đã tồn tại"
                         });
                     } else {
                         swal({
