@@ -608,6 +608,9 @@ td:first-child {
         flex-direction: column;
         align-items: flex-start;
     }
+    .box_date::before {
+        display: none !important;
+    }
     .mucluc_blog {
         padding: 16px;
     }
