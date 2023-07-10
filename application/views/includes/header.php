@@ -16,7 +16,7 @@
                 </div>
                 <div class="header_right">
                     <div class="fan_page">
-                        <a href="#">Fanpage PhuNuPlus</a>
+                        <a href="https://www.facebook.com/phunutre.vn/" rel="nofollow">Fanpage Phụ Nữ News</a>
                     </div>
                     <div class="weather">
                         <a href="#" class="weather_link">

@@ -17,7 +17,7 @@ $ft5 = chuyen_muc(['parent' => 10]);
                     <div class="list_item_menu_ft list_left">
                         <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
                         foreach ($menu_cate_parent as $key => $val) {
-                            if ($key <= 4) { ?>
+                            if ($key <= 5) { ?>
                         <li class="item_menu_ft">
                             <a href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
                         </li>
@@ -27,7 +27,7 @@ $ft5 = chuyen_muc(['parent' => 10]);
                     <div class="list_item_menu_ft list_right">
                         <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
                         foreach ($menu_cate_parent as $key => $val) {
-                            if ($key > 4) { ?>
+                            if ($key > 5) { ?>
                         <li class="item_menu_ft">
                             <a href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
                         </li>
@@ -83,8 +83,8 @@ $ft5 = chuyen_muc(['parent' => 10]);
         </div>
         <div class="ft_bot item_ft">
             <div class="item_ft_bot ft_bot_01">
-                <p><b>Hợp tác nội dung:</b> PhuNuPlus</p>
-                <p><b>Hợp tác thương mại:</b> PhuNuPlus</p>
+                <p><b>Hợp tác nội dung:</b> Lưu Lan Hương</p>
+                <p><b>Hợp tác thương mại:</b> Phụ Nữ News</p>
             </div>
             <div class="item_ft_bot ft_bot_02">
                 <p><b>Chịu trách nhiệm nội dung:</b> Cao Minh Tuệ</p>

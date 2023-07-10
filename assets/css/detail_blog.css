@@ -158,7 +158,7 @@ h6 p {
     line-height: 24px;
     color: #808EA1;
     margin-bottom: 0;
-    margin-top: 4px;
+    margin-left: 5px;
 }
 
 .blog_content {
@@ -222,6 +222,9 @@ figcaption {
 
 .img_show_ml {
     margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    transition: 0.5s;
 }
 
 .img_ml {
@@ -635,11 +638,13 @@ td:first-child {
     .left_blog {
         width: 100%;
     }
-
-    .date_blog {
-        margin-top: 0;
+    .box_author {
+        flex-direction: column;
+        align-items: flex-start;
     }
-
+    .box_date::before {
+        display: none !important;
+    }
     .mucluc_blog {
         padding: 16px;
     }
