@@ -63,6 +63,16 @@ class Home extends CI_Controller
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
                 redirect('/' . $alias . '/', 'location', 301);
             }
+            if ($chuyenmuc['parent'] == 0) { //chuyen muc to
+                $count_or['cate_parent'] = $chuyenmuc['id'];
+                $data['cate_to'] = $chuyenmuc;
+                $cate_con = $this->Madmin->query_sql("SELECT * FROM category WHERE parent = $chuyenmuc[id]");
+                $data['cate_con'] = $cate_con;
+            } else {
+                $cate_to = $this->Madmin->query_sql_row("SELECT * FROM category WHERE id = $chuyenmuc[parent] ");
+                $data['cate_to'] = $cate_to;
+                $data['cate_con'] = $this->Madmin->query_sql("SELECT * FROM category WHERE parent = $cate_to[id]");
+            }
             $where_cate = $this->search_cate($chuyenmuc['id'], $chuyenmuc['level']);
             // echo $where_cate;
             $count = $this->Madmin->num_rows_or("index_blog = 1 AND type = 0 AND time_post <= $time", $where_cate, 'blogs');

@@ -10,23 +10,28 @@
 	display: flex;
 	flex-direction: column;
 }
+
 .menu_page {
 	display: flex;
 	padding: 10px 20px;
 	border-bottom: 1px solid #f2f2f2;
 	overflow: auto;
 }
-.menu_page::-webkit-scrollbar { 
-    width: 0 !important;
-    display: none; 
-  }
+
+.menu_page::-webkit-scrollbar {
+	width: 0 !important;
+	display: none;
+}
+
 .menu_scroll {
 	width: max-content;
 	display: flex;
 }
+
 .row_page {
 	display: flex;
 }
+
 .name_big_cate {
 	font-size: 14px;
 	color: #363636;
@@ -35,9 +40,11 @@
 	position: relative;
 	text-decoration: none;
 }
+
 .menu_page a {
 	margin-right: 10px;
 }
+
 .menu_page .active::after {
 	content: "";
 	position: absolute;
@@ -48,6 +55,7 @@
 	background: #d2577e;
 	transition: all ease 0.3s;
 }
+
 .cate_con {
 	font-size: 13px;
 	color: #363636;
@@ -55,6 +63,7 @@
 	position: relative;
 	text-transform: uppercase;
 }
+
 .cate_con::after {
 	content: "";
 	position: absolute;
@@ -65,9 +74,11 @@
 	background: #d2577e;
 	transition: all ease 0.3s;
 }
+
 .cate_con:hover::after {
 	height: 2px;
 }
+
 .train_content {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -98,9 +109,11 @@
 	border-bottom: 1px solid #e6e8e9;
 	width: 100%;
 }
+
 .only_mobile {
 	display: none !important;
 }
+
 .title_blog {
 	font-size: 20px;
 	line-height: 24px;
@@ -134,19 +147,19 @@
 
 .des_blog p,
 .des_blog span {
-    color: #000000 !important;
-    font-size: 14px !important;
-    line-height: 21px !important;
-    margin-top: 0 !important;
-    text-align: left !important;
-    font-weight: unset !important;
-    display:inline
+	color: #000000 !important;
+	font-size: 14px !important;
+	line-height: 21px !important;
+	margin-top: 0 !important;
+	text-align: left !important;
+	font-weight: unset !important;
+	display: inline
 }
 
 .this_train a img {
 	position: relative;
-    width: 38.8%;
-    float: left;
+	width: 38.8%;
+	float: left;
 }
 
 .left_blog {
@@ -269,7 +282,7 @@
 
 .box_right_data {
 	width: calc(100% - 270px);
-    padding-left: 20px;
+	padding-left: 20px;
 }
 
 .list_blog {
@@ -389,9 +402,10 @@
 		width: 100%;
 	}
 
-    .box_right_data {
-        width: -webkit-fill-available;
-    }
+	.box_right_data {
+		width: -webkit-fill-available;
+	}
+
 	.title_blog {
 		font-size: 15px;
 		line-height: 20px;
@@ -404,38 +418,45 @@
 }
 
 @media only screen and (max-width: 540px) {
+
 	/* .menu_page .active::after {
         display: none;
     } */
 	.menu_page {
 		display: flow-root;
 	}
-    .menu_page::-webkit-scrollbar { 
+
+	.menu_page::-webkit-scrollbar {
 		width: 0 !important;
-		display: none; 
-	  }
-    .infor_header {
-        display: none;
-    }
+		display: none;
+	}
+
+	.infor_header {
+		display: none;
+	}
+
 	.train_content {
 		flex-direction: column;
 		margin-top: 0px;
 	}
-    .title_blog {
-        display: none;
-    }
-    .only_mobile {
-        display: block !important;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 26px;
-    color: #333;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-    margin-bottom: 15px;
-    }
+
+	.title_blog {
+		display: none;
+	}
+
+	.only_mobile {
+		display: block !important;
+		font-size: 21px;
+		font-weight: bold;
+		line-height: 26px;
+		color: #333;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+		margin-bottom: 15px;
+	}
+
 	.top_blog {
 		flex-direction: column;
 		padding: 0;
@@ -450,9 +471,11 @@
 	.left_blog {
 		width: 100%;
 	}
+
 	.title_blog_top:hover {
 		color: #000 !important;
 	}
+
 	.title_blog_top {
 		margin: 10px 0px;
 		padding: 0 !important;
@@ -465,6 +488,7 @@
 	.sapo_blog span {
 		color: #000 !important;
 	}
+
 	.sapo_blog {
 		margin-bottom: 10px;
 		margin-top: 0;
@@ -488,17 +512,19 @@
 		height: 100%;
 		background: none;
 	}
+
 	.list_blog {
 		width: 100%;
 	}
 
-    .this_train a img {
-        min-height: 113px;
-    }
+	.this_train a img {
+		min-height: 113px;
+	}
+
 	.box_right_data {
-        padding-left: 15px;
-        display: flex;
-        flex-direction: column;
+		padding-left: 15px;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.fl_date {
@@ -516,7 +542,12 @@
 		-webkit-line-clamp: 4;
 		overflow: hidden;
 	}
+
+	.sidebar_content {
+		display: none !important;
+	}
 }
+
 @media only screen and (max-width: 414px) {
 	.infor_tablet {
 		display: none;

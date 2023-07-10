@@ -276,10 +276,10 @@
     editor.execute('removeFormat');
 </script>
 <script>
-    // $('.select2').select2({
-    //     placeholder: 'Chọn tag',
-    //     'height': '100%'
-    // });
+    $('.select2').select2({
+        placeholder: 'Chọn tag',
+        'height': '100%'
+    });
 
     function get_alias(str) {
         str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");

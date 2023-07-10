@@ -103,12 +103,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nuoc-ep-dep-da-giam-can/</loc>
-    <changefreq>daily</changefreq>
-    <lastmod>2023-04-16T07:24:06+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://phunuplus.vn/cac-loai-nuoc-ep-giam-can/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-04-16T07:24:06+00:00</lastmod>
@@ -123,7 +117,7 @@
   <url>
     <loc>https://phunuplus.vn/uong-nuoc-cam-co-dep-da-khong/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-17T07:24:06+00:00</lastmod>
+    <lastmod>2023-06-26T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -159,7 +153,7 @@
   <url>
     <loc>https://phunuplus.vn/da-kho-la-nhu-the-nao/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-18T07:24:06+00:00</lastmod>
+    <lastmod>2023-07-10T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
