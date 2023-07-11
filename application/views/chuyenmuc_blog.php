@@ -50,7 +50,6 @@
                                         <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p>
                                     </div>
                                     <div class="des_blog"><?= $val['sapo'] ?>
-
                                     </div>
                                 </div>
                             </a>

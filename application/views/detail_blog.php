@@ -10,13 +10,13 @@
                         <img src="/images/icons/icons8-arrow-right-10.png" alt="icon arrow right">
                     </span>
                     <?php if (isset($cate_1) && $cate_1 != null) { ?>
-                        <a class="link_breadcrumb" href="/<?= $cate_1['alias'] ?>/"><?= $cate_1['name'] ?></a>
-                        <span>
-                            <img src="/images/icons/icons8-arrow-right-10.png" src="icon arrow right">
-                        </span>
+                    <a class="link_breadcrumb" href="/<?= $cate_1['alias'] ?>/"><?= $cate_1['name'] ?></a>
+                    <span>
+                        <img src="/images/icons/icons8-arrow-right-10.png" src="icon arrow right">
+                    </span>
                     <?php }
                     if (isset($cate) && $cate != null) { ?>
-                        <a class="link_breadcrumb" href="/<?= $cate['alias'] ?>/"><?= $cate['name'] ?></a>
+                    <a class="link_breadcrumb" href="/<?= $cate['alias'] ?>/"><?= $cate['name'] ?></a>
 
                     <?php } ?>
                 </div>
@@ -25,10 +25,11 @@
                         <h1 class="title_h1"><?= $blog['title'] ?></h1>
                         <div class="box_author">
                             <?php if (isset($author) && $author != null) { ?>
-                                <div class="text_author">
-                                    <img src="/<?= ($author['image'] != null) ? $author['image'] : 'images/avt.png' ?>" alt="Tác giả">
-                                    <a class="name_author" href="/<?= $author['alias'] ?>/"><?= $author['name'] ?></a>
-                                </div>
+                            <div class="text_author">
+                                <img src="/<?= ($author['image'] != null) ? $author['image'] : 'images/avt.png' ?>"
+                                    alt="Tác giả">
+                                <a class="name_author" href="/<?= $author['alias'] ?>/"><?= $author['name'] ?></a>
+                            </div>
                             <?php } ?>
                             <div class="box_date">
                                 <img src="/images/date.svg" alt="Ngày đăng">
@@ -41,7 +42,8 @@
                 <div class="right_detail">
                     <div class="mucluc_blog" id="mucluc_blog">
                         <div class="box_title_ml">
-                            <p class="title_mucluc" id="title_mucluc"><img class="img_ml" src="/images/icons/mucluc.png" alt="mục lục"> Mục lục</p>
+                            <p class="title_mucluc" id="title_mucluc"><img class="img_ml" src="/images/icons/mucluc.png"
+                                    alt="mục lục"> Mục lục</p>
                             <img src="/images/icon_arrow_bold.webp" class="img_show_ml" alt="mục lục">
                         </div>
                         <ul class="list_mucluc" id="list_mucluc">
@@ -57,40 +59,46 @@
                 <?php
                 if ($blog['tag'] != '') {
                     $tag = explode(',', $blog['tag']); ?>
-                    <div class="box_tag">
-                        <p class="title_tag"><img src="/images/icons/icon-chu-de.svg" alt="Chủ đề"> Chủ đề:</p>
-                        <?php foreach ($tag as $key_tag => $val) {
+                <div class="box_tag">
+                    <p class="title_tag"><img src="/images/icons/icon-chu-de.svg" alt="Chủ đề"> Chủ đề:</p>
+                    <?php foreach ($tag as $key_tag => $val) {
                             $this_tag = tag(['id' => $val]);
                             echo '<a href="/' . $this_tag[0]['alias'] . '/" class="this_tag">' . $this_tag[0]['name'] . '</a>';
                         } ?>
-                    </div>
+                </div>
                 <?php } ?>
                 <div class="sidebar_mid">
                     <?php include('includes/sidebar.php') ?>
                 </div>
                 <div class="line_blog"></div>
                 <?php if ($blog_same != null) { ?>
-                    <div class="blog_same">
-                        <div class="list_blog_same">
-                            <?php
+                <div class="blog_same">
+                    <div class="list_blog_same">
+                        <?php
                             foreach ($blog_same as $val) { ?>
-                                <div class="this_handbook ">
-                                    <a class="img_item" href="/<?= $val['alias'] ?>/">
-                                        <img class="img_blog_same" src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
-                                    </a>
-                                    <div class="data_handbook">
-                                        <a class="title_handbook" href="/<?= $val['alias'] ?>"><?= $val['title'] ?></a>
-                                        <p class="date_post">
-                                            <a class="name_cate" href="/<?= $blog['alias_cate'] ?>"><?= $blog['name_cate'] ?></a>
-                                            <span><?= date('d-m-Y', $val['created_at']) ?><span>
-                                        </p>
-                                        <div class="this_des_handbook"><?= $val['sapo'] ?></div>
+                        <div class="this_train">
+                            <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                <p class="title_blog only_mobile"><?= $val['title'] ?></p>
+                            </a>
+                            <a href="/<?= $val['alias'] ?>/">
+                                <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                <div class="box_right_data">
+                                    <p class="title_blog"><?= $val['title'] ?></p>
+                                    <div class="fl_date">
+                                        <p class="cate_post"><?php $cate = chuyen_muc(['id' => $val['chuyenmuc']]);
+                                                                        echo $cate[0]['name']; ?></p>
+                                        <span class="dot_item"></span>
+                                        <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p>
+                                    </div>
+                                    <div class="des_blog"><?= $val['sapo'] ?>
                                     </div>
                                 </div>
-                            <?php
-                            } ?>
+                            </a>
                         </div>
+                        <?php
+                            } ?>
                     </div>
+                </div>
                 <?php } ?>
             </div>
             <div class="sidebar_bot">
