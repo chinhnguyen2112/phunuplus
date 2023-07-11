@@ -65,6 +65,9 @@
                         } ?>
                     </div>
                 <?php } ?>
+                <div class="sidebar_mid">
+                    <?php include('includes/sidebar.php') ?>
+                </div>
                 <div class="line_blog"></div>
                 <?php if ($blog_same != null) { ?>
                     <div class="blog_same">
@@ -90,7 +93,9 @@
                     </div>
                 <?php } ?>
             </div>
-            <?php include('includes/sidebar.php') ?>
+            <div class="sidebar_bot">
+                <?php include('includes/sidebar.php') ?>
+            </div>
         </div>
     </div>
 </div>

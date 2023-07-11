@@ -422,6 +422,9 @@
 	/* .menu_page .active::after {
         display: none;
     } */
+	.sidebar_content {
+		display: none !important;
+	}
 	.menu_page {
 		display: flow-root;
 	}
