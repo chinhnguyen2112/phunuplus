@@ -523,6 +523,9 @@ td:first-child {
     padding: 6px 12px;
     line-height: unset;
 }
+.sidebar_mid {
+    display: none;
+}
 
 
 @media only screen and (max-width: 1024px) {
@@ -713,8 +716,10 @@ td:first-child {
         font-size: 26px;
         line-height: 34px;
     }
-
-    .sidebar_content {
+    .sidebar_mid {
+        display: block !important;
+    }
+    .sidebar_bot, .sidebar_box, .hot_news {
         display: none !important;
     }
 }
