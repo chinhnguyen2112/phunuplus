@@ -373,6 +373,15 @@ li .toc-ul {
     font-size: 14px !important;
 }
 
+.des_blog p, .des_blog span {
+    color: #000000 !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+    margin-top: 0 !important;
+    text-align: left !important;
+    font-weight: unset !important;
+    display: inline;
+}
 /* .this_handbook {
     width: 100%;
     display: flex;
@@ -781,6 +790,7 @@ td:first-child {
         -webkit-line-clamp: 4;
         overflow: hidden;
     }
+
 
     /* .this_handbook {
         width: 100%;
