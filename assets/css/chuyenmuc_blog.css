@@ -522,6 +522,7 @@
 
 	.this_train a img {
 		min-height: 113px;
+		width: 50%;
 	}
 
 	.box_right_data {
