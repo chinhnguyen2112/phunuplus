@@ -339,6 +339,10 @@
 	background-repeat: no-repeat;
 }
 
+.sidebar_content {
+	width: 30.1%;
+}
+
 @media only screen and (max-width: 1024px) {
 	.content_about {
 		margin-top: 20px;
@@ -425,6 +429,7 @@
 	.sidebar_content {
 		display: none !important;
 	}
+
 	.menu_page {
 		display: flow-root;
 	}
