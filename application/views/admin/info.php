@@ -189,10 +189,10 @@
         </div>
         <div class="form-group mb-3">
             <label class="label" for="name">Loại tài khoản</label>
-            <select name="vip" id="vip" class="form-control">
-                <option <?= (isset($admin) &&  $admin['vip'] == 3) ? 'selected' : '' ?> value="3">Cộng tác viên</option>
-                <option <?= (isset($admin) &&  $admin['vip'] == 2) ? 'selected' : '' ?> value="2">Biên tập</option>
-                <option <?= (isset($admin) &&  $admin['vip'] == 1) ? 'selected' : '' ?> value="1">Quản lý</option>
+            <select name="type" id="type" class="form-control">
+                <option <?= (isset($admin) &&  $admin['type'] == 3) ? 'selected' : '' ?> value="3">Cộng tác viên</option>
+                <option <?= (isset($admin) &&  $admin['type'] == 2) ? 'selected' : '' ?> value="2">Biên tập</option>
+                <option <?= (isset($admin) &&  $admin['type'] == 1) ? 'selected' : '' ?> value="1">Quản lý</option>
             </select>
         </div>
     <?php } ?>
