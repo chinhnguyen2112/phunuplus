@@ -150,20 +150,6 @@
         font-size: 12px !important;
     }
 
-    .select_box {
-        float: right;
-        margin-bottom: 15px;
-    }
-
-    .select_box select {
-        padding: 5px;
-        margin-left: 5px;
-    }
-
-    .select_box option {
-        padding: 3px;
-    }
-
     @media only screen and (max-width: 1024px) {
         .form_change_pass {
             width: 100%;
@@ -186,29 +172,37 @@
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Keyword</label>
-        <input type="text" name="meta_key" id="meta_key" value="<?= (isset($blog)) ? $blog['meta_key'] : ''; ?>" oninput="show_alias(this.value)" class="form-control">
+        <input type="text" name="meta_key" id="meta_key" value="<?= (isset($blog)) ? $blog['meta_key'] : ''; ?>" class="form-control">
+    </div>
+    <div class="form-group mb-3">
+        <label class="label" for="name">Meta Title (50 > 60 kí tụ)</label>
+        <input type="text" name="meta_title" value="<?= (isset($blog)) ? $blog['meta_title'] : ''; ?>" <?= (isset($blog)) ? '' : 'oninput="show_alias(this.value)"' ?> class="form-control">
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Đường dẫn thân thiện</label>
-        <input type="text" name="alias" value="<?= (isset($blog)) ? $blog['alias'] : ''; ?>" id="alias" class="form-control">
+        <input type="text" name="alias" <?= (isset($blog)) ? ' onmousedown="return false;"' : '' ?> value="<?= (isset($blog)) ? $blog['alias'] : ''; ?>" id="alias" class="form-control">
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Chuyên mục</label>
         <select name="category" id="category" class="form-control">
             <?php
-            $chuyenmuc = chuyen_muc(['level !=' => 1]);
-            foreach ($chuyenmuc as $key => $val) {
-                $name = $val['name'];
-                if ($val['parent'] > 0) {
-                    $cate_parent = chuyen_muc(['id' => $val['parent']]);
-                    $name = $cate_parent[0]['name'] . ' - ' . $val['name'];
-                } ?>
-                <option <?= (isset($blog) &&  $blog['chuyenmuc'] == $val['id']) ? 'selected' : '' ?> value="<?= $val['id'] ?>"><?= $name ?></option>
-            <?php } ?>
+            $chuyenmuc = chuyen_muc(['parent' => 0]);
+            foreach ($chuyenmuc as $key => $val) { ?>
+                <option <?= (isset($blog) &&  $blog['chuyenmuc'] == $val['id']) ? 'selected' : '' ?> value="<?= $val['id'] ?>"><?= $val['name'] ?></option>
+                <?php
+                $cate_child = chuyen_muc(['parent' => $val['id']]);
+                foreach ($cate_child as $val_child) { ?>
+                    <option <?= (isset($blog) &&  $blog['chuyenmuc'] == $val_child['id']) ? 'selected' : '' ?> value="<?= $val_child['id'] ?>"> - <?= $val_child['name'] ?></option>
+                    <?php $cate_child_2 = chuyen_muc(['parent' => $val_child['id']]);
+                    foreach ($cate_child_2 as  $val_child_2) { ?>
+                        <option <?= (isset($blog) &&  $blog['chuyenmuc'] == $val_child_2['id']) ? 'selected' : '' ?> value="<?= $val_child_2['id'] ?>"> -- <?= $val_child_2['name'] ?></option>
+            <?php  }
+                }
+            } ?>
         </select>
     </div>
     <div class="form-group mb-3">
-        <label class="label" for="name">tag</label>
+        <label class="label" for="name">Tag</label>
         <select name="tag[]" id="tag" class="form-control select2" multiple>
             <?php
             $tag = tag();
@@ -219,10 +213,6 @@
                 <option <?= (isset($blog) &&  in_array($val['id'], $tag_blog)) ? 'selected' : '' ?> value="<?= $val['id'] ?>"><?= $name ?></option>
             <?php } ?>
         </select>
-    </div>
-    <div class="form-group mb-3">
-        <label class="label" for="name">Meta Title (50 > 60 kí tụ)</label>
-        <input type="text" name="meta_title" value="<?= (isset($blog)) ? $blog['meta_title'] : ''; ?>" class="form-control">
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Meta Description</label>
@@ -236,17 +226,11 @@
         <label class="label" for="name">Nội dung</label>
         <textarea name="content" id="editor"><?= (isset($blog) && $blog['content'] != '') ? $blog['content'] : '' ?></textarea>
     </div>
-    <!-- <div class="form-group mb-3">
-        <label class="label" for="name">Phân loại</label>
-        <select name="type" id="type" class="form-control">
-            <option <?= (isset($blog) && $blog['type'] == 0) ? 'selected' : '' ?> value="0">Post</option>
-            <option <?= (isset($blog) && $blog['type'] == 1) ? 'selected' : '' ?> value="1">Page</option>
-        </select>
-    </div> -->
     <div class="form-group mb-3">
         <label class="label" for="name">Hẹn giờ đăng </label>
         <input type="datetime-local" name="time_post" id="" value="<?= date("Y-m-d\TH:i:s", $time_post) ?>" class="form-control">
-    </div> <?php if (check_admin() == 3 && isset($blog) && $blog['index_blog'] == 1) { ?>
+    </div>
+    <?php if (check_admin() == 3 && isset($blog) && $blog['index_blog'] == 1) { ?>
         <div class="form-group mb-3">
             <select name="index_blog" id="index_blog" class="form-control">
                 <option <?= (isset($blog) &&  $blog['index_blog'] == 1) ? 'selected' : '' ?> value="1">Đã xuất bản</option>
@@ -273,9 +257,14 @@
 <script defer type="text/javascript">
     CKEDITOR.replace('editor');
     CKEDITOR.replace('sapo');
-    editor.execute('removeFormat');
 </script>
 <script>
+    $("#alias").keypress(function(evt) {
+        var num = String.fromCharCode(evt.which);
+        if (num == " ") {
+            evt.preventDefault();
+        }
+    });
     $('.select2').select2({
         placeholder: 'Chọn tag',
         'height': '100%'
@@ -331,7 +320,7 @@
         },
         messages: {
             "image": {
-                required: 'chưa chọn ảnh đại diện',
+                required: "Chưa chọn ảnh đại diện",
             },
             "title": {
                 required: "Chưa nhập H1 bài viết",
@@ -391,25 +380,4 @@
             return false;
         }
     });
-    // $("#category").change(function(e) {
-    //     var id_error = $(this).val();
-    //     $.ajax({
-    //         type: "post",
-    //         url: "/Error_ctr/get_error",
-    //         data: {
-    //             "id": id_error
-    //         },
-    //         success: function(data) {
-    //             data = JSON.parse(data.replace('gi', ''));
-    //             if (data.length > 0) {
-    //                 var i = 0;
-    //                 var html = "<option value=''></option>";
-    //                 for (i = 0; i < data.length; i++) {
-    //                     html = html + `<option value="` + data[i].id + `">` + data[i].name + `</option>`;
-    //                 }
-    //                 $('#ls_error').html(html);
-    //             }
-    //         }
-    //     });
-    // });
 </script>

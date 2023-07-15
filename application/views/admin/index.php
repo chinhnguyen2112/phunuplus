@@ -8,7 +8,7 @@
     <meta name="robots" content="noindex,nofollow" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Phụ Nữ Plus Admin</title>
+    <title>Phunuplus Admin</title>
     <link rel="stylesheet" href="/assets/css/admin/vendors/typicons/typicons.css">
     <link rel="stylesheet" href="/assets/css/admin/vendors/css/vendor.bundle.base.css">
     <link rel="stylesheet" href="/assets/css/admin/vertical-layout-light/style.css">
@@ -113,9 +113,7 @@
                         </a>
                         <div class="collapse" id="ui-basicsss">
                             <ul class="nav flex-column sub-menu">
-                                <?php if (check_admin() != 3) { ?>
-                                    <li class="nav-item"><a class="nav-link" href="/admin/add_tag">Thêm tags</a></li>
-                                <?php } ?>
+                                <li class="nav-item"><a class="nav-link" href="/admin/add_tag">Thêm tags</a></li>
                                 <li class="nav-item"><a class="nav-link" href="/admin/list_tag">Danh sách tags</a></li>
                                 <?php $CI = get_instance();
                                 $list_tag = tag(['parent' => 0]);
@@ -124,6 +122,12 @@
                                 <?php } ?>
                             </ul>
                         </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/logout">
+                            <i class="typcn typcn-mortar-board menu-icon"></i>
+                            <span class="menu-title">Đăng xuất</span>
+                        </a>
                     </li>
                 </ul>
             </nav>
