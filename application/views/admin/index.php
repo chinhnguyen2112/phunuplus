@@ -113,7 +113,9 @@
                         </a>
                         <div class="collapse" id="ui-basicsss">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="/admin/add_tag">Thêm tags</a></li>
+                                <?php if (check_admin() != 3) { ?>
+                                    <li class="nav-item"><a class="nav-link" href="/admin/add_tag">Thêm tags</a></li>
+                                <?php  } ?>
                                 <li class="nav-item"><a class="nav-link" href="/admin/list_tag">Danh sách tags</a></li>
                                 <?php $CI = get_instance();
                                 $list_tag = tag(['parent' => 0]);

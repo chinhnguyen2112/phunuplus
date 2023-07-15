@@ -399,6 +399,8 @@ class Admin extends CI_Controller
                 } else {
                     redirect('/admin/add_tag');
                 }
+            } elseif ($this->input->get('id') == '' && check_admin() == 3) {
+                return redirect('/admin/');
             }
             $this->load->view('admin/index', $data);
         } else {
@@ -409,49 +411,57 @@ class Admin extends CI_Controller
     {
         if (admin()) {
             $id = $this->input->post('id');
-            $data['name'] = $this->input->post('name');
-            $data['alias'] = $alias = $this->input->post('alias');
-            $data['meta_key'] = $this->input->post('meta_key');
-            $data['meta_title'] = $this->input->post('meta_title');
-            $data['meta_des'] = $this->input->post('meta_des');
-            $data['content'] = $this->input->post('content');
-            $cate = $this->input->post('category');
-            $data['parent'] = 0;
-            $where_check = ['alias' => $alias];
-            if ($id > 0) {
-                $where_check['id !='] = $id;
-            }
-            $check = $this->Madmin->get_by($where_check, 'tags');
-            if ($check != null) {
+            if ($id == '' && check_admin() == 3) {
                 $response = [
-                    'status' => 2,
-                    'msg' => 'đã tồn tại'
+                    'status' => 0,
+                    'msg' => 'Không đủ quyền'
                 ];
             } else {
-                if ($cate > 0) {
-                    $data['parent'] = $cate;
-                }
+
+                $data['name'] = $this->input->post('name');
+                $data['alias'] = $alias = $this->input->post('alias');
+                $data['meta_key'] = $this->input->post('meta_key');
+                $data['meta_title'] = $this->input->post('meta_title');
+                $data['meta_des'] = $this->input->post('meta_des');
+                $data['content'] = $this->input->post('content');
+                $cate = $this->input->post('category');
+                $data['parent'] = 0;
+                $where_check = ['alias' => $alias];
                 if ($id > 0) {
-                    $data['created_at'] = time();
-                    $insert_tag = 0;
-                    $update_tag = $this->Madmin->update(['id' => $id], $data, 'tags');
-                    if ($update_tag) {
-                        $insert_tag = $id;
-                    }
-                } else {
-                    $insert_tag = $this->Madmin->insert($data, 'tags');
+                    $where_check['id !='] = $id;
                 }
-                if ($insert_tag > 0) {
-                    $this->sitemap_page();
+                $check = $this->Madmin->get_by($where_check, 'tags');
+                if ($check != null) {
                     $response = [
-                        'status' => 1,
-                        'msg' => 'Thành công'
+                        'status' => 2,
+                        'msg' => 'đã tồn tại'
                     ];
                 } else {
-                    $response = [
-                        'status' => 0,
-                        'msg' => 'Thất bại'
-                    ];
+                    if ($cate > 0) {
+                        $data['parent'] = $cate;
+                    }
+                    if ($id > 0) {
+                        $data['created_at'] = time();
+                        $insert_tag = 0;
+                        $update_tag = $this->Madmin->update(['id' => $id], $data, 'tags');
+                        if ($update_tag) {
+                            $insert_tag = $id;
+                        }
+                    } else {
+                        $insert_tag = $this->Madmin->insert($data, 'tags');
+                    }
+                    if ($insert_tag > 0) {
+                        $this->sitemap_page();
+                        $response = [
+                            'status' => 1,
+                            'msg' => 'Thành công'
+                        ];
+                    } else {
+                        $response = [
+                            'status' => 0,
+                            'msg' => 'Thất bại'
+                        ];
+                    }
                 }
             }
         } else {
