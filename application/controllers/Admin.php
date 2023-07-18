@@ -610,13 +610,14 @@ class Admin extends CI_Controller
     }
     public function sitemap()
     {
-        $sql = "SELECT id,alias,updated_at FROM blogs ORDER BY id ASC";
+        $time = time();
+        $sql = "SELECT id,alias,updated_at FROM blogs WHERE index_blog = 1 AND time_post <= $time ORDER BY id ASC";
         $blog = $this->Madmin->query_sql($sql);
         $count = count($blog);
         $page = ceil($count / 200);
         for ($i = 1; $i <= $page; $i++) {
             $check_page = ($i - 1) * 200;
-            $sql_limit = "SELECT id,alias,updated_at FROM blogs ORDER BY id ASC LIMIT {$check_page}, 200";
+            $sql_limit = "SELECT id,alias,updated_at FROM blogs WHERE index_blog = 1 AND time_post <= $time ORDER BY id ASC LIMIT {$check_page}, 200";
             $blog_limit = $this->Madmin->query_sql($sql_limit);
             $doc = new DOMDocument("1.0", "utf-8");
             $doc->formatOutput = true;

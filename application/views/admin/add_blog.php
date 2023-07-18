@@ -230,22 +230,12 @@
         <label class="label" for="name">Hẹn giờ đăng </label>
         <input type="datetime-local" name="time_post" id="" value="<?= date("Y-m-d\TH:i:s", $time_post) ?>" class="form-control">
     </div>
-    <?php if (check_admin() == 3 && isset($blog) && $blog['index_blog'] == 1) { ?>
-        <div class="form-group mb-3">
-            <select name="index_blog" id="index_blog" class="form-control">
-                <option <?= (isset($blog) &&  $blog['index_blog'] == 1) ? 'selected' : '' ?> value="1">Đã xuất bản</option>
-            </select>
-        </div>
-    <?php } else { ?>
-        <div class="form-group mb-3">
-            <select name="index_blog" id="index_blog" class="form-control">
-                <option <?= (isset($blog) &&  $blog['index_blog'] == 0) ? 'selected' : '' ?> value="0">Lưu nháp</option>
-                <?php if (check_admin() != 3) { ?>
-                    <option <?= (isset($blog) &&  $blog['index_blog'] == 1) ? 'selected' : '' ?> value="1">Xuất bản</option>
-                <?php } ?>
-            </select>
-        </div>
-    <?php } ?>
+    <div class="form-group mb-3">
+        <select name="index_blog" id="index_blog" class="form-control">
+            <option <?= (isset($blog) &&  $blog['index_blog'] == 0) ? 'selected' : '' ?> value="0">Lưu nháp</option>
+            <option <?= (isset($blog) &&  $blog['index_blog'] == 1) ? 'selected' : '' ?> value="1">Xuất bản</option>
+        </select>
+    </div>
     <div class="form-group">
         <button type="submit" class="form-control btn btn-primary submit px-3"><?= (isset($id)) ? "Sửa" : "Thêm mới" ?></button>
     </div>
