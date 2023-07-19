@@ -127,7 +127,12 @@
     display: flex;
 
 }
-
+.left_blog {
+    width: 100%;
+    float: left;
+    padding-bottom: 3px;
+    border-bottom: 3px dotted #afa9a9;
+}
 .blog_top {
     display: flex;
     flex-direction: column;
