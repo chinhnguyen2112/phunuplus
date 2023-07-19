@@ -109,7 +109,6 @@
 
 .blog_top img {
     height: auto;
-    max-width: 440px;
 
 }
 
@@ -604,7 +603,9 @@ a.H4abc {
     .top_blog {
         flex-direction: column;
     }
-
+    .blog_top_left, .blog_top_right {
+        width: 100%;
+    }
     .title_blog_top {
         font-size: 22px;
     }
