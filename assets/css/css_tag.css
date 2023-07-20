@@ -659,7 +659,7 @@ a.H4abc {
         font-size: 25px;
     }
     .sapo_blog p {
-        padding: none;
+        padding: unset;
     }
     .sapo_blog p, .sapo_blog span {
         color: #000 !important;
