@@ -610,6 +610,7 @@ a.H4abc {
     }
     .blog_top_left, .blog_top_right {
         width: 100%;
+        background: none;
     }
     .title_blog_top {
         font-size: 22px;
@@ -651,8 +652,17 @@ a.H4abc {
     }
 
     .title_blog_top {
-        font-size: 15px !important;
-        margin-bottom: 0;
+        margin: 10px 0px;
+        padding: 0 !important;
+        line-height: 32px;
+        color: #000 !important;
+        font-size: 25px;
+    }
+    .sapo_blog p {
+        padding: none;
+    }
+    .sapo_blog p, .sapo_blog span {
+        color: #000 !important;
     }
 
     .title_blog {
