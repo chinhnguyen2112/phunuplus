@@ -661,6 +661,9 @@ a.H4abc {
     .sapo_blog p {
         padding: unset;
     }
+    .content_bfirst_ho4 {
+        margin-top: 10px;
+    }
     .sapo_blog p, .sapo_blog span {
         color: #000 !important;
     }
