@@ -161,22 +161,15 @@
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th class="text-center" style="width: 50px;">STT</th>
-                                        <th class="text-center" style="width: 50px;">ID</th>
                                         <th>Tên chuyên mục</th>
                                         <th>Url</th>
-                                        <th>Chuyên mục cha</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php foreach ($list as $key  => $val) { ?>
                                         <tr>
-                                            <td class="text-center"><?= $key; ?></td>
-                                            <td class="text-center"><?= $val['id']; ?></td>
                                             <td><?= $val['name'] ?></td>
-                                            <td><a href="/<?= $val['alias'] ?>/" target="_blank" rel="noopener noreferrer"><?= $val['alias'] ?></a></td>
-                                            <td><?php $cate_parent = chuyen_muc(['id' => $val['parent']]);
-                                                echo $cate_parent[0]['name']; ?></td>
+                                            <td><a href="/<?= $val['alias'] ?>/" target="_blank" rel="noopener noreferrer">https://phunuplus.vn/<?= $val['alias'] ?>/</a></td>
                                             <?php if (check_admin() != 3) { ?>
                                                 <td class="text-center">
                                                     <div class="btn-group">
@@ -190,11 +183,31 @@
                                                 </td>
                                             <?php } ?>
                                         </tr>
-                                    <?php } ?>
+                                        <?php $cate_nav = chuyen_muc(['parent' => $val['id']]);
+                                        if ($cate_nav != null) {
+                                            foreach ($cate_nav as $val_nav) { ?>
+                                                <tr>
+                                                    <td style="display: flex;    align-items: center;"><span style="background: #000;width: 20px;height: 1px;display: block;margin-right: 10px;" class="line_table"></span><span><?= $val_nav['name'] ?></span></td>
+                                                    <td><a href="/<?= $val_nav['alias'] ?>/" target="_blank" rel="noopener noreferrer">https://phunuplus.vn/<?= $val_nav['alias'] ?>/</a></td>
+                                                    <?php if (check_admin() != 3) { ?>
+                                                        <td class="text-center">
+                                                            <div class="btn-group">
+                                                                <a href="/admin/add_chuyenmuc?id=<?= $val_nav['id']; ?>" target="_blank">
+                                                                    <button style="font-size: 16px;" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Sửa tài khoản"><i class="fa fa-pencil"></i> Sửa</button>
+                                                                </a>
+                                                                <?php if (check_admin() == 1) { ?>
+                                                                    <span class="delete_job" onclick="del_blog(<?= $val_nav['id']; ?>)">Xóa</span>
+                                                                <?php } ?>
+                                                            </div>
+                                                        </td>
+                                                    <?php } ?>
+                                                </tr>
+                                    <?php }
+                                        }
+                                    } ?>
                                 </tbody>
                             </table>
                         </div>
-                        <?php echo $this->pagination->create_links() ?>
                     </div>
                 </div>
             </div>

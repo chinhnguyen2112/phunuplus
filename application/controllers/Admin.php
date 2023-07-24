@@ -332,15 +332,7 @@ class Admin extends CI_Controller
     public function list_chuyenmuc()
     {
         if (admin()) {
-            $page = $this->uri->segment(3);
-            if ($page < 1 || $page == '') {
-                $page = 1;
-            }
-            $limit = 20;
-            $start = $limit * ($page - 1);
-            $list = $this->Madmin->get_list('', 'category');
-            pagination('/admin/list_chuyenmuc', count($list), $limit, 3);
-            $data['list'] = $this->Madmin->get_limit('', 'category', $start, $limit);
+            $data['list'] = $this->Madmin->get_list(['parent' => 0], 'category');
             $data['content'] = '/admin/list_chuyenmuc';
             $this->load->view('admin/index', $data);
         } else {
