@@ -32,6 +32,30 @@
             </div>
         </div>
     </div>
+    <div class="outstanding">
+        <ul class="content_outs">
+            <article class="flex">
+                <span>1</span>
+                <a href="/hon-nhan/">Hôn Nhân</a>
+            </article>
+            <article class="flex">
+                <span>2</span>
+                <a href="/dang-dep/">Dáng Đẹp</a>
+            </article>
+            <article class="flex">
+                <span>3</span>
+                <a href="/benh-phu-khoa/">Bệnh Phụ Khoa</a>
+            </article>
+            <article class="flex">
+                <span>4</span>
+                <a href="/meo-hay-nha-bep/">Mẹo Hay Nhà Bếp</a>
+            </article>
+            <article class="flex">
+                <span>5</span>
+                <a href="/day-con/">Dạy Con</a>
+            </article>
+        </ul>
+    </div>
     <div class="sidebar_box">
         <div class="box_heading">
             <a href="#">Liên Kết Hữu Ích</a>
