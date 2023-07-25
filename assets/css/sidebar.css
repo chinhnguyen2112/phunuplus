@@ -129,7 +129,8 @@
     background: url(/images/bg_outs.jpeg) top center/100% no-repeat;
     position: relative;
     margin: 30px 0;
-    min-height: 445px;
+    min-height: 443px;
+    border-radius: 8px;
 }
 .content_outs {
     padding: 75px 34px 0 40px;
@@ -237,6 +238,9 @@ article.flex {
 @media only screen and (max-width: 1024px) {
     article.flex {
         padding: 5px 20px 25px 0;
+    }
+    .outstanding {
+        min-height: 382px;
     }
 }
 @media only screen and (max-width: 768px) {
