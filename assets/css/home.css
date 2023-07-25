@@ -234,7 +234,9 @@ strong {
     padding: 12px;
     display: flex;
 }
-
+.content_right_podcast .des_post {
+    display: none;
+}
 .content_right_podcast .title_blog {
     font-size: 14px !important;
 }
