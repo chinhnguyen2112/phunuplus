@@ -189,10 +189,10 @@
                                             foreach ($parent_tag as $val_nav) { ?>
                                                 <tr>
                                                     <td style="display: flex;    align-items: center;"><span style="background: #000;width: 20px;height: 1px;display: block;margin-right: 10px;" class="line_table"></span><span><?= $val_nav['name'] ?></span></td>
-                                                    <td><a href="/<?= $val['alias'] ?>/" target="_blank">Xem tag</a></td>
+                                                    <td><a href="/<?= $val_nav['alias'] ?>/" target="_blank">Xem tag</a></td>
                                                     <td class="text-center">
                                                         <div class="btn-group">
-                                                            <a href="/admin/add_tag?id=<?= $val['id']; ?>" target="_blank">
+                                                            <a href="/admin/add_tag?id=<?= $val_nav['id']; ?>" target="_blank">
                                                                 <button style="font-size: 16px;" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Sửa tài khoản"><i class="fa fa-pencil"></i> Sửa</button>
                                                             </a>
 
