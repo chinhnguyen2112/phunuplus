@@ -231,10 +231,6 @@
         <input type="datetime-local" name="time_post" id="" value="<?= date("Y-m-d\TH:i:s", $time_post) ?>" class="form-control">
     </div>
     <div class="form-group mb-3">
-        <label class="label" for="name">Redirect 301 </label>
-        <input type="text" name="redirect_301" value="<?= (isset($blog)) ? $blog['redirect_301'] : ''; ?>" class="form-control">
-    </div>
-    <div class="form-group mb-3">
         <select name="index_blog" id="index_blog" class="form-control">
             <option <?= (isset($blog) &&  $blog['index_blog'] == 0) ? 'selected' : '' ?> value="0">Lưu nháp</option>
             <option <?= (isset($blog) &&  $blog['index_blog'] == 1) ? 'selected' : '' ?> value="1">Xuất bản</option>

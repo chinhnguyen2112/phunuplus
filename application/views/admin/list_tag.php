@@ -166,23 +166,15 @@
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th class="text-center" style="width: 50px;">STT</th>
-                                        <th class="text-center" style="width: 50px;">ID</th>
                                         <th>Tên tag</th>
-                                        <th>Tag lớn</th>
                                         <th>Xem tag</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php foreach ($list as $key  => $val) {
-                                        $parent_tag = tag(['id' => $val['parent']]);
-                                    ?>
+                                        $parent_tag = tag(['parent' => $val['id']]); ?>
                                         <tr>
-                                            <td class="text-center"><?= $key; ?></td>
-                                            <td class="text-center"><?= $val['id']; ?></td>
                                             <td><?= $val['name'] ?></td>
-                                            <td><?php $cate_parent = tag(['id' => $val['parent']]);
-                                                echo $cate_parent[0]['name']; ?></td>
                                             <td><a href="/<?= $val['alias'] ?>/" target="_blank">Xem tag</a></td>
                                             <td class="text-center">
                                                 <div class="btn-group">
@@ -193,11 +185,26 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                    <?php } ?>
+                                        <?php if ($parent_tag != null) {
+                                            foreach ($parent_tag as $val_nav) { ?>
+                                                <tr>
+                                                    <td style="display: flex;    align-items: center;"><span style="background: #000;width: 20px;height: 1px;display: block;margin-right: 10px;" class="line_table"></span><span><?= $val_nav['name'] ?></span></td>
+                                                    <td><a href="/<?= $val['alias'] ?>/" target="_blank">Xem tag</a></td>
+                                                    <td class="text-center">
+                                                        <div class="btn-group">
+                                                            <a href="/admin/add_tag?id=<?= $val['id']; ?>" target="_blank">
+                                                                <button style="font-size: 16px;" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Sửa tài khoản"><i class="fa fa-pencil"></i> Sửa</button>
+                                                            </a>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                    <?php }
+                                        }
+                                    } ?>
                                 </tbody>
                             </table>
                         </div>
-                        <?php echo $this->pagination->create_links() ?>
                     </div>
                 </div>
             </div>

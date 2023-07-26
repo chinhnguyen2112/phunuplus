@@ -115,11 +115,6 @@
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"><a class="nav-link" href="/admin/add_tag">Thêm tags</a></li>
                                 <li class="nav-item"><a class="nav-link" href="/admin/list_tag">Danh sách tags</a></li>
-                                <?php $CI = get_instance();
-                                $list_tag = tag(['parent' => 0]);
-                                foreach ($list_tag as $val) { ?>
-                                    <li class="nav-item"><a class="nav-link" href="/admin/list_tag?keyword=&parent=<?= $val['id'] ?>/"><?= $val['name'] ?></a></li>
-                                <?php } ?>
                             </ul>
                         </div>
                     </li>

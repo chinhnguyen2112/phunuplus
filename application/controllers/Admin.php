@@ -100,7 +100,6 @@ class Admin extends CI_Controller
             $data['updated_at'] = $time;
             $data['author_id'] = $_SESSION['admin']['id'];
             $data['index_blog'] = $this->input->post('index_blog');
-            $data['redirect_301'] = $this->input->post('redirect_301');
             $cate = chuyen_muc(['id' => $chuyenmuc]);
             if ($cate[0]['parent'] > 0) {
                 $data['cate_parent'] = $cate[0]['parent'];
@@ -465,17 +464,11 @@ class Admin extends CI_Controller
                 $where['name LIKE '] = '%' . $keyword . '%';
             }
             if ($parent > 0) {
-                $where['parent'] = $parent;
+            } else {
+                $where['parent'] = 0;
             }
-            $page = $this->uri->segment(3);
-            if ($page < 1 || $page == '') {
-                $page = 1;
-            }
-            $limit = 20;
-            $start = $limit * ($page - 1);
             $list = $this->Madmin->get_list($where, 'tags');
-            pagination('/admin/list_tag', count($list), $limit, 3);
-            $data['list'] = $this->Madmin->get_limit($where, 'tags', $start, $limit);
+            $data['list'] = $list;
             $data['content'] = '/admin/list_tag';
             $this->load->view('admin/index', $data);
         } else {
