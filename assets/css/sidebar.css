@@ -148,6 +148,7 @@ article.flex {
     line-height: 100%;
 }
 .flex a {
+    display: none;
     font-size: 16px;
     line-height: 20px;
     color: #1b2800;
