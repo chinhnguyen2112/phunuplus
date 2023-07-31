@@ -87,7 +87,7 @@ class Ajax extends CI_Controller
     {
         $page = $this->input->post('page');
         $chuyen_muc = $this->input->post('id_chuyenmuc');
-        $page = 10 * ($page - 1);
+        $page = 18 * ($page - 1);
         $blog_cate_sql = "SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as image_cate FROM blogs INNER JOIN category ON blogs.chuyenmuc = category.id WHERE blogs.chuyenmuc = $chuyen_muc ORDER BY created_at  DESC LIMIT $page,  10";
         $blog_cate = $this->Madmin->query_sql($blog_cate_sql);
         $html = '';
@@ -112,7 +112,7 @@ class Ajax extends CI_Controller
                 ';
             }
             $next = 0;
-            if (count($blog_cate) == 10) {
+            if (count($blog_cate) == 18) {
                 $next = 1;
             }
             $response = [

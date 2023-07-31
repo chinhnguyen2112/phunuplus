@@ -77,9 +77,6 @@ class Home extends CI_Controller
                 $data['cate_con'] = $this->Madmin->query_sql("SELECT * FROM category WHERE parent = $cate_to[id]");
             }
             $where_cate = $this->search_cate($chuyenmuc['id'], $chuyenmuc['level']);
-            // echo $where_cate;
-            $count = $this->Madmin->num_rows_or("index_blog = 1 AND type = 0 AND time_post <= $time", $where_cate, 'blogs');
-            pagination('/' . $chuyenmuc['alias'], $count, 18);
             $cate = $this->Madmin->get_by(['id' => $chuyenmuc['parent']], 'category');
             $data['cate'] = $cate;
             if ($cate != null && $cate['parent'] > 0) {
