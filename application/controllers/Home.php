@@ -70,6 +70,7 @@ class Home extends CI_Controller
                 $count_or['cate_parent'] = $chuyenmuc['id'];
                 $cate_con = $this->Madmin->query_sql("SELECT * FROM category WHERE parent = $chuyenmuc[id]");
                 $data['cate_con'] = $cate_con;
+                $data['cate_to'] = $chuyenmuc;
             } else {
                 $cate_to = $this->Madmin->query_sql_row("SELECT * FROM category WHERE id = $chuyenmuc[parent] ");
                 $data['cate_to'] = $cate_to;
