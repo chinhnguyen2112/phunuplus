@@ -282,6 +282,7 @@
     }
 
     function show_alias(str) {
+        str = str.trim();
         var alias = get_alias(str);
         $("#alias").val(alias);
     }
