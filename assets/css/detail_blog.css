@@ -415,11 +415,11 @@ figure {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 10pt 0;
 }
 
 .content_blog img {
     height: auto;
+    width: 100%;
 }
 
 a.H3abc {

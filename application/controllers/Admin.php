@@ -594,6 +594,18 @@ class Admin extends CI_Controller
             redirect('/admin/');
         }
     }
+    public function pre_blog()
+    {
+        $id = $this->input->get('id');
+        if ($id > 0) {
+            $blog = $this->Madmin->get_by(['id' => $id], 'blogs');
+            if ($blog != null) {
+                $data['blog'] =  $blog;
+                $data['content'] = '/admin/pre_blog';
+                $this->load->view('admin/index', $data);
+            }
+        }
+    }
     public function sitemap()
     {
         $time = time();

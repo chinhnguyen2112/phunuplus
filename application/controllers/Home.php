@@ -57,9 +57,9 @@ class Home extends CI_Controller
         $author = $this->Madmin->get_by(['alias' => $alias], 'admin');
         $chuyenmuc = $this->Madmin->get_by(['alias' => $alias], 'category');
         if ($alias == 'gioi-thieu-phu-nu-plus' || $alias == 'chinh-sach-bao-mat' || $alias == 'lien-he') {
-            $blog = $this->Madmin->query_sql_row("SELECT * FROM blogs WHERE alias = '$alias' ");
+            $blog = $this->Madmin->query_sql_row("SELECT * FROM blogs WHERE index_blog =1 AND time_post<= $time AND alias = '$alias' ");
         } else {
-            $blog = $this->Madmin->query_sql_row("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE blogs.alias = '$alias' ");
+            $blog = $this->Madmin->query_sql_row("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE index_blog =1 AND time_post<= $time AND blogs.alias = '$alias' ");
         }
         $tags = $this->Madmin->get_by(['alias' => $alias], 'tags');
         if ($chuyenmuc != null) { //chuyenmuc
@@ -101,9 +101,6 @@ class Home extends CI_Controller
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
                 redirect('/' . $alias . '/', 'location', 301);
             }
-            if ((!admin() && $blog['time_post'] > $time) || (!admin() && $blog['index_blog'] != 1)) {
-                redirect('/');
-            }
             $data['blog_same'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE chuyenmuc = {$blog['chuyenmuc']} AND index_blog = 1 AND type = 0 AND time_post <= $time AND id != {$blog['id']}  ORDER BY updated_at DESC LIMIT 6");
             $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE  id != {$blog['id']} AND index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY id DESC LIMIT 5");
             $cate = $this->Madmin->query_sql_row("SELECT name,alias,parent FROM category  WHERE id = {$blog['chuyenmuc']} ");
@@ -135,9 +132,7 @@ class Home extends CI_Controller
             $data['meta_des'] = $blog['meta_des'];
             $data['meta_key'] = $blog['meta_key'];
             $data['meta_img'] = $blog['image'];
-            if ($blog['time_post'] <= $time && $blog['index_blog'] == 1) {
-                $data['index'] = 1;
-            }
+            $data['index'] = 1;
         } else if ($tags != null) {
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
                 redirect('/' . $alias . '/', 'location', 301);

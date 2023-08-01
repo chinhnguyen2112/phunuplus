@@ -727,3 +727,4 @@ function get_format(format_type) {
 		config.doksoft_youtube_useOldCode = false;
 	};
 })();
+CKEDITOR.config.entities = false;

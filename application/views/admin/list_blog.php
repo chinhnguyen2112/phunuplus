@@ -196,7 +196,13 @@
                                             <td class="text-center"><?= $key; ?></td>
                                             <td class="text-center"><?= $val['id']; ?></td>
                                             <td><?= $val['title'] ?></td>
-                                            <td><a href="/<?= $val['alias'] ?>/" target="_blank">Xem tin</a></td>
+                                            <td>
+                                                <?php if ($val['index_blog'] == 0 || $val['time_post'] > time()) {  ?>
+                                                    <a href="/admin/pre_blog?id=<?= $val['id'] ?>/" target="_blank">Xem tin</a>
+                                                <?php } else { ?>
+                                                    <a href="/<?= $val['alias'] ?>/" target="_blank">Xem tin</a>
+                                                <?php } ?>
+                                            </td>
                                             <td>
                                                 <?php
                                                 $chuyenmuc = chuyen_muc();
