@@ -50,8 +50,9 @@ class Home extends CI_Controller
     {
         $time = time();
         $alias = trim($alias);
-        if ($alias == 'nguoi-tieu-dung-thong-minh') {
-            $alias = 'tieu-dung-thong-minh';
+        $alias_new = alias_301($alias);
+        if ($alias != $alias_new) {
+            redirect('/' . $alias_new . '/', 'location', 301);
         }
         $data['canonical'] = base_url() . $alias . '/';
         $author = $this->Madmin->get_by(['alias' => $alias], 'admin');

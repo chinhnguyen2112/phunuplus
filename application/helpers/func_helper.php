@@ -195,3 +195,13 @@ function sendEmail($to, $name, $subject, $content)
 		return true;
 	}
 }
+function alias_301($alias)
+{
+	if ($alias == 'nguoi-tieu-dung-thong-minh') {
+		$alias = 'tieu-dung-thong-minh';
+	}
+	if ($alias == '-uyen-linh-dap-tra-ve-thai-do-trong-clip-khan-gia-giat-mic-phan-nan') {
+		$alias = 'uyen-linh-dap-tra-ve-thai-do-trong-clip-khan-gia-giat-mic-phan-nan';
+	}
+	return $alias;
+}
