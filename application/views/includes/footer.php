@@ -6,8 +6,7 @@ $ft4 = chuyen_muc(['parent' => 7]);
 $ft5 = chuyen_muc(['parent' => 10]);
 ?>
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0"
-    nonce="wmm40zXP"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0" nonce="wmm40zXP"></script>
 <div class="footer">
     <div class="footer_content body_width">
         <div class="ft_top item_ft">
@@ -18,9 +17,9 @@ $ft5 = chuyen_muc(['parent' => 10]);
                         <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
                         foreach ($menu_cate_parent as $key => $val) {
                             if ($key <= 5) { ?>
-                        <li class="item_menu_ft">
-                            <a href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
-                        </li>
+                                <li class="item_menu_ft">
+                                    <a href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
+                                </li>
                         <?php }
                         } ?>
                     </div>
@@ -28,9 +27,9 @@ $ft5 = chuyen_muc(['parent' => 10]);
                         <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
                         foreach ($menu_cate_parent as $key => $val) {
                             if ($key > 5) { ?>
-                        <li class="item_menu_ft">
-                            <a href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
-                        </li>
+                                <li class="item_menu_ft">
+                                    <a href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
+                                </li>
                         <?php }
                         } ?>
                     </div>
@@ -47,11 +46,8 @@ $ft5 = chuyen_muc(['parent' => 10]);
             <div class="line_ft_top line_nonpc"></div>
             <div class="item_ft_top ft_top_03">
                 <div class="fanpage_fb">
-                    <div class="fb-page" data-href="https://www.facebook.com/phunutre.vn" data-tabs="" data-width="482"
-                        data-height="" data-small-header="false" data-adapt-container-width="true"
-                        data-hide-cover="false" data-show-facepile="false">
-                        <blockquote cite="https://www.facebook.com/phunutre.vn" class="fb-xfbml-parse-ignore"><a
-                                href="https://www.facebook.com/phunutre.vn">Phụ Nữ News</a></blockquote>
+                    <div class="fb-page" data-href="https://www.facebook.com/phunutre.vn" data-tabs="" data-width="482" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                        <blockquote cite="https://www.facebook.com/phunutre.vn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/phunutre.vn">Phụ Nữ News</a></blockquote>
                     </div>
                 </div>
                 <div class="list_contact">
@@ -92,7 +88,7 @@ $ft5 = chuyen_muc(['parent' => 10]);
             </div>
             <div class="item_ft_bot ft_bot_03">
                 <p><b>Trụ sở chính:</b> Số 111 đường Mễ Trì - Quận Nam Từ Liêm - Hà Nội.</p>
-                <p><b>Email:</b> cs.phunuplus@gmail.com</p>
+                <p><b>Email:</b> support@manta.vn</p>
             </div>
         </div>
     </div>

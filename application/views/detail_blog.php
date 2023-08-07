@@ -24,14 +24,8 @@
                     <div class="left_blog">
                         <h1 class="title_h1"><?= $blog['title'] ?></h1>
                         <div class="box_author">
-                            <?php if (isset($author) && $author != null) { ?>
-                                <div class="text_author">
-                                    <a class="name_author" href="/<?= $author['alias'] ?>/"><?= $author['name'] ?></a>
-                                </div>
-                            <?php } ?>
                             <div class="box_date">
-                                <img src="/images/date.svg" alt="Ngày đăng">
-                                <p class="date_blog">Đăng ngày: <?= date('d-m-Y', $blog['created_at']) ?></p>
+                                <p class="date_blog"><?= replace_date($blog['created_at']) ?></p>
                             </div>
                             <a rel="nofollow" class="follow_ggnew" target="_blank" href="https://news.google.com/publications/CAAqBwgKMK2v0Asw7MrnAw?hl=vi&gl=VN&ceid=VN:vi">Theo dõi Phunuplus trên <img src="/images/googlelogo.svg" alt=""> News</a>
                         </div>
@@ -54,6 +48,11 @@
                         <?= $blog['content'] ?>
                     </div>
                 </div>
+                <?php if (isset($author) && $author != null) { ?>
+                    <div class="text_author">
+                        <a class="name_author" href="/<?= $author['alias'] ?>/"><?= $author['name'] ?></a>
+                    </div>
+                <?php } ?>
                 <?php
                 if ($blog['tag'] != '') {
                     $tag = explode(',', $blog['tag']); ?>

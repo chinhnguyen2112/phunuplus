@@ -97,6 +97,9 @@ class Ajax extends CI_Controller
                 $cate = chuyen_muc(['id' => $val['chuyenmuc']]);
                 $html .= '
                 <div class="this_train">
+                    <a title="' . $val['title'] . '" href="/' . $val['alias'] . '/">
+                        <p class="title_blog only_mobile">' . $val['title'] . '</p>
+                    </a>
                     <a href="/' . $val['alias'] . '/">
                         <img src="/' . $val['image'] . '" alt="' . $val['title'] . '">
                         <div class="box_right_data">
