@@ -161,7 +161,11 @@ strong {
     margin-bottom: 15px;
 }
 .link_home {
-    width: 22%;
+    width: 29%;
+}
+.link_home img {
+    width: 100%;
+    max-height: 40px;
 }
 .box_header_tag {
     width: calc(100% - 170px);
@@ -202,15 +206,7 @@ strong {
     border-radius: 12px;
     display: flex;
 }
-.middle_left {
-    width: calc(100% - 260px);
-    padding: 20px;
-    background: #fff;
-    border: 1px solid #e6e6e6;
-    box-shadow: 0 5px 15px rgba(0,0,0,.05);
-    border-radius: 12px;
-    display: flex;
-}
+
 .middle_right {
         width: 244px;
         margin-left: 16px;

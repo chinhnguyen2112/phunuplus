@@ -43,7 +43,7 @@
                     <div class="box_layout">
                         <div class="box_header">
                             <a class="link_home" href="/">
-                                <img src="/images/logo_old.png" alt="logo">
+                                <img src="/images/36.png" alt="logo">
                             </a>
                             <div class="box_header_tag">
                                 <a class="item_header_tag" href="/chuyen-tinh-yeu/">
