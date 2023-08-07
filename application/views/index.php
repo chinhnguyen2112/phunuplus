@@ -28,9 +28,9 @@
   <link rel="shortcut icon" type="image/png" href="<?= base_url() ?>images/favicon.png">
   <link data-n-head="ssr" rel="icon" type="image/png" href="<?= base_url() ?>images/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/assets/css/font.css">
+  <link rel="stylesheet" href="/assets/css/font.css?v=1">
   <link rel="stylesheet" href="/assets/css/reset.css">
-  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/header.css?v=1">
   <link rel="stylesheet" href="/assets/css/footer.css">
   <link rel="stylesheet" href="/assets/css/sweetalert.css">
   <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
@@ -38,7 +38,7 @@
 
   <?php if (isset($list_css)) {
     foreach ($list_css as $css) { ?>
-      <link rel="stylesheet" href="/assets/css/<?= $css ?>">
+      <link rel="stylesheet" href="/assets/css/<?= $css ?>?v=1">
       </link>
   <?php  }
   } ?>
