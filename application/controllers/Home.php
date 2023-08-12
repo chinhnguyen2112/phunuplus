@@ -32,7 +32,7 @@ class Home extends CI_Controller
     {
         $data['canonical'] = base_url();
         $time = time();
-        $giai_tri = $this->Madmin->get_limit("chuyenmuc = 4 AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
+        $giai_tri = $this->Madmin->get_limit("chuyenmuc = 40 AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
         $data['giai_tri'] = $giai_tri;
         $where = '';
         foreach($giai_tri as $val) {
