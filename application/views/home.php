@@ -3,20 +3,20 @@
         <div class="right_home">
             <div class="blog_top">
                 <div class="border_blog">
-                    <a class="linl_all_detail" title="<?= $blog[0]['title'] ?>" href="/<?= $blog[0]['alias'] ?>/">
+                    <a class="linl_all_detail" title="<?= $giai_tri[0]['title'] ?>" href="/<?= $giai_tri[0]['alias'] ?>/">
                         <div class="blog_top_content blog_top_left">
-                            <img src="/<?= $blog[0]['image'] ?>" alt="<?= $blog[0]['title'] ?>">
+                            <img src="/<?= $giai_tri[0]['image'] ?>" alt="<?= $giai_tri[0]['title'] ?>">
                         </div>
                         <div class="blog_top_content blog_top_right">
-                            <p class="title_blog_top"><?= $blog[0]['title'] ?></p>
-                            <div class="sapo_blog"><?= $blog[0]['sapo'] ?></div>
+                            <p class="title_blog_top"><?= $giai_tri[0]['title'] ?></p>
+                            <div class="sapo_blog"><?= $giai_tri[0]['sapo'] ?></div>
                         </div>
                     </a>
                 </div>
             </div>
             <div class="list_blog_home">
-                <?php foreach ($blog as $key => $val) {
-                    if ($key > 0 && $key < 6) { ?>
+                <?php foreach ($giai_tri as $key => $val) {
+                    if ($key > 0 && $key < 5) { ?>
                         <div class="this_content_right">
                             <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
                                 <p class="title_blog only_mobile"><?= $val['title'] ?></p>
@@ -66,7 +66,7 @@
                         </div>
                         <div class="box_middle">
                             <?php foreach ($blog as $key => $val) {
-                                if ($key == 6) { ?>
+                                if ($key == 0) { ?>
                                     <div class="this_content_right content_no_border middle_left">
                                         <a class="linl_all_detail link_fl" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
                                             <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
@@ -84,11 +84,11 @@
                                             </div>
                                         </a>
                                     </div>
-                            <?php }
+                            <?php } 
                             } ?>
                             <div class="middle_right">
                                 <?php foreach ($blog as $key => $val) {
-                                    if ($key > 6 && $key < 9) { ?>
+                                    if ($key > 0 && $key < 3) { ?>
                                         <div class="this_content_right content_no_border content_right_podcast">
                                             <a class="linl_all_detail link_fl" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
                                                 <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <?php foreach ($blog as $key => $val) {
-                    if ($key > 8) { ?>
+                    if ($key > 2) { ?>
                         <div class="this_content_right">
                             <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
                                 <p class="title_blog only_mobile"><?= $val['title'] ?></p>
