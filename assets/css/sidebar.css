@@ -135,11 +135,11 @@
 }
 
 .content_outs {
-    padding: 75px 34px 0 40px;
+    padding: 90px 34px 0 40px;
 }
 
 article.flex {
-    padding: 5px 20px 30px 0;
+    padding: 5px 20px 20px 0;
 }
 
 .flex span {
@@ -200,7 +200,8 @@ article.flex {
 }
 
 .item_hot_news a {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
     line-height: 22px;
     color: #333;
     transition: 0.5s;
