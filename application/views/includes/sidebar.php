@@ -36,23 +36,23 @@
         <ul class="content_outs">
             <article class="flex">
                 <span>1</span>
-                <a href="/hon-nhan/">Hôn Nhân</a>
+                <a href="/huynh-tran-y-nhi/">Huỳnh Trần Ý Nhi</a>
             </article>
             <article class="flex">
                 <span>2</span>
-                <a href="/dang-dep/">Dáng Đẹp</a>
+                <a href="/mai-phuong-thuy/">Mai Phương Thuý</a>
             </article>
             <article class="flex">
                 <span>3</span>
-                <a href="/benh-phu-khoa/">Bệnh Phụ Khoa</a>
+                <a href="/phuong-oanh/">Phương Oanh</a>
             </article>
             <article class="flex">
                 <span>4</span>
-                <a href="/meo-hay-nha-bep/">Mẹo Hay Nhà Bếp</a>
+                <a href="/vietnam-idol/">Vietnam Idol</a>
             </article>
             <article class="flex">
                 <span>5</span>
-                <a href="/day-con/">Dạy Con</a>
+                <a href="/miss-world-vietnam/">Miss World Vietnam</a>
             </article>
         </ul>
     </div>

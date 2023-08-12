@@ -127,12 +127,14 @@
     display: flex;
 
 }
+
 .left_blog {
     width: 100%;
     float: left;
     padding-bottom: 3px;
     border-bottom: 3px dotted #afa9a9;
 }
+
 .blog_top {
     display: flex;
     flex-direction: column;
@@ -140,25 +142,30 @@
     border-bottom: 3px dotted #afa9a9;
     padding-bottom: 15px;
 }
+
 .linl_all_detail {
     color: unset;
     display: flex;
     width: 100%;
 }
+
 .blog_top_left {
     max-height: 293px;
     width: 64%;
 }
+
 .blog_top img {
     width: 100%;
     height: 100%;
 }
+
 .blog_top_right {
     height: 293px;
     width: 35%;
     background: linear-gradient(90deg, #cc0355 0, #ea003a 0, #5447a4 100%);
     border-radius: 0 5px 5px 0;
 }
+
 .title_blog_top {
     margin-bottom: 0px;
     padding: 50px 15px 15px 15px;
@@ -167,6 +174,7 @@
     line-height: 24px;
     font-weight: 600;
 }
+
 .sapo_blog {
     padding: 0 !important;
     display: -webkit-box;
@@ -175,16 +183,20 @@
     overflow: hidden;
     margin-top: 20px;
 }
+
 .sapo_blog p {
     padding: 0 15px;
 }
-.sapo_blog p, .sapo_blog span {
+
+.sapo_blog p,
+.sapo_blog span {
     color: #fff !important;
     text-align: left !important;
     font-size: 14px !important;
     line-height: 21px !important;
     font-weight: 500 !important;
 }
+
 /* --  */
 
 .this_train a {
@@ -460,9 +472,8 @@ a.H4abc {
 
 .content_blog a {
     box-shadow: inset 0 -4px 0 #7be2af;
-    font-weight: 300 !important;
+    /* font-weight: 300 !important; */
     color: #000;
-
 }
 
 .content_blog a:hover {
@@ -542,6 +553,7 @@ a.H4abc {
     .sidebar_content {
         width: 100% !important;
     }
+
     .train_content {
         margin-top: 20px;
         padding: 0;
@@ -608,10 +620,13 @@ a.H4abc {
     .top_blog {
         flex-direction: column;
     }
-    .blog_top_left, .blog_top_right {
+
+    .blog_top_left,
+    .blog_top_right {
         width: 100%;
         background: none;
     }
+
     .title_blog_top {
         font-size: 22px;
     }
@@ -658,13 +673,17 @@ a.H4abc {
         color: #000 !important;
         font-size: 25px;
     }
+
     .sapo_blog p {
         padding: unset;
     }
+
     .content_bfirst_ho4 {
         margin-top: 10px;
     }
-    .sapo_blog p, .sapo_blog span {
+
+    .sapo_blog p,
+    .sapo_blog span {
         color: #000 !important;
     }
 
