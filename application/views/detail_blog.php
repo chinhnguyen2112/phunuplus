@@ -27,7 +27,7 @@
                             <div class="box_date">
                                 <p class="date_blog"><?= replace_date($blog['created_at']) ?></p>
                             </div>
-                            <a rel="nofollow" class="follow_ggnew" target="_blank" href="https://news.google.com/publications/CAAqBwgKMK2v0Asw7MrnAw?hl=vi&gl=VN&ceid=VN:vi">Theo dõi Phunuplus trên <img src="/images/googlelogo.svg" alt=""> News</a>
+                            <a rel="nofollow" class="follow_ggnew" target="_blank" href="https://news.google.com/publications/CAAqBwgKMK2v0Asw7MrnAw?hl=vi&gl=VN&ceid=VN:vi">Theo dõi Phụ Nữ Plus trên <img src="/images/googlelogo.svg" alt=""> News</a>
                         </div>
                     </div>
                 </div>
