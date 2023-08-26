@@ -103,6 +103,8 @@ class Admin extends CI_Controller
             $cate = chuyen_muc(['id' => $chuyenmuc]);
             if ($cate[0]['parent'] > 0) {
                 $data['cate_parent'] = $cate[0]['parent'];
+            } else {
+                $data['cate_parent'] = 0;
             }
             if ($this->input->post('tag') != '') {
                 $data['tag'] =  implode(',', $this->input->post('tag'));

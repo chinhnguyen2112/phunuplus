@@ -8,6 +8,7 @@
                         <span class="this_breadcrumb"><?= $title_page ?></span>
                     </div>
                     <?php if (isset($content_tag) && $content_tag != '') { ?>
+                        <h1 class="h1_tag"><?= $meta_title ?></h1>
                         <div class="blog_content">
                             <div class="left_detail">
                                 <div class="content_blog" id="content_blog">
