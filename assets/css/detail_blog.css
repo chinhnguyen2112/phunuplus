@@ -622,6 +622,7 @@ table {
     border: 1px solid #000 !important;
     border-bottom: none !important;
     border-color: black !important;
+    width: 100% !important;
 }
 
 th:first-child,
