@@ -66,7 +66,7 @@
                                 </div>
                             </div>
                             <div class="list_item_sub">
-                                <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 42 AND id != 41 AND id != 32');
+                                <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 42 AND id != 41');
                                 foreach ($menu_cate_parent as $val) {
                                     $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
                                     <li class="this_menu_sub" id="this_menu">
@@ -101,7 +101,7 @@
                             <img src="/images/icons/icons8-home-50.png" alt="icon home">
                         </a>
                         <div class="list_item_menu">
-                            <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 42 AND id != 41 AND id != 32');
+                            <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 42 AND id != 41');
                             foreach ($menu_cate_parent as $val) {
                                 $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
                                 <li class="this_menu" id="this_menu">
