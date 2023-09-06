@@ -47,6 +47,24 @@
                                     <input class="input_sub" id="search_input_sub" type="text" autocomplete="off" name="search" placeholder="Tìm kiếm" />
                                 </form>
                             </div>
+                            <div class="btn_header">
+                                <div class="item_btn night_mode">
+                                    <span class="span"></span>
+                                    <p>Chế độ tối</p>
+                                </div>
+                                <div class="item_btn">
+                                    <span>
+                                        <img src="/images/icons/icon_eyes.png" alt="icon đã xem">
+                                    </span>
+                                    <p>Tin đã xem</p>
+                                </div>
+                                <div class="item_btn">
+                                    <span>
+                                        <img src="/images/icons/icon_save.png" alt="icon cài đặt">
+                                    </span>
+                                    <p>Cài đặt APP</p>
+                                </div>
+                            </div>
                             <div class="list_item_sub">
                                 <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 42 AND id != 41 AND id != 32');
                                 foreach ($menu_cate_parent as $val) {
@@ -54,7 +72,6 @@
                                     <li class="this_menu_sub" id="this_menu">
                                         <div class="big_item_menu_sub" onclick="show_submenu(this,1)">
                                             <a class="item_menu_sub" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
-                                            <span class="drop_sub"></span>
                                         </div>
                                         <?php if ($menu_cate != null) { ?>
                                             <ul class="menu_con_sub">

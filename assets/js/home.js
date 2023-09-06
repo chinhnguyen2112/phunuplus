@@ -26,3 +26,21 @@ $(".load_more").click(function () {
 		},
 	});
 });
+
+
+var val = 0;
+var width = screen.width;
+if (width > 540) {
+  val = 3;
+} else {
+  val = 2;
+}
+$('.slider_hots_week').slick({
+	autoplay:true,
+	autoplaySpeed: 1000,
+	arrows:true,
+	prevArrow:'<button type="button" class="slick-prev"><img src="/images/icons/icon_arrow_slide.png" alt="icon prev"></button>',
+	nextArrow:'<button type="button" class="slick-next"><img src="/images/icons/icon_arrow_slide.png" alt="icon next"></button>',
+	slidesToShow:val,
+	dots:true,
+});
