@@ -32,21 +32,48 @@ class Home extends CI_Controller
     {
         $data['canonical'] = base_url();
         $time = time();
+        $hots_week = $this->Madmin->get_limit("index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 10);
+        $data['hots_week'] = $hots_week;
+        $yeu = $this->Madmin->get_limit("chuyenmuc = 1  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
+        $data['yeu'] = $yeu;
+        $dep = $this->Madmin->get_limit("chuyenmuc = 3  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
+        $data['dep'] = $dep;
+        $khoe = $this->Madmin->get_limit("chuyenmuc = 5  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
+        $data['khoe'] = $khoe;
+        $bep = $this->Madmin->get_limit("chuyenmuc = 7  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
+        $data['bep'] = $bep;
+        $lam_me = $this->Madmin->get_limit("chuyenmuc = 10  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
+        $data['lam_me'] = $lam_me;
+        $life_style = $this->Madmin->get_limit("chuyenmuc = 22  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
+        $data['life_style'] = $life_style;
+        $tam = $this->Madmin->get_limit("chuyenmuc = 23  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
+        $data['tam'] = $tam;
+        $tieu_dung = $this->Madmin->get_limit("chuyenmuc = 37  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
+        $data['tieu_dung'] = $tieu_dung;
         $giai_tri = $this->Madmin->get_limit("chuyenmuc = 40  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
         $data['giai_tri'] = $giai_tri;
+        $mat_ngu = $this->Madmin->get_limit("chuyenmuc = 46  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
+        $data['mat_ngu'] = $mat_ngu;
+        $yolo = $this->Madmin->get_limit("chuyenmuc = 47  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
+        $data['yolo'] = $yolo;
+        $nhac = $this->Madmin->get_limit("chuyenmuc = 48  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
+        $data['nhac'] = $nhac;
         $where = '';
         foreach($giai_tri as $val) {
             $where .=  ' AND ' . ' id != ' .  $val['id'];
         }
         $data['blog'] = $this->Madmin->get_limit(" index_blog = 1 AND type = 0 AND time_post <= $time $where", 'blogs', 0, 15);
-        $data['blog_new'] = $this->Madmin->get_limit("index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
+        $data['blog_new'] = $this->Madmin->get_limit("index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 7);
         $data['meta_title'] = 'Góc nhìn đa chiều phụ nữ Việt Nam - Phụ Nữ Plus';
         $data['meta_des'] = 'Phụ Nữ Plus là trang web chia sẻ kiến thức và kinh nghiệm hữu ích dành cho phụ nữ hiện đại. Đây như một cuốn cẩm nang giúp chị em có thêm nhiều bí kíp về tình yêu, sức khỏe, làm đẹp, chuyện vào bếp hay đi du lịch,… Phụ Nữ Plus hứa hẹn sẽ mang đến những thông tin chính xác, hữu ích nhất cho cuộc sống của chị em!';
         $data['content'] = 'home';
         $data['list_js'] = [
+            'slick.min.js',
             'home.js',
         ];
         $data['list_css'] = [
+            'slick.css',
+            'slick-theme.css',
             'home.css'
         ];
         $data['index'] = 1;
