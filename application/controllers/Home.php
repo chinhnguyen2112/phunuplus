@@ -34,13 +34,13 @@ class Home extends CI_Controller
         $time = time();
         $hots_week = $this->Madmin->get_limit("index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 10);
         $data['hots_week'] = $hots_week;
-        $yeu = $this->Madmin->get_limit("chuyenmuc = 1  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
+        $yeu = $this->Madmin->get_limit("chuyenmuc = 2  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
         $data['yeu'] = $yeu;
-        $dep = $this->Madmin->get_limit("chuyenmuc = 3  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
+        $dep = $this->Madmin->get_limit("chuyenmuc = 4  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
         $data['dep'] = $dep;
         $khoe = $this->Madmin->get_limit("chuyenmuc = 5  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
         $data['khoe'] = $khoe;
-        $bep = $this->Madmin->get_limit("chuyenmuc = 7  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
+        $bep = $this->Madmin->get_limit("chuyenmuc = 6  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
         $data['bep'] = $bep;
         $lam_me = $this->Madmin->get_limit("chuyenmuc = 10  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
         $data['lam_me'] = $lam_me;
