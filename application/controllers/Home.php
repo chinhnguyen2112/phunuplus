@@ -63,10 +63,9 @@ class Home extends CI_Controller
         $nhac = $this->Madmin->get_limit("chuyenmuc = 48  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
         $data['nhac'] = $nhac;
         $where = '';
-        foreach($giai_tri as $val) {
+        foreach ($giai_tri as $val) {
             $where .=  ' AND ' . ' id != ' .  $val['id'];
         }
-        $data['blog'] = $this->Madmin->get_limit(" index_blog = 1 AND type = 0 AND time_post <= $time $where", 'blogs', 0, 15);
         $data['blog_new'] = $this->Madmin->get_limit("index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 7);
         $data['meta_title'] = 'Góc nhìn đa chiều phụ nữ Việt Nam - Phụ Nữ Plus';
         $data['meta_des'] = 'Phụ Nữ Plus là trang web chia sẻ kiến thức và kinh nghiệm hữu ích dành cho phụ nữ hiện đại. Đây như một cuốn cẩm nang giúp chị em có thêm nhiều bí kíp về tình yêu, sức khỏe, làm đẹp, chuyện vào bếp hay đi du lịch,… Phụ Nữ Plus hứa hẹn sẽ mang đến những thông tin chính xác, hữu ích nhất cho cuộc sống của chị em!';

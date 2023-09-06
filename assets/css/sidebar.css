@@ -168,9 +168,11 @@ article.flex {
 .sidebar_box {
     margin-bottom: 20px;
 }
+
 .hot_news {
     margin-bottom: 20px;
 }
+
 .box_heading {
     text-align: center;
     padding: 10px;
@@ -310,6 +312,7 @@ article.flex {
 
 @media only screen and (max-width: 540px) {
     .sidebar_content {
+        display: none;
         width: 100%;
         margin-bottom: 40px;
     }
