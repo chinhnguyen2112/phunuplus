@@ -46,20 +46,6 @@ class Madmin extends CI_Model
         return $this->db->get($table)->num_rows();
         // echo $this->db->last_query();
     }
-    public function num_rows_candi($where = '', $or = [], $table)
-    {
-        $this->db->select('candidates.*, category.name as name_cat');
-        $this->db->join('category', 'category.id = candidates.cate');
-        if ($where != '') {
-            $this->db->where($where);
-        }
-        if ($or != null) {
-            $this->db->group_start();
-            $this->db->or_where($or);
-            $this->db->group_end();
-        }
-        return $this->db->get($table)->num_rows();
-    }
     public function get_by($where, $table)
     {
         $this->db->select('*');
@@ -86,21 +72,6 @@ class Madmin extends CI_Model
     public function list_where_or($where, $or = [], $table)
     {
         $this->db->select('*');
-        if ($where != '') {
-            $this->db->where($where);
-        }
-        if ($or != null) {
-            $this->db->group_start();
-            $this->db->or_where($or);
-            $this->db->group_end();
-        }
-        $this->db->order_by('updated_at', 'DESC');
-        return $this->db->get($table)->result_array();
-    }
-    public function list_uv_or($where, $or = [], $table)
-    {
-        $this->db->select('candidates.*, category.name as name_cat');
-        $this->db->join('category', 'category.id = candidates.cate');
         if ($where != '') {
             $this->db->where($where);
         }
@@ -173,6 +144,13 @@ class Madmin extends CI_Model
         }
         $this->db->order_by('id', 'DESC');
         return $this->db->get($table)->result_array();
+        // echo $this->db->last_query();
+    }
+    function add_view($where)
+    {
+        $this->db->set('view', 'view+1', FALSE);
+        $this->db->where($where);
+        return $this->db->update('blogs');
         // echo $this->db->last_query();
     }
 }

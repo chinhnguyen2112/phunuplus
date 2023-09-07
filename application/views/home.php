@@ -3,15 +3,15 @@
         <div class="right_home">
             <div class="blog_top">
                 <div class="border_blog">
-                    <a class="linl_all_detail" title="<?= $giai_tri[0]['title'] ?>" href="/<?= $giai_tri[0]['alias'] ?>/">
+                    <a class="linl_all_detail" title="<?= $blog[0]['title'] ?>" href="/<?= $blog[0]['alias'] ?>/">
                         <div class="blog_top_content blog_top_left">
-                            <img src="/<?= $giai_tri[0]['image'] ?>" alt="<?= $giai_tri[0]['title'] ?>">
+                            <img src="/<?= $blog[0]['image'] ?>" alt="<?= $blog[0]['title'] ?>">
                         </div>
                         <div class="blog_top_content blog_top_right">
                             <div class="bg_gradient"></div>
                             <div class="bg_gray">
-                                <p class="title_blog_top"><?= $giai_tri[0]['title'] ?></p>
-                                <div class="sapo_blog"><?= $giai_tri[0]['sapo'] ?></div>
+                                <p class="title_blog_top"><?= $blog[0]['title'] ?></p>
+                                <div class="sapo_blog"><?= $blog[0]['sapo'] ?></div>
                             </div>
                         </div>
                     </a>
@@ -28,16 +28,15 @@
                             <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
                                 <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
                             </a>
-                            <p class="name_cate_hots"><?php $cate = chuyen_muc(['id' => $val['chuyenmuc']]);
-                                                        echo $cate[0]['name']; ?></p>
+                            <p class="name_cate_hots"><?= $val['name_cate'] ?></p>
                             <p class="title_item_hots"><?= $val['title'] ?></p>
                         </div>
                     <?php  } ?>
                 </div>
             </div>
             <div class="list_blog_home">
-                <?php foreach ($giai_tri as $key => $val) {
-                    if ($key > 0 && $key < 5) { ?>
+                <?php foreach ($blog as $key => $val) {
+                    if ($key > 0) { ?>
                         <div class="this_content_right">
                             <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
                                 <p class="title_blog only_mobile"><?= $val['title'] ?></p>
@@ -47,8 +46,7 @@
                                 <div class="box_content_blog">
                                     <p class="title_blog"><?= $val['title'] ?></p>
                                     <div class="fl_date">
-                                        <p class="cate_post"><?php $cate = chuyen_muc(['id' => $val['chuyenmuc']]);
-                                                                echo $cate[0]['name']; ?></p>
+                                        <p class="cate_post"><?= $val['name_cate'] ?></p>
                                         <span class="dot_item"></span>
                                         <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p>
                                     </div>

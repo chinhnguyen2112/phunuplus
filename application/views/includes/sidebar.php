@@ -87,7 +87,7 @@
         </div>
         <div class="box_content">
             <ul>
-                <?php foreach ($blog_new as $key => $val) { ?>
+                <?php foreach ($blog_view as $key => $val) { ?>
                     <li class="item_hot_news">
                         <a href="/<?= $val['alias'] ?>"><?= $val['title'] ?></a>
                     </li>
@@ -110,7 +110,7 @@
         <div class="box_content">
             <ul>
                 <li class="item_content_sidebar">
-                    
+
                     Chuyện
                     <strong>
                         <a href="/chuyen-tinh-yeu/">Tình Yêu</a>
@@ -118,7 +118,7 @@
                     Lãng Mạn
                 </li>
                 <li class="item_content_sidebar">
-                    
+
                     Chăm Sóc
                     <strong>
                         <a href="/da-dep/">Da Đẹp</a>
@@ -126,7 +126,7 @@
                     Như Sao Hàn
                 </li>
                 <li class="item_content_sidebar">
-                    
+
                     Giá Trị Của
                     <strong>
                         <a href="/hon-nhan/">Hôn Nhân</a>
@@ -134,7 +134,7 @@
                     Vợ Chồng
                 </li>
                 <li class="item_content_sidebar">
-                    
+
                     Tiêu Chuẩn
                     <strong>
                         <a href="/dang-dep/">Dáng Đẹp</a>
@@ -142,7 +142,7 @@
                     Phụ Nữ Việt
                 </li>
                 <li class="item_content_sidebar">
-                    
+
                     Style
                     <strong>
                         <a href="/mac-dep/">Mặc Đẹp</a>

@@ -30,43 +30,33 @@ class Home extends CI_Controller
     }
     public function home()
     {
+        $monday = strtotime("this week 00:00:00");
         $data['canonical'] = base_url();
         $time = time();
-        $hots_week = $this->Madmin->get_limit("index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 10);
-        $data['hots_week'] = $hots_week;
-        $yeu = $this->Madmin->get_limit("chuyenmuc IN  ('2','12','24')  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
-        $data['yeu'] = $yeu;
-        $dep = $this->Madmin->get_limit("chuyenmuc IN ('4','16','17','18','19')  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
-        $data['dep'] = $dep;
-        $khoe = $this->Madmin->get_limit("chuyenmuc IN ('6','25','27','28')  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
-        $data['khoe'] = $khoe;
-        $bep = $this->Madmin->get_limit("chuyenmuc IN ('8','9','30','31')  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
-        $data['bep'] = $bep;
-        $lam_me = $this->Madmin->get_limit("chuyenmuc IN ('11','15','29')  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
-        $data['lam_me'] = $lam_me;
-        $life_style = $this->Madmin->get_limit("chuyenmuc = 22  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
-        $data['life_style'] = $life_style;
-        $tam = $this->Madmin->get_limit("chuyenmuc = 23  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
-        $data['tam'] = $tam;
-        $tieu_dung = $this->Madmin->get_limit("chuyenmuc IN ('38','39')  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
-        $data['tieu_dung'] = $tieu_dung;
-        $giai_tri = $this->Madmin->get_limit("chuyenmuc = 40  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
-        $data['giai_tri'] = $giai_tri;
-        $phong_su = $this->Madmin->get_limit("chuyenmuc = 41  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
-        $data['phong_su'] = $phong_su;
-        $ban_doc = $this->Madmin->get_limit("chuyenmuc = 42  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
-        $data['ban_doc'] = $ban_doc;
-        $mat_ngu = $this->Madmin->get_limit("chuyenmuc = 46  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
-        $data['mat_ngu'] = $mat_ngu;
-        $yolo = $this->Madmin->get_limit("chuyenmuc = 47  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
-        $data['yolo'] = $yolo;
-        $nhac = $this->Madmin->get_limit("chuyenmuc = 48  AND index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 3);
-        $data['nhac'] = $nhac;
+        $select = "SELECT id,title,alias,image,created_at,sapo FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time ";
+        $select_cate = "SELECT blogs.title,blogs.alias,blogs.image,blogs.created_at,blogs.sapo,chuyenmuc,category.name as name_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE index_blog = 1 AND type = 0 AND time_post <= $time ";
+        $data['blog'] = $this->Madmin->query_sql($select_cate . " ORDER BY created_at DESC  LIMIT 5");
+        $data['hots_week'] = $this->Madmin->query_sql($select_cate . " AND blogs.created_at >= $monday ORDER by view LIMIT 10");
+        $data['yeu'] = $this->Madmin->query_sql($select . " AND chuyenmuc IN  ('2','12','24') ORDER BY created_at DESC LIMIT 3");
+        $data['dep'] = $this->Madmin->query_sql($select . " AND chuyenmuc IN ('4','16','17','18','19') ORDER BY created_at DESC LIMIT 3");
+        $data['khoe'] = $this->Madmin->query_sql($select . " AND chuyenmuc IN ('6','25','27','28') ORDER BY created_at DESC LIMIT 3");
+        $data['bep'] = $this->Madmin->query_sql($select . " AND chuyenmuc IN ('8','9','30','31') ORDER BY created_at DESC LIMIT 3");
+        $data['lam_me'] = $this->Madmin->query_sql($select . " AND chuyenmuc IN ('11','15','29') ORDER BY created_at DESC LIMIT 3");
+        $data['life_style'] = $this->Madmin->query_sql($select . " AND chuyenmuc = 22 ORDER BY created_at DESC LIMIT 3");
+        $data['tam'] = $this->Madmin->query_sql($select . " AND chuyenmuc = 23 ORDER BY created_at DESC LIMIT 3");
+        $data['tieu_dung'] = $this->Madmin->query_sql($select . " AND chuyenmuc IN ('38','39') ORDER BY created_at DESC LIMIT 3");
+        $data['giai_tri'] = $giai_tri =  $this->Madmin->query_sql($select . " AND chuyenmuc = 40 ORDER BY created_at DESC LIMIT 3");
+        $data['phong_su'] = $this->Madmin->query_sql($select . " AND chuyenmuc = 41 ORDER BY created_at DESC LIMIT 3");
+        $data['ban_doc'] =  $this->Madmin->query_sql($select . " AND chuyenmuc = 42 ORDER BY created_at DESC LIMIT 3");
+        $data['mat_ngu'] = $this->Madmin->query_sql($select . " AND chuyenmuc = 46 ORDER BY created_at DESC LIMIT 3");
+        $data['yolo'] = $this->Madmin->query_sql($select . " AND chuyenmuc = 47 ORDER BY created_at DESC LIMIT 3");
+        $data['nhac'] = $this->Madmin->query_sql($select . " AND chuyenmuc = 48 ORDER BY created_at DESC LIMIT 3");
         $where = '';
         foreach ($giai_tri as $val) {
             $where .=  ' AND ' . ' id != ' .  $val['id'];
         }
-        $data['blog_new'] = $this->Madmin->get_limit("index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 7);
+        $data['blog_new'] =  $this->Madmin->query_sql($select . " ORDER BY updated_at DESC LIMIT 5");
+        $data['blog_view'] =  $this->Madmin->query_sql($select . " ORDER BY view DESC LIMIT 5");
         $data['meta_title'] = 'Góc nhìn đa chiều phụ nữ Việt Nam - Phụ Nữ Plus';
         $data['meta_des'] = 'Phụ Nữ Plus là trang web chia sẻ kiến thức và kinh nghiệm hữu ích dành cho phụ nữ hiện đại. Đây như một cuốn cẩm nang giúp chị em có thêm nhiều bí kíp về tình yêu, sức khỏe, làm đẹp, chuyện vào bếp hay đi du lịch,… Phụ Nữ Plus hứa hẹn sẽ mang đến những thông tin chính xác, hữu ích nhất cho cuộc sống của chị em!';
         $data['content'] = 'home';
@@ -99,6 +89,8 @@ class Home extends CI_Controller
             $blog = $this->Madmin->query_sql_row("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE index_blog =1 AND time_post<= $time AND blogs.alias = '$alias' ");
         }
         $tags = $this->Madmin->get_by(['alias' => $alias], 'tags');
+        $data['blog_new'] = $this->Madmin->query_sql("SELECT title,alias FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY updated_at DESC LIMIT 5");
+        $data['blog_view'] = $this->Madmin->query_sql("SELECT title,alias FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY view DESC LIMIT 5");
         if ($chuyenmuc != null) { //chuyenmuc
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
                 redirect('/' . $alias . '/', 'location', 301);
@@ -120,7 +112,6 @@ class Home extends CI_Controller
                 $cate_parent = $this->Madmin->get_by(['id' => $cate['parent']], 'category');
                 $data['cate_parent'] = $cate_parent;
             }
-            $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY id DESC LIMIT 5");
             $data['blog'] = $this->Madmin->get_limit_or("index_blog = 1 AND type = 0 AND time_post <= $time", $where_cate, 'blogs', 0, 18);
             $data['chuyenmuc'] = $chuyenmuc['id'];
             $data['meta_title'] = $chuyenmuc['meta_title'];
@@ -135,11 +126,13 @@ class Home extends CI_Controller
             ];
             $data['index'] = 1;
         } else if ($blog != null) { // blog
+            //add view
+            $this->Madmin->add_view(['alias' => $alias]);
+            //*/
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
                 redirect('/' . $alias . '/', 'location', 301);
             }
             $data['blog_same'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE chuyenmuc = {$blog['chuyenmuc']} AND index_blog = 1 AND type = 0 AND time_post <= $time AND id != {$blog['id']}  ORDER BY updated_at DESC LIMIT 6");
-            $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE  id != {$blog['id']} AND index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY id DESC LIMIT 5");
             $cate = $this->Madmin->query_sql_row("SELECT name,alias,parent FROM category  WHERE id = {$blog['chuyenmuc']} ");
             $data['cate'] = $cate;
             if ($cate != null && $cate['parent'] > 0) {
@@ -189,7 +182,6 @@ class Home extends CI_Controller
             $count = $this->Madmin->query_sql("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE index_blog = 1 AND type = 0 AND time_post <= $time AND ( $where ) ");
             pagination('/' . $tags['alias'], count($count), $limit);
             $data['blog'] = $this->Madmin->query_sql("SELECT * FROM blogs  WHERE index_blog = 1 AND type = 0 AND time_post <= $time AND ( $where ) ORDER BY id DESC LIMIT $start,$limit");
-            $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY id DESC LIMIT 5");
             $data['title_page'] = $tags['name'];
             $data['meta_title'] = $tags['meta_title'];
             $data['meta_des'] = $tags['meta_des'];
@@ -277,7 +269,8 @@ class Home extends CI_Controller
                 redirect('/' . $author['alias'] . '/', 'location', 301);
             }
             $blog = $this->Madmin->query_sql("SELECT * FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time AND author_id = '{$author['id']}' LIMIT 20");
-            $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY id DESC LIMIT 5");
+            $data['blog_new'] = $this->Madmin->query_sql("SELECT title,alias FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY updated_at DESC LIMIT 5");
+            $data['blog_view'] = $this->Madmin->query_sql("SELECT title,alias FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY view DESC LIMIT 5");
             $data['blog'] = $blog;
             $data['author'] = $author;
             $data['list_js'] = [
