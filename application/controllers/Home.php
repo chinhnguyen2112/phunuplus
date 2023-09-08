@@ -280,9 +280,9 @@ class Home extends CI_Controller
             $data['list_css'] = [
                 'author.css',
             ];
-            $data['meta_title'] = $author['name'] . ' Tác giả tại Phunuplus';
-            $data['meta_des'] = $author['name'];
-            $data['meta_key'] = $author['name'];
+            $data['meta_title'] = $author['meta_title'];
+            $data['meta_des'] = $author['meta_des'];
+            $data['meta_key'] = $author['meta_key'];
             $data['meta_img'] = $author['image'];
             $data['index'] = 1;
             $data['content'] = 'author';
