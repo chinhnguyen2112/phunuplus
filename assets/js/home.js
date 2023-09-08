@@ -30,7 +30,7 @@ $(".load_more").click(function () {
 var val = 0;
 var width = screen.width;
 if (width > 540) {
-	val = 3;
+	val = 4;
 } else {
 	val = 1;
 }
