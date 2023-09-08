@@ -32,6 +32,59 @@
             </div>
         </div>
     </div>
+    <div class="sidebar_box">
+        <div class="box_heading">
+            <a href="#">
+                <img src="/images/icons/icon_contact.png" alt="icon liên kết hữu ích">
+                Liên Kết Hữu Ích
+            </a>
+        </div>
+        <div class="box_content">
+            <ul>
+                <li class="item_content_sidebar">
+
+                    Chuyện
+                    <strong>
+                        <a href="/chuyen-tinh-yeu/">Tình Yêu</a>
+                    </strong>
+                    Lãng Mạn
+                </li>
+                <li class="item_content_sidebar">
+
+                    Chăm Sóc
+                    <strong>
+                        <a href="/da-dep/">Da Đẹp</a>
+                    </strong>
+                    Như Sao Hàn
+                </li>
+                <li class="item_content_sidebar">
+
+                    Giá Trị Của
+                    <strong>
+                        <a href="/hon-nhan/">Hôn Nhân</a>
+                    </strong>
+                    Vợ Chồng
+                </li>
+                <li class="item_content_sidebar">
+
+                    Tiêu Chuẩn
+                    <strong>
+                        <a href="/dang-dep/">Dáng Đẹp</a>
+                    </strong>
+                    Phụ Nữ Việt
+                </li>
+                <li class="item_content_sidebar">
+
+                    Style
+                    <strong>
+                        <a href="/mac-dep/">Mặc Đẹp</a>
+                    </strong>
+                    Dành Cho Phái Nữ
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <!-- <div class="outstanding">
         <ul class="content_outs">
             <article class="flex">
@@ -100,57 +153,5 @@
             </div>
         </div>
     </div>
-    <div class="sidebar_box">
-        <div class="box_heading">
-            <a href="#">
-                <img src="/images/icons/icon_contact.png" alt="icon liên kết hữu ích">
-                Liên Kết Hữu Ích
-            </a>
-        </div>
-        <div class="box_content">
-            <ul>
-                <li class="item_content_sidebar">
-
-                    Chuyện
-                    <strong>
-                        <a href="/chuyen-tinh-yeu/">Tình Yêu</a>
-                    </strong>
-                    Lãng Mạn
-                </li>
-                <li class="item_content_sidebar">
-
-                    Chăm Sóc
-                    <strong>
-                        <a href="/da-dep/">Da Đẹp</a>
-                    </strong>
-                    Như Sao Hàn
-                </li>
-                <li class="item_content_sidebar">
-
-                    Giá Trị Của
-                    <strong>
-                        <a href="/hon-nhan/">Hôn Nhân</a>
-                    </strong>
-                    Vợ Chồng
-                </li>
-                <li class="item_content_sidebar">
-
-                    Tiêu Chuẩn
-                    <strong>
-                        <a href="/dang-dep/">Dáng Đẹp</a>
-                    </strong>
-                    Phụ Nữ Việt
-                </li>
-                <li class="item_content_sidebar">
-
-                    Style
-                    <strong>
-                        <a href="/mac-dep/">Mặc Đẹp</a>
-                    </strong>
-                    Dành Cho Phái Nữ
-                </li>
-            </ul>
-        </div>
-    </div>
-
+   
 </div>
