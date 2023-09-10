@@ -29,14 +29,18 @@ $(".load_more").click(function () {
 
 var val = 0;
 var width = screen.width;
-if (width > 540) {
-	val = 4;
-} else {
+if (width < 540) {
 	val = 1;
+} else if (width < 768) {
+	val = 2;
+} else if (width < 1024) {
+	val = 3;
+} else {
+	val = 4;
 }
 $(".slider_hots_week").slick({
 	autoplay: true,
-	autoplaySpeed: 1000,
+	autoplaySpeed: 100000,
 	arrows: true,
 	prevArrow:
 		'<button type="button" class="slick-prev"><img src="/images/icons/icon_arrow_slide.png" alt="icon prev"></button>',
