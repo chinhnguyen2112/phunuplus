@@ -29,10 +29,8 @@ $(".load_more").click(function () {
 
 var val = 0;
 var width = screen.width;
-if (width < 540) {
+if (width < 768) {
 	val = 1;
-} else if (width < 768) {
-	val = 2;
 } else if (width < 1024) {
 	val = 3;
 } else {
@@ -40,7 +38,7 @@ if (width < 540) {
 }
 $(".slider_hots_week").slick({
 	autoplay: true,
-	autoplaySpeed: 100000,
+	autoplaySpeed: 1000,
 	arrows: true,
 	prevArrow:
 		'<button type="button" class="slick-prev"><img src="/images/icons/icon_arrow_slide.png" alt="icon prev"></button>',
