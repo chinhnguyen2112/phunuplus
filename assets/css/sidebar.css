@@ -309,6 +309,9 @@ article.flex {
     .flex a {
         font-size: 12px;
     }
+    .sidebar_box {
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 540px) {

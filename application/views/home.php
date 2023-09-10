@@ -74,20 +74,18 @@
                         <a class="first_item_cate" title="<?= $yeu[0]['title'] ?>" href="/<?= $yeu[0]['alias'] ?>/">
                             <img src="/<?= $yeu[0]['image'] ?>" alt="<?= $yeu[0]['title'] ?>">
                             <p class="title_blog_cate"><?= $yeu[0]['title'] ?></p>
-                            <div class="sapo_item_cate"><?= $yeu[0]['sapo'] ?>
-                                <p>Sau khi trải qua các phần thi, Lê Hoàng Phương xuất sắc đăng quang Hoa hậu Hòa
-                                    bình Việt Nam 2023. Đây là một kết quả nhận được sự đồng tình, ủng hộ từ phía
-                                    khán giả.
-                                </p>
-                            </div>
+                            <!-- <div class="sapo_item_cate"><?= $yeu[0]['sapo'] ?></div> -->
                         </a>
-                        <?php foreach ($yeu as $key => $val) {
-                            if ($key > 0 && $key < 3) { ?>
-                                <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                    <p class="title_blog_cate_child"><?= $val['title'] ?></p>
-                                </a>
-                        <?php }
-                        }  ?>
+                        <div class="list_blog_child">
+                            <?php foreach ($yeu as $key => $val) {
+                                if ($key > 0 && $key < 6) { ?>
+                                    <a class="item_blog_child" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <p class="title_blog_cate_child"><?= $val['title'] ?></p>
+                                    </a>
+                            <?php }
+                            }  ?>
+                        </div>
                     </div>
                 </div>
 
@@ -102,20 +100,18 @@
                         <a class="first_item_cate" title="<?= $dep[0]['title'] ?>" href="/<?= $dep[0]['alias'] ?>/">
                             <img src="/<?= $dep[0]['image'] ?>" alt="<?= $dep[0]['title'] ?>">
                             <p class="title_blog_cate"><?= $dep[0]['title'] ?></p>
-                            <div class="sapo_item_cate"><?= $dep[0]['sapo'] ?>
-                                <p>Sau khi trải qua các phần thi, Lê Hoàng Phương xuất sắc đăng quang Hoa hậu Hòa
-                                    bình Việt Nam 2023. Đây là một kết quả nhận được sự đồng tình, ủng hộ từ phía
-                                    khán giả.
-                                </p>
-                            </div>
+                            <!-- <div class="sapo_item_cate"><?= $dep[0]['sapo'] ?></div> -->
                         </a>
-                        <?php foreach ($dep as $key => $val) {
-                            if ($key > 0 && $key < 3) { ?>
-                                <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                    <p class="title_blog_cate_child"><?= $val['title'] ?></p>
-                                </a>
-                        <?php }
+                        <div class="list_blog_child">
+                            <?php foreach ($dep as $key => $val) {
+                                if ($key > 0 && $key < 6) { ?>
+                                    <a class="item_blog_child" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <p class="title_blog_cate_child"><?= $val['title'] ?></p>
+                                    </a>
+                            <?php }
                         }  ?>
+                        </div>
                     </div>
                 </div>
 
@@ -130,20 +126,18 @@
                         <a class="first_item_cate" title="<?= $khoe[0]['title'] ?>" href="/<?= $khoe[0]['alias'] ?>/">
                             <img src="/<?= $khoe[0]['image'] ?>" alt="<?= $khoe[0]['title'] ?>">
                             <p class="title_blog_cate"><?= $khoe[0]['title'] ?></p>
-                            <div class="sapo_item_cate"><?= $khoe[0]['sapo'] ?>
-                                <p>Sau khi trải qua các phần thi, Lê Hoàng Phương xuất sắc đăng quang Hoa hậu Hòa
-                                    bình Việt Nam 2023. Đây là một kết quả nhận được sự đồng tình, ủng hộ từ phía
-                                    khán giả.
-                                </p>
-                            </div>
+                            <!-- <div class="sapo_item_cate"><?= $khoe[0]['sapo'] ?></div> -->
                         </a>
-                        <?php foreach ($khoe as $key => $val) {
-                            if ($key > 0 && $key < 3) { ?>
-                                <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                    <p class="title_blog_cate_child"><?= $val['title'] ?></p>
-                                </a>
-                        <?php }
-                        }  ?>
+                        <div class="list_blog_child">
+                            <?php foreach ($khoe as $key => $val) {
+                                if ($key > 0 && $key < 6) { ?>
+                                    <a class="item_blog_child" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <p class="title_blog_cate_child"><?= $val['title'] ?></p>
+                                    </a>
+                            <?php }
+                            }  ?>
+                        </div>
                     </div>
                 </div>
 
@@ -158,20 +152,18 @@
                         <a class="first_item_cate" title="<?= $bep[0]['title'] ?>" href="/<?= $bep[0]['alias'] ?>/">
                             <img src="/<?= $bep[0]['image'] ?>" alt="<?= $bep[0]['title'] ?>">
                             <p class="title_blog_cate"><?= $bep[0]['title'] ?></p>
-                            <div class="sapo_item_cate"><?= $bep[0]['sapo'] ?>
-                                <p>Sau khi trải qua các phần thi, Lê Hoàng Phương xuất sắc đăng quang Hoa hậu Hòa
-                                    bình Việt Nam 2023. Đây là một kết quả nhận được sự đồng tình, ủng hộ từ phía
-                                    khán giả.
-                                </p>
-                            </div>
+                            <!-- <div class="sapo_item_cate"><?= $bep[0]['sapo'] ?></div> -->
                         </a>
-                        <?php foreach ($bep as $key => $val) {
-                            if ($key > 0 && $key < 3) { ?>
-                                <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                    <p class="title_blog_cate_child"><?= $val['title'] ?></p>
-                                </a>
-                        <?php }
-                        }  ?>
+                        <div class="list_blog_child">
+                            <?php foreach ($bep as $key => $val) {
+                                if ($key > 0 && $key < 6) { ?>
+                                    <a class="item_blog_child" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <p class="title_blog_cate_child"><?= $val['title'] ?></p>
+                                    </a>
+                            <?php }
+                            }  ?>
+                        </div>
                     </div>
                 </div>
 
@@ -186,20 +178,18 @@
                         <a class="first_item_cate" title="<?= $lam_me[0]['title'] ?>" href="/<?= $lam_me[0]['alias'] ?>/">
                             <img src="/<?= $lam_me[0]['image'] ?>" alt="<?= $lam_me[0]['title'] ?>">
                             <p class="title_blog_cate"><?= $lam_me[0]['title'] ?></p>
-                            <div class="sapo_item_cate"><?= $lam_me[0]['sapo'] ?>
-                                <p>Sau khi trải qua các phần thi, Lê Hoàng Phương xuất sắc đăng quang Hoa hậu Hòa
-                                    bình Việt Nam 2023. Đây là một kết quả nhận được sự đồng tình, ủng hộ từ phía
-                                    khán giả.
-                                </p>
-                            </div>
+                            <!-- <div class="sapo_item_cate"><?= $lam_me[0]['sapo'] ?></div> -->
                         </a>
-                        <?php foreach ($lam_me as $key => $val) {
-                            if ($key > 0 && $key < 3) { ?>
-                                <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                    <p class="title_blog_cate_child"><?= $val['title'] ?></p>
-                                </a>
-                        <?php }
-                        } ?>
+                        <div class="list_blog_child">
+                            <?php foreach ($lam_me as $key => $val) {
+                                if ($key > 0 && $key < 6) { ?>
+                                    <a class="item_blog_child" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <p class="title_blog_cate_child"><?= $val['title'] ?></p>
+                                    </a>
+                            <?php }
+                            } ?>
+                        </div>
                     </div>
                 </div>
 
@@ -214,20 +204,18 @@
                         <a class="first_item_cate" title="<?= $life_style[0]['title'] ?>" href="/<?= $life_style[0]['alias'] ?>/">
                             <img src="/<?= $life_style[0]['image'] ?>" alt="<?= $life_style[0]['title'] ?>">
                             <p class="title_blog_cate"><?= $life_style[0]['title'] ?></p>
-                            <div class="sapo_item_cate"><?= $life_style[0]['sapo'] ?>
-                                <p>Sau khi trải qua các phần thi, Lê Hoàng Phương xuất sắc đăng quang Hoa hậu Hòa
-                                    bình Việt Nam 2023. Đây là một kết quả nhận được sự đồng tình, ủng hộ từ phía
-                                    khán giả.
-                                </p>
-                            </div>
+                            <!-- <div class="sapo_item_cate"><?= $life_style[0]['sapo'] ?></div> -->
                         </a>
-                        <?php foreach ($life_style as $key => $val) {
-                            if ($key > 0 && $key < 3) { ?>
-                                <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                    <p class="title_blog_cate_child"><?= $val['title'] ?></p>
-                                </a>
-                        <?php }
-                        } ?>
+                        <div class="list_blog_child">
+                            <?php foreach ($life_style as $key => $val) {
+                                if ($key > 0 && $key < 6) { ?>
+                                    <a class="item_blog_child" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <p class="title_blog_cate_child"><?= $val['title'] ?></p>
+                                    </a>
+                            <?php }
+                            } ?>
+                        </div>
                     </div>
                 </div>
 
@@ -242,20 +230,18 @@
                         <a class="first_item_cate" title="<?= $tam[0]['title'] ?>" href="/<?= $tam[0]['alias'] ?>/">
                             <img src="/<?= $tam[0]['image'] ?>" alt="<?= $tam[0]['title'] ?>">
                             <p class="title_blog_cate"><?= $tam[0]['title'] ?></p>
-                            <div class="sapo_item_cate"><?= $tam[0]['sapo'] ?>
-                                <p>Sau khi trải qua các phần thi, Lê Hoàng Phương xuất sắc đăng quang Hoa hậu Hòa
-                                    bình Việt Nam 2023. Đây là một kết quả nhận được sự đồng tình, ủng hộ từ phía
-                                    khán giả.
-                                </p>
-                            </div>
+                            <!-- <div class="sapo_item_cate"><?= $tam[0]['sapo'] ?></div> -->
                         </a>
-                        <?php foreach ($tam as $key => $val) {
-                            if ($key > 0 && $key < 3) { ?>
-                                <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                    <p class="title_blog_cate_child"><?= $val['title'] ?></p>
-                                </a>
-                        <?php }
-                        } ?>
+                        <div class="list_blog_child">
+                            <?php foreach ($tam as $key => $val) {
+                                if ($key > 0 && $key < 6) { ?>
+                                    <a class="item_blog_child" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <p class="title_blog_cate_child"><?= $val['title'] ?></p>
+                                    </a>
+                            <?php }
+                            } ?>
+                        </div>
                     </div>
                 </div>
             <?php }
@@ -269,20 +255,18 @@
                         <a class="first_item_cate" title="<?= $tieu_dung[0]['title'] ?>" href="/<?= $tieu_dung[0]['alias'] ?>/">
                             <img src="/<?= $tieu_dung[0]['image'] ?>" alt="<?= $tieu_dung[0]['title'] ?>">
                             <p class="title_blog_cate"><?= $tieu_dung[0]['title'] ?></p>
-                            <div class="sapo_item_cate"><?= $tieu_dung[0]['sapo'] ?>
-                                <p>Sau khi trải qua các phần thi, Lê Hoàng Phương xuất sắc đăng quang Hoa hậu Hòa
-                                    bình Việt Nam 2023. Đây là một kết quả nhận được sự đồng tình, ủng hộ từ phía
-                                    khán giả.
-                                </p>
-                            </div>
+                            <!-- <div class="sapo_item_cate"><?= $tieu_dung[0]['sapo'] ?></div> -->
                         </a>
-                        <?php foreach ($tieu_dung as $key => $val) {
-                            if ($key > 0 && $key < 3) { ?>
-                                <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                    <p class="title_blog_cate_child"><?= $val['title'] ?></p>
-                                </a>
-                        <?php }
-                        }  ?>
+                        <div class="list_blog_child">
+                            <?php foreach ($tieu_dung as $key => $val) {
+                                if ($key > 0 && $key < 6) { ?>
+                                    <a class="item_blog_child" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <p class="title_blog_cate_child"><?= $val['title'] ?></p>
+                                    </a>
+                            <?php }
+                            }  ?>
+                        </div>
                     </div>
                 </div>
 
@@ -297,20 +281,18 @@
                         <a class="first_item_cate" title="<?= $giai_tri[0]['title'] ?>" href="/<?= $giai_tri[0]['alias'] ?>/">
                             <img src="/<?= $giai_tri[0]['image'] ?>" alt="<?= $giai_tri[0]['title'] ?>">
                             <p class="title_blog_cate"><?= $giai_tri[0]['title'] ?></p>
-                            <div class="sapo_item_cate"><?= $giai_tri[0]['sapo'] ?>
-                                <p>Sau khi trải qua các phần thi, Lê Hoàng Phương xuất sắc đăng quang Hoa hậu Hòa
-                                    bình Việt Nam 2023. Đây là một kết quả nhận được sự đồng tình, ủng hộ từ phía
-                                    khán giả.
-                                </p>
-                            </div>
+                            <!-- <div class="sapo_item_cate"><?= $giai_tri[0]['sapo'] ?></div> -->
                         </a>
-                        <?php foreach ($giai_tri as $key => $val) {
-                            if ($key > 0 && $key < 3) { ?>
-                                <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                    <p class="title_blog_cate_child"><?= $val['title'] ?></p>
-                                </a>
-                        <?php }
-                        }  ?>
+                        <div class="list_blog_child">
+                            <?php foreach ($giai_tri as $key => $val) {
+                                if ($key > 0 && $key < 6) { ?>
+                                    <a class="item_blog_child" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <p class="title_blog_cate_child"><?= $val['title'] ?></p>
+                                    </a>
+                            <?php }
+                            }  ?>
+                        </div>
                     </div>
                 </div>
 
@@ -325,20 +307,18 @@
                         <a class="first_item_cate" title="<?= $mat_ngu[0]['title'] ?>" href="/<?= $mat_ngu[0]['alias'] ?>/">
                             <img src="/<?= $mat_ngu[0]['image'] ?>" alt="<?= $mat_ngu[0]['title'] ?>">
                             <p class="title_blog_cate"><?= $mat_ngu[0]['title'] ?></p>
-                            <div class="sapo_item_cate"><?= $mat_ngu[0]['sapo'] ?>
-                                <p>Sau khi trải qua các phần thi, Lê Hoàng Phương xuất sắc đăng quang Hoa hậu Hòa
-                                    bình Việt Nam 2023. Đây là một kết quả nhận được sự đồng tình, ủng hộ từ phía
-                                    khán giả.
-                                </p>
-                            </div>
+                            <!-- <div class="sapo_item_cate"><?= $mat_ngu[0]['sapo'] ?></div> -->
                         </a>
-                        <?php foreach ($mat_ngu as $key => $val) {
-                            if ($key > 0 && $key < 3) { ?>
-                                <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                    <p class="title_blog_cate_child"><?= $val['title'] ?></p>
-                                </a>
-                        <?php }
-                        } ?>
+                        <div class="list_blog_child">
+                            <?php foreach ($mat_ngu as $key => $val) {
+                                if ($key > 0 && $key < 6) { ?>
+                                    <a class="item_blog_child" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <p class="title_blog_cate_child"><?= $val['title'] ?></p>
+                                    </a>
+                            <?php }
+                            } ?>
+                        </div>
                     </div>
                 </div>
 
@@ -353,20 +333,18 @@
                         <a class="first_item_cate" title="<?= $phong_su[0]['title'] ?>" href="/<?= $phong_su[0]['alias'] ?>/">
                             <img src="/<?= $phong_su[0]['image'] ?>" alt="<?= $phong_su[0]['title'] ?>">
                             <p class="title_blog_cate"><?= $phong_su[0]['title'] ?></p>
-                            <div class="sapo_item_cate"><?= $phong_su[0]['sapo'] ?>
-                                <p>Sau khi trải qua các phần thi, Lê Hoàng Phương xuất sắc đăng quang Hoa hậu Hòa
-                                    bình Việt Nam 2023. Đây là một kết quả nhận được sự đồng tình, ủng hộ từ phía
-                                    khán giả.
-                                </p>
-                            </div>
+                            <!-- <div class="sapo_item_cate"><?= $phong_su[0]['sapo'] ?></div> -->
                         </a>
-                        <?php foreach ($phong_su as $key => $val) {
-                            if ($key > 0 && $key < 3) { ?>
-                                <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                    <p class="title_blog_cate_child"><?= $val['title'] ?></p>
-                                </a>
-                        <?php }
-                        } ?>
+                        <div class="list_blog_child">
+                            <?php foreach ($phong_su as $key => $val) {
+                                if ($key > 0 && $key < 6) { ?>
+                                    <a class="item_blog_child" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <p class="title_blog_cate_child"><?= $val['title'] ?></p>
+                                    </a>
+                            <?php }
+                            } ?>
+                        </div>
                     </div>
                 </div>
 
@@ -381,20 +359,18 @@
                         <a class="first_item_cate" title="<?= $ban_doc[0]['title'] ?>" href="/<?= $ban_doc[0]['alias'] ?>/">
                             <img src="/<?= $ban_doc[0]['image'] ?>" alt="<?= $ban_doc[0]['title'] ?>">
                             <p class="title_blog_cate"><?= $ban_doc[0]['title'] ?></p>
-                            <div class="sapo_item_cate"><?= $ban_doc[0]['sapo'] ?>
-                                <p>Sau khi trải qua các phần thi, Lê Hoàng Phương xuất sắc đăng quang Hoa hậu Hòa
-                                    bình Việt Nam 2023. Đây là một kết quả nhận được sự đồng tình, ủng hộ từ phía
-                                    khán giả.
-                                </p>
-                            </div>
+                            <div class="sapo_item_cate"><?= $ban_doc[0]['sapo'] ?></div>
                         </a>
-                        <?php foreach ($ban_doc as $key => $val) {
-                            if ($key > 0 && $key < 3) { ?>
-                                <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                    <p class="title_blog_cate_child"><?= $val['title'] ?></p>
-                                </a>
-                        <?php }
-                        }  ?>
+                        <div class="list_blog_child">
+                            <?php foreach ($ban_doc as $key => $val) {
+                                if ($key > 0 && $key < 6) { ?>
+                                    <a class="item_blog_child" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <p class="title_blog_cate_child"><?= $val['title'] ?></p>
+                                    </a>
+                            <?php }
+                            }  ?>
+                        </div>
                     </div>
                 </div>
 
@@ -409,20 +385,18 @@
                         <a class="first_item_cate" title="<?= $yolo[0]['title'] ?>" href="/<?= $yolo[0]['alias'] ?>/">
                             <img src="/<?= $yolo[0]['image'] ?>" alt="<?= $yolo[0]['title'] ?>">
                             <p class="title_blog_cate"><?= $yolo[0]['title'] ?></p>
-                            <div class="sapo_item_cate"><?= $yolo[0]['sapo'] ?>
-                                <p>Sau khi trải qua các phần thi, Lê Hoàng Phương xuất sắc đăng quang Hoa hậu Hòa
-                                    bình Việt Nam 2023. Đây là một kết quả nhận được sự đồng tình, ủng hộ từ phía
-                                    khán giả.
-                                </p>
-                            </div>
+                            <!-- <div class="sapo_item_cate"><?= $yolo[0]['sapo'] ?></div> -->
                         </a>
-                        <?php foreach ($yolo as $key => $val) {
-                            if ($key > 0 && $key < 3) { ?>
-                                <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                    <p class="title_blog_cate_child"><?= $val['title'] ?></p>
-                                </a>
-                        <?php }
-                        } ?>
+                        <div class="list_blog_child">
+                            <?php foreach ($yolo as $key => $val) {
+                                if ($key > 0 && $key < 6) { ?>
+                                    <a class="item_blog_child" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <p class="title_blog_cate_child"><?= $val['title'] ?></p>
+                                    </a>
+                            <?php }
+                            } ?>
+                        </div>
                     </div>
                 </div>
             <?php }
@@ -436,20 +410,18 @@
                         <a class="first_item_cate" title="<?= $nhac[0]['title'] ?>" href="/<?= $nhac[0]['alias'] ?>/">
                             <img src="/<?= $nhac[0]['image'] ?>" alt="<?= $nhac[0]['title'] ?>">
                             <p class="title_blog_cate"><?= $nhac[0]['title'] ?></p>
-                            <div class="sapo_item_cate"><?= $nhac[0]['sapo'] ?>
-                                <p>Sau khi trải qua các phần thi, Lê Hoàng Phương xuất sắc đăng quang Hoa hậu Hòa
-                                    bình Việt Nam 2023. Đây là một kết quả nhận được sự đồng tình, ủng hộ từ phía
-                                    khán giả.
-                                </p>
-                            </div>
+                            <!-- <div class="sapo_item_cate"><?= $nhac[0]['sapo'] ?></div> -->
                         </a>
-                        <?php foreach ($nhac as $key => $val) {
-                            if ($key > 0 && $key < 3) { ?>
-                                <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                    <p class="title_blog_cate_child"><?= $val['title'] ?></p>
-                                </a>
-                        <?php }
-                        } ?>
+                        <div class="list_blog_child">
+                            <?php foreach ($nhac as $key => $val) {
+                                if ($key > 0 && $key < 6) { ?>
+                                    <a class="item_blog_child" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <p class="title_blog_cate_child"><?= $val['title'] ?></p>
+                                    </a>
+                            <?php }
+                            } ?>
+                        </div>
                     </div>
                 </div>
             <?php } ?>
