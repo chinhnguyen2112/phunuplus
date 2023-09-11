@@ -512,12 +512,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+.all_cate .item_cate:not(:last-child) {
+    border-bottom: 1px solid #C6C5C5;
+}
 .item_cate {
     width: 100%;
     margin-bottom: 30px;
 }
-
 .title_item_cate {
     display: flex;
     margin-bottom: 20px;
@@ -538,7 +539,7 @@
 .content_item_cate {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #C6C5C5;
+    /* border-bottom: 1px solid #C6C5C5; */
 }
 .content_item_cate a {
     display: block;
