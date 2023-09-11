@@ -1,3 +1,10 @@
+<?php if ($hots_week == null) { ?>
+    <style>
+        .sidebar_box {
+            margin-bottom: 20px !important;
+        }
+    </style>
+<?php } ?>
 <div class="homeContent body_width">
     <div class="container_widget ">
         <div class="right_home">
@@ -17,23 +24,25 @@
                     </a>
                 </div>
             </div>
-            <div class="hots_week">
-                <div class="title_hots">
-                    <p>Tiêu Điểm Tuần</p>
-                    <div class="border_dotted"></div>
+            <?php if ($hots_week != null) { ?>
+                <div class="hots_week">
+                    <div class="title_hots">
+                        <p>Tiêu Điểm Tuần</p>
+                        <div class="border_dotted"></div>
+                    </div>
+                    <div class="slider_hots_week">
+                        <?php foreach ($hots_week as $key => $val) { ?>
+                            <div class="item_slide_hots">
+                                <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                    <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                </a>
+                                <p class="name_cate_hots"><?= $val['name_cate'] ?></p>
+                                <p class="title_item_hots"><?= $val['title'] ?></p>
+                            </div>
+                        <?php  } ?>
+                    </div>
                 </div>
-                <div class="slider_hots_week">
-                    <?php foreach ($hots_week as $key => $val) { ?>
-                        <div class="item_slide_hots">
-                            <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
-                            </a>
-                            <p class="name_cate_hots"><?= $val['name_cate'] ?></p>
-                            <p class="title_item_hots"><?= $val['title'] ?></p>
-                        </div>
-                    <?php  } ?>
-                </div>
-            </div>
+            <?php } ?>
             <div class="list_blog_home">
                 <?php foreach ($blog as $key => $val) {
                     if ($key > 0) { ?>
@@ -110,7 +119,7 @@
                                         <p class="title_blog_cate_child"><?= $val['title'] ?></p>
                                     </a>
                             <?php }
-                        }  ?>
+                            }  ?>
                         </div>
                     </div>
                 </div>
