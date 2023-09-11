@@ -23,13 +23,13 @@
                     <div class="border_dotted"></div>
                 </div>
                 <div class="slider_hots_week">
-                    <?php foreach ($yeu as $key => $val) { ?>
+                    <?php foreach ($hots_week as $key => $val) { ?>
                         <div class="item_slide_hots">
                             <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
                                 <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
                             </a>
-                            <!-- <p class="name_cate_hots"><?= $val['name_cate'] ?></p>
-                            <p class="title_item_hots"><?= $val['title'] ?></p> -->
+                            <p class="name_cate_hots"><?= $val['name_cate'] ?></p>
+                            <p class="title_item_hots"><?= $val['title'] ?></p>
                         </div>
                     <?php  } ?>
                 </div>
