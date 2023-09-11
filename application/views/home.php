@@ -68,11 +68,7 @@
                 <?php }
                 } ?>
             </div>
-        </div>
-        <?php include('includes/sidebar.php') ?>
-    </div>
-    <div class="container_widget container_widget_2">
-        <div class="all_cate">
+            <div class="all_cate">
             <?php if ($yeu != null) { ?>
                 <div class="item_cate">
                     <div class="title_item_cate">
@@ -434,29 +430,11 @@
                     </div>
                 </div>
             <?php } ?>
-
-            <!-- <div class="item_cate item_cate_last">
-                <div class="title_item_cate">
-                    <span class="bg_color"></span>
-                    <p>Nhạc</p>
-                </div>
-                <div class="content_item_cate content_cate_last">
-                    <?php if ($nhac != null) { ?>
-                    <a class="link_cate_last" title="<?= $nhac[0]['title'] ?>" href="/<?= $nhac[0]['alias'] ?>/">
-                        <img src="/<?= $nhac[0]['image'] ?>" alt="<?= $nhac[0]['title'] ?>">
-                        <div class="content_item_last">
-                            <p class="title_blog_cate"><?= $nhac[0]['title'] ?></p>
-                            <div class="sapo_item_cate_last"><?= $nhac[0]['sapo'] ?>
-                                <p>Sau khi trải qua các phần thi, Lê Hoàng Phương xuất sắc đăng quang Hoa hậu Hòa
-                                    bình Việt Nam 2023. Đây là một kết quả nhận được sự đồng tình, ủng hộ từ phía
-                                    khán giả.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    <?php } ?>
-                </div>
-            </div> -->
         </div>
+        </div>
+        <?php include('includes/sidebar.php') ?>
+    </div>
+    <div class="container_widget container_widget_2">
+       
     </div>
 </div>
