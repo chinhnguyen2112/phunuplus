@@ -7,7 +7,7 @@ if (count($menu_cate_parent) > 2) {
     <div class="footer-widgets body_width">
         <div class="content_footer">
             <div class="ft_left">
-                <img class="logo_ft" src="/images/logo.png" alt="logo footer">
+                <img class="logo_ft" src="/images/logo_whitle.png" alt="logo footer">
                 <div class="widget">
                     <p class="title_widget">GÓC NHÌN ĐA CHIỀU PHỤ NỮ VIỆT NAM</p>
                     <div class="contact_infor">
@@ -18,15 +18,15 @@ if (count($menu_cate_parent) > 2) {
                             </li>
                             <li>
                                 <img src="/images/icons/icon_website.png" alt="icon website">
-                                <p>phunuso.vn -</p>
+                                <p>phunuplus.vn -</p>
                             </li>
                             <li style="margin-left:3px;width:51%">
                                 <img src="/images/icons/icon_mail.png" alt="icon email">
-                                <p>cs.phunuso@gmail.com</p>
+                                <p>cs.phunuplus@gmail.com</p>
                             </li>
                             <li>
                                 <img src="/images/icons/icon_facebook.png" alt="icon facebook">
-                                <p>fb.com/phunuso.vn</p>
+                                <p>fb.com/phunuplus.vn</p>
                             </li>
                         </ul>
                     </div>
