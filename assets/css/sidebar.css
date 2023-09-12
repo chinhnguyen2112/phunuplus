@@ -188,6 +188,12 @@ article.flex {
     display: block;
 }
 
+.fl_a {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .box_heading img {
     width: 22px;
@@ -309,6 +315,7 @@ article.flex {
     .flex a {
         font-size: 12px;
     }
+
     .sidebar_box {
         margin-bottom: 20px;
     }

@@ -34,9 +34,9 @@
     </div>
     <div class="sidebar_box">
         <div class="box_heading">
-            <a href="#">
+            <a href="#" class="fl_a">
                 <img src="/images/icons/icon_contact.png" alt="icon liên kết hữu ích">
-                Liên Kết Hữu Ích
+                <h2>Liên Kết Hữu Ích</h2>
             </a>
         </div>
         <div class="box_content">
@@ -153,5 +153,5 @@
             </div>
         </div>
     </div>
-   
+
 </div>
