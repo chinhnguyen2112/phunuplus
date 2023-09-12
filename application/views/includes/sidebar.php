@@ -124,11 +124,11 @@
                     </li>
                 <?php } ?>
             </ul>
-            <div class="see_more_news">
+            <!-- <div class="see_more_news">
                 <button class="btn_more">
                     <a href="/">Xem Thêm</a>
                 </button>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="hot_news">
@@ -146,11 +146,11 @@
                     </li>
                 <?php } ?>
             </ul>
-            <div class="see_more_news">
+            <!-- <div class="see_more_news">
                 <button class="btn_more">
                     <a href="/">Xem Thêm</a>
                 </button>
-            </div>
+            </div> -->
         </div>
     </div>
    

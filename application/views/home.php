@@ -71,10 +71,10 @@
             <div class="all_cate">
             <?php if ($yeu != null) { ?>
                 <div class="item_cate">
-                    <div class="title_item_cate">
+                    <a href="/yeu/" class="title_item_cate">
                         <span class="bg_color"></span>
                         <p>Yêu</p>
-                    </div>
+                    </a>
                     <div class="content_item_cate">
                         <a class="first_item_cate" title="<?= $yeu[0]['title'] ?>" href="/<?= $yeu[0]['alias'] ?>/">
                             <img src="/<?= $yeu[0]['image'] ?>" alt="<?= $yeu[0]['title'] ?>">
@@ -97,10 +97,10 @@
             <?php }
             if ($dep != null) { ?>
                 <div class="item_cate">
-                    <div class="title_item_cate">
+                    <a href="/dep/" class="title_item_cate">
                         <span class="bg_color"></span>
                         <p>Đẹp</p>
-                    </div>
+                    </a>
                     <div class="content_item_cate">
                         <a class="first_item_cate" title="<?= $dep[0]['title'] ?>" href="/<?= $dep[0]['alias'] ?>/">
                             <img src="/<?= $dep[0]['image'] ?>" alt="<?= $dep[0]['title'] ?>">
@@ -123,10 +123,10 @@
             <?php }
             if ($khoe != null) { ?>
                 <div class="item_cate">
-                    <div class="title_item_cate">
+                    <a href="/khoe/" class="title_item_cate">
                         <span class="bg_color"></span>
                         <p>Khoẻ</p>
-                    </div>
+                    </a>
                     <div class="content_item_cate">
                         <a class="first_item_cate" title="<?= $khoe[0]['title'] ?>" href="/<?= $khoe[0]['alias'] ?>/">
                             <img src="/<?= $khoe[0]['image'] ?>" alt="<?= $khoe[0]['title'] ?>">
@@ -149,10 +149,10 @@
             <?php }
             if ($bep != null) { ?>
                 <div class="item_cate">
-                    <div class="title_item_cate">
+                    <a href="/bep/" class="title_item_cate">
                         <span class="bg_color"></span>
                         <p>Bếp</p>
-                    </div>
+                    </a>
                     <div class="content_item_cate">
                         <a class="first_item_cate" title="<?= $bep[0]['title'] ?>" href="/<?= $bep[0]['alias'] ?>/">
                             <img src="/<?= $bep[0]['image'] ?>" alt="<?= $bep[0]['title'] ?>">
@@ -175,10 +175,10 @@
             <?php }
             if ($lam_me != null) { ?>
                 <div class="item_cate">
-                    <div class="title_item_cate">
+                    <a href="lam-me" class="title_item_cate">
                         <span class="bg_color"></span>
                         <p>Làm Mẹ</p>
-                    </div>
+                    </a>
                     <div class="content_item_cate">
                         <a class="first_item_cate" title="<?= $lam_me[0]['title'] ?>" href="/<?= $lam_me[0]['alias'] ?>/">
                             <img src="/<?= $lam_me[0]['image'] ?>" alt="<?= $lam_me[0]['title'] ?>">
@@ -201,10 +201,10 @@
             <?php }
             if ($life_style != null) { ?>
                 <div class="item_cate">
-                    <div class="title_item_cate">
+                    <a href="/lifestyle/" class="title_item_cate">
                         <span class="bg_color"></span>
                         <p>LifeStyle</p>
-                    </div>
+                    </a>
                     <div class="content_item_cate">
                         <a class="first_item_cate" title="<?= $life_style[0]['title'] ?>" href="/<?= $life_style[0]['alias'] ?>/">
                             <img src="/<?= $life_style[0]['image'] ?>" alt="<?= $life_style[0]['title'] ?>">
@@ -227,10 +227,10 @@
             <?php }
             if ($tam != null) { ?>
                 <div class="item_cate">
-                    <div class="title_item_cate">
+                    <a href="/tam/" class="title_item_cate">
                         <span class="bg_color"></span>
                         <p>Tâm</p>
-                    </div>
+                    </a>
                     <div class="content_item_cate">
                         <a class="first_item_cate" title="<?= $tam[0]['title'] ?>" href="/<?= $tam[0]['alias'] ?>/">
                             <img src="/<?= $tam[0]['image'] ?>" alt="<?= $tam[0]['title'] ?>">
@@ -252,10 +252,10 @@
             <?php }
             if ($tieu_dung != null) { ?>
                 <div class="item_cate">
-                    <div class="title_item_cate">
+                    <a href="/tieu-dung/" class="title_item_cate">
                         <span class="bg_color"></span>
                         <p>Tiêu Dùng</p>
-                    </div>
+                    </a>
                     <div class="content_item_cate">
                         <a class="first_item_cate" title="<?= $tieu_dung[0]['title'] ?>" href="/<?= $tieu_dung[0]['alias'] ?>/">
                             <img src="/<?= $tieu_dung[0]['image'] ?>" alt="<?= $tieu_dung[0]['title'] ?>">
@@ -278,10 +278,10 @@
             <?php }
             if ($giai_tri != null) { ?>
                 <div class="item_cate">
-                    <div class="title_item_cate">
+                    <a href="/giai-tri/" class="title_item_cate">
                         <span class="bg_color"></span>
                         <p>Giải Trí</p>
-                    </div>
+                    </a>
                     <div class="content_item_cate">
                         <a class="first_item_cate" title="<?= $giai_tri[0]['title'] ?>" href="/<?= $giai_tri[0]['alias'] ?>/">
                             <img src="/<?= $giai_tri[0]['image'] ?>" alt="<?= $giai_tri[0]['title'] ?>">
@@ -304,10 +304,10 @@
             <?php }
             if ($mat_ngu != null) { ?>
                 <div class="item_cate">
-                    <div class="title_item_cate">
+                    <a href="/mat-ngu/" class="title_item_cate">
                         <span class="bg_color"></span>
                         <p>Mật Ngữ</p>
-                    </div>
+                    </a>
                     <div class="content_item_cate">
                         <a class="first_item_cate" title="<?= $mat_ngu[0]['title'] ?>" href="/<?= $mat_ngu[0]['alias'] ?>/">
                             <img src="/<?= $mat_ngu[0]['image'] ?>" alt="<?= $mat_ngu[0]['title'] ?>">
@@ -330,10 +330,10 @@
             <?php }
             if ($phong_su != null) { ?>
                 <div class="item_cate">
-                    <div class="title_item_cate">
+                    <a href="/phong-su/" class="title_item_cate">
                         <span class="bg_color"></span>
                         <p>Phóng Sự</p>
-                    </div>
+                    </a>
                     <div class="content_item_cate">
                         <a class="first_item_cate" title="<?= $phong_su[0]['title'] ?>" href="/<?= $phong_su[0]['alias'] ?>/">
                             <img src="/<?= $phong_su[0]['image'] ?>" alt="<?= $phong_su[0]['title'] ?>">
@@ -356,10 +356,10 @@
             <?php }
             if ($ban_doc != null) { ?>
                 <div class="item_cate">
-                    <div class="title_item_cate">
+                    <a href="/ban-doc/" class="title_item_cate">
                         <span class="bg_color"></span>
                         <p>Bạn Đọc</p>
-                    </div>
+                    </a>
                     <div class="content_item_cate">
                         <a class="first_item_cate" title="<?= $ban_doc[0]['title'] ?>" href="/<?= $ban_doc[0]['alias'] ?>/">
                             <img src="/<?= $ban_doc[0]['image'] ?>" alt="<?= $ban_doc[0]['title'] ?>">
@@ -382,10 +382,10 @@
             <?php }
             if ($yolo != null) { ?>
                 <div class="item_cate">
-                    <div class="title_item_cate">
+                    <a href="/gioi-tre/" class="title_item_cate">
                         <span class="bg_color"></span>
                         <p>YOLO</p>
-                    </div>
+                    </a>
                     <div class="content_item_cate">
                         <a class="first_item_cate" title="<?= $yolo[0]['title'] ?>" href="/<?= $yolo[0]['alias'] ?>/">
                             <img src="/<?= $yolo[0]['image'] ?>" alt="<?= $yolo[0]['title'] ?>">
@@ -407,10 +407,10 @@
             <?php }
             if ($nhac != null) { ?>
                 <div class="item_cate">
-                    <div class="title_item_cate">
+                    <a href="/am-nhac/" class="title_item_cate">
                         <span class="bg_color"></span>
                         <p>Nhạc</p>
-                    </div>
+                    </a>
                     <div class="content_item_cate">
                         <a class="first_item_cate" title="<?= $nhac[0]['title'] ?>" href="/<?= $nhac[0]['alias'] ?>/">
                             <img src="/<?= $nhac[0]['image'] ?>" alt="<?= $nhac[0]['title'] ?>">
