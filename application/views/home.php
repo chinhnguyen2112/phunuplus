@@ -177,7 +177,7 @@
                 <?php }
                 if ($lam_me != null) { ?>
                     <div class="item_cate">
-                        <a href="lam-me" class="title_item_cate">
+                        <a href="/lam-me/" class="title_item_cate">
                             <span class="bg_color"></span>
                             <h2>Làm Mẹ</h2>
                         </a>
