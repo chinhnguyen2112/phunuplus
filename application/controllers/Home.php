@@ -33,7 +33,6 @@ class Home extends CI_Controller
         // $monday = strtotime("this week 00:00:00");
         $data['canonical'] = base_url();
         $time = time();
-        $select_cate_parent = "SELECT category.name,category.alias FROM category INNER JOIN blogs ON category.id = blogs.chuyenmuc WHERE index_blog = 1 AND type = 0 AND time_post <= $time "
         $select = "SELECT id,title,alias,image,created_at,sapo FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time ";
         $select_cate = "SELECT blogs.title,blogs.alias,blogs.image,blogs.created_at,blogs.sapo,chuyenmuc,category.name as name_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE index_blog = 1 AND type = 0 AND time_post <= $time ";
         $data['blog'] = $this->Madmin->query_sql($select_cate . " ORDER BY created_at DESC  LIMIT 5");
@@ -52,7 +51,6 @@ class Home extends CI_Controller
         $data['mat_ngu'] = $this->Madmin->query_sql($select . " AND chuyenmuc = 46 ORDER BY created_at DESC LIMIT 4");
         $data['yolo'] = $this->Madmin->query_sql($select . " AND chuyenmuc = 47 ORDER BY created_at DESC LIMIT 4");
         $data['nhac'] = $this->Madmin->query_sql($select . " AND chuyenmuc = 48 ORDER BY created_at DESC LIMIT 4");
-        $data['cate_parent'] = $this->Madmin->query_sql($select_cate_parent . " AND blogs.cate_parent =4");
         $where = '';
         foreach ($giai_tri as $val) {
             $where .=  ' AND ' . ' id != ' .  $val['id'];
