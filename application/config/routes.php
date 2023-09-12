@@ -75,6 +75,7 @@ $route['admin/pre_blog'] = 'Admin/pre_blog';
 
 
 $route['bang-xep-hang'] = 'Home/bxh';
+$route['gioi-thieu'] = 'Home/gioithieu';
 
 //AJAX
 $route['load_more'] = 'Ajax/load_more';
