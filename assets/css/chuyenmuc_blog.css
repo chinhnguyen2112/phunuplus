@@ -347,7 +347,9 @@
 .des_blog strong {
 	font-weight: unset !important;
 }
-
+.sidebar_box {
+	margin-bottom: 20px !important;
+}
 @media only screen and (max-width: 1024px) {
 	.content_about {
 		margin-top: 20px;

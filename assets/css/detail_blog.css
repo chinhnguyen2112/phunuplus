@@ -707,7 +707,9 @@ td:first-child {
 .follow_ggnew img {
     width: 47px;
 }
-
+.sidebar_box {
+    margin-bottom: 20px !important;
+}
 @media only screen and (max-width: 1024px) {
     .container_widget_about {
         padding: 20px;

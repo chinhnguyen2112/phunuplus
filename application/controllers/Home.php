@@ -418,4 +418,18 @@ class Home extends CI_Controller
             }
         }
     }
+    function gioithieu() {
+        if ($_SERVER['REQUEST_URI'] != '/gioi-thieu/') {
+            redirect('/gioi-thieu/');
+        }
+        $data['title_page'] = "Giới Thiệu";
+        $data['meta_title'] = "Giới Thiệu Phụ Nữ Plus";
+        $data['meta_key'] = "Giới Thiệu";
+        $data['canonical'] = base_url() . 'gioi-thieu/';
+        $data['content'] = 'gioi_thieu';
+        $data['list_css'] = [
+            'gioi_thieu.css',
+        ];
+        $this->load->view('index', $data);
+    }
 }
