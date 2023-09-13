@@ -72,10 +72,12 @@ $route['admin/info'] = 'Admin/info';
 $route['admin/ajax_author'] = 'Admin/ajax_author';
 $route['admin/list_author'] = 'Admin/list_author';
 $route['admin/pre_blog'] = 'Admin/pre_blog';
+$route['admin/add_page'] = 'Admin/add_page';
+$route['admin/list_page'] = 'Admin/list_page';
+
 
 
 $route['bang-xep-hang'] = 'Home/bxh';
-$route['gioi-thieu'] = 'Home/gioithieu';
 
 //AJAX
 $route['load_more'] = 'Ajax/load_more';

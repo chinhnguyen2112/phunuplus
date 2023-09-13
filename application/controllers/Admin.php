@@ -101,6 +101,9 @@ class Admin extends CI_Controller
             $data['author_id'] = $_SESSION['admin']['id'];
             $data['index_blog'] = $this->input->post('index_blog');
             $cate = chuyen_muc(['id' => $chuyenmuc]);
+            if ($this->input->post('type') == 1) {
+                $data['type'] = 1;
+            }
             if ($cate[0]['parent'] > 0) {
                 $data['cate_parent'] = $cate[0]['parent'];
             } else {
@@ -472,6 +475,37 @@ class Admin extends CI_Controller
             $list = $this->Madmin->get_list($where, 'tags');
             $data['list'] = $list;
             $data['content'] = '/admin/list_tag';
+            $this->load->view('admin/index', $data);
+        } else {
+            redirect('/admin/login/');
+        }
+    }
+    public function add_page()
+    {
+        if (admin()) {
+            $data['content'] = '/admin/add_page';
+            $data['created_at'] = time();
+            if ($this->input->get('id') > 0) {
+                $data['id'] = $id = $this->input->get('id');
+                $blog = $this->Madmin->get_by(['id' => $id], 'blogs');
+                if ($blog != null) {
+                    $data['blog'] = $blog;
+                    $data['created_at'] = $blog['created_at'];
+                } else {
+                    redirect('/admin/add_page');
+                }
+            }
+            $this->load->view('admin/index', $data);
+        } else {
+            redirect('/admin/login/');
+        }
+    }
+    public function list_page()
+    {
+        if (admin()) {
+            $list = $this->Madmin->get_list(['type' => 1], 'blogs');
+            $data['list'] = $list;
+            $data['content'] = '/admin/list_page';
             $this->load->view('admin/index', $data);
         } else {
             redirect('/admin/login/');
