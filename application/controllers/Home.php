@@ -447,32 +447,4 @@ class Home extends CI_Controller
         $data['index'] = 1;
         $this->load->view('index', $data);
     }
-    function gioithieu() {
-        if ($_SERVER['REQUEST_URI'] != '/gioi-thieu/') {
-            redirect('/gioi-thieu/');
-        }
-        $data['title_page'] = "Giới Thiệu";
-        $data['meta_title'] = "Giới Thiệu Phụ Nữ Plus";
-        $data['meta_key'] = "Giới Thiệu";
-        $data['canonical'] = base_url() . 'gioi-thieu/';
-        $data['content'] = 'gioi_thieu';
-        $data['list_css'] = [
-            'gioi_thieu.css',
-        ];
-        $this->load->view('index', $data);
-    }
-    function lienhe() {
-        if ($_SERVER['REQUEST_URI'] != '/lien-he/') {
-            redirect('/lien-he/');
-        }
-        $data['title_page'] = "Liên Hệ";
-        $data['meta_title'] = "Liên Hệ";
-        $data['meta_key'] = "Liên Hệ";
-        $data['canonical'] = base_url() . 'lien-he/';
-        $data['content'] = 'lien_he';
-        $data['list_css'] = [
-            'lien_he.css',
-        ];
-        $this->load->view('index', $data);
-    }
 }
