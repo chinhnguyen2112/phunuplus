@@ -1,14 +1,17 @@
 .container {
     padding: 30px 0;
 }
+
 .container_width {
     max-width: 800px;
     margin: auto;
 }
+
 .content_page {
     padding: 0 15px 30px;
     color: #000;
 }
+
 .content_page span {
     font-size: 16px;
     line-height: 24px;
@@ -16,36 +19,74 @@
     font-weight: bold;
     margin-bottom: 20px;
 }
-.content_page h2, .content_page h2 strong {
+
+.content_page h2,
+.content_page h2 strong {
     font-size: 25px;
     line-height: 35px;
     font-weight: bolder;
     margin-bottom: 12px;
     margin-top: 20px;
 }
+
 .content_page h3 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 15px;
     margin-top: 20px;
 }
+
 .content_page p span {
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 20px;
 }
+
 .content_page a {
     color: #000;
     box-shadow: inset 0 -4px 0 #7be2af;
     transition: 0.3s;
     font-weight: 700;
 }
+
 .content_page a:hover {
     background: #7be2af;
 }
+
 .content_page a span {
     color: #000;
 }
+
+.content_page figure p {
+    margin: 0 !important;
+    text-align: center !important;
+}
+
+.content_page ul {
+    padding: 0 !important;
+    padding-left: 30px !important;
+    list-style: disc;
+}
+
+.content_page ol {
+    padding-left: 30px;
+    list-style: auto;
+}
+
+figcaption {
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+    background: #ccc;
+    line-height: 28px;
+}
+
+.content_page {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
 .content_page li {
     margin: 10px 0;
 }
@@ -54,7 +95,9 @@
     .content_page {
         padding: 0 20px;
     }
-    .content_page h2, .content_page h2 strong {
+
+    .content_page h2,
+    .content_page h2 strong {
         margin-bottom: 0;
         margin-top: 12px;
         font-size: 18px;
