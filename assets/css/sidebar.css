@@ -167,7 +167,40 @@ article.flex {
 /* sidebar box  */
 .sidebar_box {
     margin-bottom: 20px;
-    margin-bottom: 510px;
+    padding-bottom: 2px;
+    border: 1px solid #CECECE;
+    color: #666;
+}
+
+
+.box_linkout h2 {
+    font-weight: bold;
+    padding: 6px 10px;
+    border-bottom: 1px solid #CECECE;
+    font-size: 13px;
+    background: -webkit-linear-gradient(top, #fff, #ddd);
+    font-size: 16px;
+}
+
+.box_content_link ul {
+    line-height: 22px;
+    list-style: circle !important;
+    margin: 10px !important;
+    border: none;
+}
+
+.box_content_link li {
+    list-style: circle inside !important;
+    display: list-item !important;
+    background: none !important;
+    border-bottom: 1px dashed #CECECE;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.box_content_link a {
+    color: #000;
 }
 
 .hot_news {

@@ -33,58 +33,15 @@
         </div>
     </div>
     <div class="sidebar_box">
-        <div class="box_heading">
-            <a href="#" class="fl_a">
-                <img src="/images/icons/icon_contact.png" alt="icon liên kết hữu ích">
-                <h2>Liên Kết Hữu Ích</h2>
-            </a>
+        <div class="box_linkout">
+            <h2>LIÊN KẾT HỮU ÍCH</h2>
         </div>
-        <div class="box_content">
+        <div class="box_content_link">
             <ul>
-                <li class="item_content_sidebar">
-
-                    Chuyện
-                    <strong>
-                        <a href="/chuyen-tinh-yeu/">Tình Yêu</a>
-                    </strong>
-                    Lãng Mạn
-                </li>
-                <li class="item_content_sidebar">
-
-                    Chăm Sóc
-                    <strong>
-                        <a href="/da-dep/">Da Đẹp</a>
-                    </strong>
-                    Như Sao Hàn
-                </li>
-                <li class="item_content_sidebar">
-
-                    Giá Trị Của
-                    <strong>
-                        <a href="/hon-nhan/">Hôn Nhân</a>
-                    </strong>
-                    Vợ Chồng
-                </li>
-                <li class="item_content_sidebar">
-
-                    Tiêu Chuẩn
-                    <strong>
-                        <a href="/dang-dep/">Dáng Đẹp</a>
-                    </strong>
-                    Phụ Nữ Việt
-                </li>
-                <li class="item_content_sidebar">
-
-                    Style
-                    <strong>
-                        <a href="/mac-dep/">Mặc Đẹp</a>
-                    </strong>
-                    Dành Cho Phái Nữ
-                </li>
-                <li class="item_content_sidebar">
-                    <strong>
-                        <a target="_blank" rel="dofollow" href="https://ketquabongda.io/">ketquabongda</a>
-                    </strong>
+                <li>
+                    Xem
+                    <a target="_blank" rel="dofollow" href="https://ketquabongda.io/"> <b>kết quả bóng đá</b></a>
+                    Việt Nam
                 </li>
             </ul>
         </div>

@@ -512,6 +512,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .item_cate {
     width: 100%;
     margin-bottom: 30px;
@@ -669,6 +670,10 @@
 
 .sapo_blog strong {
     font-weight: unset !important;
+}
+
+.mail_box {
+    margin-bottom: 725px !important;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -838,6 +843,10 @@
         -webkit-line-clamp: 3;
         overflow: hidden;
         padding-bottom: 0;
+    }
+
+    .mail_box {
+        margin-bottom: 20px !important;
     }
 }
 
