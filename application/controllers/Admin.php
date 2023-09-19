@@ -722,7 +722,7 @@ class Admin extends CI_Controller
             foreach ($tag_limit as $val) {
                 $url = $doc->createElement("url");
                 $name = $doc->createElement("loc");
-                $name->appendChild($doc->createTextNode('https://phunuplus.org/' . $val['alias'] . '/'));
+                $name->appendChild($doc->createTextNode('https://phunuplus.vn/' . $val['alias'] . '/'));
                 $url->appendChild($name);
                 $changefreq = $doc->createElement("changefreq");
                 $changefreq->appendChild($doc->createTextNode('daily'));
