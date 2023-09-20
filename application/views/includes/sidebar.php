@@ -41,7 +41,6 @@
                 <li>
                     Xem
                     <a target="_blank" rel="dofollow" href="https://ketquabongda.io/"> <b>kết quả bóng đá</b></a>
-                    Việt Nam
                 </li>
             </ul>
         </div>
