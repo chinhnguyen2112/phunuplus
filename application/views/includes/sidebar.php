@@ -34,7 +34,7 @@
     </div>
     <div class="sidebar_box">
         <div class="box_linkout">
-            <h2>LIÊN KẾT HỮU ÍCH</h2>
+            <p>LIÊN KẾT HỮU ÍCH</p>
         </div>
         <div class="box_content_link">
             <ul>
