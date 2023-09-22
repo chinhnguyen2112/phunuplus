@@ -15,7 +15,7 @@
                         <div class="blog_top">
                             <?php foreach ($blog as $key => $val) {
                                 if ($key == 0) { ?>
-                                    <a class="linl_all_detail" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                    <a class="linl_all_detail" title="<?= $val['title'] ?>" href="/<?= alias_new($val['alias'], $val['id']) ?>">
                                         <div class="blog_top_content blog_top_left">
                                             <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
                                         </div>
@@ -34,10 +34,10 @@
                         <?php foreach ($blog as $key => $val) {
                             if ($key > 0) { ?>
                                 <div class="this_train">
-                                    <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                    <a title="<?= $val['title'] ?>" href="/<?= alias_new($val['alias'], $val['id']) ?>">
                                         <p class="title_blog only_mobile"><?= $val['title'] ?></p>
                                     </a>
-                                    <a href="/<?= $val['alias'] ?>/">
+                                    <a href="/<?= alias_new($val['alias'], $val['id']) ?>">
                                         <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
                                         <div class="box_right_data">
                                             <p class="title_blog"><?= $val['title'] ?></p>

@@ -97,7 +97,7 @@
                             <?php foreach ($blog_same as $key => $val) {
                                 if ($key == 0) { ?>
                                     <div class="this_content_right content_no_border middle_left">
-                                        <a class="linl_all_detail link_fl" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <a class="linl_all_detail link_fl" title="<?= $val['title'] ?>" href="/<?= alias_new($val['alias'], $val['id']) ?>">
                                             <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
                                             <div class="box_content_blog">
                                                 <p class="title_blog"><?= $val['title'] ?></p>
@@ -117,7 +117,7 @@
                                 <?php foreach ($blog_same as $key => $val) {
                                     if ($key > 0 && $key < 3) { ?>
                                         <div class="this_content_right content_no_border content_right_podcast">
-                                            <a class="linl_all_detail link_fl" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                            <a class="linl_all_detail link_fl" title="<?= $val['title'] ?>" href="/<?= alias_new($val['alias'], $val['id']) ?>">
                                                 <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
                                                 <div class="box_content_blog">
                                                     <p class="title_blog"><?= $val['title'] ?></p>
@@ -144,10 +144,10 @@
                             <?php
                             foreach ($blog_same as $val) { ?>
                                 <div class="this_train">
-                                    <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                    <a title="<?= $val['title'] ?>" href="/<?= alias_new($val['alias'], $val['id']) ?>">
                                         <p class="title_blog only_mobile"><?= $val['title'] ?></p>
                                     </a>
-                                    <a href="/<?= $val['alias'] ?>/">
+                                    <a href="/<?= alias_new($val['alias'], $val['id']) ?>">
                                         <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
                                         <div class="box_right_data">
                                             <p class="title_blog"><?= $val['title'] ?></p>

@@ -19,7 +19,7 @@
                             <div class="blog_top">
                                 <?php foreach ($blog as $key => $val) {
                                     if ($key == 0) { ?>
-                                        <a class="linl_all_detail" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <a class="linl_all_detail" title="<?= $val['title'] ?>" href="/<?= alias_new($val['alias'], $val['id']) ?>">
                                             <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
                                             <p class="title_blog_top"><?= $val['title'] ?></p>
                                             <div class="fl_date">
@@ -35,7 +35,7 @@
                             <?php foreach ($blog as $key => $val) {
                                 if ($key < 4 && $key > 0) { ?>
                                     <div class="this_train_right">
-                                        <a class="linl_all_detail" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <a class="linl_all_detail" title="<?= $val['title'] ?>" href="/<?= alias_new($val['alias'], $val['id']) ?>">
                                             <p class="title_blog"><?= $val['title'] ?></p>
                                             <div class="des_blog"><?= $val['sapo'] ?></div>
                                         </a>
@@ -48,7 +48,7 @@
                         <?php foreach ($blog as $key => $val) {
                             if ($key > 4) { ?>
                                 <div class="this_train">
-                                    <a href="/<?= $val['alias'] ?>/">
+                                    <a href="/<?= alias_new($val['alias'], $val['id']) ?>">
                                         <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
                                         <div class="box_right_data">
                                             <p class="title_blog"><?= $val['title'] ?></p>

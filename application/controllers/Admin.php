@@ -333,7 +333,7 @@ class Admin extends CI_Controller
     {
         if (admin()) {
             $id_admin = $_SESSION['admin']['id'];
-            $url_search = str_replace('https://phunuplus.vn/', '', $this->input->get('url_search'));
+            $url_search = str_replace(base_url(), '', $this->input->get('url_search'));
             $url_search = str_replace('/', '', $url_search);
             $key_search = $this->input->get('key_search');
             $cate = $this->input->get('cate');
@@ -646,7 +646,7 @@ class Admin extends CI_Controller
             foreach ($blog_limit as $val) {
                 $url = $doc->createElement("url");
                 $name = $doc->createElement("loc");
-                $name->appendChild($doc->createTextNode('https://phunuplus.vn/' . $val['alias'] . '/'));
+                $name->appendChild($doc->createTextNode(base_url() . alias_new($val['alias'], $val['id'])));
                 $url->appendChild($name);
                 $changefreq = $doc->createElement("changefreq");
                 $changefreq->appendChild($doc->createTextNode('daily'));
@@ -691,7 +691,7 @@ class Admin extends CI_Controller
                     foreach ($sitemap as $key => $val) {
                         $url = $doc->createElement("sitemap");
                         $name = $doc->createElement("loc");
-                        $name->appendChild($doc->createTextNode('https://phunuplus.vn/' . $val['name']));
+                        $name->appendChild($doc->createTextNode(base_url() . $val['name']));
                         $url->appendChild($name);
                         $lastmod = $doc->createElement("lastmod");
                         $lastmod->appendChild($doc->createTextNode($val['time'] . 'T17:28:31+07:00'));
@@ -722,7 +722,7 @@ class Admin extends CI_Controller
             foreach ($tag_limit as $val) {
                 $url = $doc->createElement("url");
                 $name = $doc->createElement("loc");
-                $name->appendChild($doc->createTextNode('https://phunuplus.vn/' . $val['alias'] . '/'));
+                $name->appendChild($doc->createTextNode(base_url() . $val['alias'] . '/'));
                 $url->appendChild($name);
                 $changefreq = $doc->createElement("changefreq");
                 $changefreq->appendChild($doc->createTextNode('daily'));
@@ -759,7 +759,7 @@ class Admin extends CI_Controller
                 foreach ($sitemap as $key => $val) {
                     $url = $doc->createElement("sitemap");
                     $name = $doc->createElement("loc");
-                    $name->appendChild($doc->createTextNode('https://phunuplus.vn/' . $val['name']));
+                    $name->appendChild($doc->createTextNode(base_url() . $val['name']));
                     $url->appendChild($name);
                     $lastmod = $doc->createElement("lastmod");
                     $lastmod->appendChild($doc->createTextNode($val['time'] . 'T17:28:31+07:00'));
