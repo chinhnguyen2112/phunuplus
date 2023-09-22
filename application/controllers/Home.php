@@ -30,13 +30,13 @@ class Home extends CI_Controller
     }
     public function home()
     {
-        // $monday = strtotime("this week 00:00:00");
+        $monday = strtotime("this week 00:00:00");
         $data['canonical'] = base_url();
         $time = time();
         $select = "SELECT id,title,alias,image,created_at,sapo FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time ";
         $select_cate = "SELECT blogs.id,blogs.title,blogs.alias,blogs.image,blogs.created_at,blogs.sapo,chuyenmuc,category.name as name_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE index_blog = 1 AND type = 0 AND time_post <= $time ";
         $data['blog'] = $this->Madmin->query_sql($select_cate . " ORDER BY created_at DESC  LIMIT 5");
-        $data['hots_week'] = $this->Madmin->query_sql($select_cate . "ORDER by created_at LIMIT 10");
+        $data['hots_week'] = $this->Madmin->query_sql($select_cate . " AND blogs.created_at >= $monday ORDER by view LIMIT 10");
         $data['yeu'] = $this->Madmin->query_sql($select . " AND chuyenmuc IN  ('2','12','24') ORDER BY created_at DESC LIMIT 4");
         $data['dep'] = $this->Madmin->query_sql($select . " AND chuyenmuc IN ('4','16','17','18','19') ORDER BY created_at DESC LIMIT 4");
         $data['khoe'] = $this->Madmin->query_sql($select . " AND chuyenmuc IN ('6','25','27','28') ORDER BY created_at DESC LIMIT 4");
