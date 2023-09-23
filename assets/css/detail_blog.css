@@ -213,91 +213,23 @@ figcaption {
 }
 
 /* podcast blog  */
-.podcast_box {
-    background: #f7f7f7;
-    border: 1px solid #e6e6e6;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
-    border-radius: 12px;
-    padding: 20px;
-    background-image: url(/images/bg_podcast3.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
-    margin-top: 20px;
-}
 
-.box_header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
 
-.link_home {
-    width: 29%;
-}
 
-.link_home img {
-    width: 100%;
-    max-height: 40px;
-}
 
-.box_header_tag {
-    width: calc(100% - 170px);
-    display: flex;
-    align-items: center;
-}
 
-.item_header_tag {
-    display: flex;
-    align-items: center;
-    margin-left: 9px;
-    padding: 11px;
-    background: rgba(255, 255, 255, .1);
-    border-radius: 4px;
-    opacity: 1;
-    transition: 0.5s;
-}
 
-.item_header_tag:hover {
-    opacity: 0.6;
-}
 
-.item_header_tag span {
-    color: #fff;
-    font-size: 12px;
-}
 
-.item_header_tag img {
-    width: 20px;
-    margin-right: 5px;
-}
 
-.box_middle {
-    display: flex;
-    justify-content: space-between;
-}
 
-.middle_left {
-    width: calc(100% - 260px);
-    padding: 20px;
-    background: #fff;
-    border: 1px solid #e6e6e6;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
-    border-radius: 12px;
-    display: flex;
-}
 
 .link_fl {
     display: flex;
     align-items: flex-start;
 }
 
-.box_content_blog {
-    float: left;
-    padding-left: 20px;
-    width: -webkit-fill-available;
-}
+
 
 .middle_right {
     width: 244px;
@@ -306,56 +238,6 @@ figcaption {
     flex-direction: column;
     gap: 16px;
 }
-
-.content_no_border {
-    border: none;
-}
-
-.content_no_border img {
-    width: 160px;
-    height: 160px;
-    border-radius: 8px;
-}
-
-.content_right_podcast {
-    background: #fff;
-    border: 1px solid #e6e6e6;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
-    border-radius: 12px;
-    padding: 12px;
-    display: flex;
-}
-
-.content_right_podcast .des_post {
-    display: none;
-}
-
-.content_right_podcast .title_blog {
-    font-size: 14px !important;
-}
-
-.content_right_podcast img {
-    width: 68px !important;
-    height: 68px !important;
-    border-radius: 6px;
-}
-
-.content_right_podcast .box_content_blog {
-    padding-left: 12px;
-}
-
-.content_right_podcast .dot_item,
-.content_right_podcast .date_post {
-    display: none;
-}
-
-.content_right_podcast .fl_date {
-    margin: 3px 0;
-}
-
-
-
-
 
 .line_blog {
     border-top: 2px solid #f4aa1c;
@@ -760,54 +642,7 @@ td:first-child {
     }
 
     /* podcast  */
-    .podcast_box {
-        background: #fff;
-        border: 1px solid #e6e6e6;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
-        border-radius: 12px;
-        padding: 15px;
-        background-image: url(/images/bg_podcast3.png);
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: top;
-        margin-top: 20px;
-    }
-
-    .box_header_tag {
-        display: none;
-    }
-
-    .box_middle {
-        flex-direction: column;
-        background: #fff;
-        width: 100%;
-        border-radius: 12px;
-    }
-
-    .middle_left {
-        width: 100%;
-        padding: 0;
-        box-shadow: none;
-    }
-
-    .middle_left .des_post {
-        display: none;
-    }
-
-    .middle_left .link_fl {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .middle_left img {
-        width: 100% !important;
-        height: auto;
-    }
-
-    .box_content_blog {
-        padding: 0;
-        margin-top: 15px;
-    }
+  
 
     .middle_right {
         width: 100%;
@@ -847,13 +682,9 @@ td:first-child {
         width: -webkit-fill-available;
     }
 
-    .middle_left .title_blog {
-        margin-top: 15px;
-    }
+    
 
-    .box_content_blog {
-        margin-top: 5px;
-    }
+ 
 }
 
 @media only screen and (max-width: 540px) {
@@ -951,25 +782,9 @@ td:first-child {
         line-height: 34px;
     }
 
-    /* pod cast  */
-    .box_content_blog {
-        padding-left: 15px;
-        display: flex;
-        flex-direction: column;
-    }
 
-    .content_no_border .title_blog {
-        display: block !important;
-    }
+  
 
-    .middle_left .title_blog {
-        font-size: 18px;
-        font-weight: 600;
-    }
-
-    .link_home {
-        width: 45%;
-    }
 
     .sidebar_mid {
         display: block !important;
