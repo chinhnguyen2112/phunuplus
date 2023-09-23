@@ -451,7 +451,7 @@
 }
 
 .item_slide_hots img {
-    height: 200px;
+    /* height: 200px; */
 }
 
 .name_cate_hots {
@@ -1036,7 +1036,7 @@
 
     .item_slide_hots img {
         width: 100%;
-        min-height: 350px;
+        /* min-height: 350px; */
     }
 
     .slick-arrow {
