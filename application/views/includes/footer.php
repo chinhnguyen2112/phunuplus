@@ -1,8 +1,3 @@
-<?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
-$count_line = 0;
-if (count($menu_cate_parent) > 2) {
-    $count_line =  count($menu_cate_parent) - 2;
-} ?>
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="footer-widgets body_width">
         <div class="content_footer">

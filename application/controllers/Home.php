@@ -136,7 +136,7 @@ class Home extends CI_Controller
                 return $this->detail_blog_new($blog['id']);
             } else {
                 $alias = $alias . '/';
-                $this->detail_blog($blog, $alias);
+                return $this->detail_blog($blog, $alias);
             }
         } else if (isset($tags) && $tags != null) {
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
