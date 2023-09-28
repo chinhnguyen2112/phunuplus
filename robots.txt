@@ -1,2 +1,6 @@
-User-agent: *Allow: /*.js$Allow: /*.css$Disallow: /admin/Disallow: /*.html$
+User-agent: *
+Allow: /*.js$
+Allow: /*.css$
+Disallow: /admin/
+
 Sitemap: https://phunuplus.vn/sitemap.xml

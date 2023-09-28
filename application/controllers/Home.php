@@ -177,7 +177,8 @@ class Home extends CI_Controller
         } else if (isset($page) && $page != null) {
             return $this->page($page);
         } else {
-            redirect('/');
+            set_status_header(404);
+            return $this->load->view('errors/html/error_404');
         }
         $this->load->view('index', $data);
     }
@@ -212,7 +213,7 @@ class Home extends CI_Controller
             $alias = $blog['alias'] . '-c' . $id . '.html';
             $this->detail_blog($blog, $alias);
         } else {
-            set_status_header(301);
+            set_status_header(404);
             return $this->load->view('errors/html/error_404');
         }
     }
@@ -266,7 +267,7 @@ class Home extends CI_Controller
     {
         $author = $this->Madmin->get_by(['alias' => $alias], 'admin');
         if ($author == null) {
-            set_status_header(301);
+            set_status_header(404);
             return $this->load->view('errors/html/error_404');
         } else {
             $time = time();
