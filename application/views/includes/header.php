@@ -6,13 +6,6 @@
                     <a href="/">
                         <img src="/images/logo.png" alt="logo" class="img_logo_bot_header">
                     </a>
-                    <div class="infor_header">
-                        <img src="/images/icons/icon_growth.png" alt="icon growth">
-                        <div class="content_infor_hea">
-                            <a class="infor_pc" href="#">Thông tin Ngành học hot 2023 </a>
-                            <a class="infor_tablet" href="#">Ngành học hot 2023 </a>
-                        </div>
-                    </div>
                 </div>
                 <div class="header_right">
                     <div class="fan_page">
