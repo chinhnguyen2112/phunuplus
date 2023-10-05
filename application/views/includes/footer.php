@@ -1,3 +1,8 @@
+<?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
+$count_line = 0;
+if (count($menu_cate_parent) > 2) {
+    $count_line =  count($menu_cate_parent) - 2;
+} ?>
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="footer-widgets body_width">
         <div class="content_footer">
@@ -52,6 +57,8 @@
                         <input class="input_text" type="email" name="email" placeholder="Email Address" required>
                         <input class="btn_submit_form" value="SIGN UP" type="submit">
                     </form>
+                    <a target="_blank" style="display:block;margin-top:15px" rel="nofollow" href="https://www.dmca.com/r/4x3w11z" title="DMCA.com Protection Status" class="dmca-badge"><img width="120" height="21" loading="lazy" src="https://images.dmca.com/Badges/dmca_protected_sml_120b.png?ID=f936b4b7-f675-4399-9627-694869ab0664" alt="DMCA.com Protection Status"></a>
+                    <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
                 </div>
             </div>
         </div>

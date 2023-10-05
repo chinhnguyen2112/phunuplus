@@ -2720,7 +2720,7 @@
 			language: "",
 			defaultLanguage: "en",
 			defaultViewType: "thumbnails",
-			defaultSortBy: "date",
+			defaultSortBy: "filename",
 			defaultDisplayFilename: !0,
 			defaultDisplayDate: !0,
 			defaultDisplayFilesize: !0,
@@ -10009,10 +10009,12 @@
 			$: function (e) {
 				var t = this;
 				(t.element = e.append(
-					e.getDocument().createElement("div", {
-						attributes: { class: "cke_panel_block", role: "presentation" },
-						gS: { display: "none" },
-					})
+					e
+						.getDocument()
+						.createElement("div", {
+							attributes: { class: "cke_panel_block", role: "presentation" },
+							gS: { display: "none" },
+						})
 				)),
 					(t.jQ = {}),
 					(t._.cQ = -1),
@@ -15854,10 +15856,12 @@
 													html: ".zip",
 													id: "fileNameExt",
 													onLoad: function () {
-														this.getElement().getParent().setStyles({
-															"vertical-align": "bottom",
-															"padding-bottom": "2px",
-														});
+														this.getElement()
+															.getParent()
+															.setStyles({
+																"vertical-align": "bottom",
+																"padding-bottom": "2px",
+															});
 													},
 												},
 											],
