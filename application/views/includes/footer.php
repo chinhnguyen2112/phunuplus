@@ -1,9 +1,5 @@
-<?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
-$count_line = 0;
-if (count($menu_cate_parent) > 2) {
-    $count_line =  count($menu_cate_parent) - 2;
-} ?>
-<footer id="colophon" class="site-footer" role="contentinfo">
+</div>
+<footer id="colophon" class="site-footer">
     <div class="footer-widgets body_width">
         <div class="content_footer">
             <div class="ft_left">
@@ -39,7 +35,7 @@ if (count($menu_cate_parent) > 2) {
                         <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 42 AND id != 41');
                         foreach ($menu_cate_parent as $val) {
                             $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
-                            <div class="item_link_ft" id="this_menu">
+                            <div class="item_link_ft">
                                 <span onclick="big_item_menu(this,1)">
                                     <a href="/<?= $val['alias'] ?>/">
                                         <img src="/images/icons/icon_ar.png" alt="icon arrow footer">

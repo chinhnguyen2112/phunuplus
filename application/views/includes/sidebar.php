@@ -45,31 +45,6 @@
             </ul>
         </div>
     </div>
-
-    <!-- <div class="outstanding">
-        <ul class="content_outs">
-            <article class="flex">
-                <span>1</span>
-                <a href="/huynh-tran-y-nhi/">Huỳnh Trần Ý Nhi</a>
-            </article>
-            <article class="flex">
-                <span>2</span>
-                <a href="/mai-phuong-thuy/">Mai Phương Thuý</a>
-            </article>
-            <article class="flex">
-                <span>3</span>
-                <a href="/phuong-oanh/">Phương Oanh</a>
-            </article>
-            <article class="flex">
-                <span>4</span>
-                <a href="/vietnam-idol/">Vietnam Idol</a>
-            </article>
-            <article class="flex">
-                <span>5</span>
-                <a href="/miss-world-vietnam/">Miss World Vietnam</a>
-            </article>
-        </ul>
-    </div> -->
     <div class="hot_news">
         <div class="box_heading">
             <a href="#">
@@ -85,11 +60,6 @@
                     </li>
                 <?php } ?>
             </ul>
-            <!-- <div class="see_more_news">
-                <button class="btn_more">
-                    <a href="/">Xem Thêm</a>
-                </button>
-            </div> -->
         </div>
     </div>
     <div class="hot_news">
@@ -107,11 +77,6 @@
                     </li>
                 <?php } ?>
             </ul>
-            <!-- <div class="see_more_news">
-                <button class="btn_more">
-                    <a href="/">Xem Thêm</a>
-                </button>
-            </div> -->
         </div>
     </div>
 

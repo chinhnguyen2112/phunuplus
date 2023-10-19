@@ -67,16 +67,16 @@
                                             <a class="item_menu_sub" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
                                         </div>
                                         <?php if ($menu_cate != null) { ?>
-                                            <ul class="menu_con_sub">
-                                                <div class="row_sub">
+                                            <div class="menu_con_sub">
+                                                <ul class="row_sub">
                                                     <?php foreach ($menu_cate as $val1) { ?>
                                                         <li>
                                                             <span class="dot_header_sub"></span>
                                                             <a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a>
                                                         </li>
                                                     <?php } ?>
-                                                </div>
-                                            </ul>
+                                                </ul>
+                                            </div>
                                         <?php } ?>
                                     </li>
                                 <?php } ?>
@@ -102,8 +102,8 @@
                                         <a class="item_menu" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
                                     </div>
                                     <?php if ($menu_cate != null) { ?>
-                                        <ul class="menu_con">
-                                            <div class="row">
+                                        <div class="menu_con">
+                                            <ul class="row">
                                                 <?php foreach ($menu_cate as $val1) { ?>
                                                     <li>
                                                         <!-- <i class="icon_arrow_left"></i> -->
@@ -111,8 +111,8 @@
                                                         <a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a>
                                                     </li>
                                                 <?php } ?>
-                                            </div>
-                                        </ul>
+                                            </ul>
+                                        </div>
                                     <?php } ?>
                                 </li>
                             <?php } ?>

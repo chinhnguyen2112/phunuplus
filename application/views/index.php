@@ -14,7 +14,7 @@
   <meta name="keywords" content="<?= isset($meta_key) ? $meta_key : '' ?>" />
   <link rel="canonical" href="<?= (isset($canonical)) ? $canonical : "" ?>" />
   <meta property="og:locale" content="vi_VN" />
-  <meta proprety="og:type" content="article" />
+  <meta property="og:type" content="article" />
   <meta property="og:url" content="<?= (isset($canonical)) ? $canonical : "" ?>" />
   <meta property="og:title" content="<?= isset($meta_title) ? $meta_title : '' ?>" />
   <meta property="og:site_name" content="Phụ nữ  plus" />

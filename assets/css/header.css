@@ -177,12 +177,12 @@ img.img_logo_bot_header {
 	/* border-radius: 50%; */
 }
 
-.list_menu ul {
-	list-style: none;
-	width: 1042px;
-	height: 100%;
-	margin: 0 auto;
-}
+/* .list_menu ul {
+		list-style: none;
+		width: 1042px;
+		height: 100%;
+		margin: 0 auto;
+	} */
 
 .this_menu {
 	float: left;
@@ -428,6 +428,7 @@ a.item_menu {
 	.top_header {
 		padding: 0 20px;
 	}
+
 	.fan_page,
 	.weather,
 	.search_only_pc,
@@ -784,4 +785,3 @@ a.item_menu {
 		margin: 0 !important;
 	}
 }
-

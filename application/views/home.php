@@ -1,6 +1,6 @@
 <?php if ($hots_week == null) { ?>
     <style>
-        .sidebar_box {
+        .mail_box {
             margin-bottom: 20px !important;
         }
     </style>
@@ -104,7 +104,7 @@
                             <h2>Đẹp</h2>
                         </a>
                         <div class="content_item_cate">
-                            <a class="first_item_cate" title="<?= $dep[0]['title'] ?>" href="/<<?= alias_new($dep[0]['alias'], $dep[0]['id']) ?>">
+                            <a class="first_item_cate" title="<?= $dep[0]['title'] ?>" href="/<?= alias_new($dep[0]['alias'], $dep[0]['id']) ?>">
                                 <img src="/<?= $dep[0]['image'] ?>" alt="<?= $dep[0]['title'] ?>">
                                 <h3 class="title_blog_cate"><?= $dep[0]['title'] ?></h3>
                                 <!-- <div class="sapo_item_cate"><?= $dep[0]['sapo'] ?></div> -->
@@ -435,8 +435,5 @@
             </div>
         </div>
         <?php include('includes/sidebar.php') ?>
-    </div>
-    <div class="container_widget container_widget_2">
-
     </div>
 </div>

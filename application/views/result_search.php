@@ -6,7 +6,7 @@
         <div class="left_content">
             <div class="result_top">
                 <div class="first_result">
-                    <a class="linl_all_detail" title="<?= $result[0]['title'] ?>" href="/<<?= alias_new($result[0]['alias'], $result[0]['id']) ?>">
+                    <a class="linl_all_detail" title="<?= $result[0]['title'] ?>" href="/<?= alias_new($result[0]['alias'], $result[0]['id']) ?>">
                         <div class="blog_top_content blog_top_left">
                             <img src="/<?= $result[0]['image'] ?>" alt="<?= $result[0]['title'] ?>">
                         </div>
