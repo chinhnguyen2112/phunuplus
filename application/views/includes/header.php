@@ -21,7 +21,7 @@
                         </a>
                     </div>
                     <div class="search_only_pc">
-                        <form class="search_pc" id="search" method="get" action="/search">
+                        <form class="search_pc" id="search_pc" method="get" action="/search">
                             <img class="img_search_pc" id="img_search_pc" src="/images/icons/icons8-search-20.png" alt="icon search" />
                             <input class="input_pc" id="search_input" type="text" autocomplete="off" name="search" placeholder="Tìm kiếm" />
                         </form>
@@ -36,7 +36,7 @@
                         <div class="list_item_submenu">
                             <div class="search_sub">
                                 <form class="form_sub" id="search" method="get" action="/search">
-                                    <img class="img_seach_sub" id="img_search_sub" src="/images/icons/icons8-search-20.png" />
+                                    <img class="img_seach_sub" id="img_search_sub" src="/images/icons/icons8-search-20.png" alt="tìm kiếm" />
                                     <input class="input_sub" id="search_input_sub" type="text" autocomplete="off" name="search" placeholder="Tìm kiếm" />
                                 </form>
                             </div>
@@ -58,11 +58,11 @@
                                     <p>Cài đặt APP</p>
                                 </div>
                             </div>
-                            <div class="list_item_sub">
+                            <ul class="list_item_sub">
                                 <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 42 AND id != 41');
                                 foreach ($menu_cate_parent as $val) {
                                     $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
-                                    <li class="this_menu_sub" id="this_menu">
+                                    <li class="this_menu_sub">
                                         <div class="big_item_menu_sub" onclick="show_submenu(this,1)">
                                             <a class="item_menu_sub" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
                                         </div>
@@ -80,7 +80,7 @@
                                         <?php } ?>
                                     </li>
                                 <?php } ?>
-                            </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -89,15 +89,15 @@
         <div class="header_bot body_width">
             <div class="header_bg">
                 <div class="header_menu">
-                    <ul class="list_menu" id="list_menu">
+                    <div class="list_menu" id="list_menu">
                         <a href="/">
-                            <img src="/images/icons/icons8-home-50.png" alt="icon home">
+                            <img src="/images/icons/icons8-home-50.png" alt="trang chủ">
                         </a>
-                        <div class="list_item_menu">
+                        <ul class="list_item_menu">
                             <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 42 AND id != 41');
                             foreach ($menu_cate_parent as $val) {
                                 $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
-                                <li class="this_menu" id="this_menu">
+                                <li class="this_menu">
                                     <div class="big_item_menu" onclick="big_item_menu(this,1)">
                                         <a class="item_menu" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
                                     </div>
@@ -116,8 +116,8 @@
                                     <?php } ?>
                                 </li>
                             <?php } ?>
-                        </div>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

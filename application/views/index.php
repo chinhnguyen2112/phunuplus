@@ -14,7 +14,7 @@
   <meta name="keywords" content="<?= isset($meta_key) ? $meta_key : '' ?>" />
   <link rel="canonical" href="<?= (isset($canonical)) ? $canonical : "" ?>" />
   <meta property="og:locale" content="vi_VN" />
-  <meta proprety="og:type" content="website" />
+  <meta proprety="og:type" content="article" />
   <meta property="og:url" content="<?= (isset($canonical)) ? $canonical : "" ?>" />
   <meta property="og:title" content="<?= isset($meta_title) ? $meta_title : '' ?>" />
   <meta property="og:site_name" content="Phụ nữ  plus" />
@@ -39,7 +39,6 @@
   <?php if (isset($list_css)) {
     foreach ($list_css as $css) { ?>
       <link rel="stylesheet" href="/assets/css/<?= $css ?>?v=<?= time() ?>">
-      </link>
   <?php  }
   } ?>
   <!-- Google tag (gtag.js) -->
