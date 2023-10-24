@@ -53,7 +53,7 @@
                 <div class="box_content">
                     <ul>
                         <li class="item_content_sidebar">
-                            <img class="icon_li" src="/images/icons/icons8-star-50.png" />
+                            <img class="icon_li" src="/images/icons/icons8-star-50.png">
                             Chuyện
                             <strong>
                                 <a href="/chuyen-tinh-yeu/">Tình Yêu</a>
@@ -61,7 +61,7 @@
                             Lãng Mạn
                         </li>
                         <li class="item_content_sidebar">
-                            <img class="icon_li" src="/images/icons/icons8-star-50.png" />
+                            <img class="icon_li" src="/images/icons/icons8-star-50.png">
                             Chăm Sóc
                             <strong>
                                 <a href="/da-dep/">Da Đẹp</a>
@@ -69,7 +69,7 @@
                             Như Sao Hàn
                         </li>
                         <li class="item_content_sidebar">
-                            <img class="icon_li" src="/images/icons/icons8-star-50.png" />
+                            <img class="icon_li" src="/images/icons/icons8-star-50.png">
                             Giá Trị Của
                             <strong>
                                 <a href="/hon-nhan/">Hôn Nhân</a>
@@ -77,7 +77,7 @@
                             Vợ Chồng
                         </li>
                         <li class="item_content_sidebar">
-                            <img class="icon_li" src="/images/icons/icons8-star-50.png" />
+                            <img class="icon_li" src="/images/icons/icons8-star-50.png">
                             Tiêu Chuẩn
                             <strong>
                                 <a href="/dang-dep/">Dáng Đẹp</a>
@@ -85,7 +85,7 @@
                             Phụ Nữ Việt
                         </li>
                         <li class="item_content_sidebar">
-                            <img class="icon_li" src="/images/icons/icons8-star-50.png" />
+                            <img class="icon_li" src="/images/icons/icons8-star-50.png">
                             Style
                             <strong>
                                 <a href="/mac-dep/">Mặc Đẹp</a>
@@ -98,7 +98,7 @@
             <div class="hot_news">
                 <div class="box_heading">
                     <a href="#">
-                        <img src="/images/icons/icons8-fire-30.png" />
+                        <img src="/images/icons/icons8-fire-30.png">
                         Tin Mới Nóng
                     </a>
                 </div>

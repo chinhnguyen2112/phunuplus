@@ -125,6 +125,12 @@
                         </div>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/admin/list_down">
+                            <i class="typcn typcn-document-text menu-icon"></i>
+                            <span class="menu-title">PassWord Download</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/admin/logout">
                             <i class="typcn typcn-mortar-board menu-icon"></i>
                             <span class="menu-title">Đăng xuất</span>

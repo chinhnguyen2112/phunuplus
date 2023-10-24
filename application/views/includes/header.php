@@ -22,8 +22,8 @@
                     </div>
                     <div class="search_only_pc">
                         <form class="search_pc" id="search_pc" method="get" action="/search">
-                            <img class="img_search_pc" id="img_search_pc" src="/images/icons/icons8-search-20.png" alt="icon search" />
-                            <input class="input_pc" id="search_input" type="text" autocomplete="off" name="search" placeholder="Tìm kiếm" />
+                            <img class="img_search_pc" id="img_search_pc" src="/images/icons/icons8-search-20.png" alt="icon search">
+                            <input class="input_pc" id="search_input" type="text" autocomplete="off" name="search" placeholder="Tìm kiếm">
                         </form>
                     </div>
                     <div class="noti">
@@ -36,8 +36,8 @@
                         <div class="list_item_submenu">
                             <div class="search_sub">
                                 <form class="form_sub" id="search" method="get" action="/search">
-                                    <img class="img_seach_sub" id="img_search_sub" src="/images/icons/icons8-search-20.png" alt="tìm kiếm" />
-                                    <input class="input_sub" id="search_input_sub" type="text" autocomplete="off" name="search" placeholder="Tìm kiếm" />
+                                    <img class="img_seach_sub" id="img_search_sub" src="/images/icons/icons8-search-20.png" alt="tìm kiếm">
+                                    <input class="input_sub" id="search_input_sub" type="text" autocomplete="off" name="search" placeholder="Tìm kiếm">
                                 </form>
                             </div>
                             <div class="btn_header">

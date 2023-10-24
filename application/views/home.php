@@ -61,9 +61,9 @@
                                         <span class="dot_item"></span>
                                         <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p>
                                     </div>
-                                    <span class="des_post"><?= $val['sapo'] ?>
+                                    <div class="des_post"><?= $val['sapo'] ?>
 
-                                    </span>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -81,7 +81,6 @@
                             <a class="first_item_cate" title="<?= $yeu[0]['title'] ?>" href="/<?= alias_new($yeu[0]['alias'], $yeu[0]['id']) ?>">
                                 <img src="/<?= $yeu[0]['image'] ?>" alt="<?= $yeu[0]['title'] ?>">
                                 <h3 class="title_blog_cate"><?= $yeu[0]['title'] ?></h3>
-                                <!-- <div class="sapo_item_cate"><?= $yeu[0]['sapo'] ?></div> -->
                             </a>
                             <div class="list_blog_child">
                                 <?php foreach ($yeu as $key => $val) {
@@ -107,7 +106,6 @@
                             <a class="first_item_cate" title="<?= $dep[0]['title'] ?>" href="/<?= alias_new($dep[0]['alias'], $dep[0]['id']) ?>">
                                 <img src="/<?= $dep[0]['image'] ?>" alt="<?= $dep[0]['title'] ?>">
                                 <h3 class="title_blog_cate"><?= $dep[0]['title'] ?></h3>
-                                <!-- <div class="sapo_item_cate"><?= $dep[0]['sapo'] ?></div> -->
                             </a>
                             <div class="list_blog_child">
                                 <?php foreach ($dep as $key => $val) {
@@ -133,7 +131,6 @@
                             <a class="first_item_cate" title="<?= $khoe[0]['title'] ?>" href="/<?= alias_new($khoe[0]['alias'], $khoe[0]['id']) ?>">
                                 <img src="/<?= $khoe[0]['image'] ?>" alt="<?= $khoe[0]['title'] ?>">
                                 <h3 class="title_blog_cate"><?= $khoe[0]['title'] ?></h3>
-                                <!-- <div class="sapo_item_cate"><?= $khoe[0]['sapo'] ?></div> -->
                             </a>
                             <div class="list_blog_child">
                                 <?php foreach ($khoe as $key => $val) {
@@ -159,7 +156,6 @@
                             <a class="first_item_cate" title="<?= $bep[0]['title'] ?>" href="/<?= alias_new($bep[0]['alias'], $bep[0]['id']) ?>">
                                 <img src="/<?= $bep[0]['image'] ?>" alt="<?= $bep[0]['title'] ?>">
                                 <h3 class="title_blog_cate"><?= $bep[0]['title'] ?></h3>
-                                <!-- <div class="sapo_item_cate"><?= $bep[0]['sapo'] ?></div> -->
                             </a>
                             <div class="list_blog_child">
                                 <?php foreach ($bep as $key => $val) {
@@ -185,7 +181,6 @@
                             <a class="first_item_cate" title="<?= $lam_me[0]['title'] ?>" href="/<?= alias_new($lam_me[0]['alias'], $lam_me[0]['id']) ?>">
                                 <img src="/<?= $lam_me[0]['image'] ?>" alt="<?= $lam_me[0]['title'] ?>">
                                 <h3 class="title_blog_cate"><?= $lam_me[0]['title'] ?></h3>
-                                <!-- <div class="sapo_item_cate"><?= $lam_me[0]['sapo'] ?></div> -->
                             </a>
                             <div class="list_blog_child">
                                 <?php foreach ($lam_me as $key => $val) {
@@ -211,7 +206,6 @@
                             <a class="first_item_cate" title="<?= $life_style[0]['title'] ?>" href="/<?= alias_new($life_style[0]['alias'], $life_style[0]['id']) ?>">
                                 <img src="/<?= $life_style[0]['image'] ?>" alt="<?= $life_style[0]['title'] ?>">
                                 <h3 class="title_blog_cate"><?= $life_style[0]['title'] ?></h3>
-                                <!-- <div class="sapo_item_cate"><?= $life_style[0]['sapo'] ?></div> -->
                             </a>
                             <div class="list_blog_child">
                                 <?php foreach ($life_style as $key => $val) {
@@ -237,7 +231,6 @@
                             <a class="first_item_cate" title="<?= $tam[0]['title'] ?>" href="/<?= alias_new($tam[0]['alias'], $tam[0]['id']) ?>">
                                 <img src="/<?= $tam[0]['image'] ?>" alt="<?= $tam[0]['title'] ?>">
                                 <h3 class="title_blog_cate"><?= $tam[0]['title'] ?></h3>
-                                <!-- <div class="sapo_item_cate"><?= $tam[0]['sapo'] ?></div> -->
                             </a>
                             <div class="list_blog_child">
                                 <?php foreach ($tam as $key => $val) {
@@ -262,7 +255,6 @@
                             <a class="first_item_cate" title="<?= $tieu_dung[0]['title'] ?>" href="/<?= alias_new($tieu_dung[0]['alias'], $tieu_dung[0]['id']) ?>">
                                 <img src="/<?= $tieu_dung[0]['image'] ?>" alt="<?= $tieu_dung[0]['title'] ?>">
                                 <h3 class="title_blog_cate"><?= $tieu_dung[0]['title'] ?></h3>
-                                <!-- <div class="sapo_item_cate"><?= $tieu_dung[0]['sapo'] ?></div> -->
                             </a>
                             <div class="list_blog_child">
                                 <?php foreach ($tieu_dung as $key => $val) {
@@ -288,7 +280,6 @@
                             <a class="first_item_cate" title="<?= $giai_tri[0]['title'] ?>" href="/<?= alias_new($giai_tri[0]['alias'], $giai_tri[0]['id']) ?>">
                                 <img src="/<?= $giai_tri[0]['image'] ?>" alt="<?= $giai_tri[0]['title'] ?>">
                                 <h3 class="title_blog_cate"><?= $giai_tri[0]['title'] ?></h3>
-                                <!-- <div class="sapo_item_cate"><?= $giai_tri[0]['sapo'] ?></div> -->
                             </a>
                             <div class="list_blog_child">
                                 <?php foreach ($giai_tri as $key => $val) {
@@ -314,7 +305,6 @@
                             <a class="first_item_cate" title="<?= $mat_ngu[0]['title'] ?>" href="/<?= alias_new($mat_ngu[0]['alias'], $mat_ngu[0]['id']) ?>">
                                 <img src="/<?= $mat_ngu[0]['image'] ?>" alt="<?= $mat_ngu[0]['title'] ?>">
                                 <h3 class="title_blog_cate"><?= $mat_ngu[0]['title'] ?></h3>
-                                <!-- <div class="sapo_item_cate"><?= $mat_ngu[0]['sapo'] ?></div> -->
                             </a>
                             <div class="list_blog_child">
                                 <?php foreach ($mat_ngu as $key => $val) {
@@ -340,7 +330,6 @@
                             <a class="first_item_cate" title="<?= $phong_su[0]['title'] ?>" href="/<?= alias_new($phong_su[0]['alias'], $phong_su[0]['id']) ?>">
                                 <img src="/<?= $phong_su[0]['image'] ?>" alt="<?= $phong_su[0]['title'] ?>">
                                 <h3 class="title_blog_cate"><?= $phong_su[0]['title'] ?></h3>
-                                <!-- <div class="sapo_item_cate"><?= $phong_su[0]['sapo'] ?></div> -->
                             </a>
                             <div class="list_blog_child">
                                 <?php foreach ($phong_su as $key => $val) {
@@ -366,7 +355,6 @@
                             <a class="first_item_cate" title="<?= $ban_doc[0]['title'] ?>" href="/<?= alias_new($ban_doc[0]['alias'], $ban_doc[0]['id']) ?>">
                                 <img src="/<?= $ban_doc[0]['image'] ?>" alt="<?= $ban_doc[0]['title'] ?>">
                                 <h3 class="title_blog_cate"><?= $ban_doc[0]['title'] ?></h3>
-                                <!-- <div class="sapo_item_cate"><?= $ban_doc[0]['sapo'] ?></div> -->
                             </a>
                             <div class="list_blog_child">
                                 <?php foreach ($ban_doc as $key => $val) {
@@ -392,7 +380,6 @@
                             <a class="first_item_cate" title="<?= $yolo[0]['title'] ?>" href="/<?= alias_new($yolo[0]['alias'], $yolo[0]['id']) ?>">
                                 <img src="/<?= $yolo[0]['image'] ?>" alt="<?= $yolo[0]['title'] ?>">
                                 <h3 class="title_blog_cate"><?= $yolo[0]['title'] ?></h3>
-                                <!-- <div class="sapo_item_cate"><?= $yolo[0]['sapo'] ?></div> -->
                             </a>
                             <div class="list_blog_child">
                                 <?php foreach ($yolo as $key => $val) {
@@ -417,7 +404,6 @@
                             <a class="first_item_cate" title="<?= $nhac[0]['title'] ?>" href="/<?= alias_new($nhac[0]['alias'], $nhac[0]['id']) ?>">
                                 <img src="/<?= $nhac[0]['image'] ?>" alt="<?= $nhac[0]['title'] ?>">
                                 <h3 class="title_blog_cate"><?= $nhac[0]['title'] ?></h3>
-                                <!-- <div class="sapo_item_cate"><?= $nhac[0]['sapo'] ?></div> -->
                             </a>
                             <div class="list_blog_child">
                                 <?php foreach ($nhac as $key => $val) {

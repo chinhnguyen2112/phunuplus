@@ -71,5 +71,5 @@
         </div>
     </div>
 </div>
-<input id="chuyen_muc" value="<?= isset($tag_id) ? $tag_id : 0 ?>" hidden />
-<input id="name_page" value="tag" hidden />
+<input id="chuyen_muc" value="<?= isset($tag_id) ? $tag_id : 0 ?>" hidden>
+<input id="name_page" value="tag" hidden>

@@ -599,6 +599,25 @@ td:first-child {
     margin-bottom: 20px !important;
 }
 
+
+
+/* ////// download */
+.text_show_pass {
+    font-size: 18px;
+    background: #f6bc1b;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn_show_pass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
 @media only screen and (max-width: 1024px) {
     .container_widget_about {
         padding: 20px;
@@ -642,7 +661,7 @@ td:first-child {
     }
 
     /* podcast  */
-  
+
 
     .middle_right {
         width: 100%;
@@ -682,9 +701,9 @@ td:first-child {
         width: -webkit-fill-available;
     }
 
-    
 
- 
+
+
 }
 
 @media only screen and (max-width: 540px) {
@@ -783,7 +802,7 @@ td:first-child {
     }
 
 
-  
+
 
 
     .sidebar_mid {

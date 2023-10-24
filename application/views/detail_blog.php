@@ -33,6 +33,9 @@
                 </div>
                 <div class="sapo_top"> <?= $blog['sapo'] ?></div>
                 <div class="right_detail">
+                    <?php if (isset($download) && $download != null) { ?>
+                        <input type="text" id="mk_show" value="<?= $download['password'] ?>" hidden>
+                    <?php } ?>
                     <div class="mucluc_blog" id="mucluc_blog">
                         <div class="box_title_ml">
                             <p class="title_mucluc" id="title_mucluc"><img class="img_ml" src="/images/icons/mucluc.png" alt="mục lục"> Mục lục</p>
@@ -47,6 +50,11 @@
                     <div class="content_blog" id="content_blog">
                         <?= $blog['content'] ?>
                     </div>
+                    <?php if (isset($download) && $download != null) { ?>
+                        <div class="btn_show_pass">
+                            <p class="text_show_pass">Hiển thị mật khẩu</p>
+                        </div>
+                    <?php } ?>
                 </div>
                 <?php if (isset($author) && $author != null) { ?>
                     <div class="text_author">

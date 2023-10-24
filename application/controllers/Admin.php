@@ -627,6 +627,93 @@ class Admin extends CI_Controller
             }
         }
     }
+    public function add_down()
+    {
+        if (admin()) {
+            $data['content'] = '/admin/add_download';
+            if ($this->input->get('id') > 0) {
+                $data['id'] = $id = $this->input->get('id');
+                $pass = $this->Madmin->query_sql_row("SELECT id_blog,password,alias  FROM download JOIN blogs ON download.id_blog = blogs.id  WHERE download.id = $id ");
+                if ($pass != null) {
+                    $data['pass'] = $pass;
+                } else {
+                    redirect('/admin/add_down');
+                }
+            }
+            $this->load->view('admin/index', $data);
+        } else {
+            redirect('/admin/login/');
+        }
+    }
+    public function ajax_down()
+    {
+        if (check_admin() == 1) {
+            $id = $this->input->post('id');
+            $alias = trim($this->input->post('url_blog'));
+            $alias = str_replace(base_url(), '', $alias);
+            $alias = str_replace('/', '', $alias);
+            $blog = $this->Madmin->get_by(['alias' => $alias], 'blogs');
+            if ($blog != null) {
+                $data['id_blog'] = $blog['id'];
+                $data['password'] = trim($this->input->post('password'));
+
+                $where_check['id_blog'] =  $blog['id'];
+                if ($id > 0) {
+                    $where_check['id !='] = $id;
+                }
+                $check = $this->Madmin->get_by($where_check, 'download');
+                if ($check != null) {
+                    $response = [
+                        'status' => 2,
+                        'msg' => 'Bài viết đã tồn tại'
+                    ];
+                } else {
+                    if ($id > 0) {
+                        $insert = 0;
+                        $update = $this->Madmin->update(['id' => $id], $data, 'download');
+                        if ($update) {
+                            $insert = $id;
+                        }
+                    } else {
+                        $insert = $this->Madmin->insert($data, 'download');
+                    }
+                    if ($insert > 0) {
+                        $response = [
+                            'status' => 1,
+                            'msg' => 'Thành công'
+                        ];
+                    } else {
+                        $response = [
+                            'status' => 0,
+                            'msg' => 'Thất bại'
+                        ];
+                    }
+                }
+            } else {
+                $response = [
+                    'status' => 2,
+                    'msg' => 'Bài viết không tồn tại. Vui lòng kiểm tra lại đường dẫn'
+                ];
+            }
+        } else {
+            $response = [
+                'status' => 0,
+                'msg' => 'Hết phiên đăng nhập !'
+            ];
+        }
+        echo json_encode($response);
+    }
+    public function list_down()
+    {
+        if (admin()) {
+            $list = $this->Madmin->query_sql("SELECT download.id,id_blog,password,alias  FROM download JOIN blogs ON download.id_blog = blogs.id  ");
+            $data['list'] = $list;
+            $data['content'] = '/admin/list_download';
+            $this->load->view('admin/index', $data);
+        } else {
+            redirect('/admin/login/');
+        }
+    }
     public function sitemap()
     {
         $time = time();

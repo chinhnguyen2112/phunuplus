@@ -107,4 +107,4 @@
         </div>
     </div>
 </div>
-<input id="author" value="<?= isset($author['id']) ? $author['id'] : '' ?>" hidden />
+<input id="author" value="<?= isset($author['id']) ? $author['id'] : '' ?>" hidden>

@@ -246,6 +246,10 @@ class Home extends CI_Controller
                 $data['author'] = $author;
             }
         }
+        $download = $this->Madmin->get_by(['id_blog' => $blog['id']], 'download');
+        if ($download != null) {
+            $data['download'] = $download;
+        }
         $data['blog'] = $blog;
         $data['content'] = 'detail_blog';
         $data['list_js'] = [

@@ -74,6 +74,9 @@ $route['admin/list_author'] = 'Admin/list_author';
 $route['admin/pre_blog'] = 'Admin/pre_blog';
 $route['admin/add_page'] = 'Admin/add_page';
 $route['admin/list_page'] = 'Admin/list_page';
+$route['admin/down'] = 'Admin/view_down';
+$route['admin/ajax_down'] = 'Admin/ajax_down';
+$route['admin/list_down'] = 'Admin/list_down';
 
 
 
