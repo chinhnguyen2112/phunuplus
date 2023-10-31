@@ -42,6 +42,9 @@
                     Xem
                     <a target="_blank" rel="dofollow" href="https://ketquabongda.io/"> <b>kết quả bóng đá</b></a>
                 </li>
+                <li>
+                    <a target="_blank" rel="dofollow" href="https://vnesports.vn/"> <b>VnEsports</b></a>
+                </li>
             </ul>
         </div>
     </div>
