@@ -87,17 +87,16 @@ class Admin extends CI_Controller
         if (admin()) {
             $id = $this->input->post('id');
             $time = time();
-            $search = [' white-space-collapse: preserve;', ' background-color: transparent;', 'font-size: 11pt;', 'font-family: Arial, sans-serif;', 'color: rgb(0, 0, 0);', 'font-variant-position: normal;', 'text-align: justify;', 'font-variant-position: normal;', 'font-variant-alternates: normal;', 'font-variant-east-asian: normal;', 'font-variant-numeric: normal;', 'vertical-align: baseline;', ' font-family: Arial;', 'white-space: pre-wrap;', 'line-height:1.7999999999999998;', 'margin-top:10pt;', 'margin-bottom:10pt;', 'text-align:center;', 'line-height: 1.8;', 'margin-top: 10pt;', 'margin-bottom: 10pt;', 'text-align:center', 'list-style-type: disc;', 'white-space: pre;', 'style=""'];
             $data['title'] = $this->input->post('title');
             $data['time_post'] = $time_post =  strtotime($this->input->post('time_post'));
             $data['alias'] = $alias = trim($this->input->post('alias'));
             $data['chuyenmuc'] = $chuyenmuc =  $this->input->post('category');
             $sapo =  $this->input->post('sapo');
-            $sapo = str_replace($search, '', $sapo);
             $content =  $this->input->post('content');
-            $content = str_replace($search, '', $content);
-            $data['content'] = $content;
-            $data['sapo'] = $sapo;
+            $content = preg_replace('/(<[^>]+) id=".*?"/i', '$1', $content);
+            $sapo =  preg_replace('/(<[^>]+) id=".*?"/i', '$1', $sapo);
+            $data['content'] = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $content);
+            $data['sapo'] =  preg_replace('/(<[^>]+) style=".*?"/i', '$1', $sapo);
             $data['meta_title'] = $this->input->post('meta_title');
             $data['meta_key']     = $this->input->post('meta_key');
             $data['meta_des']     = $this->input->post('meta_des');
@@ -275,7 +274,9 @@ class Admin extends CI_Controller
             $cate = $this->input->post('category');
             $data['meta_title'] = $this->input->post('meta_title');
             $data['meta_des'] = $this->input->post('meta_des');
-            $data['content'] = $this->input->post('content');
+            $content =  $this->input->post('content');
+            $content = preg_replace('/(<[^>]+) id=".*?"/i', '$1', $content);
+            $data['content'] = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $content);
             $data['level'] = 0;
             $data['parent'] = 0;
             $where_check = ['alias' => $alias];
@@ -401,7 +402,9 @@ class Admin extends CI_Controller
             $data['meta_key'] = $this->input->post('meta_key');
             $data['meta_title'] = $this->input->post('meta_title');
             $data['meta_des'] = $this->input->post('meta_des');
-            $data['content'] = $this->input->post('content');
+            $content =  $this->input->post('content');
+            $content = preg_replace('/(<[^>]+) id=".*?"/i', '$1', $content);
+            $data['content'] = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $content);
             $cate = $this->input->post('category');
             $data['parent'] = 0;
             $where_check = ['alias' => $alias];
@@ -544,7 +547,9 @@ class Admin extends CI_Controller
         if (check_admin() == 1) {
             $data['name'] = $this->input->post('name');
             $alias = trim($this->input->post('alias'));
-            $data['content'] = $this->input->post('content');
+            $content =  $this->input->post('content');
+            $content = preg_replace('/(<[^>]+) id=".*?"/i', '$1', $content);
+            $data['content'] = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $content);
             $id = $this->input->post('id');
             $data['alias'] = $alias;
             $data['type'] = $this->input->post('type');
