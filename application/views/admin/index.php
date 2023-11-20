@@ -91,6 +91,12 @@
                         </div>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/admin/list_page">
+                            <i class="typcn typcn-document-text menu-icon"></i>
+                            <span class="menu-title">Page</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#ui-chuyenmuc" aria-expanded="false" aria-controls="ui-chuyenmuc">
                             <i class="typcn typcn-document-text menu-icon"></i>
                             <span class="menu-title">Chuyên mục</span>
@@ -117,6 +123,12 @@
                                 <li class="nav-item"><a class="nav-link" href="/admin/list_tag">Danh sách tags</a></li>
                             </ul>
                         </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/list_down">
+                            <i class="typcn typcn-document-text menu-icon"></i>
+                            <span class="menu-title">PassWord Download</span>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/admin/logout">

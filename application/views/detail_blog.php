@@ -322,6 +322,7 @@
                                     </a>
                                 </div>
                             </div>
+<<<<<<< HEAD
                         </div>
                     </div>
                 </div>
@@ -516,6 +517,25 @@
                                 </a>
                             </div>
                         </div>
+=======
+                            <a rel="nofollow" class="follow_ggnew" target="_blank" href="https://news.google.com/publications/CAAqBwgKMK2v0Asw7MrnAw?hl=vi&gl=VN&ceid=VN:vi">Theo dõi Phụ Nữ Plus trên <img src="/images/googlelogo.svg" alt=""> News</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sapo_top"> <?= $blog['sapo'] ?></div>
+                <div class="right_detail">
+                    <?php if (isset($download) && $download != null) { ?>
+                        <input type="text" id="mk_show" value="<?= $download['password'] ?>" hidden>
+                    <?php } ?>
+                    <div class="mucluc_blog" id="mucluc_blog">
+                        <div class="box_title_ml">
+                            <p class="title_mucluc" id="title_mucluc"><img class="img_ml" src="/images/icons/mucluc.png" alt="mục lục"> Mục lục</p>
+                            <img src="/images/icon_arrow_bold.webp" class="img_show_ml" alt="mục lục">
+                        </div>
+                        <ul class="list_mucluc" id="list_mucluc">
+
+                        </ul>
+>>>>>>> 6d273a316caa1d0730d6d6fdef39740b98d6d957
                     </div>
                 </div>
                 <div class="box_product third_box_product">
@@ -718,6 +738,11 @@
                             </div>
                         </div>
                     </div>
+                    <?php if (isset($download) && $download != null) { ?>
+                        <div class="btn_show_pass">
+                            <p class="text_show_pass">Hiển thị mật khẩu</p>
+                        </div>
+                    <?php } ?>
                 </div>
                 <!-- infor product  -->
                 <div class="box_product infor_product">
@@ -788,6 +813,7 @@
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <!-- evaluate  -->
                 <div class="box_product evaluate_product">
                     <div class="title_box_product">
@@ -868,6 +894,37 @@
                         <div class="text_item_policy">
                             <span class="span_none">Chính Sách</span>
                             <span>Đổi Trả</span>
+=======
+
+
+
+                <?php if ($blog_same != null) { ?>
+                    <div class="blog_same">
+                        <div class="list_blog_same">
+                            <?php
+                            foreach ($blog_same as $val) { ?>
+                                <div class="this_train">
+                                    <a title="<?= $val['title'] ?>" href="/<?= alias_new($val['alias'], $val['id']) ?>">
+                                        <p class="title_blog only_mobile"><?= $val['title'] ?></p>
+                                    </a>
+                                    <a href="/<?= alias_new($val['alias'], $val['id']) ?>">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <div class="box_right_data">
+                                            <p class="title_blog"><?= $val['title'] ?></p>
+                                            <div class="fl_date">
+                                                <p class="cate_post"><?php $cate = chuyen_muc(['id' => $val['chuyenmuc']]);
+                                                                        echo $cate[0]['name']; ?></p>
+                                                <span class="dot_item"></span>
+                                                <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p>
+                                            </div>
+                                            <div class="des_blog"><?= $val['sapo'] ?>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <?php
+                            } ?>
+>>>>>>> 6d273a316caa1d0730d6d6fdef39740b98d6d957
                         </div>
                     </a>
                 </div>

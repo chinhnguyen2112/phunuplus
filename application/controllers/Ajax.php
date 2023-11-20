@@ -23,10 +23,10 @@ class Ajax extends CI_Controller
                 $cate = chuyen_muc(['id' => $val['chuyenmuc']]);
                 $html .= '<div class="this_content_right">
 
-                            <a title="' . $val['title'] . '" href="/' . $val['alias'] . '/">
+                            <a title="' . $val['title'] . '" href="/' . alias_new($val['alias'], $val['id']) . '">
                                 <p class="title_blog only_mobile">' . $val['title'] . '</p>
                             </a>
-                            <a class="linl_all_detail link_fl" title="' . $val['title'] . '" href="/' . $val['alias'] . '/">
+                            <a class="linl_all_detail link_fl" title="' . $val['title'] . '" href="/' . alias_new($val['alias'], $val['id']) . '">
                                 <img src="/' . $val['image'] . '" alt="' . $val['title'] . '">
                                 <div class="box_content_blog">
                                 <p class="title_blog">' . $val['title'] . '</p>
@@ -107,7 +107,7 @@ class Ajax extends CI_Controller
                 $cate = chuyen_muc(['id' => $val['chuyenmuc']]);
                 if ($name_page == 'tag') {
                     $html .= '<div class="this_train">
-                                    <a href="/' . $val['alias'] . '/">
+                                    <a href="/' . alias_new($val['alias'], $val['id']) . '">
                                         <img src="/' . $val['image'] . '" alt="' . $val['title'] . '">
                                         <div class="box_right_data">
                                             <p class="title_blog">' . $val['title'] . '</p>
@@ -119,10 +119,10 @@ class Ajax extends CI_Controller
                 } else {
                     $html .= '
                             <div class="this_train">
-                                <a title="' . $val['title'] . '" href="/' . $val['alias'] . '/">
+                                <a title="' . $val['title'] . '" href="/' . alias_new($val['alias'], $val['id']) . '">
                                     <p class="title_blog only_mobile">' . $val['title'] . '</p>
                                 </a>
-                                <a href="/' . $val['alias'] . '/">
+                                <a href="/' . alias_new($val['alias'], $val['id']) . '">
                                     <img src="/' . $val['image'] . '" alt="' . $val['title'] . '">
                                     <div class="box_right_data">
                                         <p class="title_blog">' . $val['title'] . '</p>
@@ -203,7 +203,7 @@ class Ajax extends CI_Controller
             foreach ($blog_cate as $val) {
                 $html .= '
                 <div class="this_train">
-                    <a href="/' . $val['alias'] . '/">
+                    <a href="/' . alias_new($val['alias'], $val['id']) . '">
                         <img src="/' . $val['image'] . '" alt="' . $val['title'] . '">
                         <div class="box_right_data">
                             <p class="title_blog">' . $val['title'] . '</p>

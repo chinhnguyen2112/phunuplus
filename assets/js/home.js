@@ -27,6 +27,7 @@ $(".load_more").click(function () {
 	});
 });
 
+<<<<<<< HEAD
 
 $(".slide_banner").slick({
 	autoplay: true,
@@ -49,10 +50,23 @@ if (width < 768) {
 	val = 9;
 } 
 $(".list_logo").slick({
+=======
+var val = 0;
+var width = screen.width;
+if (width < 768) {
+	val = 1;
+} else if (width < 1024) {
+	val = 3;
+} else {
+	val = 4;
+}
+$(".slider_hots_week").slick({
+>>>>>>> 6d273a316caa1d0730d6d6fdef39740b98d6d957
 	autoplay: true,
 	autoplaySpeed: 1000,
 	arrows: true,
 	prevArrow:
+<<<<<<< HEAD
 		'<button type="button" class="slick-logo slick-prev-logo"><img src="/images/icons/icon_arrow_slide2.png" alt="icon prev"></button>',
 	nextArrow:
 		'<button type="button" class="slick-logo slick-next-logo"><img src="/images/icons/icon_arrow_slide2.png" alt="icon next"></button>',
@@ -108,3 +122,11 @@ $(".tab_01").click(function () {
 	}
   });
   
+=======
+		'<button type="button" class="slick-prev"><img src="/images/icons/icon_arrow_slide.png" alt="icon prev"></button>',
+	nextArrow:
+		'<button type="button" class="slick-next"><img src="/images/icons/icon_arrow_slide.png" alt="icon next"></button>',
+	slidesToShow: val,
+	dots: true,
+});
+>>>>>>> 6d273a316caa1d0730d6d6fdef39740b98d6d957

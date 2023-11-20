@@ -91,8 +91,12 @@ class Admin extends CI_Controller
             $data['time_post'] = $time_post =  strtotime($this->input->post('time_post'));
             $data['alias'] = $alias = trim($this->input->post('alias'));
             $data['chuyenmuc'] = $chuyenmuc =  $this->input->post('category');
-            $data['sapo'] = $this->input->post('sapo');
-            $data['content'] = $this->input->post('content');
+            $sapo =  $this->input->post('sapo');
+            $content =  $this->input->post('content');
+            $content = preg_replace('/(<[^>]+) id=".*?"/i', '$1', $content);
+            $sapo =  preg_replace('/(<[^>]+) id=".*?"/i', '$1', $sapo);
+            $data['content'] = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $content);
+            $data['sapo'] =  preg_replace('/(<[^>]+) style=".*?"/i', '$1', $sapo);
             $data['meta_title'] = $this->input->post('meta_title');
             $data['meta_key']     = $this->input->post('meta_key');
             $data['meta_des']     = $this->input->post('meta_des');
@@ -101,8 +105,13 @@ class Admin extends CI_Controller
             $data['author_id'] = $_SESSION['admin']['id'];
             $data['index_blog'] = $this->input->post('index_blog');
             $cate = chuyen_muc(['id' => $chuyenmuc]);
+            if ($this->input->post('type') == 1) {
+                $data['type'] = 1;
+            }
             if ($cate[0]['parent'] > 0) {
                 $data['cate_parent'] = $cate[0]['parent'];
+            } else {
+                $data['cate_parent'] = 0;
             }
             if ($this->input->post('tag') != '') {
                 $data['tag'] =  implode(',', $this->input->post('tag'));
@@ -159,7 +168,11 @@ class Admin extends CI_Controller
                     $insert_blog = $this->Madmin->insert($data, 'blogs');
                 }
                 if ($insert_blog > 0) {
-                    $this->sitemap();
+                    if ($data['type'] == 1) {
+                        $this->sitemap_page();
+                    } else {
+                        $this->sitemap();
+                    }
                     $response = [
                         'status' => 1,
                         'msg' => 'Thành công'
@@ -181,7 +194,7 @@ class Admin extends CI_Controller
     }
     public function del_blog()
     {
-        if (check_admin() == 1 || check_admin() == 2) {
+        if (check_admin() == 1) {
             $id = $this->input->post('id');
             $table = $this->input->post('table');
             if ($table == 'admin') {
@@ -210,26 +223,7 @@ class Admin extends CI_Controller
                         ];
                     } else {
                         $delete = $this->Madmin->delete(['id' => $id], $table);
-                        $this->sitemap_page();
-                    }
-                }
-            } elseif ($table == 'tag') {
-                $check = $this->Madmin->num_rows_or('', ['chuyenmuc' => $id, 'cate_parent' => $id], 'blogs');
-                if ($check != null) {
-                    $response = [
-                        'status' => 0,
-                        'msg' => 'Chưa chuyển hết bài viết của chuyên mục này'
-                    ];
-                } else {
-                    $check = $this->Madmin->get_list(['parent' => $id], 'category');
-                    if ($check != null) {
-                        $response = [
-                            'status' => 0,
-                            'msg' => 'Chưa chuyển chuyên mục con của chuyên mục này'
-                        ];
-                    } else {
-                        $delete = $this->Madmin->delete(['id' => $id], $table);
-                        $this->sitemap_page();
+                        $this->sitemap_cate();
                     }
                 }
             } else {
@@ -280,7 +274,9 @@ class Admin extends CI_Controller
             $cate = $this->input->post('category');
             $data['meta_title'] = $this->input->post('meta_title');
             $data['meta_des'] = $this->input->post('meta_des');
-            $data['content'] = $this->input->post('content');
+            $content =  $this->input->post('content');
+            $content = preg_replace('/(<[^>]+) id=".*?"/i', '$1', $content);
+            $data['content'] = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $content);
             $data['level'] = 0;
             $data['parent'] = 0;
             $where_check = ['alias' => $alias];
@@ -309,7 +305,7 @@ class Admin extends CI_Controller
                     $insert_chuyenmuc = $this->Madmin->insert($data, 'category');
                 }
                 if ($insert_chuyenmuc > 0) {
-                    $this->sitemap_page();
+                    $this->sitemap_cate();
                     $response = [
                         'status' => 1,
                         'msg' => 'Thành công'
@@ -343,7 +339,7 @@ class Admin extends CI_Controller
     {
         if (admin()) {
             $id_admin = $_SESSION['admin']['id'];
-            $url_search = str_replace('https://phunuplus.vn/', '', $this->input->get('url_search'));
+            $url_search = str_replace(base_url(), '', $this->input->get('url_search'));
             $url_search = str_replace('/', '', $url_search);
             $key_search = $this->input->get('key_search');
             $cate = $this->input->get('cate');
@@ -406,7 +402,9 @@ class Admin extends CI_Controller
             $data['meta_key'] = $this->input->post('meta_key');
             $data['meta_title'] = $this->input->post('meta_title');
             $data['meta_des'] = $this->input->post('meta_des');
-            $data['content'] = $this->input->post('content');
+            $content =  $this->input->post('content');
+            $content = preg_replace('/(<[^>]+) id=".*?"/i', '$1', $content);
+            $data['content'] = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $content);
             $cate = $this->input->post('category');
             $data['parent'] = 0;
             $where_check = ['alias' => $alias];
@@ -434,7 +432,7 @@ class Admin extends CI_Controller
                     $insert_tag = $this->Madmin->insert($data, 'tags');
                 }
                 if ($insert_tag > 0) {
-                    $this->sitemap_page();
+                    $this->sitemap_tag();
                     $response = [
                         'status' => 1,
                         'msg' => 'Thành công'
@@ -470,6 +468,37 @@ class Admin extends CI_Controller
             $list = $this->Madmin->get_list($where, 'tags');
             $data['list'] = $list;
             $data['content'] = '/admin/list_tag';
+            $this->load->view('admin/index', $data);
+        } else {
+            redirect('/admin/login/');
+        }
+    }
+    public function add_page()
+    {
+        if (admin()) {
+            $data['content'] = '/admin/add_page';
+            $data['created_at'] = time();
+            if ($this->input->get('id') > 0) {
+                $data['id'] = $id = $this->input->get('id');
+                $blog = $this->Madmin->get_by(['id' => $id], 'blogs');
+                if ($blog != null) {
+                    $data['blog'] = $blog;
+                    $data['created_at'] = $blog['created_at'];
+                } else {
+                    redirect('/admin/add_page');
+                }
+            }
+            $this->load->view('admin/index', $data);
+        } else {
+            redirect('/admin/login/');
+        }
+    }
+    public function list_page()
+    {
+        if (admin()) {
+            $list = $this->Madmin->get_list(['type' => 1], 'blogs');
+            $data['list'] = $list;
+            $data['content'] = '/admin/list_page';
             $this->load->view('admin/index', $data);
         } else {
             redirect('/admin/login/');
@@ -518,7 +547,9 @@ class Admin extends CI_Controller
         if (check_admin() == 1) {
             $data['name'] = $this->input->post('name');
             $alias = trim($this->input->post('alias'));
-            $data['content'] = $this->input->post('content');
+            $content =  $this->input->post('content');
+            $content = preg_replace('/(<[^>]+) id=".*?"/i', '$1', $content);
+            $data['content'] = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $content);
             $id = $this->input->post('id');
             $data['alias'] = $alias;
             $data['type'] = $this->input->post('type');
@@ -606,16 +637,103 @@ class Admin extends CI_Controller
             }
         }
     }
+    public function add_down()
+    {
+        if (admin()) {
+            $data['content'] = '/admin/add_download';
+            if ($this->input->get('id') > 0) {
+                $data['id'] = $id = $this->input->get('id');
+                $pass = $this->Madmin->query_sql_row("SELECT id_blog,password,alias  FROM download JOIN blogs ON download.id_blog = blogs.id  WHERE download.id = $id ");
+                if ($pass != null) {
+                    $data['pass'] = $pass;
+                } else {
+                    redirect('/admin/add_down');
+                }
+            }
+            $this->load->view('admin/index', $data);
+        } else {
+            redirect('/admin/login/');
+        }
+    }
+    public function ajax_down()
+    {
+        if (check_admin() == 1) {
+            $id = $this->input->post('id');
+            $alias = trim($this->input->post('url_blog'));
+            $alias = str_replace(base_url(), '', $alias);
+            $alias = str_replace('/', '', $alias);
+            $blog = $this->Madmin->get_by(['alias' => $alias], 'blogs');
+            if ($blog != null) {
+                $data['id_blog'] = $blog['id'];
+                $data['password'] = trim($this->input->post('password'));
+
+                $where_check['id_blog'] =  $blog['id'];
+                if ($id > 0) {
+                    $where_check['id !='] = $id;
+                }
+                $check = $this->Madmin->get_by($where_check, 'download');
+                if ($check != null) {
+                    $response = [
+                        'status' => 2,
+                        'msg' => 'Bài viết đã tồn tại'
+                    ];
+                } else {
+                    if ($id > 0) {
+                        $insert = 0;
+                        $update = $this->Madmin->update(['id' => $id], $data, 'download');
+                        if ($update) {
+                            $insert = $id;
+                        }
+                    } else {
+                        $insert = $this->Madmin->insert($data, 'download');
+                    }
+                    if ($insert > 0) {
+                        $response = [
+                            'status' => 1,
+                            'msg' => 'Thành công'
+                        ];
+                    } else {
+                        $response = [
+                            'status' => 0,
+                            'msg' => 'Thất bại'
+                        ];
+                    }
+                }
+            } else {
+                $response = [
+                    'status' => 2,
+                    'msg' => 'Bài viết không tồn tại. Vui lòng kiểm tra lại đường dẫn'
+                ];
+            }
+        } else {
+            $response = [
+                'status' => 0,
+                'msg' => 'Hết phiên đăng nhập !'
+            ];
+        }
+        echo json_encode($response);
+    }
+    public function list_down()
+    {
+        if (admin()) {
+            $list = $this->Madmin->query_sql("SELECT download.id,id_blog,password,alias  FROM download JOIN blogs ON download.id_blog = blogs.id  ");
+            $data['list'] = $list;
+            $data['content'] = '/admin/list_download';
+            $this->load->view('admin/index', $data);
+        } else {
+            redirect('/admin/login/');
+        }
+    }
     public function sitemap()
     {
         $time = time();
-        $sql = "SELECT id,alias,updated_at FROM blogs WHERE index_blog = 1 AND time_post <= $time ORDER BY id ASC";
+        $sql = "SELECT id,alias,updated_at FROM blogs WHERE type = 0 AND index_blog = 1 AND time_post <= $time ORDER BY id ASC";
         $blog = $this->Madmin->query_sql($sql);
         $count = count($blog);
         $page = ceil($count / 200);
         for ($i = 1; $i <= $page; $i++) {
             $check_page = ($i - 1) * 200;
-            $sql_limit = "SELECT id,alias,updated_at FROM blogs WHERE index_blog = 1 AND time_post <= $time ORDER BY id ASC LIMIT {$check_page}, 200";
+            $sql_limit = "SELECT id,alias,updated_at FROM blogs WHERE type = 0 AND index_blog = 1 AND time_post <= $time ORDER BY id ASC LIMIT {$check_page}, 200";
             $blog_limit = $this->Madmin->query_sql($sql_limit);
             $doc = new DOMDocument("1.0", "utf-8");
             $doc->formatOutput = true;
@@ -625,7 +743,7 @@ class Admin extends CI_Controller
             foreach ($blog_limit as $val) {
                 $url = $doc->createElement("url");
                 $name = $doc->createElement("loc");
-                $name->appendChild($doc->createTextNode('https://phunuplus.vn/' . $val['alias'] . '/'));
+                $name->appendChild($doc->createTextNode(base_url() . alias_new($val['alias'], $val['id'])));
                 $url->appendChild($name);
                 $changefreq = $doc->createElement("changefreq");
                 $changefreq->appendChild($doc->createTextNode('daily'));
@@ -670,7 +788,7 @@ class Admin extends CI_Controller
                     foreach ($sitemap as $key => $val) {
                         $url = $doc->createElement("sitemap");
                         $name = $doc->createElement("loc");
-                        $name->appendChild($doc->createTextNode('https://phunuplus.vn/' . $val['name']));
+                        $name->appendChild($doc->createTextNode(base_url() . $val['name']));
                         $url->appendChild($name);
                         $lastmod = $doc->createElement("lastmod");
                         $lastmod->appendChild($doc->createTextNode($val['time'] . 'T17:28:31+07:00'));
@@ -683,12 +801,141 @@ class Admin extends CI_Controller
             $doc->save($name_file);
         }
     }
-    public function sitemap_page()
+    public function sitemap_tag()
+    {
+        $sql = "SELECT id,alias,created_at FROM tags ORDER BY id ASC";
+        $tags = $this->Madmin->query_sql($sql);
+        $count = count($tags);
+        $page = ceil($count / 200);
+        for ($i = 1; $i <= $page; $i++) {
+            $check_page = ($i - 1) * 200;
+            $sql_limit = "SELECT id,alias,created_at FROM tags ORDER BY id ASC LIMIT {$check_page}, 200";
+            $tag_limit = $this->Madmin->query_sql($sql_limit);
+            $doc = new DOMDocument("1.0", "utf-8");
+            $doc->formatOutput = true;
+            $r = $doc->createElement("urlset");
+            $r->setAttribute("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
+            $doc->appendChild($r);
+            foreach ($tag_limit as $val) {
+                $url = $doc->createElement("url");
+                $name = $doc->createElement("loc");
+                $name->appendChild($doc->createTextNode(base_url() . $val['alias'] . '/'));
+                $url->appendChild($name);
+                $changefreq = $doc->createElement("changefreq");
+                $changefreq->appendChild($doc->createTextNode('daily'));
+                $url->appendChild($changefreq);
+                $lastmod = $doc->createElement("lastmod");
+                $lastmod->appendChild($doc->createTextNode(date('Y-m-d', $val['created_at']) . 'T07:24:06+00:00'));
+                $url->appendChild($lastmod);
+                $priority = $doc->createElement("priority");
+                $priority->appendChild($doc->createTextNode('0.9'));
+                $url->appendChild($priority);
+                $r->appendChild($url);
+            }
+            $name = ($i == 1) ? '' : $i - 1;
+            $name_file = 'tags' . $name . ".xml";
+            $doc->save($name_file);
+            $date = date('Y-m-d', time());
+            $sql_check = "SELECT * FROM sitemap  WHERE name = '$name_file' ";
+            $row = $this->Madmin->query_sql_num($sql_check);
+            if ($row == 0) {
+                $data_insert = [
+                    'name' => $name_file,
+                    'time' => $date
+                ];
+                $insert = $this->Madmin->insert($data_insert, 'sitemap');
+                //\/\/\/\/\/\/\/\\
+                $sql = "SELECT * FROM sitemap";
+                $sitemap = $this->Madmin->query_sql($sql);
+                $doc = new DOMDocument("1.0", "utf-8");
+                $doc->formatOutput = true;
+                $doc->appendChild($doc->createProcessingInstruction('xml-stylesheet', 'type="text/xsl" href="https://phunuplus.vn/assets/css/css_sitemap.xsl"'));
+                $r = $doc->createElement("sitemapindex");
+                $r->setAttribute("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
+                $doc->appendChild($r);
+                foreach ($sitemap as $key => $val) {
+                    $url = $doc->createElement("sitemap");
+                    $name = $doc->createElement("loc");
+                    $name->appendChild($doc->createTextNode(base_url() . $val['name']));
+                    $url->appendChild($name);
+                    $lastmod = $doc->createElement("lastmod");
+                    $lastmod->appendChild($doc->createTextNode($val['time'] . 'T17:28:31+07:00'));
+                    $url->appendChild($lastmod);
+                    $r->appendChild($url);
+                }
+                $doc->save("sitemap.xml");
+            }
+        }
+    }
+    public function sitemap_cate()
     {
         $sql = "SELECT id,alias,created_at FROM category ORDER BY id ASC";
         $cate = $this->Madmin->query_sql($sql);
-        $tag = $this->Madmin->query_sql("SELECT id,alias,created_at FROM tags ORDER by id");
-        $arr = array_merge($cate, $tag);
+        $count = count($cate);
+        $page = ceil($count / 200);
+        for ($i = 1; $i <= $page; $i++) {
+            $check_page = ($i - 1) * 200;
+            $sql_limit = "SELECT id,alias,created_at FROM category ORDER BY id ASC LIMIT {$check_page}, 200";
+            $tag_limit = $this->Madmin->query_sql($sql_limit);
+            $doc = new DOMDocument("1.0", "utf-8");
+            $doc->formatOutput = true;
+            $r = $doc->createElement("urlset");
+            $r->setAttribute("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
+            $doc->appendChild($r);
+            foreach ($tag_limit as $val) {
+                $url = $doc->createElement("url");
+                $name = $doc->createElement("loc");
+                $name->appendChild($doc->createTextNode(base_url() . $val['alias'] . '/'));
+                $url->appendChild($name);
+                $changefreq = $doc->createElement("changefreq");
+                $changefreq->appendChild($doc->createTextNode('daily'));
+                $url->appendChild($changefreq);
+                $lastmod = $doc->createElement("lastmod");
+                $lastmod->appendChild($doc->createTextNode(date('Y-m-d', $val['created_at']) . 'T07:24:06+00:00'));
+                $url->appendChild($lastmod);
+                $priority = $doc->createElement("priority");
+                $priority->appendChild($doc->createTextNode('0.9'));
+                $url->appendChild($priority);
+                $r->appendChild($url);
+            }
+            $name = ($i == 1) ? '' : $i - 1;
+            $name_file = 'categories' . $name . ".xml";
+            $doc->save($name_file);
+            $date = date('Y-m-d', time());
+            $sql_check = "SELECT * FROM sitemap  WHERE name = '$name_file' ";
+            $row = $this->Madmin->query_sql_num($sql_check);
+            if ($row == 0) {
+                $data_insert = [
+                    'name' => $name_file,
+                    'time' => $date
+                ];
+                $insert = $this->Madmin->insert($data_insert, 'sitemap');
+                //\/\/\/\/\/\/\/\\
+                $sql = "SELECT * FROM sitemap";
+                $sitemap = $this->Madmin->query_sql($sql);
+                $doc = new DOMDocument("1.0", "utf-8");
+                $doc->formatOutput = true;
+                $doc->appendChild($doc->createProcessingInstruction('xml-stylesheet', 'type="text/xsl" href="https://phunuplus.vn/assets/css/css_sitemap.xsl"'));
+                $r = $doc->createElement("sitemapindex");
+                $r->setAttribute("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
+                $doc->appendChild($r);
+                foreach ($sitemap as $key => $val) {
+                    $url = $doc->createElement("sitemap");
+                    $name = $doc->createElement("loc");
+                    $name->appendChild($doc->createTextNode(base_url() . $val['name']));
+                    $url->appendChild($name);
+                    $lastmod = $doc->createElement("lastmod");
+                    $lastmod->appendChild($doc->createTextNode($val['time'] . 'T17:28:31+07:00'));
+                    $url->appendChild($lastmod);
+                    $r->appendChild($url);
+                }
+                $doc->save("sitemap.xml");
+            }
+        }
+    }
+    public function sitemap_page()
+    {
+        $page = $this->Madmin->query_sql("SELECT id,alias,created_at FROM blogs WHERE type = 1 ORDER by id");
         $doc = new DOMDocument("1.0", "utf-8");
         $doc->formatOutput = true;
         $r = $doc->createElement("urlset");
@@ -697,7 +944,7 @@ class Admin extends CI_Controller
         //sitemap trang chủ
         $url = $doc->createElement("url");
         $name = $doc->createElement("loc");
-        $name->appendChild($doc->createTextNode('https://phunuplus.vn/'));
+        $name->appendChild($doc->createTextNode(base_url()));
         $url->appendChild($name);
         $lastmod = $doc->createElement("lastmod");
         $lastmod->appendChild($doc->createTextNode('2023-03-02'));
@@ -709,10 +956,10 @@ class Admin extends CI_Controller
         $priority->appendChild($doc->createTextNode('1'));
         $url->appendChild($priority);
         $r->appendChild($url);
-        foreach ($arr as $val) {
+        foreach ($page as $val) {
             $url = $doc->createElement("url");
             $name = $doc->createElement("loc");
-            $name->appendChild($doc->createTextNode('https://phunuplus.vn/' . $val['alias'] . '/'));
+            $name->appendChild($doc->createTextNode(base_url() . $val['alias'] . '/'));
             $url->appendChild($name);
             $lastmod = $doc->createElement("lastmod");
             $lastmod->appendChild($doc->createTextNode(date('Y-m-d', $val['created_at'])));
@@ -726,7 +973,6 @@ class Admin extends CI_Controller
             $r->appendChild($url);
         }
         $name_file = "page.xml";
-        $date = date('Y-m-d', time());
         $doc->save($name_file);
     }
 }

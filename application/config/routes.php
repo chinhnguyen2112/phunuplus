@@ -72,6 +72,12 @@ $route['admin/info'] = 'Admin/info';
 $route['admin/ajax_author'] = 'Admin/ajax_author';
 $route['admin/list_author'] = 'Admin/list_author';
 $route['admin/pre_blog'] = 'Admin/pre_blog';
+$route['admin/add_page'] = 'Admin/add_page';
+$route['admin/list_page'] = 'Admin/list_page';
+$route['admin/down'] = 'Admin/view_down';
+$route['admin/ajax_down'] = 'Admin/ajax_down';
+$route['admin/list_down'] = 'Admin/list_down';
+
 
 
 $route['bang-xep-hang'] = 'Home/bxh';
@@ -86,7 +92,8 @@ $route['register_mail'] = 'Ajax/register_mail';
 $route['send_mail'] = 'Admin/send_mail';
 
 
-$route['(:any)'] = 'Home/chuyenmuc/$1 ';
-$route['(:any)/(:num)'] = 'Home/chuyenmuc/$1 ';
+$route['(:any)-c(:num).html'] = 'Home/detail_blog_new/$2';
+$route['(:any)'] = 'Home/chuyenmuc/$1';
+$route['(:any)/(:num)'] = 'Home/chuyenmuc/$1';
 // $route['(:any)/(:any)'] = 'Home/tag/$1/$2 ';
 // $route['(:any)/(:any)/(:num)'] = 'Home/tag/$1/$2/$3 ';

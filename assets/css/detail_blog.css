@@ -87,9 +87,22 @@
     background: #C92127;
     margin-left: 10px;
 }
+<<<<<<< HEAD
 .right_product {
     width: calc(61.6% - 20px);
     z-index: 2;
+=======
+
+.content_blog figure p {
+    margin: 0 !important;
+    text-align: center !important;
+}
+
+.content_blog ul {
+    padding: 0 !important;
+    padding-left: 30px !important;
+    list-style: disc;
+>>>>>>> 6d273a316caa1d0730d6d6fdef39740b98d6d957
 }
 .name_product_detail {
     font-size: 22px;
@@ -111,6 +124,7 @@
     font-size: 13px;
     font-weight: 400;
 }
+<<<<<<< HEAD
 .infor_summary a {
     color: #2489F4;
     font-weight: 600;
@@ -239,6 +253,42 @@
     border-radius: 8px;
     padding: 15px 19px;
     margin-bottom: 15px;
+=======
+
+/* podcast blog  */
+
+
+
+
+
+
+
+
+
+
+
+.link_fl {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+.middle_right {
+    width: 244px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.line_blog {
+    border-top: 2px solid #f4aa1c;
+    width: 100%;
+    margin-bottom: 30px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(33.37deg, #77B955 0%, #008DC3 80.14%);
+>>>>>>> 6d273a316caa1d0730d6d6fdef39740b98d6d957
 }
 
 .title_box {
@@ -471,8 +521,52 @@ hr {
     display: flex;
     flex-direction: column;
     padding: 10px;
+<<<<<<< HEAD
  }
  .image_product {
+=======
+}
+
+table {
+    border-spacing: 0px !important;
+    border: 1px solid #000 !important;
+    border-bottom: none !important;
+    border-color: black !important;
+    width: 100% !important;
+}
+
+th:first-child,
+td:first-child {
+    border-left: none !important;
+}
+
+.content_blog table p,
+.content_blog table span {
+    margin-bottom: 0 !important;
+    font-size: 17px !important;
+    line-height: 1.5 !important;
+}
+
+.content_blog table th p {
+    text-align: center !important;
+    font-weight: 700;
+}
+
+.title_h1 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 45px;
+    color: #131736;
+    margin-bottom: 10px;
+}
+
+.emoji {
+    width: 1em !important;
+}
+
+.box_tag {
+    margin: 20px 0;
+>>>>>>> 6d273a316caa1d0730d6d6fdef39740b98d6d957
     display: flex;
  }
  .name_product {
@@ -631,6 +725,7 @@ hr {
     font-size: 13px;
  }
 
+<<<<<<< HEAD
  /* policy  */
  .policy_product {
     display: flex;
@@ -658,6 +753,39 @@ hr {
         width: 960px;
         margin: auto;
         padding: 135px 5px 0 5px;
+=======
+.sidebar_box {
+    margin-bottom: 20px !important;
+}
+
+
+
+/* ////// download */
+.text_show_pass {
+    font-size: 18px;
+    background: #f6bc1b;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn_show_pass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container_widget_about {
+        padding: 20px;
+    }
+
+    .box_author {
+        gap: 12px;
+        margin: 10px 0;
+>>>>>>> 6d273a316caa1d0730d6d6fdef39740b98d6d957
     }
     .left_product {
         width: 44.5%;
@@ -679,6 +807,7 @@ hr {
         width: 100%;
         overflow:scroll;
     }
+<<<<<<< HEAD
     .tabs_ticket {
         overflow: scroll;
         width:max-content;
@@ -701,6 +830,15 @@ hr {
     }
     .star_vote {
         width: 86%;
+=======
+
+    /* podcast  */
+
+
+    .middle_right {
+        width: 100%;
+        margin-left: 0;
+>>>>>>> 6d273a316caa1d0730d6d6fdef39740b98d6d957
     }
  }
 
@@ -729,6 +867,7 @@ hr {
     .product_add_box, .infor_summary, .quantity_product, .non_mobile {
         display: none;
     }
+<<<<<<< HEAD
     .right_product {
         width: 100%;
         padding-left: 0;
@@ -738,6 +877,18 @@ hr {
     }
     .price_discount {
         font-size: 24px;
+=======
+
+
+
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    .main_content {
+        padding-top: 80px;
+>>>>>>> 6d273a316caa1d0730d6d6fdef39740b98d6d957
     }
     .deli_child {
         justify-content: space-between;
@@ -809,6 +960,7 @@ hr {
     .right_tabs_ticket {
         display: none;
     }
+<<<<<<< HEAD
     .item_policy {
         flex-direction: column;
         text-align: center;
@@ -829,6 +981,16 @@ hr {
     .width_box_mobile .add_product {
         padding: 18px 17px;
         font-size: 14px;
+=======
+
+
+
+
+
+    .sidebar_mid {
+        display: block !important;
+        margin-top: 10px;
+>>>>>>> 6d273a316caa1d0730d6d6fdef39740b98d6d957
     }
     .width_box_mobile .buy_now {
         font-size: 14px;

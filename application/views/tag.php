@@ -8,6 +8,7 @@
                         <span class="this_breadcrumb"><?= $title_page ?></span>
                     </div>
                     <?php if (isset($content_tag) && $content_tag != '') { ?>
+                        <h1 class="h1_tag"><?= $meta_title ?></h1>
                         <div class="blog_content">
                             <div class="left_detail">
                                 <div class="content_blog" id="content_blog">
@@ -27,7 +28,7 @@
                         <div class="blog_top">
                             <?php foreach ($blog as $key => $val) {
                                 if ($key == 0) { ?>
-                                    <a class="linl_all_detail" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                    <a class="linl_all_detail" title="<?= $val['title'] ?>" href="/<?= alias_new($val['alias'], $val['id']) ?>">
                                         <div class="blog_top_content blog_top_left">
                                             <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
                                         </div>
@@ -46,7 +47,7 @@
                         <?php foreach ($blog as $key => $val) {
                             if ($key > 0) { ?>
                                 <div class="this_train">
-                                    <a href="/<?= $val['alias'] ?>/">
+                                    <a href="/<?= alias_new($val['alias'], $val['id']) ?>">
                                         <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
                                         <div class="box_right_data">
                                             <p class="title_blog"><?= $val['title'] ?></p>
@@ -70,5 +71,5 @@
         </div>
     </div>
 </div>
-<input id="chuyen_muc" value="<?= isset($tag_id) ? $tag_id : 0 ?>" hidden />
-<input id="name_page" value="tag" hidden />
+<input id="chuyen_muc" value="<?= isset($tag_id) ? $tag_id : 0 ?>" hidden>
+<input id="name_page" value="tag" hidden>

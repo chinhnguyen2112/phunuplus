@@ -234,3 +234,12 @@ function replace_date($time)
 	}
 	return $weekday . ', ' . date('d/m/Y - H:i ', $time);
 }
+function alias_new($alias, $id)
+{
+	if ($id > 1000) {
+		$alias = $alias . '-c' . $id . '.html';
+	} else {
+		$alias = $alias . '/';
+	}
+	return $alias;
+}

@@ -2,29 +2,29 @@
 <html lang="vi">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <?php if (isset($index) && $index == 1) { ?>
-    <meta name="robots" content="index,follow" />
+    <meta name="robots" content="index,follow">
   <?php } else { ?>
-    <meta name="robots" content="noindex,nofollow" />
+    <meta name="robots" content="noindex,nofollow">
   <?php } ?>
   <title><?= isset($meta_title) ? $meta_title : '' ?></title>
   <meta content="<?= isset($meta_des) ? $meta_des : '' ?>" name="description">
   <meta content="<?= isset($meta_title) ? $meta_title : '' ?>" name="msvalidate.01">
-  <meta name="keywords" content="<?= isset($meta_key) ? $meta_key : '' ?>" />
-  <link rel="canonical" href="<?= (isset($canonical)) ? $canonical : "" ?>" />
-  <meta property="og:locale" content="vi_VN" />
-  <meta proprety="og:type" content="website" />
-  <meta property="og:url" content="<?= (isset($canonical)) ? $canonical : "" ?>" />
-  <meta property="og:title" content="<?= isset($meta_title) ? $meta_title : '' ?>" />
-  <meta property="og:site_name" content="Phụ nữ  plus" />
-  <meta property="og:description" content="<?= isset($meta_des) ? $meta_des : '' ?>" />
-  <meta property="og:image:secure_url" content="<?= base_url() ?><?= (isset($meta_img) ? $meta_img : 'images/logo.png') ?>" />
-  <meta property="og:image" content="<?= base_url() ?><?= (isset($meta_img) ? $meta_img : 'images/logo.png') ?>" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:description" content="<?= isset($meta_des) ? $meta_des : '' ?>" />
-  <meta name="twitter:title" content="<?= isset($meta_title) ? $meta_title : '' ?>" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="keywords" content="<?= isset($meta_key) ? $meta_key : '' ?>">
+  <link rel="canonical" href="<?= (isset($canonical)) ? $canonical : "" ?>">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="<?= (isset($canonical)) ? $canonical : "" ?>">
+  <meta property="og:title" content="<?= isset($meta_title) ? $meta_title : '' ?>">
+  <meta property="og:site_name" content="Phụ nữ  plus">
+  <meta property="og:description" content="<?= isset($meta_des) ? $meta_des : '' ?>">
+  <meta property="og:image:secure_url" content="<?= base_url() ?><?= (isset($meta_img) ? $meta_img : 'images/logo.png') ?>">
+  <meta property="og:image" content="<?= base_url() ?><?= (isset($meta_img) ? $meta_img : 'images/logo.png') ?>">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="<?= isset($meta_des) ? $meta_des : '' ?>">
+  <meta name="twitter:title" content="<?= isset($meta_title) ? $meta_title : '' ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link rel="shortcut icon" type="image/png" href="<?= base_url() ?>images/favicon.png">
   <link data-n-head="ssr" rel="icon" type="image/png" href="<?= base_url() ?>images/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,13 +33,12 @@
   <link rel="stylesheet" href="/assets/css/header.css?v=<?= time() ?>">
   <link rel="stylesheet" href="/assets/css/footer.css">
   <link rel="stylesheet" href="/assets/css/sweetalert.css">
-  <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-  <script type="text/javascript" src="/assets/js/sweetalert.min.js"></script>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/sweetalert.min.js"></script>
 
   <?php if (isset($list_css)) {
     foreach ($list_css as $css) { ?>
       <link rel="stylesheet" href="/assets/css/<?= $css ?>?v=<?= time() ?>">
-      </link>
   <?php  }
   } ?>
   <!-- Google tag (gtag.js) -->
@@ -78,7 +77,7 @@
       ]
     }
   </script>
-
+  <meta name='dmca-site-verification' content='M2Y1REk3MDlvWHBQc2pWaGJHS3JTUT090'>
 </head>
 
 <body>
@@ -95,10 +94,10 @@
   <?php
   if (isset($list_js)) {
     foreach ($list_js as $js) { ?>
-      <script type="text/javascript" src="/assets/js/<?= $js ?>"></script>
+      <script src="/assets/js/<?= $js ?>"></script>
   <?php  }
   } ?>
-  <script type="text/javascript" src="/assets/js/header.js"></script>
+  <script src="/assets/js/header.js"></script>
 </body>
 
 </html>

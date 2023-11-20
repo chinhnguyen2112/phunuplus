@@ -14,6 +14,7 @@
                     <a href="/">
                         <img src="/images/logo.png" alt="logo">
                     </a>
+<<<<<<< HEAD
                 </div>
                 <div class="menu_hover">
                     <div class="icon_drop_menu" onclick="show_menu(this,1)">
@@ -218,6 +219,8 @@
                             </div>
                         </div>
                     </div>
+=======
+>>>>>>> 6d273a316caa1d0730d6d6fdef39740b98d6d957
                 </div>
                 <div class="search">
                     <form>
@@ -237,10 +240,18 @@
                         <img class="icon_btn_mobile" src="/images/icons/icon_shopping_whitle.png" alt="icon giỏ hàng">
                         <p>Giỏ Hàng</p>
                     </div>
+<<<<<<< HEAD
                     <div class="item_btn">
                         <img class="icon_btn_pc" src="/images/icons/icon_account.png" alt="icon tài khoản">
                         <img class="icon_btn_mobile" src="/images/icons/icon_account_whitle.png" alt="icon tài khoản">
                         <p>Tài Khoản</p>
+=======
+                    <div class="search_only_pc">
+                        <form class="search_pc" id="search_pc" method="get" action="/search">
+                            <img class="img_search_pc" id="img_search_pc" src="/images/icons/icons8-search-20.png" alt="icon search">
+                            <input class="input_pc" id="search_input" type="text" autocomplete="off" name="search" placeholder="Tìm kiếm">
+                        </form>
+>>>>>>> 6d273a316caa1d0730d6d6fdef39740b98d6d957
                     </div>
                     <div class="item_btn_last" onclick="change_language(this,1)">
                         <span class="img_flag_default"></span>
@@ -251,13 +262,102 @@
                             <span class="img_flag_default"></span>
                             <span class="name_flag">VN</span>
                         </div>
+<<<<<<< HEAD
                         <div class="item_content_flag english">
                             <span class="img_flag_eng"></span>
                             <span class="name_flag">EN</span>
+=======
+                        <div class="list_item_submenu">
+                            <div class="search_sub">
+                                <form class="form_sub" id="search" method="get" action="/search">
+                                    <img class="img_seach_sub" id="img_search_sub" src="/images/icons/icons8-search-20.png" alt="tìm kiếm">
+                                    <input class="input_sub" id="search_input_sub" type="text" autocomplete="off" name="search" placeholder="Tìm kiếm">
+                                </form>
+                            </div>
+                            <div class="btn_header">
+                                <div class="item_btn night_mode">
+                                    <span class="span"></span>
+                                    <p>Chế độ tối</p>
+                                </div>
+                                <div class="item_btn">
+                                    <span>
+                                        <img src="/images/icons/icon_eyes.png" alt="icon đã xem">
+                                    </span>
+                                    <p>Tin đã xem</p>
+                                </div>
+                                <div class="item_btn">
+                                    <span>
+                                        <img src="/images/icons/icon_save.png" alt="icon cài đặt">
+                                    </span>
+                                    <p>Cài đặt APP</p>
+                                </div>
+                            </div>
+                            <ul class="list_item_sub">
+                                <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 42 AND id != 41');
+                                foreach ($menu_cate_parent as $val) {
+                                    $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
+                                    <li class="this_menu_sub">
+                                        <div class="big_item_menu_sub" onclick="show_submenu(this,1)">
+                                            <a class="item_menu_sub" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
+                                        </div>
+                                        <?php if ($menu_cate != null) { ?>
+                                            <div class="menu_con_sub">
+                                                <ul class="row_sub">
+                                                    <?php foreach ($menu_cate as $val1) { ?>
+                                                        <li>
+                                                            <span class="dot_header_sub"></span>
+                                                            <a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a>
+                                                        </li>
+                                                    <?php } ?>
+                                                </ul>
+                                            </div>
+                                        <?php } ?>
+                                    </li>
+                                <?php } ?>
+                            </ul>
+>>>>>>> 6d273a316caa1d0730d6d6fdef39740b98d6d957
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
+=======
+        <div class="header_bot body_width">
+            <div class="header_bg">
+                <div class="header_menu">
+                    <div class="list_menu" id="list_menu">
+                        <a href="/">
+                            <img src="/images/icons/icons8-home-50.png" alt="trang chủ">
+                        </a>
+                        <ul class="list_item_menu">
+                            <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 42 AND id != 41');
+                            foreach ($menu_cate_parent as $val) {
+                                $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
+                                <li class="this_menu">
+                                    <div class="big_item_menu" onclick="big_item_menu(this,1)">
+                                        <a class="item_menu" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
+                                    </div>
+                                    <?php if ($menu_cate != null) { ?>
+                                        <div class="menu_con">
+                                            <ul class="row">
+                                                <?php foreach ($menu_cate as $val1) { ?>
+                                                    <li>
+                                                        <!-- <i class="icon_arrow_left"></i> -->
+                                                        <span class="dot_header"></span>
+                                                        <a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a>
+                                                    </li>
+                                                <?php } ?>
+                                            </ul>
+                                        </div>
+                                    <?php } ?>
+                                </li>
+                            <?php } ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+>>>>>>> 6d273a316caa1d0730d6d6fdef39740b98d6d957
     </div>
 </div>

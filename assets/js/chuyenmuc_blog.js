@@ -87,7 +87,6 @@ $(".load_more").click(function () {
 	var show_more = $(this);
 	var form_data = new FormData();
 	form_data.append("page", page);
-	form_data.append("name_page", "cate");
 	var id_chuyenmuc = $("#chuyen_muc").val();
 	form_data.append("id_chuyenmuc", id_chuyenmuc);
 	$.ajax({
