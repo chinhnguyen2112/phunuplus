@@ -40,13 +40,16 @@ class Home extends CI_Controller
         }
         $data['blog'] = $this->Madmin->get_limit(" index_blog = 1 AND type = 0 AND time_post <= $time $where", 'blogs', 0, 15);
         $data['blog_new'] = $this->Madmin->get_limit("index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
-        $data['meta_title'] = 'Góc nhìn đa chiều phụ nữ Việt Nam - Phụ Nữ Plus';
+        $data['meta_title'] = 'Nhà sách trực tuyến - ManBook.vn';
         $data['meta_des'] = 'Phụ Nữ Plus là trang web chia sẻ kiến thức và kinh nghiệm hữu ích dành cho phụ nữ hiện đại. Đây như một cuốn cẩm nang giúp chị em có thêm nhiều bí kíp về tình yêu, sức khỏe, làm đẹp, chuyện vào bếp hay đi du lịch,… Phụ Nữ Plus hứa hẹn sẽ mang đến những thông tin chính xác, hữu ích nhất cho cuộc sống của chị em!';
         $data['content'] = 'home';
         $data['list_js'] = [
+            'slick.min.js',
             'home.js',
         ];
         $data['list_css'] = [
+            'slick.css',
+            'slick-theme.css',
             'home.css'
         ];
         $data['index'] = 1;
@@ -130,9 +133,12 @@ class Home extends CI_Controller
             $data['content'] = 'detail_blog';
             $data['list_js'] = [
                 'jquery.toc.min.js',
+                'slick.min.js',
                 'detail_blog.js',
             ];
             $data['list_css'] = [
+                'slick.css',
+                'slick-theme.css',
                 'detail_blog.css',
             ];
             $data['meta_title'] = $blog['meta_title'];

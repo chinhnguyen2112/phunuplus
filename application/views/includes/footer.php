@@ -1,95 +1,165 @@
-<?php
-$ft1 = chuyen_muc(['parent' => 1]);
-$ft2 = chuyen_muc(['parent' => 3]);
-$ft3 = chuyen_muc(['parent' => 5]);
-$ft4 = chuyen_muc(['parent' => 7]);
-$ft5 = chuyen_muc(['parent' => 10]);
-?>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0" nonce="wmm40zXP"></script>
-<div class="footer">
-    <div class="footer_content body_width">
-        <div class="ft_top item_ft">
-            <div class="item_ft_top ft_top_01">
-                <p>GÓC NHÌN ĐA CHIỀU PHỤ NỮ VIỆT NAM</p>
-                <div class="all_menu_ft">
-                    <div class="list_item_menu_ft list_left">
-                        <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
-                        foreach ($menu_cate_parent as $key => $val) {
-                            if ($key <= 5) { ?>
-                                <li class="item_menu_ft">
-                                    <a href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
-                                </li>
-                        <?php }
-                        } ?>
+<div class="footer_content">
+    <div class="body_width bg_ft">
+        <div class="ft_top">
+            <div class="ft_top_left">
+                <div class="content_ft_left">
+                    <a class="logo_ft" href="#">
+                        <img src="/images/logo.png" alt="logo">
+                    </a>
+                    <p>Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM</p>
+                    <p>Công Ty Cổ Phần Phát Hành Sách TP HCM - FAHASA</p>
+                    <p>60 - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam</p>
+                    <p>Fahasa.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống Fahasa trên toàn quốc.</p>
+                    <a href="#" class="img_bct">
+                        <img src="/images/icons/icon_bct.png" alt="image bộ công thương">
+                    </a>
+                    <div class="all_contact">
+                        <a href="#">
+                            <img src="/images/icons/icon_ft_fb.png" alt="icon facebook"> 
+                        </a>
+                        <a href="#">
+                            <img src="/images/icons/icon_ft_ins.png" alt="icon instagram"> 
+                        </a>
+                        <a href="#">
+                            <img src="/images/icons/icon_ft_yt.png" alt="icon youtube"> 
+                        </a>
+                        <a href="#">
+                            <img src="/images/icons/icon_ft_tum.png" alt="icon tumblr"> 
+                        </a>
+                        <a href="#">
+                            <img src="/images/icons/icon_ft_twi.png" alt="icon twitter"> 
+                        </a>
+                        <a href="#">
+                            <img src="/images/icons/icon_ft_pint.png" alt="icon pinterest"> 
+                        </a>
                     </div>
-                    <div class="list_item_menu_ft list_right">
-                        <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
-                        foreach ($menu_cate_parent as $key => $val) {
-                            if ($key > 5) { ?>
-                                <li class="item_menu_ft">
-                                    <a href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
-                                </li>
-                        <?php }
-                        } ?>
-                    </div>
-                </div>
-            </div>
-            <div class="line_ft_top"></div>
-            <div class="item_ft_top ft_top_02">
-                <a href="/">
-                    <img src="/images/logo.png" alt="logo">
-                </a>
-                <p>All rights reserved © Phụ Nữ Plus</p>
-                <p><b>Phụ Nữ Plus</b> Web chia sẻ kiến thức và kinh nghiệm hữu ích cho phụ nữ về nhiều lĩnh vực đời sống về Yêu, Làm đẹp, Vào bếp, Sức khỏe, Tiêu dùng, Phóng sự.</p>
-            </div>
-            <div class="line_ft_top line_nonpc"></div>
-            <div class="item_ft_top ft_top_03">
-                <div class="fanpage_fb">
-                    <div class="fb-page" data-href="https://www.facebook.com/phunutre.vn" data-tabs="" data-width="482" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
-                        <blockquote cite="https://www.facebook.com/phunutre.vn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/phunutre.vn">Phụ Nữ News</a></blockquote>
-                    </div>
-                </div>
-                <div class="list_contact">
-                    <img class="qr_code" src="/images/icons/qrcode-new.png" alt="qr code">
                     <div class="app">
                         <a href="#">
-                            <img src="/images/icons/googleplay.png" alt="google play">
+                            <img src="/images/icons/android_app.png" alt="android app">
                         </a>
                         <a href="#">
-                            <img src="/images/icons/appstore.png" alt="app store">
+                            <img src="/images/icons/ios_app.png" alt="ios app">
                         </a>
                     </div>
-                    <div class="mxh">
+                </div>
+            </div>
+            <div class="ft_top_right">
+                <div class="top_right_01">
+                    <div class="item_right_01">
+                        <p class="title_item">DỊCH VỤ</p>
+                        <ul class="list_item_ft">
+                            <li>
+                                <a href="#">Điều khoản dịch vụ</a>
+                            </li>
+                            <li>
+                                <a href="#">Chính sách bảo mật thông tin cá nhân</a>
+                            </li>
+                            <li>
+                                <a href="#">Chính sách bảo mật thanh toán</a>
+                            </li>
+                            <li>
+                                <a href="#">Giới thiệu Manta</a>
+                            </li>
+                            <li>
+                                <a href="#">Hệ thống trung tâm - nhà sách</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item_right_01">
+                        <p class="title_item">HỖ TRỢ</p>
+                        <ul class="list_item_ft">
+                            <li>
+                                <a href="#">Chính sách đổi trả - hoàn tiền</a>
+                            </li>
+                            <li>
+                                <a href="#">Chính sách bảo hành - bồi hoàn</a>
+                            </li>
+                            <li>
+                                <a href="#">Chính sách vận chuyển</a>
+                            </li>
+                            <li>
+                                <a href="#">Chính sách khách sỉ</a>
+                            </li>
+                            <li>
+                                <a href="#">Phương thức thanh toán và xuất HĐ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item_right_01">
+                        <p class="title_item">TÀI KHOẢN CỦA TÔI</p>
+                        <ul class="list_item_ft">
+                            <li>
+                                <a href="#">Đăng nhập/Tạo mới tài khoản</a>
+                            </li>
+                            <li>
+                                <a href="#">Thay đổi địa chỉ khách hàng</a>
+                            </li>
+                            <li>
+                                <a href="#">Chi tiết tài khoản</a>
+                            </li>
+                            <li>
+                                <a href="#">Lịch sử mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top_right_02">
+                    <p class="title_item">LIÊN HỆ</p>
+                    <div class="list_item_ft infor_contact">
+                        <p>
+                            <img src="/images/icons/icons8-location-30.png" alt="icon address">
+                            60-62 Lê Lợi, Q.1, TP. HCM
+                        </p>
+                        <p>
+                            <img src="/images/icons/icons8-mail-30.png" alt="icon mail">
+                            cskh@fahasa.com.vn
+                        </p>
+                        <p>
+                            <img src="/images/icons/icons8-phone-30.png" alt="icon phone">
+                            1900636467
+                        </p>
+                    </div>
+                </div>
+                <div class="top_right_03">
+                    <div class="list_logo_ft">
                         <a href="#">
-                            <img class="icon_fb" src="/images/icons/icon_fb_ft.png" alt="icon facebook">
+                            <img src="/images/transport_1.png" alt="logo transport">
                         </a>
                         <a href="#">
-                            <img class="icon_yt" src="/images/icons/icon_yt_ft.png" alt="icon youtube">
+                            <img src="/images/transport_2.png" alt="logo transport">
                         </a>
                         <a href="#">
-                            <img class="icon_tt" src="/images/icons/icon_tt_ft.png" alt="icon tiktok">
+                            <img src="/images/transport_3.png" alt="logo transport">
                         </a>
                         <a href="#">
-                            <img class="icon_ins" src="/images/icons/icon_ins_ft.png" alt="icon instagram">
+                            <img src="/images/transport_4.png" alt="logo transport">
+                        </a>
+                        <a href="#">
+                            <img src="/images/transport_5.png" alt="logo transport">
+                        </a>
+                    </div>
+                    <div class="list_logo_ft">
+                        <a href="#">
+                            <img src="/images/pay_1.png" alt="logo pay">
+                        </a>
+                        <a href="#">
+                            <img src="/images/pay_2.png" alt="logo pay">
+                        </a>
+                        <a href="#">
+                            <img src="/images/pay_3.png" alt="logo pay">
+                        </a>
+                        <a href="#">
+                            <img src="/images/pay_4.png" alt="logo pay">
+                        </a>
+                        <a href="#">
+                            <img src="/images/pay_5.png" alt="logo pay">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="ft_bot item_ft">
-            <div class="item_ft_bot ft_bot_01">
-                <p><b>Hợp tác nội dung:</b> Lưu Lan Hương</p>
-                <p><b>Hợp tác thương mại:</b> Phụ Nữ News</p>
-            </div>
-            <div class="item_ft_bot ft_bot_02">
-                <p><b>Chịu trách nhiệm nội dung:</b> Cao Minh Tuệ</p>
-                <p><b>Điện thoại:</b> 0328 39 635</p>
-            </div>
-            <div class="item_ft_bot ft_bot_03">
-                <p><b>Trụ sở chính:</b> Số 111 đường Mễ Trì - Quận Nam Từ Liêm - Hà Nội.</p>
-                <p><b>Email:</b> support@manta.vn</p>
-            </div>
+        <div class="ft_bottom">
+            <p>Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 20/12/2005, đăng ký thay đổi lần thứ 10, ngày 20/05/2022.</p>
         </div>
     </div>
 </div>

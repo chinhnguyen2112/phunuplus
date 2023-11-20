@@ -18,16 +18,28 @@ $(document).click(function (event) {
 		$(".img_show_menu").hide(200);
 	}
 });
+var width_submenu = $(window).width();
+if (width_submenu < 1024) {
+	$('.menu_hover').removeClass('.menu_hover');
+	$('.menu_hover').addClass('click_menu');
 
+}
 function show_menu(e, type) {
 	if (type == 1) {
-		$(".list_item_submenu").show(500);
-		$(e).attr("onclick", "show_menu(this,2)");
-		$('#line_span').addClass('active_span');
+		if (width_submenu > 1024) {
+			$(".bg_drop_menu").show(500);
+			$(e).attr("onclick", "show_menu(this,2)");
+		} else {
+			console.log(width_submenu);
+			$(".drop_menu").css("transform","translateX(0)");
+		}
 	} else {
-		$(".list_item_submenu").hide(500);
-		$(e).attr("onclick", "show_menu(this,1)");
-		$('#line_span').removeClass('active_span');
+		if (width_submenu > 1024) {
+			$(".bg_drop_menu").hide(500);
+			$(e).attr("onclick", "show_menu(this,1)");
+		} else {
+			$(".drop_menu").css("transform","translateX(-101%)");
+		}
 	}
 }
 
@@ -141,3 +153,28 @@ $(".submit_mail").click(function () {
 		},
 	});
 });
+
+function change_language(e,type) {
+	if (type == 1) {
+		$('.content_flag').css('transform', 'scale(1)');
+		$(e).attr("onclick", "change_language(this,2)");
+
+	} else {
+		$('.content_flag').css('transform', 'scale(0)');
+		$(e).attr("onclick", "change_language(this,1)");
+
+	}
+}
+
+
+
+// jQuery(document).ready(function($) {
+// 	$(".list_item_left a").hover(function() {
+// 		$(".item_right_drop").hide();
+// 		$(".list_item_left a").removeClass('active');					
+// 		$(this).addClass("active");					
+// 		var selected_tab = $(this).find("a").attr("href");
+// 		$(selected_tab).stop().fadeIn();
+// 		return false;
+// 	});
+// });
