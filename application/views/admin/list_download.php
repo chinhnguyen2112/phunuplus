@@ -181,7 +181,7 @@
                                         <tr>
                                             <td class="text-center"><?= $key; ?></td>
                                             <td><?= base_url() . $val['alias'] ?>/</td>
-                                            <td><a href="<?= base_url() . $val['alias'] ?>/" target="_blank">Xem bài viết</a></td>
+                                            <td><a href="/<?= alias_new($val['alias'], $val['id']) ?>" target="_blank">Xem bài viết</a></td>
                                             <td class="text-center">
                                                 <div class="btn-group">
                                                     <a href="/admin/add_down?id=<?= $val['id']; ?>" target="_blank">

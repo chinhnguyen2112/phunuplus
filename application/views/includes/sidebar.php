@@ -22,7 +22,8 @@
                         </div>
                     </div>
                     <div class="content_mail_nonpc">
-                        <p>Xu hướng thịnh hành, bí quyết xịn xò và ưu đãi hấp dẫn đã sẵn sàng gửi đến bạn</p>
+                        <p>Xu hướng thịnh hành, bí quyết xịn xò và ưu đãi hấp dẫn đã sẵn sàng gửi đến
+                            bạn</p>
                     </div>
                 </div>
                 <div class="mail_bot">
@@ -39,11 +40,32 @@
         <div class="box_content_link">
             <ul>
                 <li>
-                    Xem
-                    <a target="_blank" rel="dofollow" href="https://ketquabongda.io/"> <b>kết quả bóng đá</b></a>
+                    <a target="_blank" rel="dofollow" href="https://vnesports.vn/"> <b>VnEsports</b></a>
                 </li>
                 <li>
-                    <a target="_blank" rel="dofollow" href="https://vnesports.vn/"> <b>VnEsports</b></a>
+                    <a target="_blank" rel="dofollow" href="https://nguoinhanong.vn/"> <b>Người Nhà Nông</b></a>
+                </li>
+                <li>trực tiếp bóng đá
+                    <a target="_blank" rel="dofollow" href="https://collaboration-world.com/"> <b> xoilac</b></a>
+                </li>
+                <li>
+                    <a target="_blank" rel="dofollow" href="https://phongkhamago.com/"> <b>xoi lac</b></a>
+                </li>
+                <li>
+                    <a target="_blank" rel="dofollow" href="https://kwin.one/"> <b>kwin</b></a>
+                </li>
+                <li>
+                    <a target="_blank" rel="dofollow" href="https://vodi.io/"> <b>xoilac tv</b></a>
+                </li>
+                <li>
+                    <a target="_blank" rel="dofollow" href="https://www.barchordnyc.com/"> <b>trực tiếp bóng đá hôm nay
+                            Xoilac</b></a>
+                </li>
+                <li>Xem bóng đá
+                    <a target="_blank" rel="dofollow" href="https://rakhoitv.win/"> <b> ra khoi tv</b></a>
+                </li>
+                <li>Xem trực tiếp bóng đá
+                    <a target="_blank" rel="dofollow" href=" https://caheotv.li"> <b> caheo. link</b></a>
                 </li>
             </ul>
         </div>
@@ -59,7 +81,9 @@
             <ul>
                 <?php foreach ($blog_new as $key => $val) { ?>
                     <li class="item_hot_news">
-                        <a href="/<?= alias_new($val['alias'], $val['id']) ?>"><?= $val['title'] ?></a>
+                        <a href="/<?= alias_new($val['alias'], $val['id']) ?>">
+                            <?= $val['title'] ?>
+                        </a>
                     </li>
                 <?php } ?>
             </ul>
@@ -76,7 +100,9 @@
             <ul>
                 <?php foreach ($blog_view as $key => $val) { ?>
                     <li class="item_hot_news">
-                        <a href="/<?= alias_new($val['alias'], $val['id']) ?>"><?= $val['title'] ?></a>
+                        <a href="/<?= alias_new($val['alias'], $val['id']) ?>">
+                            <?= $val['title'] ?>
+                        </a>
                     </li>
                 <?php } ?>
             </ul>

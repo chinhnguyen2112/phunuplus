@@ -1,6 +1,8 @@
 User-agent: *
+Crawl-delay: 5
 Allow: /*.js$
 Allow: /*.css$
+Disallow: /admin
 Disallow: /admin/
-
+Disallow: /admin/*
 Sitemap: https://phunuplus.vn/sitemap.xml

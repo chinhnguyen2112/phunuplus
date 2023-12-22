@@ -90,6 +90,18 @@ function tag($tag = null)
 	$array  = $CI->db->get('tags')->result_array();
 	return $array;
 }
+function author($where = null)
+{
+	$CI = &get_instance();
+	$CI->load->database();
+
+	$CI->db->select('*');
+	if ($where != null) {
+		$CI->db->where($where);
+	}
+	$array  = $CI->db->get('admin')->result_array();
+	return $array;
+}
 function replaceTitles($title)
 {
 	$title = html_entity_decode($title, ENT_COMPAT, 'UTF-8');

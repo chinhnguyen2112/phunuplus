@@ -107,7 +107,7 @@
                         <?php foreach ($list_news as $key => $val) {
                             if ($key > 0 && $key < 5) { ?>
                                 <li class="item_hot_news">
-                                    <a href="/<?= $val['alias'] ?>"><?= $val['title'] ?></a>
+                                    <a href="/<?= alias_new($val['alias'], $val['id']) ?>"><?= $val['title'] ?></a>
                                 </li>
                         <?php }
                         } ?>

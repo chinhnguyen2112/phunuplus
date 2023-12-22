@@ -217,6 +217,7 @@
     <div class="form-group mb-3">
         <label class="label" for="name">Meta Description</label>
         <textarea style=" height:150px" name="meta_des" id="meta_des" class="form-control"><?= (isset($blog) && $blog['meta_des'] != '') ? $blog['meta_des'] : '' ?></textarea>
+        <p id="txtCount"></p>
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Sapo</label>
@@ -307,6 +308,7 @@
             },
             "meta_des": {
                 required: true,
+                maxlength: 160
             },
         },
         messages: {
@@ -327,6 +329,7 @@
             },
             "meta_des": {
                 required: "Chưa nhập description",
+                maxlength: "Không quá 160 ký tự"
             },
         },
         submitHandler: function(form) {
@@ -370,5 +373,20 @@
             });
             return false;
         }
+    });
+    //Set the Variable for max length
+    var MaxLength = 160;
+    $('#txtCount').val(MaxLength);
+    $('#meta_des').keyup(function() {
+        if ($(this).text().length > MaxLength) {
+            $(this).text($(this).text().substring(0, MaxLength));
+        }
+        $('#txtCount').val(MaxLength - $(this).text().length);
+    });
+    $('#meta_des').blur(function() {
+        if ($(this).text().length > MaxLength) {
+            $(this).text($(this).text().substring(0, MaxLength));
+        }
+        $('#txtCount').val(MaxLength - $(this).text().length);
     });
 </script>

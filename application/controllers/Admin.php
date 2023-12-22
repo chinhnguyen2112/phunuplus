@@ -88,18 +88,18 @@ class Admin extends CI_Controller
             $id = $this->input->post('id');
             $time = time();
             $data['title'] = $this->input->post('title');
-            $data['time_post'] = $time_post =  strtotime($this->input->post('time_post'));
+            $data['time_post'] = $time_post = strtotime($this->input->post('time_post'));
             $data['alias'] = $alias = trim($this->input->post('alias'));
-            $data['chuyenmuc'] = $chuyenmuc =  $this->input->post('category');
-            $sapo =  $this->input->post('sapo');
-            $content =  $this->input->post('content');
+            $data['chuyenmuc'] = $chuyenmuc = $this->input->post('category');
+            $sapo = $this->input->post('sapo');
+            $content = $this->input->post('content');
             $content = preg_replace('/(<[^>]+) id=".*?"/i', '$1', $content);
-            $sapo =  preg_replace('/(<[^>]+) id=".*?"/i', '$1', $sapo);
+            $sapo = preg_replace('/(<[^>]+) id=".*?"/i', '$1', $sapo);
             $data['content'] = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $content);
-            $data['sapo'] =  preg_replace('/(<[^>]+) style=".*?"/i', '$1', $sapo);
+            $data['sapo'] = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $sapo);
             $data['meta_title'] = $this->input->post('meta_title');
-            $data['meta_key']     = $this->input->post('meta_key');
-            $data['meta_des']     = $this->input->post('meta_des');
+            $data['meta_key'] = $this->input->post('meta_key');
+            $data['meta_des'] = $this->input->post('meta_des');
             $data['created_at'] = $time_post;
             $data['updated_at'] = $time;
             $data['author_id'] = $_SESSION['admin']['id'];
@@ -114,7 +114,7 @@ class Admin extends CI_Controller
                 $data['cate_parent'] = 0;
             }
             if ($this->input->post('tag') != '') {
-                $data['tag'] =  implode(',', $this->input->post('tag'));
+                $data['tag'] = implode(',', $this->input->post('tag'));
             }
             if (!is_dir('upload/blog/')) {
                 mkdir('upload/blog/', 0755, TRUE);
@@ -141,8 +141,8 @@ class Admin extends CI_Controller
                     $data['author_id'] = $blog['author_id'];
                 }
                 if (isset($_FILES['image']) && $_FILES['image']['name'] !== "") {
-                    $filedata         = $_FILES['image']['tmp_name'];
-                    $thumb_path        = 'upload/blog/' . $alias . '.jpg';
+                    $filedata = $_FILES['image']['tmp_name'];
+                    $thumb_path = 'upload/blog/' . $alias . '.jpg';
                     $imguser = $alias . '.jpg';
                     $config['file_name'] = $imguser;
                     $config['upload_path'] = 'upload/blog';
@@ -274,7 +274,7 @@ class Admin extends CI_Controller
             $cate = $this->input->post('category');
             $data['meta_title'] = $this->input->post('meta_title');
             $data['meta_des'] = $this->input->post('meta_des');
-            $content =  $this->input->post('content');
+            $content = $this->input->post('content');
             $content = preg_replace('/(<[^>]+) id=".*?"/i', '$1', $content);
             $data['content'] = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $content);
             $data['level'] = 0;
@@ -295,13 +295,13 @@ class Admin extends CI_Controller
                     $this->Madmin->update(['id' => $cate], ['level' => 1], 'category');
                 }
                 if ($id > 0) {
-                    $data['created_at'] = time();
                     $insert_chuyenmuc = 0;
                     $update_chuyenmuc = $this->Madmin->update(['id' => $id], $data, 'category');
                     if ($update_chuyenmuc) {
                         $insert_chuyenmuc = $id;
                     }
                 } else {
+                    $data['created_at'] = time();
                     $insert_chuyenmuc = $this->Madmin->insert($data, 'category');
                 }
                 if ($insert_chuyenmuc > 0) {
@@ -402,7 +402,7 @@ class Admin extends CI_Controller
             $data['meta_key'] = $this->input->post('meta_key');
             $data['meta_title'] = $this->input->post('meta_title');
             $data['meta_des'] = $this->input->post('meta_des');
-            $content =  $this->input->post('content');
+            $content = $this->input->post('content');
             $content = preg_replace('/(<[^>]+) id=".*?"/i', '$1', $content);
             $data['content'] = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $content);
             $cate = $this->input->post('category');
@@ -422,13 +422,13 @@ class Admin extends CI_Controller
                     $data['parent'] = $cate;
                 }
                 if ($id > 0) {
-                    $data['created_at'] = time();
                     $insert_tag = 0;
                     $update_tag = $this->Madmin->update(['id' => $id], $data, 'tags');
                     if ($update_tag) {
                         $insert_tag = $id;
                     }
                 } else {
+                    $data['created_at'] = time();
                     $insert_tag = $this->Madmin->insert($data, 'tags');
                 }
                 if ($insert_tag > 0) {
@@ -547,7 +547,7 @@ class Admin extends CI_Controller
         if (check_admin() == 1) {
             $data['name'] = $this->input->post('name');
             $alias = trim($this->input->post('alias'));
-            $content =  $this->input->post('content');
+            $content = $this->input->post('content');
             $content = preg_replace('/(<[^>]+) id=".*?"/i', '$1', $content);
             $data['content'] = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $content);
             $id = $this->input->post('id');
@@ -577,8 +577,8 @@ class Admin extends CI_Controller
                     if (!is_dir('upload/author/')) {
                         mkdir('upload/author/', 0755, TRUE);
                     }
-                    $filedata         = $_FILES['image']['tmp_name'];
-                    $thumb_path        = 'upload/author/' . $id . '.jpg';
+                    $filedata = $_FILES['image']['tmp_name'];
+                    $thumb_path = 'upload/author/' . $id . '.jpg';
                     $imguser = $id . '.jpg';
                     $config['file_name'] = $imguser;
                     $config['upload_path'] = 'upload/author';
@@ -618,7 +618,7 @@ class Admin extends CI_Controller
     public function list_author()
     {
         if (check_admin() == 1) {
-            $data['list'] =  $this->Madmin->query_sql("SELECT *  FROM admin ORDER BY type ");
+            $data['list'] = $this->Madmin->query_sql("SELECT *  FROM admin ORDER BY type ");
             $data['content'] = '/admin/list_author';
             $this->load->view('admin/index', $data);
         } else {
@@ -631,7 +631,7 @@ class Admin extends CI_Controller
         if ($id > 0) {
             $blog = $this->Madmin->get_by(['id' => $id], 'blogs');
             if ($blog != null) {
-                $data['blog'] =  $blog;
+                $data['blog'] = $blog;
                 $data['content'] = '/admin/pre_blog';
                 $this->load->view('admin/index', $data);
             }
@@ -667,7 +667,7 @@ class Admin extends CI_Controller
                 $data['id_blog'] = $blog['id'];
                 $data['password'] = trim($this->input->post('password'));
 
-                $where_check['id_blog'] =  $blog['id'];
+                $where_check['id_blog'] = $blog['id'];
                 if ($id > 0) {
                     $where_check['id !='] = $id;
                 }
@@ -759,6 +759,7 @@ class Admin extends CI_Controller
             $name = ($i == 1) ? '' : $i - 1;
             $name_file = 'blog' . $name . ".xml";
             $date = date('Y-m-d', time());
+            $doc->save($name_file);
             if ($i >= 2) {
                 $sql_check = "SELECT * FROM sitemap  WHERE name = '$name_file' ";
                 $row = $this->Madmin->query_sql_num($sql_check);
@@ -776,29 +777,28 @@ class Admin extends CI_Controller
                         'time' => $date
                     ];
                     $insert = $this->Madmin->insert($data_insert, 'sitemap');
-                    //\/\/\/\/\/\/\/\\
-                    $sql = "SELECT * FROM sitemap";
-                    $sitemap = $this->Madmin->query_sql($sql);
-                    $doc = new DOMDocument("1.0", "utf-8");
-                    $doc->formatOutput = true;
-                    $doc->appendChild($doc->createProcessingInstruction('xml-stylesheet', 'type="text/xsl" href="https://phunuplus.vn/assets/css/css_sitemap.xsl"'));
-                    $r = $doc->createElement("sitemapindex");
-                    $r->setAttribute("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
-                    $doc->appendChild($r);
-                    foreach ($sitemap as $key => $val) {
-                        $url = $doc->createElement("sitemap");
-                        $name = $doc->createElement("loc");
-                        $name->appendChild($doc->createTextNode(base_url() . $val['name']));
-                        $url->appendChild($name);
-                        $lastmod = $doc->createElement("lastmod");
-                        $lastmod->appendChild($doc->createTextNode($val['time'] . 'T17:28:31+07:00'));
-                        $url->appendChild($lastmod);
-                        $r->appendChild($url);
-                    }
-                    $doc->save("sitemap.xml");
                 }
+                //\/\/\/\/\/\/\/\\
+                $sql = "SELECT * FROM sitemap";
+                $sitemap = $this->Madmin->query_sql($sql);
+                $doc = new DOMDocument("1.0", "utf-8");
+                $doc->formatOutput = true;
+                $doc->appendChild($doc->createProcessingInstruction('xml-stylesheet', 'type="text/xsl" href="https://phunuplus.vn/assets/css/css_sitemap.xsl"'));
+                $r = $doc->createElement("sitemapindex");
+                $r->setAttribute("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
+                $doc->appendChild($r);
+                foreach ($sitemap as $key => $val) {
+                    $url = $doc->createElement("sitemap");
+                    $name = $doc->createElement("loc");
+                    $name->appendChild($doc->createTextNode(base_url() . $val['name']));
+                    $url->appendChild($name);
+                    $lastmod = $doc->createElement("lastmod");
+                    $lastmod->appendChild($doc->createTextNode($val['time'] . 'T17:28:31+07:00'));
+                    $url->appendChild($lastmod);
+                    $r->appendChild($url);
+                }
+                $doc->save("sitemap.xml");
             }
-            $doc->save($name_file);
         }
     }
     public function sitemap_tag()

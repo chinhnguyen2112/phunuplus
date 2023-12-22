@@ -169,7 +169,7 @@
                                     <?php foreach ($list as $key  => $val) { ?>
                                         <tr>
                                             <td><?= $val['name'] ?></td>
-                                            <td><a href="/<?= $val['alias'] ?>/" target="_blank" rel="noopener noreferrer">https://phunuplus.vn/<?= $val['alias'] ?>/</a></td>
+                                            <td><a href="/<?= $val['alias'] ?>/" target="_blank" rel="noopener noreferrer"><?= base_url() . $val['alias'] ?>/</a></td>
                                             <?php if (check_admin() != 3) { ?>
                                                 <td class="text-center">
                                                     <div class="btn-group">
@@ -188,7 +188,7 @@
                                             foreach ($cate_nav as $val_nav) { ?>
                                                 <tr>
                                                     <td style="display: flex;    align-items: center;"><span style="background: #000;width: 20px;height: 1px;display: block;margin-right: 10px;" class="line_table"></span><span><?= $val_nav['name'] ?></span></td>
-                                                    <td><a href="/<?= $val_nav['alias'] ?>/" target="_blank" rel="noopener noreferrer">https://phunuplus.vn/<?= $val_nav['alias'] ?>/</a></td>
+                                                    <td><a href="/<?= $val_nav['alias'] ?>/" target="_blank" rel="noopener noreferrer"><?= base_url() . $val_nav['alias'] ?>/</a></td>
                                                     <?php if (check_admin() != 3) { ?>
                                                         <td class="text-center">
                                                             <div class="btn-group">

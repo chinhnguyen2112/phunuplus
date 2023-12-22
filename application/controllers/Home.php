@@ -33,8 +33,8 @@ class Home extends CI_Controller
         $monday = strtotime("this week 00:00:00");
         $data['canonical'] = base_url();
         $time = time();
-        $select = "SELECT id,title,alias,image,created_at,sapo FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time ";
-        $select_cate = "SELECT blogs.id,blogs.title,blogs.alias,blogs.image,blogs.created_at,blogs.sapo,chuyenmuc,category.name as name_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE index_blog = 1 AND type = 0 AND time_post <= $time ";
+        $select = "SELECT id,title,alias,image,created_at,sapo,author_id FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time ";
+        $select_cate = "SELECT blogs.id,blogs.title,blogs.alias,blogs.image,blogs.created_at,blogs.sapo,author_id,chuyenmuc,category.name as name_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE index_blog = 1 AND type = 0 AND time_post <= $time ";
         $data['blog'] = $this->Madmin->query_sql($select_cate . " ORDER BY created_at DESC  LIMIT 5");
         $data['hots_week'] = $this->Madmin->query_sql($select_cate . " AND blogs.created_at >= $monday ORDER by view LIMIT 10");
         $data['yeu'] = $this->Madmin->query_sql($select . " AND chuyenmuc IN  ('2','12','24') ORDER BY created_at DESC LIMIT 4");
@@ -211,7 +211,7 @@ class Home extends CI_Controller
         $blog = $this->Madmin->query_sql_row("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE  type = 0 AND index_blog = 1 AND time_post<= $time AND blogs.id = $id ");
         if ($blog != null && $id > 1000) {
             $alias = $blog['alias'] . '-c' . $id . '.html';
-            $this->detail_blog($blog, $alias);
+            return $this->detail_blog($blog, $alias);
         } else {
             set_status_header(404);
             return $this->load->view('errors/html/error_404');
@@ -265,7 +265,7 @@ class Home extends CI_Controller
         $data['meta_img'] = $blog['image'];
         $data['canonical'] = base_url() . $alias;
         $data['index'] = 1;
-        $this->load->view('index', $data);
+        return $this->load->view('index', $data);
     }
     public function author($alias)
     {
