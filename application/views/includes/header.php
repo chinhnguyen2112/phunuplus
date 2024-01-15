@@ -1,124 +1,39 @@
-<div class="main_header ">
-    <div id="nav">
-        <div class="logo body_width" id="logo">
-            <div class="top_header">
-                <div class="header_left">
-                    <a href="/">
-                        <img src="/images/logo.png" alt="logo" class="img_logo_bot_header">
-                    </a>
-                </div>
-                <div class="header_right">
-                    <div class="fan_page">
-                        <a href="https://www.facebook.com/phunutre.vn/" rel="nofollow">Fanpage Phụ Nữ News</a>
-                    </div>
-                    <div class="weather">
-                        <a href="#" class="weather_link">
-                            <img class="img_weather" src="/images/icons/icons_weather.png" alt="icon weather">
-                            <div class="content_weather">
-                                <p class="name_city">Hà Nội</p>
-                                <p class="temperature">25°C</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="search_only_pc">
-                        <form class="search_pc" id="search_pc" method="get" action="/search">
-                            <img class="img_search_pc" id="img_search_pc" src="/images/icons/icons8-search-20.png" alt="icon search">
-                            <input class="input_pc" id="search_input" type="text" autocomplete="off" name="search" placeholder="Tìm kiếm">
-                        </form>
-                    </div>
-                    <div class="noti">
-                        <img src="/images/icons/icon_bell_noti.png" alt="icon notification">
-                    </div>
-                    <div class="sub_menu_top">
-                        <div class="btn_submenu_top" id="btn_submenu_top" onclick="show_menu(this,1)">
-                            <span id="line_span"></span>
-                        </div>
-                        <div class="list_item_submenu">
-                            <div class="search_sub">
-                                <form class="form_sub" id="search" method="get" action="/search">
-                                    <img class="img_seach_sub" id="img_search_sub" src="/images/icons/icons8-search-20.png" alt="tìm kiếm">
-                                    <input class="input_sub" id="search_input_sub" type="text" autocomplete="off" name="search" placeholder="Tìm kiếm">
-                                </form>
-                            </div>
-                            <div class="btn_header">
-                                <div class="item_btn night_mode">
-                                    <span class="span"></span>
-                                    <p>Chế độ tối</p>
-                                </div>
-                                <div class="item_btn">
-                                    <span>
-                                        <img src="/images/icons/icon_eyes.png" alt="icon đã xem">
-                                    </span>
-                                    <p>Tin đã xem</p>
-                                </div>
-                                <div class="item_btn">
-                                    <span>
-                                        <img src="/images/icons/icon_save.png" alt="icon cài đặt">
-                                    </span>
-                                    <p>Cài đặt APP</p>
-                                </div>
-                            </div>
-                            <ul class="list_item_sub">
-                                <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 42 AND id != 41');
-                                foreach ($menu_cate_parent as $val) {
-                                    $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
-                                    <li class="this_menu_sub">
-                                        <div class="big_item_menu_sub" onclick="show_submenu(this,1)">
-                                            <a class="item_menu_sub" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
-                                        </div>
-                                        <?php if ($menu_cate != null) { ?>
-                                            <div class="menu_con_sub">
-                                                <ul class="row_sub">
-                                                    <?php foreach ($menu_cate as $val1) { ?>
-                                                        <li>
-                                                            <span class="dot_header_sub"></span>
-                                                            <a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a>
-                                                        </li>
-                                                    <?php } ?>
-                                                </ul>
-                                            </div>
-                                        <?php } ?>
-                                    </li>
-                                <?php } ?>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="main_header">
+    <div class="content_header body_width">
+        <h1><a href="/"><img class="logo_header" src="/images/logo.png" alt="Logo"></a></h1>
+        <div class="list_menu_pc">
+            <a href="#" class="menu_pc">Diễn đàn</a>
+            <a href="#" class="menu_pc">Điểm tin</a>
+            <a href="#" class="menu_pc">Download</a>
         </div>
-        <div class="header_bot body_width">
-            <div class="header_bg">
-                <div class="header_menu">
-                    <div class="list_menu" id="list_menu">
-                        <a href="/">
-                            <img src="/images/icons/icons8-home-50.png" alt="trang chủ">
-                        </a>
-                        <ul class="list_item_menu">
-                            <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 42 AND id != 41');
-                            foreach ($menu_cate_parent as $val) {
-                                $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
-                                <li class="this_menu">
-                                    <div class="big_item_menu" onclick="big_item_menu(this,1)">
-                                        <a class="item_menu" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
-                                    </div>
-                                    <?php if ($menu_cate != null) { ?>
-                                        <div class="menu_con">
-                                            <ul class="row">
-                                                <?php foreach ($menu_cate as $val1) { ?>
-                                                    <li>
-                                                        <!-- <i class="icon_arrow_left"></i> -->
-                                                        <span class="dot_header"></span>
-                                                        <a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a>
-                                                    </li>
-                                                <?php } ?>
-                                            </ul>
-                                        </div>
-                                    <?php } ?>
-                                </li>
-                            <?php } ?>
-                        </ul>
-                    </div>
-                </div>
+        <div class="search_pc">
+            <img class="icon_search_pc" src="/images/icons/icons8-search-20.png" alt="search">
+            <input type="search" placeholder="Tìm bài viết...">
+        </div>
+        <a href="#" class="box_login_menu"><img src="/images/icons/avatarDefault.svg" alt="đăng nhập"> Đăng nhập</a>
+        <div class="btn_menu_mb">
+            <div role="presentation" style="font-size: 30px;">
+                <svg class="svg_open" xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13">
+                    <g id="Group_5873" data-name="Group 5873" transform="translate(-330 -14)">
+                        <g id="Group_5324" data-name="Group 5324" transform="translate(0 -2)">
+                            <rect id="Rectangle_3412" data-name="Rectangle 3412" width="18" height="1" rx="0.5"
+                                transform="translate(330 16)" fill="#fff"></rect>
+                            <rect id="Rectangle_3413" data-name="Rectangle 3413" width="18" height="1" rx="0.5"
+                                transform="translate(330 22)" fill="#fff"></rect>
+                            <rect id="Rectangle_3414" data-name="Rectangle 3414" width="18" height="1" rx="0.5"
+                                transform="translate(330 28)" fill="#fff"></rect>
+                        </g>
+
+                    </g>
+                </svg><svg class="svg_close" xmlns="http://www.w3.org/2000/svg" width="13.435" height="13.435"
+                    viewBox="0 0 13.435 13.435">
+                    <g id="Group_5325" data-name="Group 5325" transform="translate(-214.253 -251.73) rotate(45)">
+                        <rect id="Rectangle_3414" data-name="Rectangle 3414" width="18" height="1" rx="0.5"
+                            transform="translate(330 26)" fill="#fff"></rect>
+                        <rect id="Rectangle_3419" data-name="Rectangle 3419" width="18" height="1" rx="0.5"
+                            transform="translate(339.5 17.5) rotate(90)" fill="#fff"></rect>
+                    </g>
+                </svg>
             </div>
         </div>
     </div>

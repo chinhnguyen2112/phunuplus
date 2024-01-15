@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://phunuplus.vn/cach-phoi-do-cho-nguoi-lun-bap-chan-to/</loc>
-    <changefreq>daily</changefreq>
-    <lastmod>2023-09-14T07:24:06+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://phunuplus.vn/cach-phoi-do-voi-ao-da-dai/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-12T07:24:06+00:00</lastmod>
@@ -1196,6 +1190,12 @@
   </url>
   <url>
     <loc>https://phunuplus.vn/cach-quan-ly-tai-chinh-gia-dinh/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-06-13T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://phunuplus.vn/thuc-don-keto-thuan-viet/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-06-13T07:24:06+00:00</lastmod>
     <priority>0.8</priority>

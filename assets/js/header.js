@@ -1,23 +1,3 @@
-// function show_menu(e, type) {
-// 	if (type == 1) {
-// 		$(".none_pc").show();
-// 		$(e).attr("onclick", "show_menu(this,2)");
-// 	} else {
-// 		$(".none_pc").hide();
-// 		$(e).attr("onclick", "show_menu(this,1)");
-// 	}
-// }
-
-$(document).click(function (event) {
-	$target = $(event.target);
-	if (
-		!$target.closest(".img_show_menu").length &&
-		$(".img_show_menu").is(":visible") &&
-		!$target.closest(".list_menu").length
-	) {
-		$(".img_show_menu").hide(200);
-	}
-});
 
 function show_menu(e, type) {
 	if (type == 1) {
@@ -40,7 +20,19 @@ $("#img_search").click(function () {
 		300
 	);
 });
-
+var check_menu = 0;
+$(".btn_menu_mb").click(function () {
+	if (check_menu % 2 == 0) {
+		$('.svg_close').show();
+		$('.svg_open').hide();
+		$('.menu_mb').show();
+	} else {
+		$('.svg_close').hide();
+		$('.svg_open').show();
+		$('.menu_mb').hide();
+	}
+	++check_menu;
+});
 
 function show_submenu(e, type) {
 	if (type == 1) {
@@ -54,90 +46,3 @@ function show_submenu(e, type) {
 	}
 }
 
-window.onscroll = function () {
-	scrollFunction();
-};
-var width = $(window).width();
-function scrollFunction() {
-	if (document.body.scrollTop > 80 && width > 1280  || document.documentElement.scrollTop > 80 && width > 1280) {
-		document.getElementById("nav").style.padding = "0px";
-		document.getElementById("logo").style.display = "none";
-		// document.getElementById("logo_scroll").style.display = "block";
-	} else {
-		document.getElementById("nav").style.padding = "15px 0px 0px 0px";
-		document.getElementById("logo").style.display = "block";
-		// document.getElementById("logo_scroll").style.display = "none";
-	}
-}
-// var acc = document.getElementsByClassName("item_menu");
-// var i;
-// for (i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var menu_con = this.nextElementSibling;
-//     if (menu_con.style.display === "block") {
-// 		menu_con.style.display = "none";
-//     } else {
-// 		menu_con.style.display = "block";
-//     }
-//   });
-// }
-// function show_menu1(e) {
-// 	$(".box_menu").show();
-// }
-// if ($(window).width() <= 1024) {
-// 	$(document).click(function (event) {
-// 		$target = $(event.target);
-// 		if (
-// 			!$target.closest(".box_menu").length &&
-// 			$(".box_menu").is(":visible") &&
-// 			!$target.closest(".img_show_2").length
-// 		) {
-// 			$(".box_menu").hide(100);
-// 		}
-// 	});
-// }
-
-$(".submit_mail").click(function () {
-	var form_data = new FormData();
-	form_data.append("email", $("#input_mail").val());
-	$.ajax({
-		url: "/register_mail",
-		type: "POST",
-		processData: false,
-		contentType: false,
-		dataType: "json",
-		data: form_data,
-		success: function (data) {
-			if (data.status == 0) {
-				swal({
-					title: "Thất bại",
-					type: "error",
-					text: "Thất bại",
-				});
-			} else if (data.status == 1) {
-				swal({
-					title: "Thành công",
-					type: "success",
-					text: "Đăng ký thành công",
-				});
-				$("#input_mail").val("");
-			} else if (data.status == 2) {
-				swal({
-					title: "Thất bại",
-					type: "error",
-					text: "Email này đã được đăng ký",
-				});
-			} else if (data.status == 3) {
-				swal({
-					title: "Thất bại",
-					type: "error",
-					text: "Vui lòng nhập email",
-				});
-			}
-		},
-		error: function () {
-			alert("error");
-		},
-	});
-});

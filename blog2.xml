@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://phunuplus.vn/thuc-don-keto-thuan-viet/</loc>
-    <changefreq>daily</changefreq>
-    <lastmod>2023-06-13T07:24:06+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://phunuplus.vn/thuc-don-7-ngay-trong-tuan-cho-cong-nhan/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-06-13T07:24:06+00:00</lastmod>
@@ -933,7 +927,7 @@
   <url>
     <loc>https://phunuplus.vn/khi-nao-ket-hon/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-07-14T07:24:06+00:00</lastmod>
+    <lastmod>2023-12-20T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -1198,6 +1192,12 @@
     <loc>https://phunuplus.vn/visual-dinh-cao-cua-erik-tai-buoi-hop-bao-ra-mat-ep-dau-tay/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-29T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://phunuplus.vn/nhung-bieu-hien-sau-khi-quan-he-lan-dau/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-07-24T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>

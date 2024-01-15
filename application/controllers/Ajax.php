@@ -20,18 +20,19 @@ class Ajax extends CI_Controller
         $html = '';
         if ($blog != null) {
             foreach ($blog as $val) {
-                $cate = chuyen_muc(['id' => $val['chuyenmuc']]);
+                $image = ($val['image'] != '') ? $val['image'] : 'images/logo.png';
+                $author = author(['id' => $val['author_id']]);
                 $html .= '<div class="this_content_right">
 
                             <a title="' . $val['title'] . '" href="/' . alias_new($val['alias'], $val['id']) . '">
                                 <p class="title_blog only_mobile">' . $val['title'] . '</p>
                             </a>
                             <a class="linl_all_detail link_fl" title="' . $val['title'] . '" href="/' . alias_new($val['alias'], $val['id']) . '">
-                                <img src="/' . $val['image'] . '" alt="' . $val['title'] . '">
+                                <img src="/' .  $image  . '" alt="' . $val['title'] . '">
                                 <div class="box_content_blog">
                                 <p class="title_blog">' . $val['title'] . '</p>
                                 <div class="fl_date">
-                                    <p class="cate_post">' . $cate[0]['name'] . '</p>
+                                    <p class="cate_post">' . $author[0]['name'] . '</p>
                                     <span class="dot_item"></span>
                                     <p class="date_post">' . date('d-m-Y', $val['created_at']) . '</p> 
                                 </div>
@@ -41,7 +42,7 @@ class Ajax extends CI_Controller
                         </div>';
             }
             $next = 0;
-            if (count($blog) == 20) {
+            if (count($blog) == 40) {
                 $next = 1;
             }
             $response = [
@@ -117,24 +118,26 @@ class Ajax extends CI_Controller
                                     </a>
                                 </div>';
                 } else {
+                    $image = ($val['image'] != '') ? $val['image'] : 'images/logo.png';
+                    $author = author(['id' => $val['author_id']]);
                     $html .= '
-                            <div class="this_train">
-                                <a title="' . $val['title'] . '" href="/' . alias_new($val['alias'], $val['id']) . '">
-                                    <p class="title_blog only_mobile">' . $val['title'] . '</p>
-                                </a>
-                                <a href="/' . alias_new($val['alias'], $val['id']) . '">
-                                    <img src="/' . $val['image'] . '" alt="' . $val['title'] . '">
-                                    <div class="box_right_data">
-                                        <p class="title_blog">' . $val['title'] . '</p>
-                                        <div class="fl_date">
-                                                <p class="cate_post">' . $cate[0]['name'] . '</p>
-                                                <span class="dot_item"></span>
-                                                <p class="date_post">' . date('d-m-Y', $val['created_at']) . '</p> 
-                                            </div>
-                                        <div class="des_blog">' . $val['sapo'] . '</div>
-                                    </div>
-                                </a>
+                    <div class="this_content_right">
+                    <a title="' . $val['title'] . '" href="/' . alias_new($val['alias'], $val['id']) . '">
+                        <p class="title_blog only_mobile">' . $val['title'] . '</p>
+                    </a>
+                    <a class="linl_all_detail link_fl" title="' . $val['title'] . '" href="/' . alias_new($val['alias'], $val['id']) . '">
+                        <img src="/' . $image . '" alt="' . $val['title'] . '">
+                        <div class="box_content_blog">
+                            <p class="title_blog">' . $val['title'] . '</p>
+                            <div class="fl_date">
+                                <p class="cate_post">' . $author[0]['name'] . '</p>
+                                <span class="dot_item"></span>
+                                <p class="date_post">' . date('d-m-Y', $val['created_at']) . '</p>
                             </div>
+                            <div class="des_post">' . $val['sapo'] . '</div>
+                        </div>
+                    </a>
+                    </div>
                             ';
                 }
             }

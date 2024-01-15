@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://phunuplus.vn/nhung-bieu-hien-sau-khi-quan-he-lan-dau/</loc>
-    <changefreq>daily</changefreq>
-    <lastmod>2023-07-24T07:24:06+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://phunuplus.vn/mung-may-tet-thi-duoc-quan-he/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-24T07:24:06+00:00</lastmod>
@@ -1198,6 +1192,12 @@
     <loc>https://phunuplus.vn/le-hoang-phuong-dang-quang-hoa-hau-hoa-binh-viet-nam-2023/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-28T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://phunuplus.vn/cach-de-khong-suy-nghi-tieu-cuc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-09-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>

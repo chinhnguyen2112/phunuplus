@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://phunuplus.vn/cach-de-khong-suy-nghi-tieu-cuc/</loc>
-    <changefreq>daily</changefreq>
-    <lastmod>2023-09-07T07:24:06+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://phunuplus.vn/hoc-cach-chap-nhan/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-07T07:24:06+00:00</lastmod>
@@ -928,6 +922,48 @@
     <loc>https://phunuplus.vn/ngu-hon-am-duong-su-c112507.html</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-12-14T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://phunuplus.vn/review-banh-bo-trung-richy-c112508.html</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-12-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://phunuplus.vn/yeu-bao-lau-thi-cuoi-c112509.html</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-12-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://phunuplus.vn/serum-vitamin-c-zakka-c112510.html</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-12-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://phunuplus.vn/cach-nap-the-am-duong-su-c112511.html</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-12-21T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://phunuplus.vn/bieu-hien-dan-ong-si-tinh-c112512.html</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-12-21T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://phunuplus.vn/meo-nau-an-nhanh-c112513.html</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-12-23T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://phunuplus.vn/binh-giu-nhiet-feather-light-c112514.html</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-12-25T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <clipPath id="clip-Tu_van">
+      <rect width="26" height="26"/>
+    </clipPath>
+  </defs>
+  <g id="Tu_van" data-name="Tu van" clip-path="url(#clip-Tu_van)">
+    <g id="Group_5908" data-name="Group 5908" transform="translate(22157.809 20459.021)">
+      <path id="Path_14308" data-name="Path 14308" d="M19.543,12a4.043,4.043,0,1,0,4.043,4.043A4.043,4.043,0,0,0,19.543,12Z" transform="translate(-22166.885 -20467.021)" fill="#4caf50"/>
+      <path id="Path_14309" data-name="Path 14309" d="M24.118,19H16.706C14.662,19,13,21.021,13,23.507v2.459A1.137,1.137,0,0,0,14.011,27.2h12.8a1.137,1.137,0,0,0,1.011-1.229V23.507C27.824,21.021,26.163,19,24.118,19Z" transform="translate(-22167.807 -20464.021)" fill="#4caf50"/>
+      <g id="Group_5845" data-name="Group 5845" transform="translate(-22141.553 -20454.389)">
+        <path id="Path_14307" data-name="Path 14307" d="M12.422,5.623a.424.424,0,0,0,.234-.071l1.4-.936a.7.7,0,0,1,.39-.118H17.76a.985.985,0,0,0,.984-.984V.984A.985.985,0,0,0,17.763,0H12.984A.985.985,0,0,0,12,.984V5.2a.421.421,0,0,0,.223.372.414.414,0,0,0,.2.05Z" transform="translate(-12)" fill="#2196f3"/>
+        <path id="Path_14310" data-name="Path 14310" d="M12,0h2.67a.985.985,0,0,1,.984.984v2.53a.985.985,0,0,1-.984.984H12Z" transform="translate(-8.908)" fill="#1d83d4"/>
+      </g>
+      <path id="Path_14311" data-name="Path 14311" d="M19.543,12a4.043,4.043,0,0,0,0,8.086Z" transform="translate(-22166.939 -20467.021)" fill="#429846"/>
+      <path id="Path_14312" data-name="Path 14312" d="M20.412,19H16.706C14.662,19,13,21.021,13,23.507v2.459A1.137,1.137,0,0,0,14.011,27.2h6.4Z" transform="translate(-22167.809 -20464.02)" fill="#429846"/>
+    </g>
+  </g>
+</svg>

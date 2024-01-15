@@ -9,7 +9,7 @@
   <url>
     <loc>https://phunuplus.vn/bieu-hien-khi-con-gai-yeu-don-phuong/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-06-17T07:24:06+00:00</lastmod>
+    <lastmod>2023-12-20T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -398,12 +398,6 @@
   </url>
   <url>
     <loc>https://phunuplus.vn/bieu-hien-dan-ong-khi-het-yeu/</loc>
-    <changefreq>daily</changefreq>
-    <lastmod>2023-06-27T07:24:06+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://phunuplus.vn/bieu-hien-dan-ong-si-tinh/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-06-27T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
@@ -1198,6 +1192,12 @@
     <loc>https://phunuplus.vn/status-giam-can/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-11T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://phunuplus.vn/cach-phoi-do-cho-nguoi-lun-bap-chan-to/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-09-14T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>

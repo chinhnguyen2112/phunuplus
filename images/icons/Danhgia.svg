@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <clipPath id="clip-Danh_gia">
+      <rect width="26" height="26"/>
+    </clipPath>
+  </defs>
+  <g id="Danh_gia" data-name="Danh gia" clip-path="url(#clip-Danh_gia)">
+    <g id="star" transform="translate(1.901 -7.65)">
+      <path id="Path_14280" data-name="Path 14280" d="M22.2,18.021l-8.064-.535L11.09,9.55,8.047,17.486,0,18.021l6.173,5.458L4.144,31.748l6.946-4.566,6.946,4.566-2.029-8.269Z" fill="#ffd400"/>
+      <path id="Path_14281" data-name="Path 14281" d="M260.905,23.479l2.109,8.269L255.8,27.182,256.215,9.6l3.047,7.906,8.067.511Z" transform="translate(-245.131)" fill="#fdbf00"/>
+    </g>
+  </g>
+</svg>

@@ -16,13 +16,15 @@
     gtag('config', 'G-GP45ZZPN4X');
   </script>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <?php if (isset($index) && $index == 1) { ?>
     <meta name="robots" content="index,follow">
   <?php } else { ?>
     <meta name="robots" content="noindex,nofollow">
   <?php } ?>
   <title><?= isset($meta_title) ? $meta_title : 'Phụ Nữ Plus' ?></title>
-  <meta content="<?= isset($meta_des) ? $meta_des : '' ?>" name="description">
+  <meta name="description" content="<?= isset($meta_des) ? $meta_des : '' ?>">
   <meta name="keywords" content="<?= isset($meta_key) ? $meta_key : '' ?>">
   <link rel="canonical" href="<?= (isset($canonical)) ? $canonical : base_url() ?>">
   <meta property="og:locale" content="vi_VN">
@@ -33,7 +35,6 @@
   <meta property="og:description" content="<?= isset($meta_des) ? $meta_des : '' ?>">
   <meta property="og:image:secure_url" content="<?= base_url() ?><?= (isset($meta_img) ? $meta_img : 'images/logo.png') ?>">
   <meta property="og:image" content="<?= base_url() ?><?= (isset($meta_img) ? $meta_img : 'images/logo.png') ?>">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="<?= base_url() ?>images/favicon.png">
   <link data-n-head="ssr" rel="icon" type="image/png" href="<?= base_url() ?>images/favicon.png">
   <link rel="stylesheet" href="/assets/css/font.css">

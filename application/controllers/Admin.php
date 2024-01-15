@@ -828,7 +828,7 @@ class Admin extends CI_Controller
                 $lastmod->appendChild($doc->createTextNode(date('Y-m-d', $val['created_at']) . 'T07:24:06+00:00'));
                 $url->appendChild($lastmod);
                 $priority = $doc->createElement("priority");
-                $priority->appendChild($doc->createTextNode('0.9'));
+                $priority->appendChild($doc->createTextNode('0.5'));
                 $url->appendChild($priority);
                 $r->appendChild($url);
             }
@@ -894,7 +894,7 @@ class Admin extends CI_Controller
                 $lastmod->appendChild($doc->createTextNode(date('Y-m-d', $val['created_at']) . 'T07:24:06+00:00'));
                 $url->appendChild($lastmod);
                 $priority = $doc->createElement("priority");
-                $priority->appendChild($doc->createTextNode('0.9'));
+                $priority->appendChild($doc->createTextNode('0.8'));
                 $url->appendChild($priority);
                 $r->appendChild($url);
             }
@@ -968,7 +968,7 @@ class Admin extends CI_Controller
             $changefreq->appendChild($doc->createTextNode('daily'));
             $url->appendChild($changefreq);
             $priority = $doc->createElement("priority");
-            $priority->appendChild($doc->createTextNode('0.9'));
+            $priority->appendChild($doc->createTextNode('0.3'));
             $url->appendChild($priority);
             $r->appendChild($url);
         }
