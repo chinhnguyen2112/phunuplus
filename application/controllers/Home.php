@@ -402,18 +402,10 @@ class Home extends CI_Controller
     // }  
     public function replace_blog()
     {
-        $blog = $this->Madmin->query_sql("SELECT alias FROM blogs ");
-        var_dump($blog);
+        $blog = $this->Madmin->query_sql("SELECT id,content FROM blogs ");
         foreach ($blog as $val) {
-            $alias = $val['alias'] . '/';
-            $get =  $this->Madmin->query_sql("SELECT id,alias FROM blogs WHERE content LIKE '%$alias%' ");
-            if ($get != null) {
-                var_dump($get);
-                // foreach ($get as $val2)
-                //     $alias_new = alias_new($val2['alias'], $val2['id']) . '"';
-                // $content = str_replace($alias, $alias_new, $val2['content']);
-                // $update = $this->Madmin->update(['id' => $val2['id']], ['content' => $content], 'blogs');
-            }
+                $content = preg_replace('/(<[^>]+) srcset=".*?"/i', '$1',  $val['content']);
+                $update = $this->Madmin->update(['id' => $val['id']], ['content' => $content], 'blogs');
         }
     }
     function page($page)

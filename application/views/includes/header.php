@@ -1,6 +1,6 @@
 <div class="main_header">
     <div class="content_header body_width">
-        <h1><a href="/"><img class="logo_header" src="/images/logo.png" alt="Logo"></a></h1>
+        <a href="/"><img class="logo_header" src="/images/logo.png" alt="Logo"></a>
         <div class="list_menu_pc">
             <a href="#" class="menu_pc">Diễn đàn</a>
             <a href="#" class="menu_pc">Điểm tin</a>
