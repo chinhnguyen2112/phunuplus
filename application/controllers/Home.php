@@ -32,11 +32,13 @@ class Home extends CI_Controller
     {
         $data['canonical'] = base_url();
         $time = time();
-        $select = "SELECT id,title,alias,image,created_at,sapo,author_id FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time ";
+        $select = "SELECT id,title,alias,image,created_at,author_id,chuyenmuc FROM blogs WHERE chuyenmuc != 53 AND index_blog = 1 AND type = 0 AND time_post <= $time  ";
 
-        $data['blog'] = $this->Madmin->query_sql("$select ORDER BY created_at DESC LIMIT 40");
-        $data['blog_new'] = $this->Madmin->get_limit("index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
-        $data['blog_view'] =  $this->Madmin->query_sql($select . " ORDER BY view DESC LIMIT 5");
+        $data['blog_new'] =  $this->Madmin->query_sql($select . " ORDER BY created_at DESC LIMIT 16");
+        $data['blog_view'] =  $this->Madmin->query_sql($select . " ORDER BY view DESC LIMIT 6");
+        $data['blog_1'] =  $this->Madmin->query_sql($select . " AND (chuyenmuc = 1 or cate_parent = 1) ORDER BY updated_at DESC LIMIT 1");
+        $data['blog_3'] =  $this->Madmin->query_sql($select . " AND (chuyenmuc = 3 or cate_parent = 3) ORDER BY updated_at DESC LIMIT 1");
+        $data['blog_46'] =  $this->Madmin->query_sql($select . " AND (chuyenmuc = 46 or cate_parent = 46) ORDER BY updated_at DESC LIMIT 1");
         $data['meta_title'] = 'Góc nhìn đa chiều phụ nữ Việt Nam - Phụ Nữ Plus';
         $data['meta_des'] = 'Phụ Nữ Plus là trang web chia sẻ kiến thức và kinh nghiệm hữu ích dành cho phụ nữ hiện đại. Đây như một cuốn cẩm nang giúp chị em có thêm nhiều bí kíp về tình yêu, sức khỏe, làm đẹp, chuyện vào bếp hay đi du lịch,… Phụ Nữ Plus hứa hẹn sẽ mang đến những thông tin chính xác, hữu ích nhất cho cuộc sống của chị em!';
         $data['content'] = 'home';
@@ -58,7 +60,7 @@ class Home extends CI_Controller
         $alias = trim($alias);
         $alias_new = alias_301($alias);
         if ($alias != $alias_new) {
-            redirect('/' . $alias_new . '/', 'location', 301);
+            redirect('/' . $alias_new, 'location', 301);
         }
         $data['canonical'] = base_url() . $alias . '/';
         $author = $this->Madmin->get_by(['alias' => $alias], 'admin');
@@ -179,6 +181,9 @@ class Home extends CI_Controller
     }
     public function detail_blog_new($id)
     {
+        if($id == 112655){
+            redirect($this->detail_blog_new(112657), 'location', 301);
+        }
         $time = time();
         $blog = $this->Madmin->query_sql_row("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE  type = 0 AND index_blog = 1 AND time_post<= $time AND blogs.id = $id ");
         if ($blog != null && $id > 1000) {
@@ -193,7 +198,9 @@ class Home extends CI_Controller
     {
         $id = $blog['id'];
         $time = time();
-
+        if ($blog['redirect_301'] != null) {
+            redirect($blog['redirect_301'], 'location', 301);
+        }
         if ($_SERVER['REQUEST_URI'] != '/' . $alias) {
             redirect('/' . $alias, 'location', 301);
         }
@@ -239,6 +246,7 @@ class Home extends CI_Controller
         $data['index'] = 1;
         return $this->load->view('index', $data);
     }
+
     public function author($alias)
     {
         $author = $this->Madmin->get_by(['alias' => $alias], 'admin');
@@ -247,12 +255,12 @@ class Home extends CI_Controller
             return $this->load->view('errors/html/error_404');
         } else {
             $time = time();
-            if ($_SERVER['REQUEST_URI'] != '/' . $author['alias'] . '/') {
-                redirect('/' . $author['alias'] . '/', 'location', 301);
+            if ($_SERVER['REQUEST_URI'] != '/author/' . $author['alias'] . '.html') {
+                redirect('/author/' . $author['alias'] . '.html', 'location', 301);
             }
             $blog = $this->Madmin->query_sql("SELECT * FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time AND author_id = '{$author['id']}' LIMIT 20");
-            $data['blog_new'] = $this->Madmin->query_sql("SELECT id,title,alias FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY updated_at DESC LIMIT 5");
-            $data['blog_view'] = $this->Madmin->query_sql("SELECT id,title,alias FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY view DESC LIMIT 5");
+            $data['blog_new'] = $this->Madmin->query_sql("SELECT id,title,alias FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY updated_at DESC LIMIT 6");
+            $data['blog_view'] = $this->Madmin->query_sql("SELECT id,title,alias FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY view DESC LIMIT 6");
             $data['blog'] = $blog;
             $data['author'] = $author;
             $data['list_js'] = [
@@ -262,13 +270,14 @@ class Home extends CI_Controller
             $data['list_css'] = [
                 'author.css',
             ];
-            $data['meta_title'] = $author['name'] . " - Tác giả tại PhuNuPlus";
-            $data['meta_des'] = $author['name'] . " - Tác giả tại PhuNuPlus";
-            $data['meta_key'] = $author['name'] . " - Tác giả tại PhuNuPlus";
+            $data['meta_title'] = $author['name'] . ' Tác giả tại Phụ Nữ Plus';
+            $data['meta_des'] = $author['name'];
+            $data['meta_key'] = $author['name'];
             $data['meta_img'] = $author['image'];
-            // $data['index'] = 1;
+            $data['index'] = 1;
             $data['content'] = 'author';
-            $this->load->view('index', $data);
+            $data['canonical'] = base_url('author/' . $author['alias'] . '.html');
+            return $this->load->view('index', $data);
         }
     }
     // public function import_file()
@@ -399,15 +408,7 @@ class Home extends CI_Controller
     //             //var_dump($re_cv);die();
     //         }
     //     }
-    // }  
-    public function replace_blog()
-    {
-        $blog = $this->Madmin->query_sql("SELECT id,content FROM blogs ");
-        foreach ($blog as $val) {
-                $content = preg_replace('/(<[^>]+) srcset=".*?"/i', '$1',  $val['content']);
-                $update = $this->Madmin->update(['id' => $val['id']], ['content' => $content], 'blogs');
-        }
-    }
+    // } 
     function page($page)
     {
         if ($_SERVER['REQUEST_URI'] != '/' . $page['alias'] . '/') {
@@ -424,5 +425,10 @@ class Home extends CI_Controller
         $data['meta_img'] = $page['image'];
         $data['index'] = 1;
         $this->load->view('index', $data);
+    }
+
+    public function custom_404()
+    {
+        $this->load->view('errors/html/error_404');
     }
 }

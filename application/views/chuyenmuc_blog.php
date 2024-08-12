@@ -22,7 +22,7 @@
     <div class="container_widget ">
         <div class="right_home">
             <div class="list_blog_home">
-                <?php foreach ($blog as $key => $val) { ?>
+                <?php foreach ($blog as $key => $val) {?>
                     <div class="this_content_right">
                         <a title="<?= $val['title'] ?>" href="/<?= alias_new($val['alias'], $val['id']) ?>">
                             <p class="title_blog only_mobile"><?= $val['title'] ?></p>
@@ -32,8 +32,7 @@
                             <div class="box_content_blog">
                                 <p class="title_blog"><?= $val['title'] ?></p>
                                 <div class="fl_date">
-                                    <p class="cate_post"><?php $cate = author(['id' => $val['author_id']]);
-                                                           ( $cate != null)?$cate[0]['name']: '' ?></p>
+                                    <p class="cate_post"><?php $cate = author(['id' => $val['author_id']]); echo (( $cate != null)?$cate[0]['name']: ''); ?></p>
                                     <span class="dot_item"></span>
                                     <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p>
                                 </div>

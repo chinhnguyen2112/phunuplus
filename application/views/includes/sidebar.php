@@ -6,25 +6,6 @@
         </div>
         <div class="box_content_link">
             <ul>
-                <li>
-                    <a target="_blank" rel="dofollow" href="https://vnesports.vn/"> <b>VnEsports</b></a>
-                </li>
-                <li>
-                    <a target="_blank" rel="dofollow" href="https://nguoinhanong.vn/"> <b>Người Nhà Nông</b></a>
-                </li>
-                <li>
-                    <a target="_blank" rel="dofollow" href="https://vodi.io/"> <b>xoilac tv</b></a>
-                </li>
-                <li>
-                    <a target="_blank" rel="dofollow" href="https://www.barchordnyc.com/"> <b>trực tiếp bóng đá hôm nay
-                            Xoilac</b></a>
-                </li>
-                <li>Xem bóng đá
-                    <a target="_blank" rel="dofollow" href="https://rakhoitv.win/"> <b> ra khoi tv</b></a>
-                </li>
-                <li>Xem trực tiếp bóng đá
-                    <a target="_blank" rel="dofollow" href=" https://caheotv.li"> <b> caheo. link</b></a>
-                </li>
             </ul>
         </div>
     </div>

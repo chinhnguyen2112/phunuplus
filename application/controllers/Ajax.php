@@ -15,34 +15,30 @@ class Ajax extends CI_Controller
     {
         $time = time();
         $page = $this->input->post('page');
-        $page = 20 * ($page - 1);
-        $blog = $this->Madmin->get_limit(" index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', $page, 20);
+        $page = 16 * ($page - 1);
+        $blog = $this->Madmin->get_limit(" index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', $page, 16);
         $html = '';
         if ($blog != null) {
             foreach ($blog as $val) {
                 $image = ($val['image'] != '') ? $val['image'] : 'images/logo.png';
                 $author = author(['id' => $val['author_id']]);
-                $html .= '<div class="this_content_right">
-
-                            <a title="' . $val['title'] . '" href="/' . alias_new($val['alias'], $val['id']) . '">
-                                <p class="title_blog only_mobile">' . $val['title'] . '</p>
-                            </a>
-                            <a class="linl_all_detail link_fl" title="' . $val['title'] . '" href="/' . alias_new($val['alias'], $val['id']) . '">
-                                <img src="/' .  $image  . '" alt="' . $val['title'] . '">
-                                <div class="box_content_blog">
-                                <p class="title_blog">' . $val['title'] . '</p>
-                                <div class="fl_date">
-                                    <p class="cate_post">' . $author[0]['name'] . '</p>
-                                    <span class="dot_item"></span>
-                                    <p class="date_post">' . date('d-m-Y', $val['created_at']) . '</p> 
-                                </div>
-                                <span class="des_post">' . $val['sapo'] . '</span>
-                                </div>
-                            </a>
-                        </div>';
+                $cate = chuyen_muc(['id' => $val['chuyenmuc']]);
+                $html .= ' <article class="this_new">
+                <a href="/' . alias_new($val['alias'], $val['id']) . '">
+                    <div class="ratio ratio_5by3 ">
+                        <img class="ratio_item" src="/' . $image . '" alt="' . $val['title'] . '">
+                    </div>
+                </a>
+                <div class="card_body">
+                    <span class="text_category">' . $author[0]['name'] . ' | ' . $cate[0]['name'] . '</span>
+                    <h3 class="text_title">
+                        <a href="/' . alias_new($val['alias'], $val['id']) . '" class="text_reset">' . $val['title'] . '</a>
+                    </h3>
+                </div>
+            </article>';
             }
             $next = 0;
-            if (count($blog) == 40) {
+            if (count($blog) == 16) {
                 $next = 1;
             }
             $response = [

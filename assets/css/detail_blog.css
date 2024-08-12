@@ -1,5 +1,5 @@
 .main_content {
-    padding-top: 80px;
+    padding-top: 125px;
 }
 
 .container_widget_about {
@@ -204,9 +204,9 @@ h6 p {
 }
 
 .text_author {
-    display: flex;
-    gap: 5px;
-    align-items: center;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 25px;
 }
 
 .text_author img {

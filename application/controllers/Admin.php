@@ -104,6 +104,7 @@ class Admin extends CI_Controller
             $data['updated_at'] = $time;
             $data['author_id'] = $_SESSION['admin']['id'];
             $data['index_blog'] = $this->input->post('index_blog');
+            $data['redirect_301'] = trim($this->input->post('redirect_301'));
             $cate = chuyen_muc(['id' => $chuyenmuc]);
             if ($this->input->post('type') == 1) {
                 $data['type'] = 1;

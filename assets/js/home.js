@@ -1,6 +1,6 @@
 var page = 2;
 $(".load_more").click(function () {
-	var show_more = $(this);
+	var show_more = $('.list_new');
 	var form_data = new FormData();
 	form_data.append("page", page);
 	$.ajax({
@@ -15,7 +15,7 @@ $(".load_more").click(function () {
 			if (data.status == 0) {
 				$(".load_more").remove();
 			} else if (data.status == 1) {
-				show_more.before(data.html);
+				show_more.append(data.html);
 				if (data.next == 0) {
 					$(".load_more").remove();
 				}

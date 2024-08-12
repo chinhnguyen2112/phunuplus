@@ -19,7 +19,7 @@
                         <div class="breadcrumb_after"></div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
         <div class="main_content_blog">
             <div class="blog_content">
@@ -28,12 +28,13 @@
                         <div class="left_blog">
                             <h1 class="title_h1"><?= $blog['title'] ?></h1>
                             <div class="box_author">
+                                <?php if(isset($author) && $author !=null){ ?>
+                                <a href="/author/<?= $author['alias'] ?>.html" class="text_author"><?= $author['name'] ?></a>
+                                <?php } ?>
                                 <div class="box_date">
                                     <p class="date_blog"><?= replace_date($blog['created_at']) ?></p>
                                 </div>
-                                <a rel="nofollow" class="follow_ggnew" target="_blank"
-                                    href="https://news.google.com/publications/CAAqBwgKMK2v0Asw7MrnAw?hl=vi&gl=VN&ceid=VN:vi">Theo
-                                    dõi Phụ Nữ Plus trên <img src="/images/googlelogo.svg" alt=""> News</a>
+                                <a rel="nofollow" class="follow_ggnew" target="_blank" href="https://news.google.com/publications/CAAqBwgKMKPNqgwwsM23BA">Theo dõi Phụ Nữ Plus trên <img src="/images/googlelogo.svg" alt=""> News</a>
                             </div>
                         </div>
                     </div>

@@ -210,10 +210,16 @@ function sendEmail($to, $name, $subject, $content)
 function alias_301($alias)
 {
 	if ($alias == 'nguoi-tieu-dung-thong-minh') {
-		$alias = 'tieu-dung-thong-minh';
+		$alias = 'tieu-dung-thong-minh/';
 	}
 	if ($alias == '-uyen-linh-dap-tra-ve-thai-do-trong-clip-khan-gia-giat-mic-phan-nan') {
-		$alias = 'uyen-linh-dap-tra-ve-thai-do-trong-clip-khan-gia-giat-mic-phan-nan';
+		$alias = 'uyen-linh-dap-tra-ve-thai-do-trong-clip-khan-gia-giat-mic-phan-nan/';
+	}
+	if ($alias == 'cach-got-tao-khong-bi-tham') {
+		$alias = '7-cach-got-tao-khong-bi-tham-c112546.html';
+	}
+	if ($alias == 'cach-de-biet-crush-co-thich-minh-khong') {
+		$alias = 'dau-hieu-nhan-biet-crush-thich-minh-c112550.html';
 	}
 	return $alias;
 }

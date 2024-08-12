@@ -1,1203 +1,1203 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://phunuplus.vn/mung-may-tet-thi-duoc-quan-he/</loc>
+    <loc>http://localhost:8304/nhung-bieu-hien-sau-khi-quan-he-lan-dau/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-24T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cam-giac-khi-quan-he-tinh-duc/</loc>
+    <loc>http://localhost:8304/mung-may-tet-thi-duoc-quan-he/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-24T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/lan-dau-quan-he-nhung-khong-cho-vao-duoc/</loc>
+    <loc>http://localhost:8304/cam-giac-khi-quan-he-tinh-duc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-07-24T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:8304/lan-dau-quan-he-nhung-khong-cho-vao-duoc/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-25T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nhung-ngay-kieng-quan-he/</loc>
+    <loc>http://localhost:8304/nhung-ngay-kieng-quan-he/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-25T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nen-dung-bep-tu-hay-bep-hong-ngoai/</loc>
+    <loc>http://localhost:8304/nen-dung-bep-tu-hay-bep-hong-ngoai/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-25T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nen-mua-lo-vi-song-hay-noi-chien-khong-dau/</loc>
+    <loc>http://localhost:8304/nen-mua-lo-vi-song-hay-noi-chien-khong-dau/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-19T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nen-mua-noi-chien-khong-dau-co-hay-dien-tu/</loc>
+    <loc>http://localhost:8304/nen-mua-noi-chien-khong-dau-co-hay-dien-tu/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-25T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nen-mua-quat-dieu-hoa-hay-may-lanh/</loc>
+    <loc>http://localhost:8304/nen-mua-quat-dieu-hoa-hay-may-lanh/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-25T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nen-mua-lo-nuong-hay-noi-chien-khong-dau/</loc>
+    <loc>http://localhost:8304/nen-mua-lo-nuong-hay-noi-chien-khong-dau/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-25T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/thuc-hu-ve-moi-quan-he-giua-phuong-oanh-va-me-chong/</loc>
+    <loc>http://localhost:8304/thuc-hu-ve-moi-quan-he-giua-phuong-oanh-va-me-chong/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-29T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-chi-tieu-tiet-kiem-cua-nguoi-nhat/</loc>
+    <loc>http://localhost:8304/cach-chi-tieu-tiet-kiem-cua-nguoi-nhat/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-18T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-chi-tieu-hop-ly-voi-muc-luong-7-trieu/</loc>
+    <loc>http://localhost:8304/cach-chi-tieu-hop-ly-voi-muc-luong-7-trieu/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-26T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/chi-tieu-tiet-kiem-voi-luong-5-trieu/</loc>
+    <loc>http://localhost:8304/chi-tieu-tiet-kiem-voi-luong-5-trieu/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-03T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-chi-tieu-hop-ly-cho-gia-dinh-4-nguoi/</loc>
+    <loc>http://localhost:8304/cach-chi-tieu-hop-ly-cho-gia-dinh-4-nguoi/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-17T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/ba-bau-khanh-thi-mang-thai-nhung-thang-cuoi-duoc-chong-tre-phan-hien-dua-di-du-lich-khap-noi/</loc>
+    <loc>http://localhost:8304/ba-bau-khanh-thi-mang-thai-nhung-thang-cuoi-duoc-chong-tre-phan-hien-dua-di-du-lich-khap-noi/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-26T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-chi-tieu-hop-ly-trong-1-thang/</loc>
+    <loc>http://localhost:8304/cach-chi-tieu-hop-ly-trong-1-thang/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-chi-tieu-tiet-kiem-cho-nguoi-thu-nhap-thap/</loc>
+    <loc>http://localhost:8304/cach-chi-tieu-tiet-kiem-cho-nguoi-thu-nhap-thap/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/dong-thai-moi-nhat-cua-le-duong-bao-lam-sau-khi-bi-cong-an-dieu-tra/</loc>
+    <loc>http://localhost:8304/dong-thai-moi-nhat-cua-le-duong-bao-lam-sau-khi-bi-cong-an-dieu-tra/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-29T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-chi-tieu-1-trieu-1-thang/</loc>
+    <loc>http://localhost:8304/cach-chi-tieu-1-trieu-1-thang/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nen-mua-gi-lam-qua-khi-di-thai-lan/</loc>
+    <loc>http://localhost:8304/nen-mua-gi-lam-qua-khi-di-thai-lan/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/dac-san-nhat-ban-lam-qua/</loc>
+    <loc>http://localhost:8304/dac-san-nhat-ban-lam-qua/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cai-nghien-mua-sam/</loc>
+    <loc>http://localhost:8304/cai-nghien-mua-sam/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/dan-cu-mang-che-trang-tri-dam-hoi-cua-shark-binh-va-phuong-oanh-lam-qua-lo-ma-kem-sang/</loc>
+    <loc>http://localhost:8304/dan-cu-mang-che-trang-tri-dam-hoi-cua-shark-binh-va-phuong-oanh-lam-qua-lo-ma-kem-sang/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-27T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/phu-nu-len-dinh-nhieu-co-tot-khong/</loc>
+    <loc>http://localhost:8304/phu-nu-len-dinh-nhieu-co-tot-khong/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cam-giac-khi-bi-tinh-trung-ban-vao-tu-cung/</loc>
+    <loc>http://localhost:8304/cam-giac-khi-bi-tinh-trung-ban-vao-tu-cung/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-20T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-nhan-biet-phu-nu-vua-quan-he-xong/</loc>
+    <loc>http://localhost:8304/cach-nhan-biet-phu-nu-vua-quan-he-xong/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nhung-guong-mat-hoa-hau-lot-xac-ngoan-muc-sau-khi-dang-quang-khien-dan-tinh-chong-mat-/</loc>
+    <loc>http://localhost:8304/nhung-guong-mat-hoa-hau-lot-xac-ngoan-muc-sau-khi-dang-quang-khien-dan-tinh-chong-mat-/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-09T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-nhan-biet-phu-nu-da-quan-he-nhieu-lan/</loc>
+    <loc>http://localhost:8304/cach-nhan-biet-phu-nu-da-quan-he-nhieu-lan/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-20T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/quan-he-bang-mieng-phu-nu-co-thich-khong/</loc>
+    <loc>http://localhost:8304/quan-he-bang-mieng-phu-nu-co-thich-khong/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-nhan-biet-con-gai-con-trinh/</loc>
+    <loc>http://localhost:8304/cach-nhan-biet-con-gai-con-trinh/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/doi-tu-dep-khong-ti-vet-cua-nhung-hoa-hau-song-kin-tieng-nhat-viet-nam/</loc>
+    <loc>http://localhost:8304/doi-tu-dep-khong-ti-vet-cua-nhung-hoa-hau-song-kin-tieng-nhat-viet-nam/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nam-em-bat-ngo-cong-khai-ve-thong-tin-da-co-chong-la-nguoi-trong-showbiz-/</loc>
+    <loc>http://localhost:8304/nam-em-bat-ngo-cong-khai-ve-thong-tin-da-co-chong-la-nguoi-trong-showbiz-/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-24T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nhin-lai-nhan-sac-man-ma-cua-hoa-hau-do-my-linh-truoc-khi-chuan-bi-ha-sinh-con-gai-dau-long/</loc>
+    <loc>http://localhost:8304/nhin-lai-nhan-sac-man-ma-cua-hoa-hau-do-my-linh-truoc-khi-chuan-bi-ha-sinh-con-gai-dau-long/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/khi-hon-co-be-co-vi-gi/</loc>
+    <loc>http://localhost:8304/khi-hon-co-be-co-vi-gi/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/lam-sao-de-chong-thich-hon-co-be/</loc>
+    <loc>http://localhost:8304/lam-sao-de-chong-thich-hon-co-be/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-29T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-hon-co-be/</loc>
+    <loc>http://localhost:8304/cach-hon-co-be/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-24T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cam-giac-lan-dau-quan-he/</loc>
+    <loc>http://localhost:8304/cam-giac-lan-dau-quan-he/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/thang-co-hon-co-kieng-quan-he-khong/</loc>
+    <loc>http://localhost:8304/thang-co-hon-co-kieng-quan-he-khong/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/kinh-nghiem-mua-do-so-sinh-khong-lang-phi/</loc>
+    <loc>http://localhost:8304/kinh-nghiem-mua-do-so-sinh-khong-lang-phi/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-25T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/kinh-nghiem-mua-noi-chien-khong-dau/</loc>
+    <loc>http://localhost:8304/kinh-nghiem-mua-noi-chien-khong-dau/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-03T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/hoc-duoc-gi-tu-nhung-thanh-tich-dang-ne-cua-cac-nang-hau-viet/</loc>
+    <loc>http://localhost:8304/hoc-duoc-gi-tu-nhung-thanh-tich-dang-ne-cua-cac-nang-hau-viet/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-29T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/kinh-nghiem-mua-may-loc-nuoc/</loc>
+    <loc>http://localhost:8304/kinh-nghiem-mua-may-loc-nuoc/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-03T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/kinh-nghiem-mua-may-rua-bat/</loc>
+    <loc>http://localhost:8304/kinh-nghiem-mua-may-rua-bat/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-03T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/lo-quan-he-vao-ngay-ram-thi-phai-lam-sao/</loc>
+    <loc>http://localhost:8304/lo-quan-he-vao-ngay-ram-thi-phai-lam-sao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-dao-dau-khi-quan-he/</loc>
+    <loc>http://localhost:8304/cach-dao-dau-khi-quan-he/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-17T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nhung-cau-noi-hu-khi-quan-he/</loc>
+    <loc>http://localhost:8304/nhung-cau-noi-hu-khi-quan-he/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-24T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/hoa-hau-y-nhi-voi-lien-tuc-nhung-phat-ngon-gay-tranh-cai/</loc>
+    <loc>http://localhost:8304/hoa-hau-y-nhi-voi-lien-tuc-nhung-phat-ngon-gay-tranh-cai/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/bi-mat-ve-nguoi-chong-ma-nam-em-che-giau-hau-flex-anh-ket-hon/</loc>
+    <loc>http://localhost:8304/bi-mat-ve-nguoi-chong-ma-nam-em-che-giau-hau-flex-anh-ket-hon/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/khoi-tai-san-dang-nguong-mo-cua-phuong-oanh-truoc-khi-lam-vo-shark-binh-/</loc>
+    <loc>http://localhost:8304/khoi-tai-san-dang-nguong-mo-cua-phuong-oanh-truoc-khi-lam-vo-shark-binh-/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nghi-van-ran-nut-tinh-cam-voi-tien-cookie-bich-phuong-roi-di-sau-13-nam-gan-bo/</loc>
+    <loc>http://localhost:8304/nghi-van-ran-nut-tinh-cam-voi-tien-cookie-bich-phuong-roi-di-sau-13-nam-gan-bo/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/sao-viet-no-nuc-di-xem-concert-blackpink/</loc>
+    <loc>http://localhost:8304/sao-viet-no-nuc-di-xem-concert-blackpink/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/tap-4-vietnam-idol-2023-thi-sinh-hon-nhien-bat-giam-khao-ho-wow-my-tam-em-chi-dung-o-muc-hat-cho-vui/</loc>
+    <loc>http://localhost:8304/tap-4-vietnam-idol-2023-thi-sinh-hon-nhien-bat-giam-khao-ho-wow-my-tam-em-chi-dung-o-muc-hat-cho-vui/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-07-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/dong-cua-quan-nuoc-vo-le-duong-bao-lam-lap-tuc-chuyen-hang-muc-kinh-doanh-moi/</loc>
+    <loc>http://localhost:8304/dong-cua-quan-nuoc-vo-le-duong-bao-lam-lap-tuc-chuyen-hang-muc-kinh-doanh-moi/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-01T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/shark-binh-cung-phuong-oanh-nhap-quoc-tranh-ne-du-luan-on-ao-sau-le-an-hoi/</loc>
+    <loc>http://localhost:8304/shark-binh-cung-phuong-oanh-nhap-quoc-tranh-ne-du-luan-on-ao-sau-le-an-hoi/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-01T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/uyen-linh-dap-tra-ve-thai-do-trong-clip-khan-gia-giat-mic-phan-nan/</loc>
+    <loc>http://localhost:8304/uyen-linh-dap-tra-ve-thai-do-trong-clip-khan-gia-giat-mic-phan-nan/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-an-mac-dep-cho-nu-lun/</loc>
+    <loc>http://localhost:8304/cach-an-mac-dep-cho-nu-lun/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-03T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nguoi-gay-nen-mac-mau-gi/</loc>
+    <loc>http://localhost:8304/nguoi-gay-nen-mac-mau-gi/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-27T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-phoi-do-cho-nguoi-gay-va-lun/</loc>
+    <loc>http://localhost:8304/cach-phoi-do-cho-nguoi-gay-va-lun/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-29T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-phoi-do-mua-dong-cho-nu-beo/</loc>
+    <loc>http://localhost:8304/cach-phoi-do-mua-dong-cho-nu-beo/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-03T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/phoi-do-mua-he-cho-nu-beo/</loc>
+    <loc>http://localhost:8304/phoi-do-mua-he-cho-nu-beo/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-03T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/phoi-do-di-hoc-cho-sinh-vien-nu/</loc>
+    <loc>http://localhost:8304/phoi-do-di-hoc-cho-sinh-vien-nu/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-03T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/chan-vay-xep-ly-ngan-mac-voi-ao-gi/</loc>
+    <loc>http://localhost:8304/chan-vay-xep-ly-ngan-mac-voi-ao-gi/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-03T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/chan-vay-xep-ly-dai-mac-voi-ao-gi/</loc>
+    <loc>http://localhost:8304/chan-vay-xep-ly-dai-mac-voi-ao-gi/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-30T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nguoi-dep-bui-khanh-linh-top-5-miss-world-viet-nam-tien-thang-vao-chung-ket-miss-grand-2023/</loc>
+    <loc>http://localhost:8304/nguoi-dep-bui-khanh-linh-top-5-miss-world-viet-nam-tien-thang-vao-chung-ket-miss-grand-2023/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/hau-dramma-cang-nao-y-nhi-quay-xe-di-tu-thien-nhung-van-bi-nem-da/</loc>
+    <loc>http://localhost:8304/hau-dramma-cang-nao-y-nhi-quay-xe-di-tu-thien-nhung-van-bi-nem-da/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-25T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/kieu-toc-dep-cho-phu-nu-tuoi-60/</loc>
+    <loc>http://localhost:8304/kieu-toc-dep-cho-phu-nu-tuoi-60/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-chon-mau-toc-phu-hop-voi-tone-da/</loc>
+    <loc>http://localhost:8304/cach-chon-mau-toc-phu-hop-voi-tone-da/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nhung-hoa-hau-vuong-phai-thi-phi-nhieu-nhat-showbiz-viet/</loc>
+    <loc>http://localhost:8304/nhung-hoa-hau-vuong-phai-thi-phi-nhieu-nhat-showbiz-viet/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/mau-toc-tram-cho-hoc-sinh/</loc>
+    <loc>http://localhost:8304/mau-toc-tram-cho-hoc-sinh/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-03T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/mau-toc-tram-cho-da-ngam/</loc>
+    <loc>http://localhost:8304/mau-toc-tram-cho-da-ngam/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-03T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/mau-toc-dep-danh-cho-tuoi-40/</loc>
+    <loc>http://localhost:8304/mau-toc-dep-danh-cho-tuoi-40/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-15T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nhung-kieu-toc-dep-cho-phu-nu-tuoi-50/</loc>
+    <loc>http://localhost:8304/nhung-kieu-toc-dep-cho-phu-nu-tuoi-50/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-11-02T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/lo-bang-ielts-cao-ngat-nguong-hoa-hau-y-nhi-khoe-nhe-giong-ca-troi-phu-/</loc>
+    <loc>http://localhost:8304/lo-bang-ielts-cao-ngat-nguong-hoa-hau-y-nhi-khoe-nhe-giong-ca-troi-phu-/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-05T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/vo-chong-son-shark-binh-phuong-oanh-khoe-anh-tinh-be-tinh-o-my-phuong-oanh-dap-tra-tin-don-co-bau/</loc>
+    <loc>http://localhost:8304/vo-chong-son-shark-binh-phuong-oanh-khoe-anh-tinh-be-tinh-o-my-phuong-oanh-dap-tra-tin-don-co-bau/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-03T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nhung-nang-hau-giau-co-nhat-nhi-showbiz-viet/</loc>
+    <loc>http://localhost:8304/nhung-nang-hau-giau-co-nhat-nhi-showbiz-viet/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-03T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/flexing-qua-do-y-nhi-tu-tin-noi-tieng-truoc-ca-nha-tho-han-mac-tu-va-vua-quang-trung/</loc>
+    <loc>http://localhost:8304/flexing-qua-do-y-nhi-tu-tin-noi-tieng-truoc-ca-nha-tho-han-mac-tu-va-vua-quang-trung/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-04T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/danh-tinh-nguoi-dan-ong-bi-an-cau-hon-sieu-mau-thanh-hang/</loc>
+    <loc>http://localhost:8304/danh-tinh-nguoi-dan-ong-bi-an-cau-hon-sieu-mau-thanh-hang/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-04T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/phat-ngon-tiep-tuc-gay-day-song-cua-hoa-hau-y-nhi-co-du-lap-lanh-du-xuat-canh-chua/</loc>
+    <loc>http://localhost:8304/phat-ngon-tiep-tuc-gay-day-song-cua-hoa-hau-y-nhi-co-du-lap-lanh-du-xuat-canh-chua/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-04T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/showbiz-day-song-dap-tra-lai-phat-ngon-cua-y-nhi-ba-trum-dung-sau-len-tieng/</loc>
+    <loc>http://localhost:8304/showbiz-day-song-dap-tra-lai-phat-ngon-cua-y-nhi-ba-trum-dung-sau-len-tieng/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/phu-nu-chiu-duoc-bao-lau-khong-quan-he/</loc>
+    <loc>http://localhost:8304/phu-nu-chiu-duoc-bao-lau-khong-quan-he/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-25T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/phu-nu-lau-ngay-khong-quan-he-co-sao-khong/</loc>
+    <loc>http://localhost:8304/phu-nu-lau-ngay-khong-quan-he-co-sao-khong/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-04T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/tai-sao-lau-ngay-khong-quan-he-lai-dau/</loc>
+    <loc>http://localhost:8304/tai-sao-lau-ngay-khong-quan-he-lai-dau/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-04T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nhung-cau-chuyen-tinh-yeu-dep/</loc>
+    <loc>http://localhost:8304/nhung-cau-chuyen-tinh-yeu-dep/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-24T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/dau-hieu-phu-nu-lau-ngay-khong-quan-he/</loc>
+    <loc>http://localhost:8304/dau-hieu-phu-nu-lau-ngay-khong-quan-he/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-23T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-lam-cho-tinh-yeu-them-sau-dam/</loc>
+    <loc>http://localhost:8304/cach-lam-cho-tinh-yeu-them-sau-dam/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-04T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-de-co-mot-tinh-yeu-dep/</loc>
+    <loc>http://localhost:8304/cach-de-co-mot-tinh-yeu-dep/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-10T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/lam-sao-de-co-nguoi-yeu-dep-trai/</loc>
+    <loc>http://localhost:8304/lam-sao-de-co-nguoi-yeu-dep-trai/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-24T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/bi-quay-roi-tren-bai-bien-dancer-quynh-nga-tro-thanh-tam-diem-chu-y/</loc>
+    <loc>http://localhost:8304/bi-quay-roi-tren-bai-bien-dancer-quynh-nga-tro-thanh-tam-diem-chu-y/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-05T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/hinh-anh-dep-ve-tinh-yeu-tuoi-gia/</loc>
+    <loc>http://localhost:8304/hinh-anh-dep-ve-tinh-yeu-tuoi-gia/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-04T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/hinh-anh-ve-tinh-yeu-bo-doi/</loc>
+    <loc>http://localhost:8304/hinh-anh-ve-tinh-yeu-bo-doi/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-04T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/bo-hoa-hau-y-nhi-len-tieng-sau-loat-phat-ngon-va-mieng-cua-con-gai/</loc>
+    <loc>http://localhost:8304/bo-hoa-hau-y-nhi-len-tieng-sau-loat-phat-ngon-va-mieng-cua-con-gai/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/lanh-dao-ubnd-va-so-van-hoa-the-thao-tinh-binh-dinh-cung-len-tieng-ve-nhung-phat-ngon-cua-hoa-hau-y-nhi/</loc>
+    <loc>http://localhost:8304/lanh-dao-ubnd-va-so-van-hoa-the-thao-tinh-binh-dinh-cung-len-tieng-ve-nhung-phat-ngon-cua-hoa-hau-y-nhi/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/truoc-y-nhi-nhung-nang-hau-nao-da-tung-bi-tuoc-vuong-mien/</loc>
+    <loc>http://localhost:8304/truoc-y-nhi-nhung-nang-hau-nao-da-tung-bi-tuoc-vuong-mien/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/hinh-anh-moi-nhat-khi-hoa-hau-mai-phuong-thuy-cham-moc-71kg/</loc>
+    <loc>http://localhost:8304/hinh-anh-moi-nhat-khi-hoa-hau-mai-phuong-thuy-cham-moc-71kg/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/tap-5-viet-nam-idol-2023-quang-dung-xuc-dong-thi-sinh-tu-nhan-minh-la-tham-hoa/</loc>
+    <loc>http://localhost:8304/tap-5-viet-nam-idol-2023-quang-dung-xuc-dong-thi-sinh-tu-nhan-minh-la-tham-hoa/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nghi-van-a-hau-len-ngoi-hoa-hau-y-nhi-bi-phe-truat-danh-hieu/</loc>
+    <loc>http://localhost:8304/nghi-van-a-hau-len-ngoi-hoa-hau-y-nhi-bi-phe-truat-danh-hieu/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-06T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nhung-nang-hau-tai-hoa-nhung-duong-duyen-lan-dan-nhat-showbiz-viet/</loc>
+    <loc>http://localhost:8304/nhung-nang-hau-tai-hoa-nhung-duong-duyen-lan-dan-nhat-showbiz-viet/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/thanh-hang-tau-sieu-xe-sau-khi-duoc-ban-trai-cau-hon/</loc>
+    <loc>http://localhost:8304/thanh-hang-tau-sieu-xe-sau-khi-duoc-ban-trai-cau-hon/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/bang-dau-rap-viet-mua-3-thet-lua-tranh-cai-non-vang-chung-ket/</loc>
+    <loc>http://localhost:8304/bang-dau-rap-viet-mua-3-thet-lua-tranh-cai-non-vang-chung-ket/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-10T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/hinh-nen-tinh-yeu-dep/</loc>
+    <loc>http://localhost:8304/hinh-nen-tinh-yeu-dep/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-14T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nhung-cau-noi-hay-ve-tinh-yeu-dep-ngan-gon/</loc>
+    <loc>http://localhost:8304/nhung-cau-noi-hay-ve-tinh-yeu-dep-ngan-gon/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/anh-tinh-yeu-dep-lang-man-nhat/</loc>
+    <loc>http://localhost:8304/anh-tinh-yeu-dep-lang-man-nhat/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/bai-tap-tang-vong-1-truoc-khi-di-ngu/</loc>
+    <loc>http://localhost:8304/bai-tap-tang-vong-1-truoc-khi-di-ngu/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/son-tung-khoe-anh-moi-dan-tinh-ran-ran-goi-ten-nang-tho-hai-tu-/</loc>
+    <loc>http://localhost:8304/son-tung-khoe-anh-moi-dan-tinh-ran-ran-goi-ten-nang-tho-hai-tu-/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-08T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-ngu-tang-vong-1/</loc>
+    <loc>http://localhost:8304/cach-ngu-tang-vong-1/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-08T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/tap-gym-co-tang-vong-1-khong/</loc>
+    <loc>http://localhost:8304/tap-gym-co-tang-vong-1-khong/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-11T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-tang-vong-1-sau-sinh/</loc>
+    <loc>http://localhost:8304/cach-tang-vong-1-sau-sinh/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-08T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nhung-dancer-tai-bai-bien-ha-long-nong-nhat-cac-mxh/</loc>
+    <loc>http://localhost:8304/nhung-dancer-tai-bai-bien-ha-long-nong-nhat-cac-mxh/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-08T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/bai-tap-massage-tang-vong-1/</loc>
+    <loc>http://localhost:8304/bai-tap-massage-tang-vong-1/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-20T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/bai-tap-yoga-tang-vong-1/</loc>
+    <loc>http://localhost:8304/bai-tap-yoga-tang-vong-1/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-08T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-tang-vong-1-sau-khi-cai-sua/</loc>
+    <loc>http://localhost:8304/cach-tang-vong-1-sau-khi-cai-sua/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-08T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/-lan-dau-lam-chuyen-ay-quang-linh-chi-biet-ngoi-im-tren-chiec-ghe-100-trieu-ve-viet-nam/</loc>
+    <loc>http://localhost:8304/-lan-dau-lam-chuyen-ay-quang-linh-chi-biet-ngoi-im-tren-chiec-ghe-100-trieu-ve-viet-nam/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-08T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/ve-ngoai-long-lanh-tua-nu-than-cua-hoa-hau-thuy-tien-tren-song-truyen-hinh/</loc>
+    <loc>http://localhost:8304/ve-ngoai-long-lanh-tua-nu-than-cua-hoa-hau-thuy-tien-tren-song-truyen-hinh/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-09T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/hau-cung-nhu-y-truyen-ngay-tren-tham-do-pham-thoai-nhap-vai-xuat-hien-bat-ngo/</loc>
+    <loc>http://localhost:8304/hau-cung-nhu-y-truyen-ngay-tren-tham-do-pham-thoai-nhap-vai-xuat-hien-bat-ngo/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-11T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/vo-tre-nsnd-cong-ly-bat-ngo-thong-bao-tin-co-bau-khien-netizen-sung-sot/</loc>
+    <loc>http://localhost:8304/vo-tre-nsnd-cong-ly-bat-ngo-thong-bao-tin-co-bau-khien-netizen-sung-sot/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-09T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/ly-nha-ky-buc-xuc-vi-bi-fan-cuong-quay-roi-cuoc-song-rieng-tu/</loc>
+    <loc>http://localhost:8304/ly-nha-ky-buc-xuc-vi-bi-fan-cuong-quay-roi-cuoc-song-rieng-tu/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-10T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/lo-ket-qua-chung-ket-rap-viet-mua-3-quang-anh-rhyder-vao-toi-vong-cuoi-cung/</loc>
+    <loc>http://localhost:8304/lo-ket-qua-chung-ket-rap-viet-mua-3-quang-anh-rhyder-vao-toi-vong-cuoi-cung/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-10T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/diep-lam-anh-lo-bung-bau-du-phien-toa-phuc-tham-voi-chong-cu/</loc>
+    <loc>http://localhost:8304/diep-lam-anh-lo-bung-bau-du-phien-toa-phuc-tham-voi-chong-cu/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-11T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/chan-dung-chong-sap-cuoi-cua-ca-si-siu-black/</loc>
+    <loc>http://localhost:8304/chan-dung-chong-sap-cuoi-cua-ca-si-siu-black/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-11T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/the-new-mentor-lan-khue-choi-tham-khien-huong-giang-va-ha-ho-khia-nhau-gay-gat/</loc>
+    <loc>http://localhost:8304/the-new-mentor-lan-khue-choi-tham-khien-huong-giang-va-ha-ho-khia-nhau-gay-gat/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-12T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/phan-hien-rong-vi-o-dat-chau-au-khanh-thi-gui-tien-cho-chong/</loc>
+    <loc>http://localhost:8304/phan-hien-rong-vi-o-dat-chau-au-khanh-thi-gui-tien-cho-chong/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-24T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-lam-tang-vong-1-cap-toc-cua-nguoi-nhat/</loc>
+    <loc>http://localhost:8304/cach-lam-tang-vong-1-cap-toc-cua-nguoi-nhat/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-12T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nhung-thoi-quen-giup-tang-vong-1/</loc>
+    <loc>http://localhost:8304/nhung-thoi-quen-giup-tang-vong-1/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-14T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/uong-sua-dau-nanh-co-tang-vong-1-khong/</loc>
+    <loc>http://localhost:8304/uong-sua-dau-nanh-co-tang-vong-1-khong/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-30T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/bai-tap-nang-mong-giam-mo-bung/</loc>
+    <loc>http://localhost:8304/bai-tap-nang-mong-giam-mo-bung/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-14T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/tap-mong-qua-dao-tai-nha/</loc>
+    <loc>http://localhost:8304/tap-mong-qua-dao-tai-nha/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-14T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/tap-mong-tren-giuong/</loc>
+    <loc>http://localhost:8304/tap-mong-tren-giuong/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-11T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/bai-tap-hong-qua-tao/</loc>
+    <loc>http://localhost:8304/bai-tap-hong-qua-tao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-14T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/dong-thai-moi-nhat-cua-dancer-quynh-nga-sau-vu-ao-phan-chu/</loc>
+    <loc>http://localhost:8304/dong-thai-moi-nhat-cua-dancer-quynh-nga-sau-vu-ao-phan-chu/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-24T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/trai-dep-6-mui-xuat-hien-tai-quan-bar-ha-long-khien-chi-em-dung-ngoi-khong-yen/</loc>
+    <loc>http://localhost:8304/trai-dep-6-mui-xuat-hien-tai-quan-bar-ha-long-khien-chi-em-dung-ngoi-khong-yen/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-11T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/tap-yoga-tang-chieu-cao/</loc>
+    <loc>http://localhost:8304/tap-yoga-tang-chieu-cao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-14T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/yoga-tang-vong-3/</loc>
+    <loc>http://localhost:8304/yoga-tang-vong-3/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-14T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/bai-tap-yoga-tang-can/</loc>
+    <loc>http://localhost:8304/bai-tap-yoga-tang-can/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-14T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nghi-van-ran-nut-tinh-be-binh-giua-quynh-luong-va-thieu-gia-tra-vinh/</loc>
+    <loc>http://localhost:8304/nghi-van-ran-nut-tinh-be-binh-giua-quynh-luong-va-thieu-gia-tra-vinh/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-24T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/viet-nam-idol-2023-thi-sinh-nhan-duoc-tam-ve-vang-duy-nhat-tu-my-tam-hoc-tro-dong-nhi-gay-chu-y-/</loc>
+    <loc>http://localhost:8304/viet-nam-idol-2023-thi-sinh-nhan-duoc-tam-ve-vang-duy-nhat-tu-my-tam-hoc-tro-dong-nhi-gay-chu-y-/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-14T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/rap-viet-mua-3-tez-mikelodic-xuat-sac-gianh-tam-ve-vao-chung-ket/</loc>
+    <loc>http://localhost:8304/rap-viet-mua-3-tez-mikelodic-xuat-sac-gianh-tam-ve-vao-chung-ket/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-14T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/y-nhi-co-y-dinh-tra-lai-vuong-mien-nha-sen-vang-dung-ngoi-khong-yen/</loc>
+    <loc>http://localhost:8304/y-nhi-co-y-dinh-tra-lai-vuong-mien-nha-sen-vang-dung-ngoi-khong-yen/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-15T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/thuc-hu-chuyen-an-tay-bo-thi-the-new-mentor-vi-tin-don-soc-thuoc/</loc>
+    <loc>http://localhost:8304/thuc-hu-chuyen-an-tay-bo-thi-the-new-mentor-vi-tin-don-soc-thuoc/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-14T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/boc-phot-hop-dong-ly-hon-he-lo-nguyen-nhan-ran-nut-cua-vo-chong-viet-anh/</loc>
+    <loc>http://localhost:8304/boc-phot-hop-dong-ly-hon-he-lo-nguyen-nhan-ran-nut-cua-vo-chong-viet-anh/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-15T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/rap-viet-mua-3-gducky-phan-doi-double2t-khong-duoc-vao-chung-ket/</loc>
+    <loc>http://localhost:8304/rap-viet-mua-3-gducky-phan-doi-double2t-khong-duoc-vao-chung-ket/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-14T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/mc-phan-anh-xuong-toc-xuat-gia-he-lo-nguyen-nhan-dang-sau-quyet-dinh-gay-bat-ngo/</loc>
+    <loc>http://localhost:8304/mc-phan-anh-xuong-toc-xuat-gia-he-lo-nguyen-nhan-dang-sau-quyet-dinh-gay-bat-ngo/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-15T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/lo-anh-thoi-chua-phau-thuat-tham-my-cua-ban-gai-bray/</loc>
+    <loc>http://localhost:8304/lo-anh-thoi-chua-phau-thuat-tham-my-cua-ban-gai-bray/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-15T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/the-face-viet-nam-2023-ga-nha-team-anh-thu-am-tron-cup-quan-quan-la-ai/</loc>
+    <loc>http://localhost:8304/the-face-viet-nam-2023-ga-nha-team-anh-thu-am-tron-cup-quan-quan-la-ai/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-25T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/thuc-hu-chuyen-khoi-my-quay-tro-lai-voi-am-nhac-xuat-hien-trong-the-masked-singer-mua-2/</loc>
+    <loc>http://localhost:8304/thuc-hu-chuyen-khoi-my-quay-tro-lai-voi-am-nhac-xuat-hien-trong-the-masked-singer-mua-2/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-16T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/thuc-hu-tin-hoa-hau-tieu-vy-hen-ho-voi-my-nam-thai-lan/</loc>
+    <loc>http://localhost:8304/thuc-hu-tin-hoa-hau-tieu-vy-hen-ho-voi-my-nam-thai-lan/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-16T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/thuc-hu-bun-dau-mac-van-khoa-thu-nhap-2-ty-ngay/</loc>
+    <loc>http://localhost:8304/thuc-hu-bun-dau-mac-van-khoa-thu-nhap-2-ty-ngay/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-17T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/yoga-thon-chan/</loc>
+    <loc>http://localhost:8304/yoga-thon-chan/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-16T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/yoga-giam-mo-lung/</loc>
+    <loc>http://localhost:8304/yoga-giam-mo-lung/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-16T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cach-massage-nguc-o-tuoi-day-thi/</loc>
+    <loc>http://localhost:8304/cach-massage-nguc-o-tuoi-day-thi/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-16T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/bai-tap-tang-chieu-cao-cua-nhat/</loc>
+    <loc>http://localhost:8304/bai-tap-tang-chieu-cao-cua-nhat/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-22T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/tap-yoga-1-tieng-tieu-hao-bao-nhieu-calo/</loc>
+    <loc>http://localhost:8304/tap-yoga-1-tieng-tieu-hao-bao-nhieu-calo/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-16T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/bai-tap-yoga-giam-mo-bung-truoc-khi-di-ngu/</loc>
+    <loc>http://localhost:8304/bai-tap-yoga-giam-mo-bung-truoc-khi-di-ngu/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-16T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/tu-the-ngu-giup-tang-vong-3/</loc>
+    <loc>http://localhost:8304/tu-the-ngu-giup-tang-vong-3/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-16T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cac-bai-tap-mong-cho-nu-tai-phong-gym/</loc>
+    <loc>http://localhost:8304/cac-bai-tap-mong-cho-nu-tai-phong-gym/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-16T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/uong-sua-dau-nanh-co-giam-can-khong/</loc>
+    <loc>http://localhost:8304/uong-sua-dau-nanh-co-giam-can-khong/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-16T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/a-hau-minh-kien-buc-xuc-den-muc-phai-nho-den-co-quan-chuc-nang/</loc>
+    <loc>http://localhost:8304/a-hau-minh-kien-buc-xuc-den-muc-phai-nho-den-co-quan-chuc-nang/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-24T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/tinh-cach-12-cung-hoang-dao/</loc>
+    <loc>http://localhost:8304/tinh-cach-12-cung-hoang-dao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/mau-thuy-len-tieng-sau-khi-bi-chi-trich-vi-cai-sua-som-cho-con/</loc>
+    <loc>http://localhost:8304/mau-thuy-len-tieng-sau-khi-bi-chi-trich-vi-cai-sua-som-cho-con/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-17T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/truong-my-nhan-va-phi-ngoc-hung-nen-duyen-vo-chong/</loc>
+    <loc>http://localhost:8304/truong-my-nhan-va-phi-ngoc-hung-nen-duyen-vo-chong/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-18T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/nen-ngu-luc-may-gio-de-tang-chieu-cao/</loc>
+    <loc>http://localhost:8304/nen-ngu-luc-may-gio-de-tang-chieu-cao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-22T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/4-nhom-nguyen-to-cung-hoang-dao/</loc>
+    <loc>http://localhost:8304/4-nhom-nguyen-to-cung-hoang-dao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-05T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/ky-hieu-cua-12-cung-hoang-dao/</loc>
+    <loc>http://localhost:8304/ky-hieu-cua-12-cung-hoang-dao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-05T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cac-cung-hoang-dao-hop-nhau/</loc>
+    <loc>http://localhost:8304/cac-cung-hoang-dao-hop-nhau/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-05T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/ngu-trua-co-tang-chieu-cao-khong/</loc>
+    <loc>http://localhost:8304/ngu-trua-co-tang-chieu-cao-khong/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-22T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cung-hoang-dao-thu-13/</loc>
+    <loc>http://localhost:8304/cung-hoang-dao-thu-13/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-05T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/hau-chung-ket-the-face-3-4-hlv-dang-dan-to-thai-do-khong-phuc-voi-chien-thang-cua-tu-anh/</loc>
+    <loc>http://localhost:8304/hau-chung-ket-the-face-3-4-hlv-dang-dan-to-thai-do-khong-phuc-voi-chien-thang-cua-tu-anh/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-18T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cap-doi-lucie-nguyen-tuan-duong-chao-don-con-gai-dau-long/</loc>
+    <loc>http://localhost:8304/cap-doi-lucie-nguyen-tuan-duong-chao-don-con-gai-dau-long/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-18T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/qua-doi-o-tuoi-36-cuoc-doi-nguoi-mau-phuong-anh-ra-sao/</loc>
+    <loc>http://localhost:8304/qua-doi-o-tuoi-36-cuoc-doi-nguoi-mau-phuong-anh-ra-sao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-18T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/dien-vien-quynh-luong-gay-tranh-cai-khi-chia-se-ve-quan-diem-yeu-duong-nhu-cong-chua/</loc>
+    <loc>http://localhost:8304/dien-vien-quynh-luong-gay-tranh-cai-khi-chia-se-ve-quan-diem-yeu-duong-nhu-cong-chua/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-24T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/ngo-thanh-van-tiet-lo-loat-thay-doi-cua-chong-tre-kem-11-tuoi-ke-tu-ngay-ve-chung-nha/</loc>
+    <loc>http://localhost:8304/ngo-thanh-van-tiet-lo-loat-thay-doi-cua-chong-tre-kem-11-tuoi-ke-tu-ngay-ve-chung-nha/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-19T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/go-cua-tham-nha-kieu-trinh-trai-long-chuyen-gia-dinh-cay-dang/</loc>
+    <loc>http://localhost:8304/go-cua-tham-nha-kieu-trinh-trai-long-chuyen-gia-dinh-cay-dang/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-26T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/tran-thanh-gay-tranh-cai-vi-phat-ngon-o-viet-nam-khong-co-noi-nao-dao-tao-dien-vien-bai-ban/</loc>
+    <loc>http://localhost:8304/tran-thanh-gay-tranh-cai-vi-phat-ngon-o-viet-nam-khong-co-noi-nao-dao-tao-dien-vien-bai-ban/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-19T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/bich-phuong-gay-tranh-cai-khi-vo-tu-ke-ve-chuyen-cam-sung-nguoi-yeu-cu/</loc>
+    <loc>http://localhost:8304/bich-phuong-gay-tranh-cai-khi-vo-tu-ke-ve-chuyen-cam-sung-nguoi-yeu-cu/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-22T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/trung-quan-idol-gap-bien-lon-tinh-trang-khien-fan-lo-lang/</loc>
+    <loc>http://localhost:8304/trung-quan-idol-gap-bien-lon-tinh-trang-khien-fan-lo-lang/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-20T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/a-hau-minh-kien-trinh-dien-thoi-trang-chiem-tron-trai-tim-khan-gia-mai-ngo-bat-khoc/</loc>
+    <loc>http://localhost:8304/a-hau-minh-kien-trinh-dien-thoi-trang-chiem-tron-trai-tim-khan-gia-mai-ngo-bat-khoc/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-20T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/ro-bang-chung-puka-va-gin-tuan-kiet-lai-co-them-hint-ve-chung-mot-nha-/</loc>
+    <loc>http://localhost:8304/ro-bang-chung-puka-va-gin-tuan-kiet-lai-co-them-hint-ve-chung-mot-nha-/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-22T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/vietnam-idol-2023-nhan-ve-chi-trich-tu-mot-thi-sinh-gianh-ve-bac/</loc>
+    <loc>http://localhost:8304/vietnam-idol-2023-nhan-ve-chi-trich-tu-mot-thi-sinh-gianh-ve-bac/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-21T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cung-hoang-dao-xinh-dep-nhat/</loc>
+    <loc>http://localhost:8304/cung-hoang-dao-xinh-dep-nhat/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-05T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/do-tuoi-xinh-dep-cua-12-cung-hoang-dao/</loc>
+    <loc>http://localhost:8304/do-tuoi-xinh-dep-cua-12-cung-hoang-dao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-05T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/linh-thu-cua-12-cung-hoang-dao/</loc>
+    <loc>http://localhost:8304/linh-thu-cua-12-cung-hoang-dao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-05T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cung-dat-gom-cung-nao/</loc>
+    <loc>http://localhost:8304/cung-dat-gom-cung-nao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-05T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/truong-quynh-anh-song-luan/</loc>
+    <loc>http://localhost:8304/truong-quynh-anh-song-luan/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-24T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cung-khi-gom-cung-nao/</loc>
+    <loc>http://localhost:8304/cung-khi-gom-cung-nao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-05T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cung-nuoc-gom-cung-nao/</loc>
+    <loc>http://localhost:8304/cung-nuoc-gom-cung-nao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-10-20T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cung-lua-gom-cung-nao/</loc>
+    <loc>http://localhost:8304/cung-lua-gom-cung-nao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-05T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/truong-giang-thang-than-gop-y-cho-papper-negav-truoc-tin-don-lanh-nhat-voi-dan-em-tren-song-truyen-hinh/</loc>
+    <loc>http://localhost:8304/truong-giang-thang-than-gop-y-cho-papper-negav-truoc-tin-don-lanh-nhat-voi-dan-em-tren-song-truyen-hinh/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-23T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/minh-hang-ha-sinh-con-dau-long-sau-hon-mot-nam-ket-hon-voi-ong-xa-doanh-nhan/</loc>
+    <loc>http://localhost:8304/minh-hang-ha-sinh-con-dau-long-sau-hon-mot-nam-ket-hon-voi-ong-xa-doanh-nhan/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-25T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/vo-chong-tran-thanh-hari-won-lan-dau-ke-ve-nu-hon-dau-doi/</loc>
+    <loc>http://localhost:8304/vo-chong-tran-thanh-hari-won-lan-dau-ke-ve-nu-hon-dau-doi/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-25T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/thu-linh-cua-12-cung-hoang-dao/</loc>
+    <loc>http://localhost:8304/thu-linh-cua-12-cung-hoang-dao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-06T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/12-cung-hoang-dao-tuong-trung-cho-nuoc-nao/</loc>
+    <loc>http://localhost:8304/12-cung-hoang-dao-tuong-trung-cho-nuoc-nao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-06T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/cung-hoang-dao-nao-duoc-nhieu-nguoi-thich-nhat/</loc>
+    <loc>http://localhost:8304/cung-hoang-dao-nao-duoc-nhieu-nguoi-thich-nhat/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-06T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/than-thoai-hy-lap-12-cung-hoang-dao/</loc>
+    <loc>http://localhost:8304/than-thoai-hy-lap-12-cung-hoang-dao/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-06T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/top-cung-hoang-dao-nu-nhieu-nguoi-theo-duoi-nhat/</loc>
+    <loc>http://localhost:8304/top-cung-hoang-dao-nu-nhieu-nguoi-theo-duoi-nhat/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/chom-sao-nam-nao-duoc-nhieu-nguoi-theo-duoi-nhat/</loc>
+    <loc>http://localhost:8304/chom-sao-nam-nao-duoc-nhieu-nguoi-theo-duoi-nhat/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-09-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/huong-tram-gay-phan-no-vi-tiet-muc-phan-cam-tren-san-khau/</loc>
+    <loc>http://localhost:8304/huong-tram-gay-phan-no-vi-tiet-muc-phan-cam-tren-san-khau/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-26T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/gia-dinh-minh-vui-bat-thinh-linh-cai-ket-no-hoa-hay-roi-vao-be-tac/</loc>
+    <loc>http://localhost:8304/gia-dinh-minh-vui-bat-thinh-linh-cai-ket-no-hoa-hay-roi-vao-be-tac/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-28T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/ninh-duong-lan-ngoc-noi-gi-khi-bi-nghi-ngo-kha-nang-ca-hat-o-chi-dep-dap-gio-re-song/</loc>
+    <loc>http://localhost:8304/ninh-duong-lan-ngoc-noi-gi-khi-bi-nghi-ngo-kha-nang-ca-hat-o-chi-dep-dap-gio-re-song/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-28T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/hoa-hau-doan-thien-an-neu-co-kiep-sau-xin-cho-con-duoc-tim-lai-me/</loc>
+    <loc>http://localhost:8304/hoa-hau-doan-thien-an-neu-co-kiep-sau-xin-cho-con-duoc-tim-lai-me/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-28T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://phunuplus.vn/le-hoang-phuong-dang-quang-hoa-hau-hoa-binh-viet-nam-2023/</loc>
+    <loc>http://localhost:8304/le-hoang-phuong-dang-quang-hoa-hau-hoa-binh-viet-nam-2023/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2023-08-28T07:24:06+00:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://phunuplus.vn/cach-de-khong-suy-nghi-tieu-cuc/</loc>
-    <changefreq>daily</changefreq>
-    <lastmod>2023-09-07T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>

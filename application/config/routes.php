@@ -50,6 +50,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'Home/home';
+$route['404_override'] = 'Home/custom_404';
 
 //admin
 $route['admin'] = 'Admin/admin';
@@ -92,6 +93,7 @@ $route['register_mail'] = 'Ajax/register_mail';
 $route['send_mail'] = 'Admin/send_mail';
 
 
+$route['author/(:any).html'] = 'Home/author/$1';
 $route['(:any)-c(:num).html'] = 'Home/detail_blog_new/$2';
 $route['(:any)'] = 'Home/chuyenmuc/$1';
 $route['(:any)/(:num)'] = 'Home/chuyenmuc/$1';

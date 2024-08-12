@@ -1,5 +1,5 @@
 .content {
-    padding-top: 10px;
+    padding-top: 125px;
     background: #fff;
 }
 
@@ -634,7 +634,9 @@ a.H4abc {
         width: 100%;
     }
 
-    .content {}
+    .content {
+    padding-top: 65px;
+}
 
     .title_blog a,
     .title_blog_list a {

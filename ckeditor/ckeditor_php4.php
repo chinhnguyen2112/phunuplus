@@ -26,7 +26,7 @@ class CKEditor
 	 * A constant string unique for each release of %CKEditor.
 	 * \private
 	 */
-	var $_timestamp = 'D03G5X1';
+	var $_timestamp = 'D03G5X3';
 
 	/**
 	 * URL to the %CKEditor installation directory (absolute or relative to document root).

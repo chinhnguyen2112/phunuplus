@@ -1,5 +1,6 @@
 .container {
     padding: 79px 0;
+    padding-top: 125px;
 }
 
 .container_width {
@@ -10,14 +11,6 @@
 .content_page {
     padding: 0 15px 30px;
     color: #000;
-}
-
-.content_page span {
-    font-size: 16px;
-    line-height: 24px;
-    color: #777;
-    font-weight: bold;
-    margin-bottom: 20px;
 }
 
 .content_page h2,
@@ -36,10 +29,11 @@
     margin-top: 20px;
 }
 
-.content_page p span {
+.content_page p,.content_page span {
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .content_page a {
@@ -90,7 +84,21 @@ figcaption {
 .content_page li {
     margin: 10px 0;
 }
+.content_page h1 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 45px;
+    color: #131736;
+    margin-bottom: 10px;
+}
+.content_page img {
+    width: 100%;
+}
 
+.content_page figure {
+    width: 100%;
+    margin: auto;
+}
 @media only screen and (max-width: 540px) {
     .content_page {
         padding: 0 20px;
@@ -102,5 +110,9 @@ figcaption {
         margin-top: 12px;
         font-size: 18px;
         line-height: 28px;
+    }
+    .content_page h1 {
+        font-size: 26px;
+        line-height: 34px;
     }
 }

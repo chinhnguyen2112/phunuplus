@@ -64,7 +64,7 @@ class CKFinder_Connector_Core_Xml
      */
     function &getConnectorNode()
     {
-        return $this->_connectorNode;
+    	return $this->_connectorNode;
     }
 
     /**
@@ -75,7 +75,7 @@ class CKFinder_Connector_Core_Xml
      */
     function &getErrorNode()
     {
-        return $this->_errorNode;
+    	return $this->_errorNode;
     }
 
     /**
@@ -86,17 +86,17 @@ class CKFinder_Connector_Core_Xml
     {
         // Prevent the browser from caching the result.
         // Date in the past
-        header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
+        header('Expires: Mon, 26 Jul 1997 05:00:00 GMT') ;
         // always modified
-        header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');
+        header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT') ;
         // HTTP/1.1
-        header('Cache-Control: no-store, no-cache, must-revalidate');
-        header('Cache-Control: post-check=0, pre-check=0', false);
+        header('Cache-Control: no-store, no-cache, must-revalidate') ;
+        header('Cache-Control: post-check=0, pre-check=0', false) ;
         // HTTP/1.0
-        header('Pragma: no-cache');
+        header('Pragma: no-cache') ;
 
         // Set the response format.
-        header('Content-Type: text/xml; charset=utf-8');
+        header( 'Content-Type: text/xml; charset=utf-8' ) ;
     }
 
     /**
@@ -107,7 +107,7 @@ class CKFinder_Connector_Core_Xml
      */
     function getXMLDeclaration()
     {
-        return '<?xml version="1.0" encoding="utf-8"?>';
+    	return '<?xml version="1.0" encoding="utf-8"?>';
     }
 
     /**
@@ -118,10 +118,10 @@ class CKFinder_Connector_Core_Xml
      * @param int $number error number
      * @param string $text Custom error message (optional)
      */
-    function raiseError($number, $text = false)
+    function raiseError( $number, $text = false)
     {
         $this->_errorNode->addAttribute("number", intval($number));
-        if (false != $text) {
+        if (false!=$text) {
             $this->_errorNode->addAttribute("text", $text);
         }
 

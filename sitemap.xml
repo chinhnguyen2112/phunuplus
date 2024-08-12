@@ -2,39 +2,39 @@
 <?xml-stylesheet type="text/xsl" href="https://phunuplus.vn/assets/css/css_sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://phunuplus.vn/page.xml</loc>
+    <loc>http://localhost:8304/page.xml</loc>
     <lastmod>2023-01-10T17:28:31+07:00</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://phunuplus.vn/blog.xml</loc>
+    <loc>http://localhost:8304/blog.xml</loc>
     <lastmod>2023-01-10T17:28:31+07:00</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://phunuplus.vn/blog1.xml</loc>
-    <lastmod>2023-12-14T17:28:31+07:00</lastmod>
+    <loc>http://localhost:8304/blog1.xml</loc>
+    <lastmod>2024-01-24T17:28:31+07:00</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://phunuplus.vn/blog2.xml</loc>
-    <lastmod>2023-12-14T17:28:31+07:00</lastmod>
+    <loc>http://localhost:8304/blog2.xml</loc>
+    <lastmod>2024-01-24T17:28:31+07:00</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://phunuplus.vn/blog3.xml</loc>
-    <lastmod>2023-12-14T17:28:31+07:00</lastmod>
+    <loc>http://localhost:8304/blog3.xml</loc>
+    <lastmod>2024-01-24T17:28:31+07:00</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://phunuplus.vn/blog4.xml</loc>
-    <lastmod>2023-12-14T17:28:31+07:00</lastmod>
+    <loc>http://localhost:8304/blog4.xml</loc>
+    <lastmod>2024-01-24T17:28:31+07:00</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://phunuplus.vn/tags.xml</loc>
+    <loc>http://localhost:8304/tags.xml</loc>
     <lastmod>2023-09-19T17:28:31+07:00</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://phunuplus.vn/categories.xml</loc>
+    <loc>http://localhost:8304/categories.xml</loc>
     <lastmod>2023-09-21T17:28:31+07:00</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://phunuplus.vn/tags1.xml</loc>
+    <loc>http://localhost:8304/tags1.xml</loc>
     <lastmod>2023-10-03T17:28:31+07:00</lastmod>
   </sitemap>
 </sitemapindex>

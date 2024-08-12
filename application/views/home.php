@@ -1,91 +1,169 @@
 <h1 style="display: none;">Phụ Nữ Plus</h1>
 <div class="homeContent body_width">
     <div class="blog_top">
-        <div class="left_blog_top">
-            <div class="blog_1">
-                <a class="linl_all_detail" title="<?= $blog[0]['title'] ?>" href="/<?= alias_new($blog[0]['alias'], $blog[0]['id']) ?>">
-                    <div class="blog_top_content blog_top_left">
-                        <img src="/<?= ($blog[0]['image'] != '') ? $blog[0]['image'] : 'images/logo.png' ?>" alt="<?= $blog[0]['title'] ?>">
-                        <div class="bg_image"></div>
-                    </div>
-                    <div class="blog_top_content blog_top_right">
-                        <p class="title_blog_top"><?= $blog[0]['title'] ?></p>
-                    </div>
-                </a>
-            </div>
-            <div class="blog_2">
-                <?php foreach ($blog as $key => $val) {
-                    if ($key > 0 && $key < 4) { ?>
-                        <div class="blog_content_2">
-                            <a title="<?= $val['title'] ?>" href="/<?= alias_new($val['alias'], $val['id']) ?>">
-                                <p class="title_blog only_mobile"><?= $val['title'] ?></p>
-                            </a>
-                            <a class="linl_all_detail link_fl" title="<?= $val['title'] ?>" href="/<?= alias_new($val['alias'], $val['id']) ?>">
-                                <img src="/<?= ($val['image'] != '') ? $val['image'] : 'images/logo.png' ?>" alt="<?= $val['title'] ?>">
-                                <div class="bg_image"></div>
-                                <div class="box_content_blog">
-                                    <p class="title_blog"><?= $val['title'] ?></p>
-                                    <div class="fl_date only_mobile">
-                                        <p class="cate_post only_mobile"><?php $cate = author(['id' => $val['author_id']]);
-                                                                            echo $cate[0]['name']; ?></p>
-                                        <span class="dot_item"></span>
-                                        <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p>
-                                    </div>
-                                    <div class="des_post"><?= $val['sapo'] ?> </div>
-                                </div>
-                            </a>
+        <div class="blog_top_1">
+            <?php foreach ($blog_new as $key => $val) {
+                if ($key == 0) {
+                    $author = author(['id' => $val['author_id']]);
+                    $cate = chuyen_muc(['id' => $val['chuyenmuc']]); ?>
+                    <article class="card">
+                        <a href="/<?= alias_new($val['alias'], $val['id']) ?>">
+                            <div class="ratio ratio_1by1 ">
+                                <img class="ratio_item" src="/<?= ($val['image'] != '') ? $val['image'] : 'images/logo.png' ?>" alt="<?= $val['title'] ?>">
+                            </div>
+                        </a>
+                        <div class="card_body">
+                            <span class="text_category"><?= ($author != null) ? $author[0]['name'] : '' ?> | <?= ($cate != null) ? $cate[0]['name'] : '' ?></span>
+                            <h3 class="text_title">
+                                <a href="/<?= alias_new($val['alias'], $val['id']) ?>" class="text_reset"><?= $val['title'] ?></a>
+                            </h3>
                         </div>
-                <?php }
-                } ?>
-            </div>
+                    </article>
+            <?php }
+            } ?>
+        </div>
+        <div class="blog_top_2">
+            <?php foreach ($blog_new as $key => $val) {
+                if ($key > 0 && $key < 4) {
+                    $author = author(['id' => $val['author_id']]);
+                    $cate = chuyen_muc(['id' => $val['chuyenmuc']]); ?>
+                    <article class="card card_<?= $key ?>">
+                        <a href="/<?= alias_new($val['alias'], $val['id']) ?>">
+                            <div class="ratio ratio_1by1 ">
+                                <img class="ratio_item" src="/<?= ($val['image'] != '') ? $val['image'] : 'images/logo.png' ?>" alt="<?= $val['title'] ?>">
+                            </div>
+                        </a>
+                        <div class="card_body">
+                            <span class="text_category"><?= ($author != null) ? $author[0]['name'] : '' ?> | <?= ($cate != null) ? $cate[0]['name'] : '' ?></span>
+                            <h3 class="text_title">
+                                <a href="/<?= alias_new($val['alias'], $val['id']) ?>" class="text_reset"><?= $val['title'] ?></a>
+                            </h3>
+                        </div>
+                    </article>
+            <?php }
+            } ?>
         </div>
     </div>
-    <div class="container_widget ">
-        <div class="right_home">
-            <div class="list_blog_home">
-                <div class="tab_home">
-                    <div class="list_tab">
-                        <?php
-                        $tab = chuyen_muc(['parent' => 0]);
-                        foreach ($tab as $val) { ?>
-                            <a class="this_tab" href="/<?= $val['alias'] ?>/">
-                                <span class="img_tab"></span>
-                                <p class="name_tab"><?= $val['name'] ?></p>
-                            </a>
-                        <?php } ?>
-                    </div>
-                </div>
-                <?php foreach ($blog as $key => $val) {
-                    if ($key >= 4) { ?>
-                        <div class="this_content_right">
-                            <a title="<?= $val['title'] ?>" href="/<?= alias_new($val['alias'], $val['id']) ?>">
-                                <p class="title_blog only_mobile"><?= $val['title'] ?></p>
-                            </a>
-                            <a class="linl_all_detail link_fl" title="<?= $val['title'] ?>" href="/<?= alias_new($val['alias'], $val['id']) ?>">
-                                <img src="/<?= ($val['image'] != '') ? $val['image'] : 'images/logo.png' ?>" alt="<?= $val['title'] ?>">
-                                <div class="box_content_blog">
-                                    <p class="title_blog"><?= $val['title'] ?></p>
-                                    <div class="fl_date">
-                                        <p class="cate_post"><?php $cate = author(['id' => $val['author_id']]);
-                                                                echo $cate[0]['name']; ?></p>
-                                        <span class="dot_item"></span>
-                                        <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p>
-                                    </div>
-                                    <div class="des_post"><?= $val['sapo'] ?> </div>
-                                </div>
-                            </a>
+    <div class="blog_second">
+        <div class="blog_second_left">
+            <h2 class="text_title_heading">Xem nhiều nhất</h2>
+            <div class="list_blog_second">
+                <?php foreach ($blog_view as $key => $val) {
+                    $author = author(['id' => $val['author_id']]);
+                    $cate = chuyen_muc(['id' => $val['chuyenmuc']]); ?>
+                    <article class="this_blog_second">
+                        <a href="/<?= alias_new($val['alias'], $val['id']) ?>">
+                            <div class="ratio ratio_13by10">
+                                <img class="ratio_item" src="/<?= ($val['image'] != '') ? $val['image'] : 'images/logo.png' ?>" alt="<?= $val['title'] ?>">
+                            </div>
+                        </a>
+                        <div class="card_body">
+                            <span class="text_category"><?= ($author != null) ? $author[0]['name'] : '' ?> | <?= ($cate != null) ? $cate[0]['name'] : '' ?></span>
+                            <h3 class="text_title text_title_sm">
+                                <a href="/<?= alias_new($val['alias'], $val['id']) ?>" class="text_reset max_line_3"><?= $val['title'] ?></a>
+                            </h3>
                         </div>
-                <?php }
-                } ?>
-                <div class="load_more">
-                    <button class="btn_see_more">
-                        <span>Hiển thị thêm tin</span>
-                        <i class="icon_arrow_down"></i>
-                    </button>
-                </div>
+                    </article>
+                <?php } ?>
             </div>
         </div>
-        <?php include('includes/sidebar.php')
-        ?>
+        <div class="blog_second_right">
+            <h3 class="text_title_heading">Recommend</h3>
+        </div>
+    </div>
+    <div class="list_cate">
+        <div class="this_cate">
+            <a href="/yeu/">
+                <h2 class="text_title_heading">Yêu</h2>
+            </a>
+            <?php foreach ($blog_1 as $key => $val) {
+                $author = author(['id' => $val['author_id']]);
+                $cate = chuyen_muc(['id' => $val['chuyenmuc']]); ?>
+                <article class="blog_cate">
+                    <a href="/<?= alias_new($val['alias'], $val['id']) ?>">
+                        <div class="ratio ratio_13by10">
+                            <img class="ratio_item" src="/<?= ($val['image'] != '') ? $val['image'] : 'images/logo.png' ?>" alt="<?= $val['title'] ?>">
+                        </div>
+                    </a>
+                    <div class="card_body">
+                        <span class="text_category"><?= ($author != null) ? $author[0]['name'] : '' ?> | <?= ($cate != null) ? $cate[0]['name'] : '' ?></span>
+                        <h3 class="text_title ">
+                            <a href="/<?= alias_new($val['alias'], $val['id']) ?>" class="text_reset"><?= $val['title'] ?></a>
+                        </h3>
+                    </div>
+                </article>
+            <?php } ?>
+        </div>
+        <div class="this_cate">
+            <a href="/dep/">
+                <h2 class="text_title_heading">Đẹp</h2>
+            </a>
+            <?php foreach ($blog_3 as $key => $val) {
+                $author = author(['id' => $val['author_id']]);
+                $cate = chuyen_muc(['id' => $val['chuyenmuc']]); ?>
+                <article class="blog_cate">
+                    <a href="/<?= alias_new($val['alias'], $val['id']) ?>">
+                        <div class="ratio ratio_13by10">
+                            <img class="ratio_item" src="/<?= ($val['image'] != '') ? $val['image'] : 'images/logo.png' ?>" alt="<?= $val['title'] ?>">
+                        </div>
+                    </a>
+                    <div class="card_body">
+                        <span class="text_category"><?= ($author != null) ? $author[0]['name'] : '' ?> | <?= ($cate != null) ? $cate[0]['name'] : '' ?></span>
+                        <h3 class="text_title ">
+                            <a href="/<?= alias_new($val['alias'], $val['id']) ?>" class="text_reset"><?= $val['title'] ?></a>
+                        </h3>
+                    </div>
+                </article>
+            <?php } ?>
+        </div>
+        <div class="this_cate">
+            <a href="/mat-ngu/">
+                <h2 class="text_title_heading">Mật Ngữ</h2>
+            </a>
+            <?php foreach ($blog_46 as $key => $val) {
+                $author = author(['id' => $val['author_id']]);
+                $cate = chuyen_muc(['id' => $val['chuyenmuc']]); ?>
+                <article class="blog_cate">
+                    <a href="/<?= alias_new($val['alias'], $val['id']) ?>">
+                        <div class="ratio ratio_13by10">
+                            <img class="ratio_item" src="/<?= ($val['image'] != '') ? $val['image'] : 'images/logo.png' ?>" alt="<?= $val['title'] ?>">
+                        </div>
+                    </a>
+                    <div class="card_body">
+                        <span class="text_category"><?= ($author != null) ? $author[0]['name'] : '' ?> | <?= ($cate != null) ? $cate[0]['name'] : '' ?></span>
+                        <h3 class="text_title ">
+                            <a href="/<?= alias_new($val['alias'], $val['id']) ?>" class="text_reset"><?= $val['title'] ?></a>
+                        </h3>
+                    </div>
+                </article>
+            <?php } ?>
+        </div>
+    </div>
+    <div class="new_feed">
+        <h2 class="text_title_heading text_primary ">News feed</h2>
+        <div class="list_new">
+            <?php foreach ($blog_new as $key => $val) {
+                if ($key >= 4) {
+                    $author = author(['id' => $val['author_id']]);
+                    $cate = chuyen_muc(['id' => $val['chuyenmuc']]); ?>
+                    <article class="this_new">
+                        <a href="/<?= alias_new($val['alias'], $val['id']) ?>">
+                            <div class="ratio ratio_5by3 ">
+                                <img class="ratio_item" src="/<?= ($val['image'] != '') ? $val['image'] : 'images/logo.png' ?>" alt="<?= $val['title'] ?>">
+                            </div>
+                        </a>
+                        <div class="card_body">
+                            <span class="text_category"><?= ($author != null) ? $author[0]['name'] : '' ?> | <?= ($cate != null) ? $cate[0]['name'] : '' ?></span>
+                            <h3 class="text_title">
+                                <a href="/<?= alias_new($val['alias'], $val['id']) ?>" class="text_reset"><?= $val['title'] ?></a>
+                            </h3>
+                        </div>
+                    </article>
+            <?php }
+            } ?>
+        </div>
+        <div class="loadmore">
+            <span class="load_more" >Xem thêm</span>
+        </div>
     </div>
 </div>
